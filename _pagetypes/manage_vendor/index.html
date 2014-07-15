@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <script src="/assets/scripts/modernizr.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-editVendorInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editVendorInfo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="form-horizontal" role="form">
+
+          <div class="modal-header tier static">
+            <div class="indicator"></div>
+            <h4 class="modal-title" id="myModalLabel">
+              Edit Ship From Address
+              <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+            </h4>
+          </div>
+
+          <div class="modal-body tier">
+            <div class="indicator"></div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-1" value="1922 Rodeo Dr">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 108">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+              <div class="col-sm-4">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option selected="selected">Austin</option>
+                  <option>Amarillo</option>
+                  <option>Dallas</option>
+                  <option>Houston</option>
+                  <option>San Antonio</option>
+                  <option>Tyler</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option>AK</option>
+                  <option selected="selected">TX</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DE</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="vendor-city-state-zip" value="78701">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-footer tier static">
+            <div class="indicator"></div>
+            <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="app">
+
+    <header class="topbar navbar" id="topbar" role="navigation">
+      <div class="topbar-branding" id="logo"></div>
+      <div class="topbar-buttons" id="topbar-buttons">
+        <ul class="topbar-nav nav nav-pills">
+          <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+          <li>
+            <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+            <ul class="topbar-dropdown dropdown-menu pull-right">
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header> <!-- header.navbar.topbar#topbar -->
+
+    <main>
+
+      <section class="menu-system">
+        <nav class="menu">
+          <ul class="level">
+            <li>
+              <a class="level-down" href=""><i class="entypo-line-graph"></i> <span>Dashboard</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Dashboard</a></li>
+                <li><a href="">My Dashboard</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Dashboard Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Dashboard Settings</a></li>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                    <li><a href="">Option 4</a></li>
+                    <li><a href="">Option 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="level-down has-children" href="">Widget Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Widget Settings</a></li>
+                    <li><a href="">Colors &amp; Styles</a></li>
+                    <li><a href="">Configure Widgets</a></li>
+                    <li><a href="">3rd Party Apps</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-text-doc"></i> <span>General Ledger</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">General Ledger</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-pie-chart"></i> <span>Budget</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Budget</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Budget by Department</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Budget By Department</a></li>
+                    <li><a href="">Operations</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Personnel</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Budget</a></li>
+                <li><a href="">Approvals</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </li>
+            <li><a href=""><i class="entypo-folder"></i> <span>Reports</span></a></li>
+            <li><a href=""><i class="entypo-cog"></i> <span>Settings</span></a></li>
+          </ul>
+        </nav>
+      </section> <!-- section.menu-system -->
+
+      <div class="app-content">
+
+        <div class="master-container view" id="manage-vendor">
+
+          <header class="page heading">
+            <div class="container">
+
+              <h1 class="page title"><a href="#">Manage Vendor</a></h1>
+
+              <nav class="actions">
+                <a class="btn btn-primary" href="">Add New Bill</a>
+              </nav> <!-- nav.actions -->
+              <nav class="actions right">
+                <a class="btn btn-primary" href="">Back to Vendor List</a>
+              </nav> <!-- nav.actions -->
+
+            </div> <!-- .container -->
+          </header> <!-- header.page-heading -->
+
+
+          <div class="content block" id="vendor-info">
+            <div class="container">
+
+              <section class="vendor-photo">
+                <a class="add-vendor-photo" href="#"><i class="entypo-plus"></i></a>
+              </section>
+
+              <section class="vendor-info">
+                <h1>
+                  Agave IT Services
+                  <a class="btn btn-inverse right" data-toggle="modal" data-target="#modal-editVendorInfo">Edit Vendor Info</a>
+                </h1>
+                <h6>Vendor Since: April 12, 2012</h6>
+
+                <div class="row">
+                  <div class="vendor-address col-sm-6">
+                    <p>
+                      2225 White Hills Trail<br>
+                      Suite 9975<br>
+                      Austin, TX 78721
+                    </p>
+                  </div>
+
+                  <ul class="vendor-contact col-sm-6">
+                    <li><a class="" href="#"><i class="entypo-user"></i> John Smith</a></li>
+                    <li><a class="" href="#"><i class="entypo-mobile"></i> 512.989.2298</a></li>
+                    <li><a class="" href="#"><i class="entypo-paper-plane"></i> john@agaveit.com</a></li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="vendor-actions">
+                <header class="section-heading">
+                  <h2 class="section title">Actions</h2>
+                </header>
+
+                <div class="section-contents">
+                  <nav class="actions">
+                    <a class="btn btn-inverse" href="#">Approve Payments</a>
+                    <a class="btn btn-inverse" href="#">Run Vendor Report</a>
+                    <a class="btn btn-inverse" href="#">Send 1099</a>
+                  </nav>
+                </div>
+              </section>
+
+              <section class="vendor-secondary-addresses">
+                <header class="section-heading">
+                  <h2 class="section title">Secondary Addresses</h2>
+                </header>
+
+                <div class="section-contents">
+                  <form class="form-horizontal" role="form">
+
+                    <div class="form-group has-feedback">
+
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="ship-from-address" value="Ship From Address">
+                        <span class="form-control-feedback"><i class="entypo-pencil"></i></span>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="remit-to-address" value="Remit To Address">
+                        <span class="form-control-feedback"><i class="entypo-pencil"></i></span>
+                      </div>
+
+                    </div>
+
+                  </form>
+                </div>
+              </section>
+
+              <section class="vendor-notes">
+                <header class="section-heading">
+                  <h2 class="section title">Vendor Notes</h2>
+                </header>
+
+                <div class="section-contents">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in justo nisi. Maecenas rutrum gravida odio.</p>
+                </div>
+              </section>
+
+            </div> <!-- .container -->
+          </div> <!-- .content.block#vendor-info -->
+
+
+
+          <div class="content block" id="recent-transactions">
+            <div class="container">
+
+              <header class="block-heading tier static">
+                <div class="indicator"></div>
+                <h2 class="block title">Recent Transactions</h2>
+
+                <select class="dropdown filter" id="filter-by-time" name="filter-by-time">
+                  <option>Past 30 Days</option>
+                  <option>Past 3 Months</option>
+                  <option>Past 6 Months</option>
+                  <option>Past 9 Months</option>
+                </select>
+
+              </header> <!-- header.block.heading -->
+
+
+              <div class="block-contents">
+                <div class="faux-table">
+                  <header class="table-head tier static">
+                    <div class="indicator"></div>
+                    <div class="cell due-date">Due Date</div>
+                    <div class="cell payment-type">Payment Type</div>
+                    <div class="cell voucher-id">Voucher ID</div>
+                    <div class="cell memo">Memo</div>
+                    <div class="cell balance">Balance</div>
+                    <div class="cell paid">Paid</div>
+                    <div class="cell status">Status</div>
+                  </header> <!-- .table-head.tier.static -->
+
+                  <ul class="table-content">
+                    <li class="tier status-due">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">3/15/2014</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">012392</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$297.34</div>
+                      <div class="cell paid">$0.00</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Due</a></div>
+                    </li>
+
+                    <li class="tier status-due">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">2/25/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">012457</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$297.34</div>
+                      <div class="cell paid">$0.00</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Due</a></div>
+                    </li>
+
+                    <li class="tier status-past_due">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">11/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">228290</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$297.34</div>
+                      <div class="cell paid">$0.00</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Past Due</a></div>
+                    </li>
+
+                    <li class="tier status-paid">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">10/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">192840</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$0.00</div>
+                      <div class="cell paid">$297.34</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Paid</a></div>
+                    </li>
+
+                    <li class="tier status-paid">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">9/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">478201</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$0.00</div>
+                      <div class="cell paid">$297.34</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Paid</a></div>
+                    </li>
+
+                    <li class="tier status-paid">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">8/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">928401</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$0.00</div>
+                      <div class="cell paid">$297.34</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Paid</a></div>
+                    </li>
+
+                    <li class="tier status-paid">
+                      <div class="indicator"></div>
+                      <div class="cell due-date">7/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">292894</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$0.00</div>
+                      <div class="cell paid">$297.34</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Paid</a></div>
+                    </li>
+
+                    <li class="tier status-paid">
+                      <div class="indicator"></div>
+                      <div class="cell due-date disabled">6/22/2013</div>
+                      <div class="cell payment-type">Check</div>
+                      <div class="cell voucher-id">409122</div>
+                      <div class="cell memo">
+                        Monthly Retainer
+                        <nav class="actions">
+                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
+                          <a class="btn btn-primary btn-hidden inverted" href="">Pay Bill</a>
+                        </nav>
+                      </div>
+                      <div class="cell balance">$0.00</div>
+                      <div class="cell paid">$297.34</div>
+                      <div class="cell status">
+                        <a class="btn" href="">Paid</a></div>
+                    </li>
+                  </ul>
+                </div> <!-- .faux-table -->
+              </div> <!-- .block.content -->
+
+            </div> <!-- .container -->
+          </div> <!-- .content.block #outstanding-invoices -->
+
+
+        </div> <!-- .master-container.view #manage-invoices -->
+
+      </div> <!-- .app-content -->
+    </main>
+
+  </div> <!-- .app -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script>
+  <script src="/assets/scripts/jquery-ui.js"></script>
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+
+</body>
+</html>
