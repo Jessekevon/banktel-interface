@@ -15787,6 +15787,7 @@ div.actions:hover + .form-group {
 
     #upload ul{
         list-style:none;
+        padding-left: 0px;
   /*      margin:0 -30px;
         border-top:1px solid #2b2e31;
         border-bottom:1px solid #3d4043;
@@ -15794,7 +15795,7 @@ div.actions:hover + .form-group {
 
     #upload ul li{
 
-        background-color:#333639;
+/*        background-color:#333639;
 
         background-image:-webkit-linear-gradient(top, #333639, #303335);
         background-image:-moz-linear-gradient(top, #333639, #303335);
@@ -15804,7 +15805,7 @@ div.actions:hover + .form-group {
         border-bottom:1px solid #2b2e31;
         padding:15px;
         height: 52px;
-
+*/
         position: relative;
     }
 
