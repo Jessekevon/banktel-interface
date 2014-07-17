@@ -15747,7 +15747,7 @@ padding: 10px;
   }
 
   #drop a{
-      background-color:#007a96;
+/*      background-color:#007a96;
       padding:12px 26px;
       color:#fff;
       font-size:14px;
@@ -15756,7 +15756,20 @@ padding: 10px;
       display:inline-block;
       margin-top:12px;
       line-height:1;
-  }
+*/  
+background-color: #007a96;
+/*padding: 12px 26px;
+*/color: #fff;
+font-size: 14px;
+border-radius: 2px;
+cursor: pointer;
+display: inline-block;
+margin-top: -37px;
+line-height: 1;
+float: right;
+
+
+}
 
   #drop a:after {
       color:#d1d3d4;
@@ -15786,7 +15799,7 @@ padding: 10px;
 
   #upload ul li{
 
-      background-color:#333639;
+/*      background-color:#333639;
 
       background-image:-webkit-linear-gradient(top, #333639, #303335);
       background-image:-moz-linear-gradient(top, #333639, #303335);
@@ -15794,10 +15807,15 @@ padding: 10px;
 
       border-top:1px solid #3d4043;
       border-bottom:1px solid #2b2e31;
-      padding:15px;
+*/     
+/* padding:15px;
       height: 52px;
-
+*/
       position: relative;
+
+      height: 99px;
+      position: absolute;
+
   }
 
   #upload ul li input{
@@ -15852,6 +15870,21 @@ padding: 10px;
   line-height: 25px;
   font-size: 12px;
   text-transform: initial;
+  }
+
+  li.working {
+    background-color: #2db5ab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  i.clip:after {
+    font-family: 'entypo'
+    content: '\1F4CE';
   }
 
 
