@@ -4818,7 +4818,7 @@ pre code {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .container {
     width: 1170px;
   }
@@ -15951,7 +15951,7 @@ div.actions:hover + .form-group {
       margin-top: 11px;
   }
 
-  
+
   .drawer-content { 
     display:none;
   }
