@@ -15869,13 +15869,13 @@ float: right;
   }
 
   #upload ul li span{
-      width: 15px;
-      height: 12px;
-      background: url(../images/success-icon.png) no-repeat;
-      position: absolute;
-      top: 34px;
-      right: 33px;
-      cursor:pointer;
+    width: 73px;
+    height: 73px;
+    background: url(../images/success-icon.png) no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 130px;
+    cursor: pointer;
   }
 
   #upload ul li.working span{
