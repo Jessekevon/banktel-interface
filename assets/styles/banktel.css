@@ -15929,6 +15929,14 @@ li.working span {
 }
 
 
+li.working span.cancel {
+  display: inline-block !important;
+  top: 8px !important;
+  right: -16px !important;
+  width: 65px !important;
+  height: 20px !important;
+
+}
 
   /*----------------------------
       The Demo Footer
