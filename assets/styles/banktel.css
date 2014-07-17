@@ -15821,6 +15821,12 @@ float: right;
       border-radius: 3px;
       margin-left: 17px;
       top: 2px;
+    background-color: #aae1dc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
 
 
@@ -15865,7 +15871,7 @@ float: right;
   #upload ul li span{
       width: 15px;
       height: 12px;
-      background: url('../img/icons.png') no-repeat;
+      background: url(../images/success-icon.png) no-repeat;
       position: absolute;
       top: 34px;
       right: 33px;
@@ -15874,12 +15880,12 @@ float: right;
 
   #upload ul li.working span{
 
-      height: 16px;
+/*      height: 16px;
       background-position: 0 -13px;
       position: absolute;
       top: 5px;
       right: 5px;
-
+*/
   }
 
   #upload ul li.error p{
@@ -16007,10 +16013,12 @@ float: right;
 
   ul#improved {
     padding-left: 0px;
+
   }
 
   #improved li {
     position:relative;
+
     overflow:hidden;
   }
 
@@ -16042,7 +16050,7 @@ float: right;
  #dropzone.hover {
   opacity: 0.5;
   background: #aae1dc;
-  background-image: url('file:///Users/jessekevon/Desktop/banktel-interface-local/assets/images/upload-icon.png');
+  background-image: url(../images/upload-icon.png);
   background-repeat: no-repeat;
  }
  #dropzone.fade {
@@ -16058,6 +16066,13 @@ float: right;
     display: none;
  }
 
+/* .drawer-background {
+  background-color: #6472a1;
+  display: inline-block !important;
+  width: 100%;
+  height: auto;
+ }
+*/
 
 
 /* ---------------------------------------------
