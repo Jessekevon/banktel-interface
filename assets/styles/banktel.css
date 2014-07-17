@@ -15910,11 +15910,9 @@ float: right;
 
   }
 
-/*  #upload ul li.error canvas {
-      display: none;
-
-  }
-*/
+#upload ul li.working canvas {
+  z-index: 3000;
+}
 
 
 
