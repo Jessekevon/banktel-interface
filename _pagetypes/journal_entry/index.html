@@ -145,17 +145,16 @@
 
                   <div class='drawer-content'>
                     <div class="col-md-2"></div>
-
                     <div class="col-md-4 textit">
                       <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
                     </div>
-                    <div class="col-md-6">
-                      <div id="dropzone" class="fade well">
+                    <div class="col-md-4">
+                      <div id="dropzone" class="fade">
                         <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
                           <div id="drop">
                             <p>Drag attachments here to apply to memo.</p>
 
-                            <a>Browse</a>
+                            <a class="clip">hi</a>
                             <input type="file" name="upl" multiple />
                           </div>
 
@@ -168,7 +167,11 @@
                       </div>
 
                   </div>
-                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                    <a class="btn btn-primary" href="">Cancel<i class="entypo-chevron-thin-right"></i></a>
+                    <br>
+                    <a class="btn btn-primary" href="">Save<i class="entypo-save"></i></a>
+                  </div>
 
                   </div>
                 </li>

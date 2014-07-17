@@ -9588,8 +9588,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: whitesmoke;
-  border: 1px solid #e3e3e3;
+/*  background-color: whitesmoke;
+*/  border: 1px solid #e3e3e3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -15741,6 +15741,8 @@ div.actions:hover + .form-group {
       font-weight:bold;
 */      color:#7f858a;
 
+height: 110px;
+
 padding: 10px;
 
 
@@ -15770,14 +15772,6 @@ float: right;
 
 
 }
-
-  #drop a:after {
-      color:#d1d3d4;
-      font-size:14px;
-      content: "\1F4CE";
-      font-family: "entypo";
-
-  }
 
 
 
@@ -15811,10 +15805,15 @@ float: right;
 /* padding:15px;
       height: 52px;
 */
-      position: relative;
+/*      position: relative;
 
       height: 99px;
-      position: absolute;
+*/      position: absolute;
+
+      height: 110px;
+      width: 94%;
+      margin-left: 15px;
+
 
   }
 
@@ -15870,6 +15869,8 @@ float: right;
   line-height: 25px;
   font-size: 12px;
   text-transform: initial;
+  color: #d1d3d4;
+
   }
 
   li.working {
@@ -15882,10 +15883,6 @@ float: right;
 
   }
 
-  i.clip:after {
-    font-family: 'entypo'
-    content: '\1F4CE';
-  }
 
 
   /*----------------------------
@@ -15992,10 +15989,14 @@ float: right;
 
  #improved textarea {
   height: 110px;
-  background: transparent;
+  background: transparent !important;
+  border-color: #d1d3d4 !important;
  } 
 
+
  #dropzone {
+  height: 110px;
+
 /*     background: palegreen;
      width: 150px;
      height: 50px;
