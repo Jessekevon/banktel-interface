@@ -15910,8 +15910,12 @@ float: right;
 
   }
 
-#upload ul li.working canvas {
+/*#upload ul li.working canvas {
   z-index: 3000;
+}
+*/
+li.working span {
+  display: none;
 }
 
 
