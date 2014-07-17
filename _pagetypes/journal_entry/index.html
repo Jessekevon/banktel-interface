@@ -111,28 +111,6 @@
       <div class="app-content">
 
 
-        <ul id='improved'>
-          <li>
-            <div class='drawer-content'>
-              <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                <div id="drop">
-                  <p>Drag attachments here to apply to memo.</p>
-
-                  <a>Browse</a>
-                  <input type="file" name="upl" multiple />
-                </div>
-
-                <ul>
-                  <!-- The file uploads will be shown here -->
-                </ul>
-
-              </form>
-            </div>
-            <a href='#' class='head'>Heading 1</a>
-
-          </li>
-          <li>
-          </ul>
 
         <div class="master-container view" id="journal-entry">
 
@@ -159,7 +137,41 @@
 
               </nav> <!-- nav.actions -->
 
-            </div> <!-- .container -->
+
+            <ul id='improved'>
+
+              <li>
+                <a href='#' class='head'>Heading 1</a>
+
+                <div class='drawer-content'>
+                  <div class="col-md-2"></div>
+
+                  <div class="col-md-4 textit">
+                    <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
+                  </div>
+                  <div class="col-md-6">
+                  <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                    <div id="drop">
+                      <p>Drag attachments here to apply to memo.</p>
+
+                      <a>Browse</a>
+                      <input type="file" name="upl" multiple />
+                    </div>
+
+                    <ul>
+                      <!-- The file uploads will be shown here -->
+                    </ul>
+
+                  </form>
+                </div>
+                <div class="col-md-2"></div>
+
+                </div>
+              </li>
+              <li>
+              </ul>
+              </div> <!-- .container -->
+
           </header> <!-- header.page-heading -->
 
 

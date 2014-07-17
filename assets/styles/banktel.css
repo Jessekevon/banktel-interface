@@ -15956,10 +15956,20 @@ div.actions:hover + .form-group {
     display:none;
   }
 
-  #improved li {
-    position:relative;
-    overflow:hidden;
-  }
+
+   ul#improved {
+     padding-left: 0px;
+   }
+
+   #improved li {
+     position:relative;
+     overflow:hidden;
+   }
+
+  #improved textarea {
+   height: 110px;
+   background: transparent;
+  } 
 
 
 
