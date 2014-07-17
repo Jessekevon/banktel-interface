@@ -16046,14 +16046,11 @@ float: right;
      opacity: 1;
  }
 
- #upload ul li.error canvas {
+/* #upload ul li.error canvas {
      display: none;
-     top: 30px;
-     left: 150px;
-     position: absolute;
-
  }
 
+*/
 
 /* ---------------------------------------------
     FIXES
