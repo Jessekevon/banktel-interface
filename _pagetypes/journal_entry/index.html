@@ -110,20 +110,29 @@
 
       <div class="app-content">
 
-        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-          <div id="drop">
-            <p>Drag attachments here to apply to memo.</p>
 
-<!--             <a>Browse</a>
-            <input type="file" name="upl" multiple />
- -->          </div>
+        <ul id='improved'>
+          <li>
+            <div class='drawer-content'>
+              <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                <div id="drop">
+                  <p>Drag attachments here to apply to memo.</p>
 
-          <ul>
-            <!-- The file uploads will be shown here -->
+                  <a>Browse</a>
+                  <input type="file" name="upl" multiple />
+                </div>
+
+                <ul>
+                  <!-- The file uploads will be shown here -->
+                </ul>
+
+              </form>
+            </div>
+            <a href='#' class='head'>Heading 1</a>
+
+          </li>
+          <li>
           </ul>
-
-        </form>
-
 
         <div class="master-container view" id="journal-entry">
 
@@ -653,6 +662,16 @@
       $(".draggable-container").prepend($("<li class='tier with-actions new-transaction'><div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div></li>"));
       $('.new-transaction .chosen').chosen('chosen:updated');
     });
+
+
+$(document).ready(function(){
+
+  $('#improved .head').click(function(e){
+    e.preventDefault();
+    $(this).closest('li').find('.drawer-content').not(':animated').slideToggle();
+  });
+});
+
   </script>
 
 </body>
