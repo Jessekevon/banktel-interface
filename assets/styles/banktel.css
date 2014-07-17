@@ -15951,6 +15951,17 @@ div.actions:hover + .form-group {
       margin-top: 11px;
   }
 
+  
+  .drawer-content { 
+    display:none;
+  }
+
+  #improved li {
+    position:relative;
+    overflow:hidden;
+  }
+
+
 
 /* ---------------------------------------------
     FIXES
