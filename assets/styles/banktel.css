@@ -15895,7 +15895,7 @@ float: right;
   }
 
   li.working {
-    background-color: #2db5ab;
+    background-color: #aae1dc;
     position: absolute;
     top: 0;
     left: 0;
@@ -15903,6 +15903,12 @@ float: right;
     bottom: 0;
 
   }
+
+/*  #upload ul li.error canvas {
+      display: none;
+
+  }
+*/
 
 
 
@@ -16034,8 +16040,10 @@ float: right;
 
 
  #dropzone.hover {
-  background-color: #2db5ab;
   opacity: 0.5;
+  background: #aae1dc;
+  background-image: url('file:///Users/jessekevon/Desktop/banktel-interface-local/assets/images/upload-icon.png');
+  background-repeat: no-repeat;
  }
  #dropzone.fade {
      -webkit-transition: all 0.3s ease-out;
@@ -16046,11 +16054,11 @@ float: right;
      opacity: 1;
  }
 
-/* #upload ul li.error canvas {
-     display: none;
+ #dropzone.hover #drop p {
+    display: none;
  }
 
-*/
+
 
 /* ---------------------------------------------
     FIXES
