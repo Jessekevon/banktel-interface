@@ -16046,6 +16046,11 @@ float: right;
      opacity: 1;
  }
 
+ #upload ul li.error canvas {
+     display: none;
+ }
+
+
 
 /* ---------------------------------------------
     FIXES
