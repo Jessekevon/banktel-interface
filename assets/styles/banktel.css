@@ -9888,6 +9888,7 @@ button.close {
 .popover.top {
   margin-top: -15px;
   width: 200px;
+  padding-bottom: 18px;
 }
 
 .popover.top a {
@@ -9897,6 +9898,13 @@ button.close {
   top: 2px;
   margin-left: 5px;
   text-decoration: underline;
+
+}
+
+.popover-content a.head.btn.btn-primary.inverted {
+  text-decoration: none;
+  position: relative;
+  left: 35px;
 
 }
 
@@ -9925,6 +9933,12 @@ img.clip-icon {
   height: 13px;
   float: right;
   margin-right: -7px;
+
+}
+
+p.example {
+  padding-bottom: 20px;
+  padding-top: 6px;
 
 }
 
@@ -16295,6 +16309,7 @@ i.popover-pencil {
         top: 1px;
         right: -25px;
     }
+
 
     .loader-buttons .btn-primary {
         background: none repeat scroll 0% 0% #6472A1;
