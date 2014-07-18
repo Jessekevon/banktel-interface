@@ -9888,7 +9888,7 @@ button.close {
 .popover.top {
   margin-top: -15px;
   width: 200px;
-  padding-bottom: 18px;
+  padding-bottom: 24px;
 }
 
 .popover.top a {
@@ -9905,7 +9905,11 @@ button.close {
   text-decoration: none;
   position: relative;
   left: 35px;
+  margin-top: 10px;
+}
 
+.popover-content .btn {
+  text-align: center;
 }
 
 .popover.top a:hover {
