@@ -16162,6 +16162,15 @@ li.memo span.edit-indicator {
   color: #d1d3d4;
 }
 
+.textit textarea.form-control::-moz-placeholder {
+  color: #d1d3d4;
+}
+
+
+.textit textarea.form-control:-ms-input-placeholder {
+  color: #d1d3d4;
+}
+
 i.popover-pencil {
   margin-left: 6px;
 }
