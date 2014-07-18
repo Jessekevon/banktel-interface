@@ -9888,7 +9888,7 @@ button.close {
 .popover.top {
   margin-top: -15px;
   width: 200px;
-  height: 100px;
+  height: 115px;
 
 }
 
@@ -9898,9 +9898,12 @@ button.close {
   position: relative;
   top: 2px;
   margin-left: 5px;
+  text-decoration: underline;
+
 }
 
 .popover.top a:hover {
+  color: #4aa9a5;
 }
 
 .popover.top img {
@@ -9908,6 +9911,11 @@ button.close {
   width: 15px;
   height: 19px;
 */}
+
+.attachment-bottom {
+  padding: 10px 0px;
+
+}
 
 img.pdf-icon {
   width: 15px;
@@ -11172,6 +11180,13 @@ section.menu-system nav.menu .level .level .level {
   left: -201px;
   z-index: 3;
 }
+
+section.menu-system nav.menu .level .level .level .level {
+  background: #707172;
+  left: -201px;
+  z-index: 3;
+}
+
 section.menu-system nav.menu .level li {
   display: block;
 }
@@ -11224,15 +11239,15 @@ section.menu-system nav.menu > .level > li > a > span {
 section.menu-system nav.menu > .level > li > .level > li {
   /* THIRD LEVEL */
 }
-section.menu-system nav.menu > .level > li > .level > li > a {
+section.menu-system nav.menu .level li .level li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 0 15px 0 18px;
 }
-section.menu-system nav.menu > .level > li > .level > li > a.has-children {
+section.menu-system nav.menu .level li .level li a.has-children {
   position: relative;
 }
-section.menu-system nav.menu > .level > li > .level > li > a.has-children:after {
+section.menu-system nav.menu .level li .level li a.has-children:after {
   content: "\e680";
   display: inline-block;
   font-size: 12px;
@@ -11248,14 +11263,17 @@ section.menu-system nav.menu > .level > li > .level > li > a.has-children:after 
   top: 0;
   width: 27px;
 }
-section.menu-system nav.menu > .level > li > .level > li > .level > li > a {
+section.menu-system nav.menu > .level li .level li .level li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 0 15px 0 18px;
 }
+
+
 section.menu-system nav.menu > .level > li > .level > li > .level > li > a.level-up {
   font-size: 11px;
 }
+
 
 /* ---------------------------------------------
     Theming & Site Styles
@@ -15960,6 +15978,208 @@ li.working span.cancel {
 
 }
 
+  ul#improved {
+    padding-left: 0px;
+
+  }
+
+  #improved li {
+    position:relative;
+    margin-bottom: -15px;
+
+    overflow:hidden;
+  }
+
+ #improved textarea {
+  height: 110px;
+  background: transparent !important;
+  border-color: #d1d3d4 !important;
+
+ } 
+
+
+ #dropzone {
+  height: 110px;
+  border: 2px dashed #d1d3d4;
+  border-radius: 3px;
+}
+
+ #dropzone.in {
+ }
+
+
+
+ #dropzone.hover {
+     display: block;
+     position: relative;
+     opacity: 0.5;
+     background: url(../images/upload-icon.png)  no-repeat, 
+                 #aae1dc;
+     background-size: 48px;
+     background-position: center;
+ }
+
+ #dropzone.fade {
+/*     -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+     -ms-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+     */opacity: 1;
+ }
+
+ #dropzone.hover #drop p {
+    display: none;
+ }
+
+ #dropzone.hover #drop a {
+    display: none;
+ }
+
+ #dropzone.hover #upload ul li span {
+  background: url(../images/upload-icon.png);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-size: 48px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+ }
+
+
+
+ /*----------------------------
+     Loader Drawer 
+ -----------------------------*/
+
+   .drawer-content { 
+     display:none;
+   }
+
+ .drawer-content-wrapper {
+   background-color: #6472a1 !important;
+   width: 100%;
+   height: 100%;
+   float: right;
+   padding: 40px 0px;
+ }
+
+
+
+.loader-buttons .btn-primary {
+  background: #6472a1;
+  border-color: #516199 !important;
+  color: #fff !important;
+  margin-bottom: 15px;
+  width: 100px;
+  padding: 10px;
+  border: 2px solid;
+  text-align: left;
+
+}
+
+.loader-buttons .btn-primary.cancel:hover {
+  background: #516199 !important;
+
+}
+
+
+.loader-buttons .entypo-save:before {
+  float: right;
+  top: 3px;
+  position: relative;
+
+}
+
+
+
+a.memo.btn.btn-primary.cancel {
+  background: #6472a1;
+  border: 1px solid #2db5ab;
+  color: #2db5ab;
+}
+
+
+.loader-buttons img {
+  width: 14px;
+  height: 14px;
+  float: right;
+  position: relative;
+  top: 2px;
+
+}
+
+
+
+a.memo.btn.btn-primary.cancel:hover {
+  background: #516199 !important;
+
+}
+
+img.clip-icon {
+  float: right !important;
+}
+
+
+a.btn.btn-primary.save {
+  background-color: #516199;
+}
+
+a.btn.btn-primary.save:hover {
+  background: #6472a1;
+  color: #2db5ab;
+
+}
+
+a.popover-memo.memo.btn.btn-primary {
+  background: rgba(45, 181, 171, 0.24) !important;
+  border: 1px solid #2db5ab;
+  color: #2db5ab;
+}
+
+a.popover-memo.memo.btn.btn-primary:hover {
+  background: #2db5ab !important;
+  border-color: #2db5ab !important;
+  color: #f2f3f3 !important;
+
+}
+
+
+.save i.entypo-save {
+  font-size: 16px;
+}
+
+
+li.memo span.edit-indicator {
+  margin-left: 6px;
+}
+
+.textit textarea.form-control::-webkit-input-placeholder {
+  color: #d1d3d4;
+}
+
+i.popover-pencil {
+  margin-left: 6px;
+}
+
+.journal-header-container {
+  margin-bottom: -15px;
+}
+
+
+/* .drawer-background {
+  background-color: #6472a1;
+  display: inline-block !important;
+  width: 100%;
+  height: auto;
+ }
+*/
+
+
 
 
   /*----------------------------
@@ -16050,193 +16270,6 @@ li.working span.cancel {
       margin-top: 11px;
   }
 
-
-  .drawer-content { 
-    display:none;
-  }
-
-.drawer-content-wrapper {
-  background-color: #6472a1 !important;
-  width: 100%;
-  height: 100%;
-  float: right;
-  padding: 40px 0px;
-}
-  ul#improved {
-    padding-left: 0px;
-
-  }
-
-  #improved li {
-    position:relative;
-    margin-bottom: -15px;
-
-    overflow:hidden;
-  }
-
- #improved textarea {
-  height: 110px;
-  background: transparent !important;
-  border-color: #d1d3d4 !important;
-
- } 
-
-
- #dropzone {
-  height: 110px;
-  border: 2px dashed #d1d3d4;
-  border-radius: 3px;
-}
-
- #dropzone.in {
- }
-
-
-
- #dropzone.hover {
-     display: block;
-     position: relative;
-     opacity: 0.5;
-     background: url(../images/upload-icon.png)  no-repeat, 
-                 #aae1dc;
-     background-size: 48px;
-     background-position: center;
- }
-
-/* #dropzone.hover::after {
-     content: "";
-     background: rgba(170, 225, 220, 0.5);
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
- }
-*/
-
-img.clip-icon {
-  float: right !important;
-}
-
-
- #dropzone.fade {
-/*     -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-     -ms-transition: all 0.3s ease-out;
-     -o-transition: all 0.3s ease-out;
-     transition: all 0.3s ease-out;
-     */opacity: 1;
- }
-
- #dropzone.hover #drop p {
-    display: none;
- }
-
- #dropzone.hover #drop a {
-    display: none;
- }
-
- #dropzone.hover #upload ul li span {
-  background: url(../images/upload-icon.png);
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    background-size: 48px;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
- }
-
-.loader-buttons .btn-primary {
-  background: #6472a1;
-  border-color: #516199 !important;
-  color: #fff !important;
-  margin-bottom: 15px;
-  width: 100px;
-  padding: 10px;
-  border: 2px solid;
-
-}
-
-.loader-buttons .btn-primary.cancel:hover {
-  background: #516199 !important;
-
-}
-
-
-.loader-buttons .entypo-save:before {
-  float: right;
-  top: 2px;
-  position: relative;
-
-}
-
-
-
-a.memo.btn.btn-primary.cancel {
-  background: #6472a1;
-  border: 1px solid #2db5ab;
-  color: #2db5ab;
-}
-
-a.memo.btn.btn-primary.cancel:hover {
-  background: #516199 !important;
-
-}
-
-
-a.btn.btn-primary.save {
-  background-color: #516199;
-}
-
-a.btn.btn-primary.save:hover {
-  background: #6472a1;
-  color: #2db5ab;
-
-}
-
-a.popover-memo.memo.btn.btn-primary {
-  background: rgba(45, 181, 171, 0.24) !important;
-  border: 1px solid #2db5ab;
-  color: #2db5ab;
-}
-
-a.popover-memo.memo.btn.btn-primary:hover {
-  background: #2db5ab !important;
-  border-color: #2db5ab !important;
-  color: #f2f3f3 !important;
-
-}
-
-
-.save i.entypo-save {
-  font-size: 16px;
-}
-
-
-li.memo span.edit-indicator {
-  margin-left: 6px;
-}
-
-.textit textarea.form-control::-webkit-input-placeholder {
-  color: #d1d3d4;
-}
-
-i.popover-pencil {
-  margin-left: 6px;
-}
-
-
-/* .drawer-background {
-  background-color: #6472a1;
-  display: inline-block !important;
-  width: 100%;
-  height: auto;
- }
-*/
 
 
 /* ---------------------------------------------
