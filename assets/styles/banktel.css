@@ -16275,5 +16275,40 @@ i.popover-pencil {
 /* ---------------------------------------------
     FIXES
   ------------------------------------------- */
-/* FIREFOX-SPECIFIC */
-@-moz-document url-prefix() {}
+  /* FIREFOX-SPECIFIC */
+  @-moz-document url-prefix() {
+
+    .loader-buttons .entypo-save:before {
+        float: right;
+        top: 1px;
+        position: relative;
+        right: -35px;
+    }
+
+    .loader-buttons img {
+        width: 14px;
+        height: 14px;
+        float: right;
+        position: relative;
+        top: 1px;
+        right: -25px;
+    }
+
+    .loader-buttons .btn-primary {
+        background: none repeat scroll 0% 0% #6472A1;
+        border-color: #516199 !important;
+        color: #FFF !important;
+        margin-bottom: 15px;
+        width: 100px;
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid;
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image: none;
+        text-align: left;
+        display: inline-flex;
+    }
+  }
