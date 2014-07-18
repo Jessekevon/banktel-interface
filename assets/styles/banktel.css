@@ -9888,8 +9888,6 @@ button.close {
 .popover.top {
   margin-top: -15px;
   width: 200px;
-  height: 115px;
-
 }
 
 .popover.top a {
@@ -9913,8 +9911,7 @@ button.close {
 */}
 
 .attachment-bottom {
-  padding: 10px 0px;
-
+  padding-top: 10px;
 }
 
 img.pdf-icon {
@@ -9927,6 +9924,8 @@ img.clip-icon {
   width: 12px;
   height: 13px;
   float: right;
+  margin-right: -7px;
+
 }
 
 
