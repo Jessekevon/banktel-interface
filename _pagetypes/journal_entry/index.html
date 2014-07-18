@@ -71,7 +71,7 @@
                           <div id="drop">
                             <p>Drag attachments here</p>
 
-                            <a class="clip"><img src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/images/clip.png"></a>
+                            <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
                             <input type="file" name="upl" multiple />
                           </div>
 
@@ -629,14 +629,46 @@
     });
 
 
+$(function() {
+  var HasTooltip = $('.hastooltip');
+  HasTooltip.on('click', function(e) {
+    e.preventDefault();
+    var isShowing = $(this).data('isShowing');
+    HasTooltip.removeData('isShowing');
+    if (isShowing !== 'true')
+    {
+      HasTooltip.not(this).tooltip('hide');
+      $(this).data('isShowing', "true");
+      $(this).tooltip('show');
+    }
+    else
+    {
+      $(this).tooltip('hide');
+    }
+
+  }).tooltip({
+    animation: true,
+    trigger: 'manual'
+  });
+});
+
+$('.popover-markup>.trigger').popover({
+    placement: 'top',
+    html: true,
+    title: '',
+    content: function () {
+        return $(this).parent().find('.content').html();
+    }
+});
+
+
 $(document).ready(function(){
 
-    $('.head').click(function(e){
-      e.preventDefault();
-      $('.drawer-content').not(':animated').slideToggle();
-    });
+  $('.head').click(function(e){
+    e.preventDefault();
+    $('.drawer-content').not(':animated').slideToggle();
   });
-
+});
 
 $('#fileupload').fileupload({
     dropZone: $('#dropzone')
@@ -668,7 +700,17 @@ $(document).bind('dragover', function (e) {
         window.dropZoneTimeout = null;
         dropZone.removeClass('in hover');
     }, 100);
+
+
 });
+
+$(function () {
+    $('#dial').knob({
+       fgColor: '#159f86'
+    });
+});
+
+
 
 
 

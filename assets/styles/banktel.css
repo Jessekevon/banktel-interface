@@ -15814,44 +15814,19 @@ a.clip img {
       border-bottom:1px solid #3d4043;
 */  }
 
-  #upload ul li{
 
-/*      background-color:#333639;
-
-      background-image:-webkit-linear-gradient(top, #333639, #303335);
-      background-image:-moz-linear-gradient(top, #333639, #303335);
-      background-image:linear-gradient(top, #333639, #303335);
-
-      border-top:1px solid #3d4043;
-      border-bottom:1px solid #2b2e31;
-*/     
-/* padding:15px;
-      height: 52px;
-*/
-/*      position: relative;
-
-      height: 99px;
-*/      
-/*position: absolute;
-
-      height: 110px;
-      width: 94%;
-      margin-left: 15px;
-*/
-      position: absolute;
-      height: 106px;
-      width: 91%;
-      border-radius: 3px;
-      margin-left: 17px;
-      top: 2px;
+#upload ul li{
+    position: absolute;
+    height: 106px;
+    border-radius: 3px;
+    margin-left: 17px;
+    margin-right: 17px;
+    top: 2px;
     background-color: #aae1dc;
     position: absolute;
-/*    top: 0;
-*/    left: 0;
+   left: 0;
     right: 0;
     bottom: 0;
-
-
 
   }
 
