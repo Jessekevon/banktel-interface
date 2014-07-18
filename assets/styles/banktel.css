@@ -16325,4 +16325,14 @@ i.popover-pencil {
         text-align: left;
         display: inline-flex;
     }
+
+     .journal-header-container {
+         margin-bottom: 0px;
+    }
+     #improved li {
+         position: relative;
+         overflow: hidden;
+         margin-bottom: -30px;
+     }
+
   }
