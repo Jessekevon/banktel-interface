@@ -15931,12 +15931,6 @@ a.clip img {
 
   #upload ul li.working span{
 
-/*      height: 16px;
-      background-position: 0 -13px;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-*/
   }
 
   #upload ul li.error p{
@@ -16074,7 +16068,6 @@ li.working span.cancel {
   background: #6472a1;
   border-color: #516199 !important;
   color: #fff !important;
-  margin-bottom: 15px;
   width: 100px;
   padding: 10px;
   border: 2px solid;
@@ -16102,6 +16095,11 @@ a.memo.btn.btn-primary.cancel {
   border: 1px solid #2db5ab;
   color: #2db5ab;
 }
+
+.loader-buttons .cancel {
+  margin-bottom: 26px;
+}
+
 
 
 .loader-buttons img {
@@ -16183,15 +16181,6 @@ i.popover-pencil {
 .journal-header-container {
   margin-bottom: -15px;
 }
-
-
-/* .drawer-background {
-  background-color: #6472a1;
-  display: inline-block !important;
-  width: 100%;
-  height: auto;
- }
-*/
 
 
 
