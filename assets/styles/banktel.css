@@ -9888,19 +9888,40 @@ button.close {
 .popover.top {
   margin-top: -15px;
   width: 200px;
+  height: 100px;
 
 }
 
 .popover.top a {
-  font-size: 12px;
-  float: left;
+/*  font-size: 12px;
+*/  float: left;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+
+.popover.top a:hover {
 }
 
 .popover.top img {
-  float: left;
+/*  float: left;
   width: 15px;
   height: 19px;
+*/}
+
+img.pdf-icon {
+  width: 15px;
+  height: 19px;
+  float: left;
 }
+
+img.clip-icon {
+  width: 12px;
+  height: 13px;
+  float: right;
+}
+
+
 .popover.right {
   margin-left: 10px;
 }
@@ -9935,6 +9956,10 @@ button.close {
 .popover-content hr.example-hr {
   margin-left: -14px;
   margin-right: -14px;
+}
+
+.popover-content p {
+display: inline-block;  
 }
 
 
@@ -11923,6 +11948,10 @@ section.menu-system nav.menu > .level > li > .level > li > .level > li > a.level
 
 .entypo-download:before {
   content: "\e6a3";
+}
+
+.drawer-buttons .entypo-save:before {
+  font-size: 16px !important;
 }
 
 .entypo-save:before {
@@ -15750,7 +15779,7 @@ div.actions:hover + .form-group {
 
 height: 110px;
 
-padding: 10px;
+padding: 3px 15px;
 
 
   }
@@ -15772,7 +15801,7 @@ font-size: 14px;
 border-radius: 2px;
 cursor: pointer;
 display: inline-block;
-margin-top: -37px;
+margin-top: -30px;
 line-height: 1;
 float: right;
 -webkit-transition: all 0.3s ease-out;
@@ -16049,6 +16078,7 @@ li.working span.cancel {
   height: 110px;
   background: transparent !important;
   border-color: #d1d3d4 !important;
+
  } 
 
 
@@ -16084,7 +16114,9 @@ li.working span.cancel {
  }
 */
 
-
+img.clip-icon {
+  float: right !important;
+}
 
 
  #dropzone.fade {
@@ -16093,7 +16125,7 @@ li.working span.cancel {
      -ms-transition: all 0.3s ease-out;
      -o-transition: all 0.3s ease-out;
      transition: all 0.3s ease-out;
-*/     opacity: 1;
+     */opacity: 1;
  }
 
  #dropzone.hover #drop p {
@@ -16119,7 +16151,7 @@ li.working span.cancel {
  }
 
 .loader-buttons .btn-primary {
-  background: transparent;
+  background: #6472a1;
   border-color: #516199 !important;
   color: #fff !important;
   margin-bottom: 15px;
@@ -16129,11 +16161,30 @@ li.working span.cancel {
 
 }
 
+.loader-buttons .btn-primary.cancel:hover {
+  background: #516199 !important;
+
+}
+
+
 .loader-buttons .entypo-save:before {
   float: right;
-  font-size: 15px;
-  position: relative;
   top: 2px;
+  position: relative;
+
+}
+
+
+
+a.memo.btn.btn-primary.cancel {
+  background: #6472a1;
+  border: 1px solid #2db5ab;
+  color: #2db5ab;
+}
+
+a.memo.btn.btn-primary.cancel:hover {
+  background: #516199 !important;
+
 }
 
 
@@ -16141,16 +16192,43 @@ a.btn.btn-primary.save {
   background-color: #516199;
 }
 
-a.memo.btn.btn-primary {
-  background: rgba(45, 181, 171, 0.24);
-  border: 1px solid #2db5ab;
+a.btn.btn-primary.save:hover {
+  background: #6472a1;
   color: #2db5ab;
 
 }
 
+a.popover-memo.memo.btn.btn-primary {
+  background: rgba(45, 181, 171, 0.24) !important;
+  border: 1px solid #2db5ab;
+  color: #2db5ab;
+}
+
+a.popover-memo.memo.btn.btn-primary:hover {
+  background: #2db5ab !important;
+  border-color: #2db5ab !important;
+  color: #f2f3f3 !important;
+
+}
+
+
+.save i.entypo-save {
+  font-size: 16px;
+}
+
+
 li.memo span.edit-indicator {
   margin-left: 6px;
 }
+
+.textit textarea.form-control::-webkit-input-placeholder {
+  color: #d1d3d4;
+}
+
+i.popover-pencil {
+  margin-left: 6px;
+}
+
 
 /* .drawer-background {
   background-color: #6472a1;
