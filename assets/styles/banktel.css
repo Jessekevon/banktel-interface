@@ -16131,6 +16131,9 @@ li.working span.cancel {
 
 .loader-buttons .entypo-save:before {
   float: right;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
 }
 
 
