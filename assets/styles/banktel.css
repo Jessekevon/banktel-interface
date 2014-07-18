@@ -15814,20 +15814,18 @@ a.clip img {
       border-bottom:1px solid #3d4043;
 */  }
 
-
-#upload ul li{
-    position: absolute;
-    height: 106px;
-    border-radius: 3px;
-    margin-left: 17px;
-    margin-right: 17px;
-    top: 2px;
-    background-color: #aae1dc;
-    position: absolute;
-   left: 0;
-    right: 0;
-    bottom: 0;
-
+  #upload ul li{
+      position: absolute;
+      height: 106px;
+      border-radius: 3px;
+      margin-left: 17px;
+      margin-right: 17px;
+      top: 2px;
+      background-color: #aae1dc;
+      position: absolute;
+     left: 0;
+      right: 0;
+      bottom: 0;
   }
 
   #upload ul li input{
@@ -15866,13 +15864,6 @@ a.clip img {
   }
 
   #upload ul li span{
-/*    width: 73px;
-    height: 73px;
-    background: url(../images/success-icon.png) no-repeat;
-    position: absolute;
-    top: 16px;
-    right: 130px;
-    cursor: pointer;*/
     width: 48px;
     height: 48px;
     background: url(../images/success-icon.png) no-repeat;
@@ -16065,34 +16056,44 @@ li.working span.cancel {
   height: 110px;
   border: 2px dashed #d1d3d4;
   border-radius: 3px;
+}
 
-
-/*     background: palegreen;
-     width: 150px;
-     height: 50px;
-     line-height: 50px;
-     text-align: center;
-     font-weight: bold;
-*/ }
  #dropzone.in {
  }
 
 
+
  #dropzone.hover {
-  opacity: 0.5;
-  background: #aae1dc;
-  background-repeat: no-repeat;
+     display: block;
+     position: relative;
+     opacity: 0.5;
+     background: url(../images/upload-icon.png)  no-repeat, 
+                 #aae1dc;
+     background-size: 48px;
+     background-position: center;
  }
+
+/* #dropzone.hover::after {
+     content: "";
+     background: rgba(170, 225, 220, 0.5);
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+ }
+*/
+
 
 
 
  #dropzone.fade {
-     -webkit-transition: all 0.3s ease-out;
+/*     -webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
      -ms-transition: all 0.3s ease-out;
      -o-transition: all 0.3s ease-out;
      transition: all 0.3s ease-out;
-     opacity: 1;
+*/     opacity: 1;
  }
 
  #dropzone.hover #drop p {
@@ -16101,6 +16102,20 @@ li.working span.cancel {
 
  #dropzone.hover #drop a {
     display: none;
+ }
+
+ #dropzone.hover #upload ul li span {
+  background: url(../images/upload-icon.png);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background-size: 48px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
  }
 
 .loader-buttons .btn-primary {
