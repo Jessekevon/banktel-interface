@@ -52,10 +52,20 @@
                 <ul class="level">
                   <li><a class="level-up" href="">Dashboard</a></li>
                   <li><a href="">My Dashboard</a></li>
+
                   <li>
                     <a class="level-down has-children" href="">Dashboard Settings</a>
                     <ul class="level">
                       <li><a class="level-up" href="">Dashboard Settings</a></li>
+                            <a class="level-down has-children" href="">Fourth Level</a>
+                            <ul class="level">
+                              <li><a class="level-up" href="">Fourth Level</a></li>
+                              <li><a href="">Option 1</a></li>
+                              <li><a href="">Option 2</a></li>
+                              <li><a href="">Option 3</a></li>
+                              <li><a href="">Option 4</a></li>
+                              <li><a href="">Option 5</a></li>
+                            </ul>
                       <li><a href="">Option 1</a></li>
                       <li><a href="">Option 2</a></li>
                       <li><a href="">Option 3</a></li>
@@ -117,7 +127,7 @@
           <div class="master-container view" id="journal-entry">
 
             <header class="page heading">
-              <div class="container">
+              <div class="container journal-header-container">
 
                 <h1 class="page title"><a href="#">Journal Entry</a></h1>
 
@@ -172,14 +182,13 @@
 
                   </div>
                   <div class="col-md-2 loader-buttons">
-                    <a class="btn btn-primary cancel" href="">Cancel<!-- <i class="entypo-chevron-thin-right"></i> --></a>
+                    <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
                     <br>
                     <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
                   </div>
   </div>
                   </div>
                 </li>
-                <li>
                 </ul>
 
             </header> <!-- header.page-heading -->
@@ -371,19 +380,21 @@
                               <div class="popover-markup">
                                 <a href="#" class="popover-memo memo btn btn-primary btn-hidden inverted trigger">Memo
                                 <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
-                                </a> 
+  </a> 
                                 <div class="content hide">
                                   <p>Example Memo</p>
                                   <hr class="example-hr">
-                                  <p>Attachments</p>
-                                  <img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
+                                  <p>Attachments</p><img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
+
                                   <hr>
-                                  <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/pdf-icon.png">
-                                  <p><a href="#">1234-CitiMortgage.pdf</a></p>
+                                  <div class="attachment-bottom">
+                                  <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/pdf-icon.png"><p><a href="#">1234-CitiMortgage.pdf</a></p>
+                                </div>
                                 </div>
                               </div>
-                            </nav>
-                            <!-- nav.actions -->
+
+                            </nav> <!-- nav.actions -->
+
 
                           </div> <!-- .cell.transaction-details -->
 
@@ -418,10 +429,22 @@
                             </ul> <!-- .tagged -->
 
                             <nav class="actions">
-                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
-
-                            </nav> <!-- nav.actions -->
-
+                              <div class="popover-markup">
+                                <a href="#" class="popover-memo memo btn btn-primary btn-hidden inverted trigger">Memo
+                                <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
+                                </a> 
+                                <div class="content hide">
+                                  <p>Example Memo</p>
+                                  <hr class="example-hr">
+                                  <p>Attachments</p>
+                                  <img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
+                                  <hr>
+                                  <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/pdf-icon.png">
+                                  <p><a href="#">1234-CitiMortgage.pdf</a></p>
+                                </div>
+                              </div>
+                            </nav>
+                            <!-- nav.actions -->
 
                           </div> <!-- .cell.transaction-details -->
 
@@ -456,22 +479,8 @@
                             </ul> <!-- .tagged -->
 
                             <nav class="actions">
-                              <div class="popover-markup">
-                                <a href="#" class="popover-memo memo btn btn-primary btn-hidden inverted trigger">Memo
-                                <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
-                                </a> 
-                                <div class="content hide">
-                                  <p>Example Memo</p>
-                                  <hr class="example-hr">
-                                  <p>Attachments</p>
-                                  <img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
-                                  <hr>
-                                  <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/pdf-icon.png">
-                                  <p><a href="#">1234-CitiMortgage.pdf</a></p>
-                                </div>
-                              </div>
-                            </nav>
-                            <!-- nav.actions -->
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+                            </nav> <!-- nav.actions -->
 
                           </div> <!-- .cell.transaction-details -->
 
@@ -653,7 +662,7 @@
                       <span>Total:</span> $4,233.60
                     </div>
                   </div>
-                  <div class="row transactions-actions">
+                  <div class="row transactions-actions drawer-buttons">
                     <a class="btn btn-primary" href="">Save Draft <i class="entypo-save"></i></a>
                     <a class="btn btn-primary" href="">Save &amp; Post <i class="entypo-chevron-thin-right"></i></a>
                   </div>
