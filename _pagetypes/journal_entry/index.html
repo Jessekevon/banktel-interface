@@ -687,118 +687,113 @@
               </main>
 
             </div> <!-- .app -->
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery.js"><\/script>')</script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery-ui.js"></script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/bootstrap.js"></script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/plugins.js"></script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/banktel.js"></script>
-
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery.knob.js"></script>
-
-            <!-- jQuery File Upload Dependencies -->
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery.ui.widget.js"></script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery.iframe-transport.js"></script>
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/jquery.fileupload.js"></script>
-
-            <!-- Our main JS file -->
-            <script src="file:///Users/jessekevon/Desktop/banktel-interface-local/assets/scripts/script.js"></script>
-
-
-            <script>
-              // Inst chosen on .journal-number select
-              $('.journal-number .chosen, .table-search .chosen').chosen({
-                no_results_text: "Sorry, we were unable to find "
-              });
-
-              // Inst chosen on .new-transaction select elements
-              $('.new-transaction .chosen').chosen({
-                allow_single_deselect: true,
-                no_results_text: "Sorry, we were unable to find "
-              });
-
-              // Edit tier on click
-              // $('.tier.transaction .transaction-details p, .tier.transaction .transaction-details .tag, .tier.transaction .payment, .tier.transaction .deposit').click(function(){
-              //   var tierParent = $( this ).closest('.tier.with-actions');
-              //   tierParent.html("<div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div>").removeClass("transaction").addClass("new-transaction");
-              //   $('.new-transaction .chosen').chosen('chosen:updated');
-              // });
-
-              // Insert new tier beneath tier clicked
-              $(".draggable-container").on('click', '.btn-tier-add', function () {
-                $(".draggable-container").prepend($("<li class='tier with-actions new-transaction'><div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div></li>"));
-                $('.new-transaction .chosen').chosen('chosen:updated');
-              });
-            </script>
-
-            <script type="text/javascript">
-
-            $('.popover-markup>.trigger').popover({
-                placement: 'top',
-                html: true,
-                title: '',
-                content: function () {
-                    return $(this).parent().find('.content').html();
-                }
-
-
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script>
+          <script src="/assets/scripts/jquery-ui.js"></script>
+          <script src="/assets/scripts/bootstrap.js"></script>
+          <script src="/assets/scripts/plugins.js"></script>
+          <script src="/assets/scripts/banktel.js"></script>
+          <script src="/assets/scripts/jquery.knob.js"></script>
+          <!-- jQuery File Upload Dependencies -->
+          <script src="/assets/scripts/jquery.ui.widget.js"></script>
+          <script src="/assets/scripts/jquery.iframe-transport.js"></script>
+          <script src="/assets/scripts/jquery.fileupload.js"></script>
+          <!-- Our main JS file -->
+          <script src="/assets/scripts/script.js"></script>
+          <script>
+            // Inst chosen on .journal-number select
+            $('.journal-number .chosen, .table-search .chosen').chosen({
+              no_results_text: "Sorry, we were unable to find "
             });
-
-
-            $('#fileupload').fileupload({
-                dropZone: $('#dropzone')
+            
+            // Inst chosen on .new-transaction select elements
+            $('.new-transaction .chosen').chosen({
+              allow_single_deselect: true,
+              no_results_text: "Sorry, we were unable to find "
             });
-
-            $(document).bind('dragover', function (e) {
-                var dropZone = $('#dropzone'),
-                    timeout = window.dropZoneTimeout;
-                if (!timeout) {
-                    dropZone.addClass('in');
-                } else {
-                    clearTimeout(timeout);
-                }
-                var found = false,
-                    node = e.target;
-                do {
-                    if (node === dropZone[0]) {
-                        found = true;
-                        break;
-                    }
-                    node = node.parentNode;
-                } while (node != null);
-                if (found) {
-                    dropZone.addClass('hover');
-                } else {
-                    dropZone.removeClass('hover');
-                }
-                window.dropZoneTimeout = setTimeout(function () {
-                    window.dropZoneTimeout = null;
-                    dropZone.removeClass('in hover');
-                }, 100);
-
-
+            
+            // Edit tier on click
+            // $('.tier.transaction .transaction-details p, .tier.transaction .transaction-details .tag, .tier.transaction .payment, .tier.transaction .deposit').click(function(){
+            //   var tierParent = $( this ).closest('.tier.with-actions');
+            //   tierParent.html("<div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div>").removeClass("transaction").addClass("new-transaction");
+            //   $('.new-transaction .chosen').chosen('chosen:updated');
+            // });
+            
+            // Insert new tier beneath tier clicked
+            $(".draggable-container").on('click', '.btn-tier-add', function () {
+              $(".draggable-container").prepend($("<li class='tier with-actions new-transaction'><div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div></li>"));
+              $('.new-transaction .chosen').chosen('chosen:updated');
             });
+        </script>
+    
+            
+<script type="text/javascript">
 
-            $(function () {
-                $('#dial').knob({
-                   fgColor: '#159f86'
-                });
-            });
-
-            $('[data-toggle="popover"]').popover();
-
-            $('body').on('click', function (e) {
-                $('[data-toggle="popover"]').each(function () {
-                    //the 'is' for buttons that trigger popups
-                    //the 'has' for icons within a button that triggers a popup
-                    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                        $(this).popover('hide');
-                    }
-                });
-            });
+$('.popover-markup>.trigger').popover({
+    placement: 'top',
+    html: true,
+    title: '',
+    content: function () {
+        return $(this).parent().find('.content').html();
+    }
 
 
-            </script>
+});
+
+
+$('#fileupload').fileupload({
+    dropZone: $('#dropzone')
+});
+
+$(document).bind('dragover', function (e) {
+    var dropZone = $('#dropzone'),
+        timeout = window.dropZoneTimeout;
+    if (!timeout) {
+        dropZone.addClass('in');
+    } else {
+        clearTimeout(timeout);
+    }
+    var found = false,
+        node = e.target;
+    do {
+        if (node === dropZone[0]) {
+            found = true;
+            break;
+        }
+        node = node.parentNode;
+    } while (node != null);
+    if (found) {
+        dropZone.addClass('hover');
+    } else {
+        dropZone.removeClass('hover');
+    }
+    window.dropZoneTimeout = setTimeout(function () {
+        window.dropZoneTimeout = null;
+        dropZone.removeClass('in hover');
+    }, 100);
+
+
+});
+
+$(function () {
+    $('#dial').knob({
+       fgColor: '#159f86'
+    });
+});
+
+$('[data-toggle="popover"]').popover();
+
+$('body').on('click', function (e) {
+    $('[data-toggle="popover"]').each(function () {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});
+
+
+</script>
         </body>
       </html>
