@@ -1483,6 +1483,11 @@
     container: false
   }
 
+  $(document).on('click', '.head', function () {
+    $('.drawer-content').slideToggle();
+  })
+
+
   Tooltip.prototype.init = function (type, element, options) {
     this.enabled  = true
     this.type     = type
