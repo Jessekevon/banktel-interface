@@ -1485,6 +1485,7 @@
 
   $(document).on('click', '.head', function () {
     $('.drawer-content').slideToggle();
+    $('[data-toggle="popover"]').popover('hide');
   })
 
 
