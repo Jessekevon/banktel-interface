@@ -677,85 +677,56 @@
             });
             
             
-            $(function() {
-            var HasTooltip = $('.hastooltip');
-            HasTooltip.on('click', function(e) {
-            e.preventDefault();
-            var isShowing = $(this).data('isShowing');
-            HasTooltip.removeData('isShowing');
-            if (isShowing !== 'true')
-            {
-              HasTooltip.not(this).tooltip('hide');
-              $(this).data('isShowing', "true");
-              $(this).tooltip('show');
-            }
-            else
-            {
-              $(this).tooltip('hide');
-            }
-            
-            }).tooltip({
-            animation: true,
-            trigger: 'manual'
-            });
-            });
-            
             $('.popover-markup>.trigger').popover({
-            placement: 'top',
-            html: true,
-            title: '',
-            content: function () {
-                return $(this).parent().find('.content').html();
-            }
-            });
-            
-            
-            $(document).ready(function(){
-            
-            $('.head').click(function(e){
-            e.preventDefault();
-            $('.drawer-content').not(':animated').slideToggle();
-            });
-            });
-            
-            $('#fileupload').fileupload({
-            dropZone: $('#dropzone')
-            });
-            
-            $(document).bind('dragover', function (e) {
-            var dropZone = $('#dropzone'),
-                timeout = window.dropZoneTimeout;
-            if (!timeout) {
-                dropZone.addClass('in');
-            } else {
-                clearTimeout(timeout);
-            }
-            var found = false,
-                node = e.target;
-            do {
-                if (node === dropZone[0]) {
-                    found = true;
-                    break;
+                placement: 'top',
+                html: true,
+                title: '',
+                content: function () {
+                    return $(this).parent().find('.content').html();
                 }
-                node = node.parentNode;
-            } while (node != null);
-            if (found) {
-                dropZone.addClass('hover');
-            } else {
-                dropZone.removeClass('hover');
-            }
-            window.dropZoneTimeout = setTimeout(function () {
-                window.dropZoneTimeout = null;
-                dropZone.removeClass('in hover');
-            }, 100);
-            
-            
+
+
             });
-            
+
+
+            $('#fileupload').fileupload({
+                dropZone: $('#dropzone')
+            });
+
+            $(document).bind('dragover', function (e) {
+                var dropZone = $('#dropzone'),
+                    timeout = window.dropZoneTimeout;
+                if (!timeout) {
+                    dropZone.addClass('in');
+                } else {
+                    clearTimeout(timeout);
+                }
+                var found = false,
+                    node = e.target;
+                do {
+                    if (node === dropZone[0]) {
+                        found = true;
+                        break;
+                    }
+                    node = node.parentNode;
+                } while (node != null);
+                if (found) {
+                    dropZone.addClass('hover');
+                } else {
+                    dropZone.removeClass('hover');
+                }
+                window.dropZoneTimeout = setTimeout(function () {
+                    window.dropZoneTimeout = null;
+                    dropZone.removeClass('in hover');
+                }, 100);
+
+
+            });
+
             $(function () {
-            $('#dial').knob({
-               fgColor: '#159f86'
-            });
+                $('#dial').knob({
+                   fgColor: '#159f86'
+                });
             });
             
             
