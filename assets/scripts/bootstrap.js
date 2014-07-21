@@ -1479,7 +1479,7 @@
     trigger: 'hover focus',
     title: '',
     delay: 0,
-    html: false,
+    html: true,
     container: false
   }
 
@@ -1847,6 +1847,8 @@
     $.fn.tooltip = old
     return this
   }
+
+
 
 }(jQuery);
 
