@@ -16692,4 +16692,82 @@ i.popover-pencil {
   color: #808285;
 }
 
+.dashboard-table thead tr th {
+  padding: 0px;
+  line-height: 1.42857;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  font-size: 12px;
 
+}
+
+.cash-balances h4 {
+  display: inline-block;
+}
+
+.cash-balances p {
+  display: inline-block;
+  color: #808285;
+
+}
+
+.acct-row {
+  color: #58595B;
+}
+
+.blue-dot {
+  margin-right: 25px;
+
+}
+
+.blue-dot:after {
+  background: #516199;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-top: 14px;
+
+}
+
+.green-dot {
+  margin-right: 25px;
+}
+
+.green-dot:after {
+  background: #2DB5AB;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-top: 14px;
+}
+
+
+span.acct-balance {
+  float: right;
+}
+
+.acct-title {
+  margin-top: 10px;
+  color: #808285;
+}
+
+.acct-date {
+  float: right;
+}
+
+
+.cash-balances hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+span.refresh {
+  float: right;
+  color: #808285;
+
+}
