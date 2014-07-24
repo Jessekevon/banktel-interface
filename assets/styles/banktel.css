@@ -9971,6 +9971,8 @@ p.example {
 .popover-content {
   padding: 9px 14px;
   line-height: 15px;
+  width: 196px;
+
 }
 
 .popover-content hr {
@@ -16518,8 +16520,8 @@ i.popover-pencil {
       .switch-toggle.switch-5 input:checked:nth-of-type(4) ~ a { left: 60% }
       .switch-toggle.switch-5 input:checked:last-of-type ~ a { left: 80% }
       .switch-candy {
-          background-color: #efefef;
-          /* border-radius: 3px;*/
+/*          background-color: #efefef;
+*/          /* border-radius: 3px;*/
           /* color: #000;*/
           height: 40px;
           width: 230px;
@@ -16541,15 +16543,16 @@ i.popover-pencil {
           text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
       }
       .switch-candy a {
-          border: 1px solid #d4d6d6;
-          /*        background-color: #2DB5AB;*/
+          background-color: #2DB5AB;
           border-radius: 3px;
       }
       .switch-candy > span {
           color: #333;
           text-shadow: none;
       }
-      .switch-candy span { color: #fff }
+      .switch-candy span { 
+        color: #BCBEC0;
+         }
       .switch-candy.switch-candy-blue a { background-color: #38a3d4 }
       .switch-candy.switch-candy-yellow a { background-color: #f5e560 }
       .switch-android {
@@ -16660,3 +16663,34 @@ i.popover-pencil {
       to { -webkit-transform: translate3d(0, 0, 0) }
   }
   
+
+ .aux-new p.aux-label {
+
+  color: #bcbec0;
+  line-height: 14px;
+  margin-bottom: 8px;
+
+
+ } 
+
+.aux-new p.aux-value {
+  font-size: 28px;
+  color: #3fc568;
+
+} 
+
+.accounts-graph {
+  height: 120px;
+  width: 100%;
+  background-color: #E2E2E2;
+}
+
+.switch-light-wrapper {
+  width: 240px;
+  height: 50px;
+  padding: 3px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 2px solid #BCBEC0;
+  border-radius: 3px;
+}
