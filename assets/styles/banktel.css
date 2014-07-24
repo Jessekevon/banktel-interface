@@ -1081,7 +1081,7 @@ Copyright (c) 2013 Daniel Eden
   }
 }
 
-@keyframes bounceIn {
+/*@keyframes bounceIn {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -1166,7 +1166,7 @@ Copyright (c) 2013 Daniel Eden
     transform: translateY(0);
   }
 }
-
+*/
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
@@ -16348,28 +16348,28 @@ i.popover-pencil {
   }
 
   /*
-     * CSS TOGGLE SWITCHES
-     * Unlicense
-     *
-     * Ionuț Colceriu - ghinda.net
-     * https://github.com/ghinda/css-toggle-switch
-     *
-     */
+   * CSS TOGGLE SWITCHES
+   * Unlicense
+   *
+   * Ionuț Colceriu - ghinda.net
+   * https://github.com/ghinda/css-toggle-switch
+   *
+   */
   /* Toggle Switches
-     */
+   */
   /* Shared
-     */
+   */
   /* Checkbox
-     */
+   */
   /* Radio Switch
-     */
+   */
   /* Hide by default
-     */
+   */
   .switch-toggle a,
   .switch-light span span { display: none }
   /* We can't test for a specific feature,
-     * so we only target browsers with support for media queries.
-     */
+   * so we only target browsers with support for media queries.
+   */
   @media only screen { 
       /* Checkbox switch
            */
@@ -16391,6 +16391,7 @@ i.popover-pencil {
           position: relative;
           overflow: visible;
           padding: 0;
+          margin-left: 100px;
           /* Position the label over all the elements, except the slide-button (<a>): ;
           * Clicking anywhere on the label will change the switch-state: ;*/
           /* Don't hide the input from screen-readers and keyboard access: ;*/
@@ -16438,7 +16439,6 @@ i.popover-pencil {
           top: 0;
           left: 0;
           z-index: 5;
-          margin-top: 4px;
           display: block;
           width: 50%;
           margin-left: 100px;
@@ -16494,6 +16494,8 @@ i.popover-pencil {
           height: 100%;
           margin: 0;
           text-align: center;
+          font-weight: 100;
+
       }
       .switch-toggle a {
           position: absolute;
@@ -16521,40 +16523,28 @@ i.popover-pencil {
       .switch-toggle.switch-5 input:checked:nth-of-type(4) ~ a { left: 60% }
       .switch-toggle.switch-5 input:checked:last-of-type ~ a { left: 80% }
       .switch-candy {
-/*          background-color: #efefef;
-*/          /* border-radius: 3px;*/
-          /* color: #000;*/
-          height: 40px;
-          width: 230px;
-          margin-bottom: 20px;
-          /* padding: 0px;*/
-          /* font-weight: bold;*/
-          /* text-align: center;*/
-          /* text-shadow: 1px 1px 1px #191b1e;*/
-          /* box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.2);*/
+          border-radius: 3px;
+          color: #fff;
+          font-weight: 100;
+          text-align: center;
       }
       .switch-candy label {
-          color: #BCBEC0;
-          line-height: 35px;
-
+        color: #BCBEC0;
           -webkit-transition: color 0.2s ease-out;
           -moz-transition: color 0.2s ease-out;
           transition: color 0.2s ease-out;
       }
       .switch-candy input:checked + label {
-          color: #fff;
+        color: #fff;
       }
       .switch-candy a {
-          background-color: #2DB5AB;
-          border-radius: 3px;
+        background-color: #2DB5AB;
+        border-radius: 3px;
       }
       .switch-candy > span {
-          color: #333;
-          text-shadow: none;
-      }
-      .switch-candy span { 
         color: #BCBEC0;
-         }
+      }
+      .switch-candy span { color: #fff }
       .switch-candy.switch-candy-blue a { background-color: #38a3d4 }
       .switch-candy.switch-candy-yellow a { background-color: #f5e560 }
       .switch-android {
@@ -16653,18 +16643,16 @@ i.popover-pencil {
       .switch-ios input:checked + label { color: #3a3a3a }
   }
   /* Bugfix for older Webkit, including mobile Webkit. Adapted from
-     * http://css-tricks.com/webkit-sibling-bug/
-     */
-    @media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) { 
+   * http://css-tricks.com/webkit-sibling-bug/
+   */
+  @media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) { 
       .switch-light,
       .switch-toggle { -webkit-animation: webkitSiblingBugfix infinite 1s }
   }
-
-    @-webkit-keyframes webkitSiblingBugfix { 
+  @-webkit-keyframes webkitSiblingBugfix { 
       from { -webkit-transform: translate3d(0, 0, 0) }
       to { -webkit-transform: translate3d(0, 0, 0) }
-  }
-  
+  }  
 
  .aux-new p.aux-label {
 
@@ -16688,16 +16676,20 @@ i.popover-pencil {
 }
 
 .switch-light-wrapper {
-  width: 240px;
-  height: 50px;
-  padding: 3px;
   margin-bottom: 10px;
   background: #fff;
-  border: 2px solid #BCBEC0;
+  border: 1px solid #BCBEC0;
   border-radius: 3px;
+  padding: 2px;
 }
 
 .dashboard-select {
   margin-bottom: 15px;
 }
+
+.dashboard-table td {
+  font-size: 11px;
+  color: #808285;
+}
+
 
