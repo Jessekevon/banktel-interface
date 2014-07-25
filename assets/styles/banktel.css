@@ -16670,7 +16670,7 @@ i.popover-pencil {
 } 
 
 .accounts-graph {
-  height: 120px;
+  height: 115px;
   width: 100%;
   background-color: #E2E2E2;
 }
@@ -16701,8 +16701,10 @@ i.popover-pencil {
 
 }
 
-.cash-balances h4 {
+.cash-balances h6 {
   display: inline-block;
+  margin: 0px;
+  font-size: 11px;
 }
 
 .cash-balances p {
@@ -16725,9 +16727,9 @@ i.popover-pencil {
   content: "";
   position: absolute;
   border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  margin-top: 14px;
+  height: 8px;
+  width: 8px;
+  margin-top: 7px;
 
 }
 
@@ -16740,9 +16742,10 @@ i.popover-pencil {
   content: "";
   position: absolute;
   border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  margin-top: 14px;
+  height: 8px;
+  width: 8px;
+  margin-top: 7px;
+
 }
 
 
@@ -16751,7 +16754,7 @@ span.acct-balance {
 }
 
 .acct-title {
-  margin-top: 10px;
+  margin: 8px 0px;
   color: #808285;
 }
 
@@ -16759,6 +16762,9 @@ span.acct-balance {
   float: right;
 }
 
+.cash-balances {
+  margin-bottom: 6px;
+}
 
 .cash-balances hr {
   margin-top: 5px;
@@ -16769,5 +16775,36 @@ span.acct-balance {
 span.refresh {
   float: right;
   color: #808285;
+
+}
+
+a.view-all.btn {
+  float: right;
+}
+
+table.dashboard-table {
+  font-size: 11px;
+}
+
+.total hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.total .aux-value {
+  margin-bottom: 0px;
+}
+
+.table.dashboard-table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+padding: 5px;
+line-height: 1.42857;
+vertical-align: top;
+border-top: 1px solid #dddddd;
+}
+
+.table.dashboard-table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+border-top: 0;
+font-size: 11px;
+color: #808285;
 
 }
