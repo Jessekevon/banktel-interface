@@ -16213,8 +16213,8 @@ i.popover-pencil {
   footer{
 /*      background-color: #080808;
 */      bottom: 0;
-      box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
-      height: 40px;
+/*      box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
+*/      height: 40px;
       left: 0;
       position: fixed;
       width: 100%;
@@ -16656,6 +16656,15 @@ i.popover-pencil {
       .switch-ios.switch-toggle label { color: #868686 }
       .switch-ios input:checked + label { color: #3a3a3a }
   }
+
+  .switch-light-wrapper {
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #BCBEC0;
+    border-radius: 3px;
+    padding: 2px;
+  }
+
   /* Bugfix for older Webkit, including mobile Webkit. Adapted from
    * http://css-tricks.com/webkit-sibling-bug/
    */
@@ -16667,6 +16676,11 @@ i.popover-pencil {
       from { -webkit-transform: translate3d(0, 0, 0) }
       to { -webkit-transform: translate3d(0, 0, 0) }
   }  
+
+  /* ---------------------------------------------
+      DASHBOARD STYLES
+    ------------------------------------------- */
+
 
  .aux-new p.aux-label {
 
@@ -16689,13 +16703,6 @@ i.popover-pencil {
   background-color: #E2E2E2;
 }
 
-.switch-light-wrapper {
-  margin-bottom: 10px;
-  background: #fff;
-  border: 1px solid #BCBEC0;
-  border-radius: 3px;
-  padding: 2px;
-}
 
 .dashboard-select {
   margin-bottom: 8px;
@@ -16763,7 +16770,7 @@ i.popover-pencil {
 }
 
 
-span.acct-balance {
+span .acct-balance {
   float: right;
 }
 
@@ -16786,17 +16793,17 @@ span.acct-balance {
 }
 
 
-span.refresh {
+span .refresh {
   float: right;
   color: #808285;
 
 }
 
-a.view-all.btn {
+a .view-all.btn {
 /*  float: right;
 */}
 
-table.dashboard-table {
+table .dashboard-table {
   font-size: 11px;
   border-bottom: 1px solid #939598;
 
@@ -16811,27 +16818,27 @@ table.dashboard-table {
   margin-bottom: 0px;
 }
 
-.table.dashboard-table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+.table .dashboard-table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
 padding: 5px;
 line-height: 1.42857;
 vertical-align: top;
 border-top: 1px solid #dddddd;
 }
 
-.table.dashboard-table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+.table .dashboard-table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
 border-top: 0;
 color: #BCBEC0;
 font-weight: 100;
 
 }
 
-.table.dashboard-table > thead > tr > th {
+.table .dashboard-table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 1px solid #939598;
 }
 
 
-img.settings-icon {
+img .settings-icon {
   width: 32px;
   height: auto;
   float: right;
@@ -16840,7 +16847,7 @@ img.settings-icon {
 
 }
 
-img.settings-icon:hover {
+img .settings-icon:hover {
   opacity: 0.7;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -16848,21 +16855,17 @@ img.settings-icon:hover {
 }
 
 .fancy-select {
-font-size: 11px;
+  font-size: 11px;
 }
 
-
-@media screen and (max-width: 1280px) {
-
-}
 
 @media screen and (max-width: 1300px) {
 
 
 .dashboard-table td {
-font-size: 10px;
-color: #808285;
-}
+  font-size: 10px;
+  color: #808285;
+  }
 
 }
 
