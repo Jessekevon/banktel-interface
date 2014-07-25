@@ -16684,7 +16684,7 @@ i.popover-pencil {
 } 
 
 .accounts-graph {
-  height: 115px;
+  height: 109px;
   width: 100%;
   background-color: #E2E2E2;
 }
@@ -16698,7 +16698,7 @@ i.popover-pencil {
 }
 
 .dashboard-select {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .dashboard-table td {
@@ -16777,7 +16777,7 @@ span.acct-balance {
 }
 
 .cash-balances {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .cash-balances hr {
@@ -16798,6 +16798,8 @@ a.view-all.btn {
 
 table.dashboard-table {
   font-size: 11px;
+  border-bottom: 1px solid #939598;
+
 }
 
 .total hr {
@@ -16818,10 +16820,16 @@ border-top: 1px solid #dddddd;
 
 .table.dashboard-table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
 border-top: 0;
-font-size: 11px;
-color: #808285;
+color: #BCBEC0;
+font-weight: 100;
 
 }
+
+.table.dashboard-table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #939598;
+}
+
 
 img.settings-icon {
   width: 32px;
@@ -16838,3 +16846,15 @@ img.settings-icon:hover {
   transition: all 0.2s ease-in-out;
 
 }
+
+@media screen and (max-width: 1280px) {
+.fancy-select {
+font-size: 10px;
+}
+.dashboard-table td {
+font-size: 10px;
+color: #808285;
+}
+
+}
+
