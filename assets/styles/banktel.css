@@ -16869,4 +16869,12 @@ img.settings-icon:hover {
 
 }
 
+.grid-block-content img {
+  width: 32px;
+  height: auto;
+  float: right;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
 
