@@ -608,7 +608,7 @@ Copyright (c) 2013 Daniel Eden
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: both;
 }
 
@@ -1081,7 +1081,7 @@ Copyright (c) 2013 Daniel Eden
   }
 }
 
-/*@keyframes bounceIn {
+@keyframes bounceIn {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.3);
@@ -1166,7 +1166,7 @@ Copyright (c) 2013 Daniel Eden
     transform: translateY(0);
   }
 }
-*/
+
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
@@ -16345,6 +16345,20 @@ i.popover-pencil {
          margin-bottom: -30px;
      }
 
+     a.view-all.btn {
+         padding: 4px 8px;
+         font-size: 10px;
+     }
+
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+     /* IE10+ specific styles go here */  
+     a.view-all.btn {
+         padding: 4px 8px;
+         font-size: 10px;
+     }
+
   }
 
   /*
@@ -16779,8 +16793,8 @@ span.refresh {
 }
 
 a.view-all.btn {
-  float: right;
-}
+/*  float: right;
+*/}
 
 table.dashboard-table {
   font-size: 11px;
@@ -16806,5 +16820,21 @@ border-top: 1px solid #dddddd;
 border-top: 0;
 font-size: 11px;
 color: #808285;
+
+}
+
+img.settings-icon {
+  width: 32px;
+  height: auto;
+  float: right;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+img.settings-icon:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
 }
