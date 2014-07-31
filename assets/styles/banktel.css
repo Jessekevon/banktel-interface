@@ -16210,11 +16210,11 @@ i.popover-pencil {
   -----------------------------*/
 
 
-  footer{
-/*      background-color: #080808;
-*/      bottom: 0;
-/*      box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
-*/      height: 40px;
+/*  footer{
+      background-color: #080808;
+      bottom: 0;
+      box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
+      height: 40px;
       left: 0;
       position: fixed;
       width: 100%;
@@ -16247,7 +16247,7 @@ i.popover-pencil {
       font-style:normal;
       color:#888;
   }
-
+*/
   #tzine-download{
       opacity:0.9;
       background-color:#257691;
