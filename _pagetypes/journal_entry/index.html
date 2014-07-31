@@ -709,8 +709,11 @@
             // Inst chosen on .new-transaction select elements
             $('.new-transaction .chosen').chosen({
               allow_single_deselect: true,
+              disable_search: true,
               no_results_text: "Sorry, we were unable to find "
             });
+
+            
             
             // Edit tier on click
             // $('.tier.transaction .transaction-details p, .tier.transaction .transaction-details .tag, .tier.transaction .payment, .tier.transaction .deposit').click(function(){
