@@ -703,6 +703,8 @@
           <script>
             // Inst chosen on .journal-number select
             $('.journal-number .chosen, .table-search .chosen').chosen({
+              allow_single_deselect: true,
+              disable_search: true,
               no_results_text: "Sorry, we were unable to find "
             });
             
