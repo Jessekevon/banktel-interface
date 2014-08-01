@@ -16663,6 +16663,7 @@ i.popover-pencil {
     border: 1px solid #BCBEC0;
     border-radius: 3px;
     padding: 2px;
+    font-size: 12px;
   }
 
   /* Bugfix for older Webkit, including mobile Webkit. Adapted from
