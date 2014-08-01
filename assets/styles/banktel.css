@@ -16891,7 +16891,7 @@ a.ellipsis {
 /*    font-weight: bold;
 */}
 
-@media screen and (min-width: 991px) and (max-width: 1199px) {
+@media screen and (min-width: 991px) and (max-width: 1400px) {
   #view-document #document-actions .btn, #view-document #document-actions .tagged .tag, .tagged #view-document #document-actions .tag, #view-document #document-actions .memos .memo, .memos #view-document #document-actions .memo {
   font-size: 11px;
   padding: 10px 10px;
