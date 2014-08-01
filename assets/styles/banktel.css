@@ -16890,3 +16890,18 @@ a.ellipsis {
   cursor: default;
 /*    font-weight: bold;
 */}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  #view-document #document-actions .btn, #view-document #document-actions .tagged .tag, .tagged #view-document #document-actions .tag, #view-document #document-actions .memos .memo, .memos #view-document #document-actions .memo {
+  font-size: 11px;
+  padding: 10px 10px;
+  text-align: left;
+  }
+
+  #view-document #document-actions .btn i, #view-document #document-actions .tagged .tag i, .tagged #view-document #document-actions .tag i, #view-document #document-actions .memos .memo i, .memos #view-document #document-actions .memo i {
+   margin-left: 0px; 
+  }
+
+
+}
+
