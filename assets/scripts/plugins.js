@@ -678,6 +678,7 @@ function () {
         })
     });
 
+// Ellipsis Tooltip
 //Extend storage
 Storage.prototype.setObject = function (key, value) {
     this.setItem(key, JSON.stringify(value));
@@ -725,7 +726,7 @@ $.fn.extend({
 function tooltip(e) {
     $(e.target).popover({
         content: $(e.target).attr('data-ellipsis'),
-        placement: 'bottom',
+        placement: 'top',
         trigger: 'hover'
     }).popover('show');
 }
