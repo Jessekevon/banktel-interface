@@ -10511,12 +10511,13 @@ display: inline-block;
   border-width: 0 1px 1px;
   color: #6d6e71;
   cursor: pointer;
-  padding: 9px 8px 8px 9px;
+  line-height: 1.8;
 
-/*  padding: 9px 24px 8px 9px;
-  white-space: nowrap;
-*/  
-word-wrap: break-word;
+/*  padding: 9px 8px 8px 9px;
+*/
+padding: 9px 24px 8px 9px;
+/*  white-space: nowrap;
+*/word-wrap: break-word;
 -webkit-transition: all 150ms ease-out;
   transition: all 150ms ease-out;
 }
@@ -13896,7 +13897,7 @@ div.actions:hover + .form-group {
 }
 #dashboard .grid-block header {
   line-height: 27px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 #dashboard .grid-block header:before, #dashboard .grid-block header:after {
   content: " ";
