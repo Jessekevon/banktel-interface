@@ -11179,6 +11179,9 @@ section.menu-system nav.menu {
 }
 section.menu-system nav.menu.expanded {
   width: 200px;
+/*  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+*/
 }
 section.menu-system nav.menu ul,
 section.menu-system nav.menu li {
@@ -11306,6 +11309,85 @@ section.menu-system nav.menu > .level li .level li .level li a {
 section.menu-system nav.menu > .level > li > .level > li > .level > li > a.level-up {
   font-size: 11px;
 }
+
+a.collapse-link {
+  font-size: 12px;
+  padding: 0px 15px;
+  position: relative;
+  top: 14px;
+  color: #a1a2a3;
+}
+
+
+
+i.collapse-icon {
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: -4%;
+  width: 50px;
+  float: left;
+  color: #a1a2a3;
+}
+
+i.collapse-icon:hover {
+  color: #fff;
+}
+
+
+.collapse-item {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  float: right;
+}
+
+.menu-collapse:hover i.collapse-icon, .menu-collapse:hover a.collapse-link {
+
+  color: #fff;
+
+}
+
+
+.entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
+    position:absolute;
+    -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
+    
+}
+
+.entypo-chevron-thin-right.collapse-icon{
+  z-index: -2;
+  -webkit-transform: rotateY(180deg);   
+    
+}
+
+.entypo-chevron-thin-left.collapse-icon{
+    z-index: -1;   
+    -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+    -webkit-transform: rotateY(0deg);   
+}
+
+/*.rotator{
+     
+     width:160px;   
+    height: 160px;
+}
+*/
+.rotator .entypo-chevron-thin-right.collapse-icon{
+    -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+    z-index: -1;
+    -webkit-transform: rotateY(0deg);   
+
+}
+.rotator  .entypo-chevron-thin-left.collapse-icon{
+    -webkit-transform: rotateY(180deg);   
+    -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
+    z-index: -2;
+}
+
 
 
 /* ---------------------------------------------
@@ -13872,9 +13954,9 @@ div.actions:hover + .form-group {
 @media only screen and (min-width: 60em) {
   #dashboard .dash-grid > .grid-row .grid-block.one-wide {
     width: 33.333%;
-/*    width: -webkit-calc(100% / 3);
+    width: -webkit-calc(100% / 3);
     width: calc(100% / 3);
-*/  }
+  }
 }
 #dashboard .dash-grid > .grid-row .grid-block.two-wide {
   width: 100%;
