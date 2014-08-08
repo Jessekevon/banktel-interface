@@ -11393,19 +11393,32 @@ i.collapse-icon:hover {
 .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
     position:absolute;
     -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
-    
+    -moz-transition: -moz-transform 0.3s , z-index 0s 0.25s;
+    -o-transition: -o-transform 0.3s , z-index 0s 0.25s;
+    transition: transform 0.3s , z-index 0s 0.25s;
+
 }
 
 .entypo-chevron-thin-right.collapse-icon{
   z-index: -2;
   -webkit-transform: rotateY(180deg);   
-    
+   -moz-transform: rotateY(180deg); 
+   -o-transform: rotateY(180deg);   
+   transform: rotateY(180deg);   
+
 }
 
 .entypo-chevron-thin-left.collapse-icon{
     z-index: -1;   
     -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
-    -webkit-transform: rotateY(0deg);   
+    -webkit-transform: rotateY(0deg); 
+    -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
+    -moz-transform: rotateY(0deg);   
+    -o-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+    -o-transform: rotateY(0deg);   
+    transition: transform 0.3s, z-index 0s 0.25s;
+    transform: rotateY(0deg);   
+
 }
 
 /*.rotator{
@@ -11418,11 +11431,30 @@ i.collapse-icon:hover {
     -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
     z-index: -1;
     -webkit-transform: rotateY(0deg);   
+    -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
+    z-index: -1;
+    -moz-transform: rotateY(0deg);   
+    -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
+    z-index: -1;
+    -o-transform: rotateY(0deg);   
+    transition: transform 0.3s, z-index 0s 0.25s;
+    z-index: -1;
+    transform: rotateY(0deg);   
+
 
 }
 .rotator  .entypo-chevron-thin-left.collapse-icon{
     -webkit-transform: rotateY(180deg);   
     -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
+    z-index: -2;
+    -moz-transform: rotateY(180deg);   
+    -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;;
+    z-index: -2;
+    -o-transform: rotateY(180deg);   
+    -o-transition: -o-transform 0.3s, z-index 0s 0.25s;;
+    z-index: -2;
+    transform: rotateY(180deg);   
+    transition: transform 0.3s, z-index 0s 0.25s;;
     z-index: -2;
 }
 
@@ -11431,19 +11463,31 @@ i.collapse-icon:hover {
   .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
       position:absolute;
       -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
-      
+      -moz-transition: -moz-transform 0.3s , z-index 0s 0.25s;
+      -o-transition: -o-transform 0.3s , z-index 0s 0.25s;
+      transition: transform 0.3s , z-index 0s 0.25s;
+
   }
 
   .entypo-chevron-thin-left.collapse-icon{
     z-index: -2;
     -webkit-transform: rotateY(180deg);   
-      
+    -moz-transform: rotateY(180deg);   
+    -o-transform: rotateY(180deg);   
+    transform: rotateY(180deg);   
+
   }
 
   .entypo-chevron-thin-right.collapse-icon{
       z-index: -1;   
       -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
       -webkit-transform: rotateY(0deg);   
+      -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
+      -moz-transform: rotateY(0deg);   
+      -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
+      -o-transform: rotateY(0deg);   
+      transition: transform 0.3s, z-index 0s 0.25s;
+      transform: rotateY(0deg);   
   }
 
   /*.rotator{
@@ -11456,12 +11500,32 @@ i.collapse-icon:hover {
       -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
       z-index: -1;
       -webkit-transform: rotateY(0deg);   
+      -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
+      z-index: -1;
+      -moz-transform: rotateY(0deg);   
+      -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
+      z-index: -1;
+      -o-transform: rotateY(0deg);   
+      transition: transform 0.3s, z-index 0s 0.25s;
+      z-index: -1;
+      transform: rotateY(0deg);   
 
   }
   .rotator  .entypo-chevron-thin-right.collapse-icon{
       -webkit-transform: rotateY(180deg);   
       -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
       z-index: -2;
+      -moz-transform: rotateY(180deg);   
+      -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;;
+      z-index: -2;
+      -o-transform: rotateY(180deg);   
+      -o-transition: -o-transform 0.3s, z-index 0s 0.25s;;
+      z-index: -2;
+      transform: rotateY(180deg);   
+      transition: transform 0.3s, z-index 0s 0.25s;;
+      z-index: -2;
+
+
   }
 
 }
