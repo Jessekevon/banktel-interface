@@ -11179,14 +11179,18 @@ section.menu-system nav.menu {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
+
   /* FIRST LEVEL */
   /* FIRST LEVEL */
 }
+
+
 section.menu-system nav.menu.expanded {
   width: 200px;
-/*  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-*/
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
 }
 section.menu-system nav.menu ul,
 section.menu-system nav.menu li {
@@ -11318,7 +11322,6 @@ a.collapse-link {
   padding: 0px 15px;
   position: relative;
   top: 14px;
-  color: #a1a2a3;
 }
 
 
@@ -11333,7 +11336,6 @@ i.collapse-icon {
   vertical-align: -4%;
   width: 50px;
   float: left;
-  color: #a1a2a3;
 
 }
 
@@ -11359,8 +11361,11 @@ i.collapse-icon:hover {
 
 }
 
+.menu-collapse {
+}
 
-.menu-collapse:hover i.collapse-icon, .menu-collapse:hover a {
+
+.menu-collapse:hover i.collapse-icon  {
 
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
@@ -11369,6 +11374,18 @@ i.collapse-icon:hover {
   transition: all 0.3s ease-in-out;
 
 }
+
+.menu-collapse:hover a.collapse-link  {
+
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+
 
 
 
