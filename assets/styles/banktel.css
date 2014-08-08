@@ -11173,24 +11173,23 @@ section.menu-system nav.menu {
   height: 100%;
   overflow: hidden;
   position: relative;
-  width: 50px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 
 
   /* FIRST LEVEL */
   /* FIRST LEVEL */
 }
 
+section.menu-system nav.menu.closed {
+  width: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
 
 section.menu-system nav.menu.expanded {
   width: 200px;
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
 }
 section.menu-system nav.menu ul,
 section.menu-system nav.menu li {
@@ -11389,7 +11388,9 @@ i.collapse-icon:hover {
 
 
 
-
+.entypo-chevron-thin-left.collapse-icon {
+  display: none\9;
+}
 .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
     position:absolute;
     -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
@@ -11468,7 +11469,7 @@ i.collapse-icon:hover {
 }
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
       position:absolute;
       -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
