@@ -11395,6 +11395,7 @@ i.collapse-icon:hover {
     -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
     -moz-transition: -moz-transform 0.3s , z-index 0s 0.25s;
     -o-transition: -o-transform 0.3s , z-index 0s 0.25s;
+    -ms-transition: -ms-transform 0.3s , z-index 0s 0.25s;
     transition: transform 0.3s , z-index 0s 0.25s;
 
 }
@@ -11403,7 +11404,8 @@ i.collapse-icon:hover {
   z-index: -2;
   -webkit-transform: rotateY(180deg);   
    -moz-transform: rotateY(180deg); 
-   -o-transform: rotateY(180deg);   
+   -o-transform: rotateY(180deg);  
+   -ms-transform: rotateY(180deg);    
    transform: rotateY(180deg);   
 
 }
@@ -11415,7 +11417,9 @@ i.collapse-icon:hover {
     -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
     -moz-transform: rotateY(0deg);   
     -o-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
-    -o-transform: rotateY(0deg);   
+    -o-transform: rotateY(0deg); 
+    -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+    -ms-transform: rotateY(0deg);     
     transition: transform 0.3s, z-index 0s 0.25s;
     transform: rotateY(0deg);   
 
@@ -11437,12 +11441,14 @@ i.collapse-icon:hover {
     -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
     z-index: -1;
     -o-transform: rotateY(0deg);   
+    -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+    z-index: -1;
+    -ms-transform: rotateY(0deg);   
     transition: transform 0.3s, z-index 0s 0.25s;
     z-index: -1;
     transform: rotateY(0deg);   
-
-
 }
+
 .rotator  .entypo-chevron-thin-left.collapse-icon{
     -webkit-transform: rotateY(180deg);   
     -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
@@ -11452,6 +11458,9 @@ i.collapse-icon:hover {
     z-index: -2;
     -o-transform: rotateY(180deg);   
     -o-transition: -o-transform 0.3s, z-index 0s 0.25s;;
+    z-index: -2;
+    -ms-transform: rotateY(180deg);   
+    -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
     z-index: -2;
     transform: rotateY(180deg);   
     transition: transform 0.3s, z-index 0s 0.25s;;
@@ -11465,6 +11474,7 @@ i.collapse-icon:hover {
       -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
       -moz-transition: -moz-transform 0.3s , z-index 0s 0.25s;
       -o-transition: -o-transform 0.3s , z-index 0s 0.25s;
+      -ms-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
       transition: transform 0.3s , z-index 0s 0.25s;
 
   }
@@ -11473,7 +11483,8 @@ i.collapse-icon:hover {
     z-index: -2;
     -webkit-transform: rotateY(180deg);   
     -moz-transform: rotateY(180deg);   
-    -o-transform: rotateY(180deg);   
+    -o-transform: rotateY(180deg);  
+    -ms-transform: rotateY(180deg);    
     transform: rotateY(180deg);   
 
   }
@@ -11485,7 +11496,9 @@ i.collapse-icon:hover {
       -moz-transition: -moz-transform 0.3s, z-index 0s 0.25s;
       -moz-transform: rotateY(0deg);   
       -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
-      -o-transform: rotateY(0deg);   
+      -o-transform: rotateY(0deg);
+      -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+      -ms-transform: rotateY(0deg);      
       transition: transform 0.3s, z-index 0s 0.25s;
       transform: rotateY(0deg);   
   }
@@ -11505,7 +11518,10 @@ i.collapse-icon:hover {
       -moz-transform: rotateY(0deg);   
       -o-transition: -o-transform 0.3s, z-index 0s 0.25s;
       z-index: -1;
-      -o-transform: rotateY(0deg);   
+      -o-transform: rotateY(0deg); 
+      -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+      z-index: -1;
+      -ms-transform: rotateY(0deg);     
       transition: transform 0.3s, z-index 0s 0.25s;
       z-index: -1;
       transform: rotateY(0deg);   
@@ -11520,6 +11536,9 @@ i.collapse-icon:hover {
       z-index: -2;
       -o-transform: rotateY(180deg);   
       -o-transition: -o-transform 0.3s, z-index 0s 0.25s;;
+      z-index: -2;
+      -ms-transform: rotateY(180deg);   
+      -ms-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
       z-index: -2;
       transform: rotateY(180deg);   
       transition: transform 0.3s, z-index 0s 0.25s;;
