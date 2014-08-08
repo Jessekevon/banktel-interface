@@ -11174,6 +11174,11 @@ section.menu-system nav.menu {
   overflow: hidden;
   position: relative;
   width: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
   /* FIRST LEVEL */
   /* FIRST LEVEL */
 }
@@ -11331,6 +11336,7 @@ i.collapse-icon {
   width: 50px;
   float: left;
   color: #a1a2a3;
+  
 }
 
 i.collapse-icon:hover {
