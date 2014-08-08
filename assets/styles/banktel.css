@@ -11174,10 +11174,10 @@ section.menu-system nav.menu {
   overflow: hidden;
   position: relative;
   width: 50px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   /* FIRST LEVEL */
   /* FIRST LEVEL */
@@ -11195,8 +11195,6 @@ section.menu-system nav.menu li {
   padding: 0;
 }
 section.menu-system nav.menu .level {
-  -webkit-transition: left 0.2s, width 0.2s;
-  transition: left 0.2s, width 0.2s;
   background: #464747;
   height: 100%;
   position: absolute;
@@ -11336,7 +11334,7 @@ i.collapse-icon {
   width: 50px;
   float: left;
   color: #a1a2a3;
-  
+
 }
 
 i.collapse-icon:hover {
@@ -11351,11 +11349,28 @@ i.collapse-icon:hover {
   float: right;
 }
 
-.menu-collapse:hover i.collapse-icon, .menu-collapse:hover a.collapse-link {
+.menu-collapse i.collapse-icon, .menu-collapse a {
 
-  color: #fff;
+  color: #a1a2a3;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
 }
+
+
+.menu-collapse:hover i.collapse-icon, .menu-collapse:hover a {
+
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
 
 
 .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
@@ -11394,6 +11409,45 @@ i.collapse-icon:hover {
     z-index: -2;
 }
 
+
+@media screen and (max-width: 1280px) {
+  .entypo-chevron-thin-left.collapse-icon, .entypo-chevron-thin-right.collapse-icon{
+      position:absolute;
+      -webkit-transition: -webkit-transform 0.3s , z-index 0s 0.25s;
+      
+  }
+
+  .entypo-chevron-thin-left.collapse-icon{
+    z-index: -2;
+    -webkit-transform: rotateY(180deg);   
+      
+  }
+
+  .entypo-chevron-thin-right.collapse-icon{
+      z-index: -1;   
+      -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+      -webkit-transform: rotateY(0deg);   
+  }
+
+  /*.rotator{
+       
+       width:160px;   
+      height: 160px;
+  }
+  */
+  .rotator .entypo-chevron-thin-left.collapse-icon{
+      -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;
+      z-index: -1;
+      -webkit-transform: rotateY(0deg);   
+
+  }
+  .rotator  .entypo-chevron-thin-right.collapse-icon{
+      -webkit-transform: rotateY(180deg);   
+      -webkit-transition: -webkit-transform 0.3s, z-index 0s 0.25s;;
+      z-index: -2;
+  }
+
+}
 
 
 /* ---------------------------------------------
