@@ -14115,9 +14115,9 @@ div.actions:hover + .form-group {
 @media only screen and (min-width: 60em) {
   #dashboard .dash-grid > .grid-row .grid-block.one-wide {
     width: 33.333%;
-    width: -webkit-calc(100% / 3);
+/*    width: -webkit-calc(100% / 3);
     width: calc(100% / 3);
-  }
+*/  }
 }
 #dashboard .dash-grid > .grid-row .grid-block.two-wide {
   width: 100%;
