@@ -30,15 +30,18 @@
   });
 
 // Expand menu on larger screens
-  if( $( window ).width() >= 1280 ) {
-    $( '.menu' ).addClass( 'expanded' );
+  if( $( window ).width() <= 1280 ) {
+    $( '.menu' ).removeClass( 'expanded' );
   };
 
 // Expand menu on initial click/touch on smaller screens
-    $( document.body ).on( 'click', '.menu-collapse', function(){
-      $( '.menu' ).toggleClass( 'expanded' );
+  if( $( window ).width() <= 1280 ) {
+    $( document.body ).one( 'click', '.menu', function(){
+      $( '.menu' ).addClass( 'expanded' );
+
       return false;
-  });
+    });
+  };
 
 // Expand or collapse menu on resize of window
   $( window ).on( 'resize', function() {
@@ -55,18 +58,14 @@
     };
   } );
 
+    $( '.menu' ).on( 'click', '.menu-collapse', function(){
+      $( '.menu' ).toggleClass( 'expanded' );
+  });
+
+
     $( '.menu-collapse' ).on( 'click', function(){
       $( this ).toggleClass('rotator');
     });
-
-
-
-    // $('.menu-collapse').click(function(){
-    //  $(this).toggleClass('rotator')  ; 
-    // })
-
-
-
 
 
 // Menu, downward traversal
@@ -80,7 +79,6 @@
     $( this ).closest( ".level" ).css( "left", "-201px" );
     return false;
   });
-
 
 }());
 //= require bootstrap/affix
