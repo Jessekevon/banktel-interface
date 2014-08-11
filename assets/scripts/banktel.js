@@ -35,28 +35,14 @@
   };
 
 // Expand menu on initial click/touch on smaller screens
-  if( $( window ).width() <= 1280 ) {
+  if( $( window ).width() < 1280 ) {
     $( document.body ).one( 'click', '.menu', function(){
-      $( '.menu' ).addClass( 'expanded' );
+      $( '.menu' ).addClass( 'expanded' ),
+        $('.menu-collapse').toggleClass('rotator');
 
       return false;
     });
   };
-
-// Expand or collapse menu on resize of window
-  $( window ).on( 'resize', function() {
-    if( $( window ).width() < 1280 ) {
-      if( $( '.menu' ).hasClass( 'expanded' ) ) {
-        $( '.menu' ).removeClass( 'expanded' );
-      };
-    } else if ( $( window ).width() >= 1280 ) {
-      if( $( '.menu' ).hasClass( 'expanded' ) ) {
-        return false;
-      } else {
-        $( '.menu' ).addClass( 'expanded' );
-      };
-    };
-  } );
 
     $( '.menu' ).on( 'click', '.menu-collapse', function(){
       $( '.menu' ).toggleClass( 'expanded' );
@@ -79,6 +65,22 @@
     $( this ).closest( ".level" ).css( "left", "-201px" );
     return false;
   });
+
+  // Expand or collapse menu on resize of window
+    $( window ).on( 'resize', function() {
+      if( $( window ).width() < 1280 ) {
+        if( $( '.menu' ).hasClass( 'expanded' ) ) {
+          $( '.menu' ).removeClass( 'expanded' );
+        };
+      } else if ( $( window ).width() >= 1280 ) {
+        if( $( '.menu' ).hasClass( 'expanded' ) ) {
+          return false;
+        } else {
+          $( '.menu' ).addClass( 'expanded' );
+        };
+      };
+    } );
+
 
 }());
 //= require bootstrap/affix
