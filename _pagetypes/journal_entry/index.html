@@ -341,7 +341,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>City of Austin</p>
-
+<div class="tag-wrapper">
                                     <ul class="tagged">
                                       <li class="tag">
                                         Utilities
@@ -353,7 +353,7 @@
                                       <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
 
                                     </nav> <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment">$297.34</div>
@@ -378,7 +378,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Central Texas Cleaning Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+                                    <div class="tag-wrapper">
                                     <ul class="tagged">
                                       <li class="tag">
                                         Repairs &amp; Maintenance
@@ -405,7 +405,7 @@
                                       </div>
 
                                     </nav> <!-- nav.actions -->
-
+</div>
 
                                   </div> <!-- .cell.transaction-details -->
 
@@ -431,6 +431,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Big Red Sun</p>
+                                    <div class="tag-wrapper">
 
                                     <ul class="tagged">
                                       <li class="tag">
@@ -456,7 +457,7 @@
                                       </div>
                                     </nav>
                                     <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment"></div>
@@ -481,6 +482,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Trello</p>
+                                    <div class="tag-wrapper">
 
                                     <ul class="tagged">
                                       <li class="tag">
@@ -492,7 +494,7 @@
                                     <nav class="actions">
                                       <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
                                     </nav> <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment"></div>
@@ -517,6 +519,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Barclaycard</p>
+                                    <div class="tag-wrapper">
 
                                     <ul class="tagged">
                                       <li class="tag">
@@ -528,7 +531,7 @@
                                     <nav class="actions">
                                       <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
                                     </nav> <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment"></div>
@@ -553,6 +556,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Employee 1</p>
+                                    <div class="tag-wrapper">
 
                                     <ul class="tagged">
                                       <li class="tag">
@@ -564,7 +568,7 @@
                                     <nav class="actions">
                                       <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
                                     </nav> <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment">$297.34</div>
@@ -589,6 +593,7 @@
                                     </div> <!-- div.actions -->
 
                                     <p>Employee 2</p>
+                                    <div class="tag-wrapper">
 
                                     <ul class="tagged">
                                       <li class="tag">
@@ -600,7 +605,7 @@
                                     <nav class="actions">
                                       <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
                                     </nav> <!-- nav.actions -->
-
+</div>
                                   </div> <!-- .cell.transaction-details -->
 
                                   <div class="cell payment">$297.34</div>
@@ -799,8 +804,9 @@ $('body').on('click', function (e) {
     });
 });
 
-  $('#transactions .transaction-details > p').ellipsis({maxLine: 1, trigger: 'mouseenter', fixedWidth: '350', callback: tooltip,
+  $('#transactions .transaction-details > p').ellipsis({maxLine: 1, trigger: 'mouseenter', callback: tooltip,
 });
+
 
 
 

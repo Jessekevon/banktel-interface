@@ -17156,3 +17156,13 @@ a.ellipsis {
 
 }
 
+.tag-wrapper {
+  width: 50%;
+  float: left;
+}
+
+#transactions .transaction-details > p {
+  max-width: 50%;
+  height: 63px;
+}
+
