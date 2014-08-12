@@ -35,12 +35,14 @@
   };
 
 // Expand menu on initial click/touch on smaller screens
+  if( $( window ).width() < 1280 ) {
     $( document.body ).one( 'click', '.menu', function(){
       $( '.menu' ).addClass( 'expanded' ),
         $('.menu-collapse').toggleClass('rotator');
 
       return false;
     });
+  };
 
     $( '.menu' ).on( 'click', '.menu-collapse', function(){
       $( '.menu' ).toggleClass( 'expanded' );
