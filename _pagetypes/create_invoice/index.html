@@ -630,15 +630,22 @@
 
 
                   </ul> <!-- ul.table-content -->
-
                                     <div class="new-invoice-actions">
                   <!--                     <a class="btn btn-primary">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></a>
                    -->
                                       <div class="progress-buttons">
 
-                                         <button class="btn btn-primary progress-button button-save" data-style="fill" data-horizontal>Save<i class="entypo-save"></i></button>
+                                        <button id="notification-trigger" class="btn btn-primary progress-button">
+                                          <span class="content">Save<i class="entypo-save"></i></span>
+                                        </button>
 
-                                        <button class="btn btn-primary progress-button button-save-preview" data-style="fill" data-horizontal>Save &amp; Preview <i class="entypo-save"></i></button>
+                                        <button id="notification-trigger-error" class="btn btn-primary progress-button">
+                                          <span class="content">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></span>
+                                        </button>
+
+
+
+
                                       </div>
                                     </div>
 
@@ -675,22 +682,78 @@
       $('.chosen').chosen('chosen:updated');
     });
 
-    [].slice.call( document.querySelectorAll( 'button.progress-button' ) ).forEach( function( bttn ) {
-      new ProgressButton( bttn, {
-        callback : function( instance ) {
-          var progress = 0,
-            interval = setInterval( function() {
-              progress = Math.min( progress + Math.random() * 0.1, 1 );
-              instance._setProgress( progress );
+// Initialize the success message notification
 
-              if( progress === 1 ) {
-                instance._stop(1);
-                clearInterval( interval );
-              }
-            }, 200 );
+(function() {
+  var bttn = document.getElementById( 'notification-trigger' );
+
+  // make sure..
+  bttn.disabled = false;
+  
+  bttn.addEventListener( 'click', function() {
+    // simulate loading (for demo purposes only)
+    classie.add( bttn, 'active' );
+    setTimeout( function() {
+
+      classie.remove( bttn, 'active' );
+      
+      // create the notification
+      var notification = new NotificationFx({
+        message : '<p>Requested action was performed successfully.</p>',
+        layout : 'growl',
+        effect : 'scale',
+        type : 'notice', // notice, warning, error or success
+        onClose : function() {
+          bttn.disabled = false;
         }
-      } );
-    } );
+      });
+
+      // show the notification
+      notification.show();
+
+    }, 0 );
+    
+    // disable the button (for demo purposes only)
+    this.disabled = true;
+  } );
+})();
+
+// Initialize the error message notification
+
+
+(function() {
+  var bttn = document.getElementById( 'notification-trigger-error' );
+
+  // make sure..
+  bttn.disabled = false;
+  
+  bttn.addEventListener( 'click', function() {
+    // simulate loading (for demo purposes only)
+    classie.add( bttn, 'active' );
+    setTimeout( function() {
+
+      classie.remove( bttn, 'active' );
+      
+      // create the notification
+      var notification = new NotificationFx({
+        message : '<p>Please specify a Vendor to pay.</p>',
+        layout : 'growl',
+        effect : 'scale-two',
+        type : 'error', // notice, warning, error or success
+        onClose : function() {
+          bttn.disabled = false;
+        }
+      });
+
+      // show the notification
+      notification.show();
+
+    }, 0 );
+    
+    // disable the button (for demo purposes only)
+    this.disabled = true;
+  } );
+})();
 
   </script>
 
