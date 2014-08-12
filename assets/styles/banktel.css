@@ -17278,6 +17278,7 @@ a.ellipsis {
     max-width: 300px;
     max-height: 100px;
     border-radius: 5px;
+    width: 100%;
   }
 
   .ns-growl p {
