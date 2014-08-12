@@ -17184,7 +17184,9 @@ a.ellipsis {
     url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
 }
 
-/* General styles for all types of buttons */
+/* ---------------------------------------------
+    PROGRESS BUTTON STYLES
+  ------------------------------------------- */
 
 .progress-buttons {
 
@@ -17195,10 +17197,25 @@ a.ellipsis {
   outline: none;
   border: none;
   color: #fff;
-/*  font-size: 1em;
-*/  line-height: 3;
+  font-size: 1em;
+  line-height: 3;
 }
 
+
+/*.progress-button {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+  outline: none;
+  border: none;
+  background: #1d9650;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  line-height: 4;
+}
+*/
 .progress-button[disabled],
 .progress-button[disabled].state-loading {
   cursor: default;
@@ -17248,14 +17265,17 @@ a.ellipsis {
 }
 
 .progress-button .progress {
-  background: #1d9650;
+  background: #516199;
 }
 
 .progress-button .progress-inner {
   position: absolute;
   left: 0;
-  background: #1d9650;
+  background: #516199;
+  border: none !important;
 }
+
+
 
 .progress-button[data-horizontal] .progress-inner {
   top: 0;
@@ -17338,6 +17358,11 @@ a.ellipsis {
 button.progress-button {
   padding: 0px 12px !important;
 }
+
+/* ---------------------------------------------
+    PACE LOADER STYLES
+  ------------------------------------------- */
+
 
 .pace {
   -webkit-pointer-events: none;
