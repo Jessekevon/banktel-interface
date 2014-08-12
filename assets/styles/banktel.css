@@ -17284,8 +17284,10 @@ a.ellipsis {
 
   .ns-growl p {
     margin: 0;
-    line-height: 1.3;
-  }
+    line-height: 1.7;
+
+/*    line-height: 1.3;
+*/  }
 
   [class^="ns-effect-"].ns-growl.ns-hide,
   [class*=" ns-effect-"].ns-growl.ns-hide {
