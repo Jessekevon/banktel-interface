@@ -17360,7 +17360,7 @@ a.ellipsis {
 
   .ns-effect-scale-two .ns-close::before,
   .ns-effect-scale-two .ns-close::after {
-    background: #fff;
+    background: #af483f;
   }
 
   .ns-effect-scale-two .ns-close:hover::before,
