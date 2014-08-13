@@ -14886,12 +14886,13 @@ div.actions:hover + .form-group {
 .empty-content {
   border: 1px solid #BCBEC0;
   border-radius: 8px;
+  padding: 90px;
 }
 .empty-content h1, .empty-content h2, .empty-content h3, .empty-content h4, .empty-content h5, .empty-content h6 {
   color: #BCBEC0;
   font-size: 24px;
-  padding: 90px;
-  text-align: center;
+/*  padding: 90px;
+*/  text-align: center;
 }
 
 /* ---------------------------------------------
