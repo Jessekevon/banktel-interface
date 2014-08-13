@@ -37,10 +37,7 @@
 // Expand menu on initial click/touch on smaller screens
    $( document.body ).on( 'click', '.menu', function(){
       $( '.menu' ).toggleClass( 'expanded' ),
-        $('.menu-collapse').toggleClass('rotator'),
-        $( '.menu-collapse' ).on( 'click', function(){
-          $( this ).toggleClass('rotator');
-        });
+        $('.menu-collapse').toggleClass('rotator');
       return false;
     });
 
