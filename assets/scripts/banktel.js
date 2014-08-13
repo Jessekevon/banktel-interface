@@ -35,23 +35,18 @@
   };
 
 // Expand menu on initial click/touch on smaller screens
-  if( $( window ).width() < 1280 ) {
-    $( document.body ).one( 'click', '.menu', function(){
-      $( '.menu' ).addClass( 'expanded' ),
-        $('.menu-collapse').toggleClass('rotator');
-
+   $( document.body ).on( 'click', '.menu', function(){
+      $( '.menu' ).toggleClass( 'expanded' ),
+        $('.menu-collapse').toggleClass('rotator'),
+        $( '.menu-collapse' ).on( 'click', function(){
+          $( this ).toggleClass('rotator');
+        });
       return false;
     });
-  };
-
-    $( '.menu' ).on( 'click', '.menu-collapse', function(){
-      $( '.menu' ).toggleClass( 'expanded' );
-  });
 
 
-    $( '.menu-collapse' ).on( 'click', function(){
-      $( this ).toggleClass('rotator');
-    });
+
+
 
 
 // Menu, downward traversal
@@ -80,6 +75,15 @@
         };
       };
     } );
+
+    // if($('.menu').hasClass('closed')) {
+
+    // }
+
+
+
+
+
 
 
 }());
