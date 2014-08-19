@@ -17,7 +17,7 @@ $(function(){
         // This function is called when a file is added to the queue;
         // either via the browse button, or via drag/drop:
         add: function (e, data) {
-
+            data.url = '/Note/UploadFile';
             var tpl = $('<li class="working"><input type="text" value="0" data-width="48" data-height="48"'+
                 ' data-fgColor="#2db5ab" data-readOnly="1" data-bgColor="#fff" /><p></p><span></span></li>');
 
