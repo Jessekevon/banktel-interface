@@ -13100,8 +13100,8 @@ textarea {
   border: 1px solid #d1d3d4 !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  color: #6d6e71 !important;
-  font-size: 12px !important;
+/*  color: #6d6e71 !important;
+*/  font-size: 12px !important;
 }
 input:focus,
 textarea:focus {
