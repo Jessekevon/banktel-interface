@@ -711,7 +711,7 @@ $.fn.extend({
         var defaults = {
             maxLine: 1,
             callback: tooltip,
-            trigger: '',
+            trigger: 'mouseenter',
             cutWords: false,
             withTags: false,
             fixedWidth: 0
@@ -725,7 +725,7 @@ $.fn.extend({
             var newString = new FastEllipsis(el).ellipseIt(el, options.maxLine, lineWidth, options.cutWords, options.withTags)[0];
             if (!options.withTags && options.trigger && oldString != newString) {
                 newString = newString.replace(/\.{3}$/, "");
-                $(el).html(newString).append($("<a class='ellipsis'>...</a>").attr("data-ellipsis", oldString).on(options.trigger, options.callback));
+                $(el).html(newString).attr("data-ellipsis", oldString).on(options.trigger, options.callback).append($("<a class='ellipsis'>...</a>"));
             }
             else if (!options.withTags) {
                 el.innerHTML = newString;
