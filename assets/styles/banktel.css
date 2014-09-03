@@ -9886,7 +9886,7 @@ button.close {
   white-space: normal;
 }
 .popover.top {
-  margin-top: -15px;
+  margin-top: 7px;
   width: 200px;
   padding-bottom: 24px;
 }
