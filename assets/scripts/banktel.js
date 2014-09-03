@@ -34,17 +34,12 @@
     $( '.menu' ).removeClass( 'expanded' );
   };
 
-// Expand menu on initial click/touch on smaller screens
+// Expand menu on initial click/touch on smaller screens 
    $( document.body ).on( 'click', '.menu', function(){
       $( '.menu' ).toggleClass( 'expanded' ),
         $('.menu-collapse').toggleClass('rotator');
       return false;
     });
-
-
-
-
-
 
 // Menu, downward traversal
   $( document.body ).on('click', '.menu.expanded .level-down', function () {
