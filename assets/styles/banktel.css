@@ -17166,6 +17166,9 @@ a.ellipsis {
 #transactions .transaction-details > p {
   max-width: 50%;
   height: 63px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 *, *:after, *::before {
