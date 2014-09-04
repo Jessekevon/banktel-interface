@@ -17430,7 +17430,7 @@ a.ellipsis {
     z-index: 2000;
     bottom: 0;
     left: 0;
-    height: 18px;
+    height: 15px;
 
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
