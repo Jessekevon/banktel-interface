@@ -740,13 +740,16 @@
 
 <script type="text/javascript">
 
-$('.popover-markup').popover({
+$('.popover-markup>.trigger').popover({
     placement: 'top',
     html: true,
     title: '',
+    template: '<div class="popover memo-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
     content: function () {
         return $(this).parent().find('.content').html();
     }
+
+
 });
 
 

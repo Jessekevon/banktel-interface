@@ -9891,6 +9891,11 @@ button.close {
   padding-bottom: 24px;
 }
 
+.popover.memo-popover {
+  margin-top: -15px;
+}
+
+
 .popover.top a {
 /*  font-size: 12px;
 */  float: left;
