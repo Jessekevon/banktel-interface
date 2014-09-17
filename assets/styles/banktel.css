@@ -12980,6 +12980,11 @@ button i {
   color: #fff;
 }
 
+.status-outstanding .status a.btn {
+  background: #efcf11;
+  color:#fff;
+}
+
 .status-draft .issue-date,
 .status-draft .due-date,
 .status-draft .status .btn,
