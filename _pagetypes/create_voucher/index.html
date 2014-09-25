@@ -642,9 +642,17 @@
                   </ul> <!-- ul.table-content -->
 
                   <div class="new-voucher-actions">
-                    <a class="btn btn-primary">Save Draft <i class="entypo-save"></i></a>
+
+                    <button class="progress-button" data-style="fill" data-horizontal>Save Draft <i class="entypo-save"></i></button>
+
+                    <button class="progress-button error" data-style="fill" data-horizontal>Save &amp; Pay Bill <i class="entypo-chevron-thin-right"></i></button>
+
+<!--                     <a class="btn btn-primary">Save Draft <i class="entypo-save"></i></a>
                     <a class="btn btn-primary">Save &amp; Pay Bill <i class="entypo-chevron-thin-right"></i></a>
-                  </div>
+ -->                 
+
+
+  </div>
 
                   <div class="new-voucher-attachments">
                     <div class="drop-zone">
@@ -685,6 +693,25 @@
       $(".draggable-container").prepend($("<li class='tier with-actions new-voucher-item'><div class='indicator'></div><div class='cell expense-account'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-item-type' data-placeholder='Item'><option>Account</option><option>Account</option><option>Account</option><option>Account</option></select></div></div><div class='cell pay-from-account'><div class='form-group'><select class='chosen form-control' name='select-item-type' data-placeholder='Item'><option>Account</option><option>Account</option><option>Account</option><option>Account</option></select></div></div><div class='cell description'><div class='form-group'><textarea class='form-control' name='item-description' placeholder='Item Description Here'></textarea></div></div><div class='cell cost'><div class='form-group'><input type='text' class='form-control' name='item-cost' placeholder='$0.00'></div></div></li>"));
       $('.chosen').chosen('chosen:updated');
     });
+
+[].slice.call( document.querySelectorAll( 'button.progress-button' ) ).forEach( function( bttn ) {
+  new ProgressButton( bttn, {
+    callback : function( instance ) {
+      var progress = 0,
+        interval = setInterval( function() {
+          progress = Math.min( progress + Math.random() * 0.1, 1 );
+          instance._setProgress( progress );
+
+          if( progress === 1 ) {
+            instance._stop(1);
+            clearInterval( interval );
+          }
+        }, 200 );
+    }
+  } );
+} );
+
+
   </script>
 
 </body>
