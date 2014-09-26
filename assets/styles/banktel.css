@@ -17687,3 +17687,9 @@ a.ellipsis {
         color: #fff !important;
         border: none !important;
       }
+
+      .progress-button[disabled].state-loading {
+        background-color: #fff !important;
+        color: #fff !important;
+      }
+
