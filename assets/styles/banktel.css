@@ -17448,248 +17448,253 @@ a.ellipsis {
   }
 
   
-        /* ---------------------------------------------
-            PROGRESS BUTTON STYLES
-          ------------------------------------------- */
+          /* ---------------------------------------------
+              PROGRESS BUTTON STYLES
+            ------------------------------------------- */
 
-        .progress-buttons {
+          .progress-buttons {
 
-        }
-        .progress-button {
-          position: relative;
-          display: inline-block;
-          outline: none;
-          border: none;
-          color: #fff;
-          font-size: 1em;
-          line-height: 3;
-        }
+          }
+          .progress-button {
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: 1em;
+            line-height: 3;
+          }
 
 
-        /*.progress-button {
-          position: relative;
-          display: inline-block;
-          padding: 0 60px;
-          outline: none;
-          border: none;
-          background: #1d9650;
-          color: #fff;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 1em;
-          line-height: 4;
-        }
+          /*.progress-button {
+            position: relative;
+            display: inline-block;
+            padding: 0 60px;
+            outline: none;
+            border: none;
+            background: #1d9650;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1em;
+            line-height: 4;
+          }
+          */
+          .progress-button[disabled],
+          .progress-button[disabled].state-loading {
+            cursor: default;
+          }
+
+          .progress-button .content {
+            position: relative;
+            display: block;
+          }
+
+          .progress-button .content::before,
+          .progress-button .content::after  {
+            position: absolute;
+            right: 20px;
+            color: #fff;
+            font-family: "icomoon";
+            opacity: 0;
+            -webkit-transition: opacity 0.3s 0.3s;
+            transition: opacity 0.3s 0.3s;
+          }
+
+          .progress-button.error .content::before {
+            color: #fff !important;
+          }
+
+
+          .progress-button .content::before {
+            content: "\e600"; /* Checkmark for success */
+          }
+
+          .progress-button.state-success .content::before,
+          .progress-button.state-error .content::after {
+            opacity: 1;
+          }
+
+          .progress-button.error .content::before {
+            content: "\e601"; /* Cross for error */
+            border: 1px solid red !important;
+          }
+
+
+          .progress-button.error .content::after {
+            opacity: 1;
+          }
+
+          /*.progress-button.state-error {
+            background-color: red;
+          }
+          */
+
+          .notransition {
+            -webkit-transition: none !important;
+            transition: none !important;
+          }
+
+
+          .progress-button[data-horizontal] .progress-inner {
+            top: 0;
+            width: 0;
+            height: 100%;
+            -webkit-transition: width 0.3s, opacity 0.3s;
+            transition: width 0.3s, opacity 0.3s;
+          }
+
+          .progress-button[data-vertical] .progress-inner {
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            -webkit-transition: height 0.3s, opacity 0.3s;
+            transition: height 0.3s, opacity 0.3s;
+          }
+
+          /* Necessary 3d styles for buttons with perspective */
+
+          .progress-button[data-perspective] {
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            background: transparent;
+            -webkit-perspective: 900px;
+            perspective: 900px;
+          }
+
+          .progress-button[data-perspective] .content {
+            padding: 0 60px;
+            background: #1d9650;
+          }
+
+          .progress-button[data-perspective] .progress-wrap {
+            display: block;
+            -webkit-transition: -webkit-transform 0.2s;
+            transition: transform 0.2s;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+          }
+
+          .progress-button[data-perspective] .content,
+          .progress-button[data-perspective] .progress {
+            outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
+          }
+
+          /* Individual styles */
+          /* Choose the effect(s) you want, delete the rest */
+
+          /* Fill horizontal */
+          /* ====================== */
+
+          .progress-button[data-style="fill"][data-horizontal] {
+            overflow: hidden;
+          }
+
+          .progress-button[data-style="fill"][data-horizontal] .content {
+            z-index: 10;
+            -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+          }
+
+          .progress-button[data-style="fill"][data-horizontal] .content::before,
+          .progress-button[data-style="fill"][data-horizontal] .content::after {
+            top: 100%;
+            right: auto;
+            left: 50%;
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+          }
+
+          .progress-button[data-style="fill"][data-horizontal].state-success .content,
+          .progress-button[data-style="fill"][data-horizontal].state-error .content {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+          }
+
+          button.progress-button {
+            padding: 1.5px 12px !important;
+            background: #2db5ab;
+            border: 1px solid #2db5ab;
+            border-radius: 3px !important;
+          }
+
+          button.progress-button:hover {
+            background: #fff;
+            color: #2db5ab;
+            border: 1px solid #2db5ab;
+          }
+
+
+        /*  .progress-button.state-success .progress-inner {
+            background: #2db5ab !important;
+          }
         */
-        .progress-button[disabled],
-        .progress-button[disabled].state-loading {
-          cursor: default;
-        }
+          .progress-button.state-error .progress-inner {
+            background: #dd5c4e !important;
+          }
 
-        .progress-button .content {
-          position: relative;
-          display: block;
-        }
-
-        .progress-button .content::before,
-        .progress-button .content::after  {
-          position: absolute;
-          right: 20px;
-          color: #2db5ab;
-          font-family: "icomoon";
-          opacity: 0;
-          -webkit-transition: opacity 0.3s 0.3s;
-          transition: opacity 0.3s 0.3s;
-        }
-
-        .progress-button.error .content::before {
-          color: #fff !important;
-        }
-
-
-        .progress-button .content::before {
-          content: "\e600"; /* Checkmark for success */
-        }
-
-        .progress-button.state-success .content::before,
-        .progress-button.state-error .content::after {
-          opacity: 1;
-        }
-
-        .progress-button.error .content::before {
-          content: "\e601"; /* Cross for error */
-          border: 1px solid red !important;
-        }
-
-
-        .progress-button.error .content::after {
-          opacity: 1;
-        }
-
-        /*.progress-button.state-error {
-          background-color: red;
-        }
-        */
-
-        .notransition {
-          -webkit-transition: none !important;
-          transition: none !important;
-        }
-
-
-        .progress-button[data-horizontal] .progress-inner {
-          top: 0;
-          width: 0;
-          height: 100%;
-          -webkit-transition: width 0.3s, opacity 0.3s;
-          transition: width 0.3s, opacity 0.3s;
-        }
-
-        .progress-button[data-vertical] .progress-inner {
-          bottom: 0;
-          width: 100%;
-          height: 0;
-          -webkit-transition: height 0.3s, opacity 0.3s;
-          transition: height 0.3s, opacity 0.3s;
-        }
-
-        /* Necessary 3d styles for buttons with perspective */
-
-        .progress-button[data-perspective] {
-          position: relative;
-          display: inline-block;
-          padding: 0;
-          background: transparent;
-          -webkit-perspective: 900px;
-          perspective: 900px;
-        }
-
-        .progress-button[data-perspective] .content {
-          padding: 0 60px;
-          background: #1d9650;
-        }
-
-        .progress-button[data-perspective] .progress-wrap {
-          display: block;
-          -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
-          -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-        }
-
-        .progress-button[data-perspective] .content,
-        .progress-button[data-perspective] .progress {
-          outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
-        }
-
-        /* Individual styles */
-        /* Choose the effect(s) you want, delete the rest */
-
-        /* Fill horizontal */
-        /* ====================== */
-
-        .progress-button[data-style="fill"][data-horizontal] {
-          overflow: hidden;
-        }
-
-        .progress-button[data-style="fill"][data-horizontal] .content {
-          z-index: 10;
-          -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
-        }
-
-        .progress-button[data-style="fill"][data-horizontal] .content::before,
-        .progress-button[data-style="fill"][data-horizontal] .content::after {
-          top: 100%;
+         .progress-button.error[data-style="fill"][data-horizontal] .content::before {
+           top: 100%;
+           right: auto;
+           left: 50%;
+           -webkit-transition: opacity 0.3s;
+           transition: opacity 0.3s;
+           -webkit-transform: translateX(-50%);
+           transform: translateX(-50%);
+         }
+         
+          .progress-button.error[data-style="fill"][data-horizontal] .content::before {
+          top: 95%;
           right: auto;
           left: 50%;
+          background: #dd5c4e !important;
+          width: 300px;
+          height: 800px;
           -webkit-transition: opacity 0.3s;
           transition: opacity 0.3s;
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-        }
-
-        .progress-button[data-style="fill"][data-horizontal].state-success .content,
-        .progress-button[data-style="fill"][data-horizontal].state-error .content {
-          -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-        }
-
-        button.progress-button {
-          padding: 1.5px 12px !important;
-          background: #2db5ab;
-          border: 1px solid #2db5ab;
-          border-radius: 3px !important;
-        }
-
-        button.progress-button:hover {
-          background: #fff;
-          color: #2db5ab;
-          border: 1px solid #2db5ab;
-        }
-
-
-      /*  .progress-button.state-success .progress-inner {
-          background: #2db5ab !important;
-        }
-      */
-        .progress-button.state-error .progress-inner {
-          background: #dd5c4e !important;
-        }
-
-       .progress-button.error[data-style="fill"][data-horizontal] .content::before {
-         top: 100%;
-         right: auto;
-         left: 50%;
-         -webkit-transition: opacity 0.3s;
-         transition: opacity 0.3s;
-         -webkit-transform: translateX(-50%);
-         transform: translateX(-50%);
-       }
-       
-        .progress-button.error[data-style="fill"][data-horizontal] .content::before {
-        top: 95%;
-        right: auto;
-        left: 50%;
-        background: #dd5c4e !important;
-        width: 300px;
-        height: 800px;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        border: 1px solid #dd5c4e !important;
-        }
-
-        button.progress-button.error[data-style="fill"][data-horizontal] .content::before {
           border: 1px solid #dd5c4e !important;
+          }
+
+          button.progress-button.error[data-style="fill"][data-horizontal] .content::before {
+            border: 1px solid #dd5c4e !important;
+          }
+
+
+        /*  .progress-button[data-style="fill"][data-horizontal] .content::before {
+          top: 100%;
+          right: auto;
+          left: 50%;
+          background: #3fc568;
+          width: 300px;
+          height: 300px;
+          -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          }
+        */
+
+        .progress-button:hover .content::before,
+        .progress-button:hover .content::after  {
+          color: #2db5ab !important;
         }
 
 
-      /*  .progress-button[data-style="fill"][data-horizontal] .content::before {
-        top: 100%;
-        right: auto;
-        left: 50%;
-        background: #3fc568;
-        width: 300px;
-        height: 300px;
-        -webkit-transition: opacity 0.3s;
-        transition: opacity 0.3s;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        .progress-button[disabled].state-loading {
+          background-color: #fff !important;
+          color: #fff !important;
         }
-      */
 
-
-      .progress-button .progress-inner {
-        position: absolute;
-        left: 0;
-        background: #2db5ab !important;
-        color: #fff !important;
-        border: none !important;
-      }
-
-      .progress-button[disabled].state-loading {
-        background-color: #fff !important;
-        color: #fff !important;
-      }
+        .progress-button .progress-inner {
+          position: absolute;
+          left: 0;
+          background: #2db5ab !important;
+          color: #fff !important;
+          border: none !important;
+        }
 
