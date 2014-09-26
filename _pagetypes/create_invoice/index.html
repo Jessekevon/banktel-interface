@@ -739,9 +739,10 @@
         message : '<p>Please specify a Vendor to pay.</p>',
         layout : 'growl',
         effect : 'scale-two',
-        type : 'error', // notice, warning, error or success
+        type : 'error', // notice, warning, error or success 
+        ttl : 30000, // modify the TTL to force user to close
         onClose : function() {
-          bttn.disabled = false;
+          bttn.disabled = false;  
         }
       });
 
