@@ -17644,7 +17644,7 @@ a.ellipsis {
         .progress-button .progress-inner {
           position: absolute;
           left: 0;
-          background: rgba(45, 181, 171, 0.5) !important;
+          background: rgba(45, 181, 171, 0.4) !important;
           border: none !important;
         }
 
