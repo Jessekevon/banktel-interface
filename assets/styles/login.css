@@ -1,0 +1,217 @@
+/* ---------------------------------------------
+    Login Styles
+  ------------------------------------------- */
+
+
+  .loginBkg {
+  	background-color: #ebeced;
+  }
+
+  .logo-tag {
+    display: block;
+    width: 535px;
+    min-width: 535px;
+    margin:100px auto 25px;
+  }
+
+  .biz-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1.subhead {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #2db5ab;
+    margin: 15px 0;
+  }
+
+  .loginBox {
+  	display: block;
+  	position: relative;
+  	background-color: #fff;
+  	box-shadow: 0 0 0.2em #b4b4b4;
+  	-webkit-box-shadow: 0 0 0.2;
+  	-ms-box-shadow: 0 0 0.2;
+  	-o-box-shadow: 0 0 0.2;
+  	width: 535px;
+  	height: 340px;
+  	margin: 10% auto 0;
+  }
+
+  .content-login {
+  	display: block;
+  	position: relative;
+  	background-color: #fff;
+  	box-shadow: 0 0 0.4em #b4b4b4;
+  	-webkit-box-shadow: 0 0 0.4 #b4b4b4;
+  	-ms-box-shadow: 0 0 0.4 #b4b4b4;
+  	-o-box-shadow: 0 0 0.4 #b4b4b4;
+  	width: 535px;
+    min-width: 535px;
+  	height: auto;
+  	margin:0 auto;
+  	padding: 30px 30px 15px;
+  }
+
+  .loginUser-t {
+  	color: #25b5ab; /*This is label color*/
+    font-size: 16px;
+  }
+
+  .loginUser-f {
+  	background-color: #e2e1e0; /*This is label color --  #edf7f6  */
+    float: right;
+    width: 75%;
+  }
+
+  input {
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #282424;
+    font-size: 16px;
+    width: 320px;
+    margin: 0 0 15px !important;
+    padding: 10px;
+    font-weight: 300;
+  }
+
+ ::-webkit-input-placeholder {
+  color: #5f5a5a;
+  font-weight: 300;
+ }
+
+ :-moz-placeholder {
+  color: #5f5a5a;
+  font-weight: 300;
+ }
+
+ ::-moz-placeholder {
+  color: #5f5a5a;
+  font-weight: 300;
+ }
+
+ :-ms-input-placeholder {
+  color: #8e8d8d;
+  font-weight: 300;
+ }
+
+  input:focus {
+    border-left: 3px solid #037d75;
+  }
+
+  .form-group {
+    margin: 0px !important;
+  }
+
+  .control-label {
+    display: inline-block;
+    padding-top: 12px !important;
+  }
+
+  .control-label-2 {
+    display: inline-block;
+    line-height: 1.1em;
+    padding-top: 6px !important;
+    max-width: 100px;
+}
+
+  .btn-login {
+    -moz-user-select: none;
+    border: 1px solid #2db5ab;
+    background-color: #ebeced;
+    color: #2db5ab;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #2db5ab;
+    border: 1px solid #2db5ab;
+  }
+
+.fgBox {
+  display: block;
+  width: 100%;
+}
+
+.fgBox-1 {
+  margin-top: 10px;
+}
+
+a.fg {
+  display: block;
+  color: #9f9f9f !important;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.questions {
+  display: block;
+  border-top: 1px solid #ebeced;
+  color: #8e8d8d;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.q-num {
+  color: #25b5ab !important;
+}
+
+.bk-box-wrap {
+  display: block;
+  width: 535px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bk-box {
+  display: inline-block;
+  background: url("../images/bk-arrow.png") 5px center no-repeat #cecece;
+  width: 125px;
+  height: 25px;
+  font-size: 11px;
+  float: left;
+  padding: 4px 3px 0 28px;
+}
+
+.bk-box a {
+  color: #626262;
+}
+
+.forgot_head {
+  display: block;
+  font-size: 2.3em;
+  font-weight: 300;
+  color: #2db5ab;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+
+  .content-login {
+    width: 300px;    
+  }
+}

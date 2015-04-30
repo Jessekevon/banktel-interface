@@ -11562,8 +11562,8 @@ i.collapse-icon:hover {
   ------------------------------------------- */
 @font-face {
   font-family: 'entypo';
-  src: url("../fonts/entypo/entypo.eot");
-  src: url("../fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo/entypo.woff") format("woff"), url("../fonts/entypo/entypo.ttf") format("truetype"), url("../fonts/entypo/entypo.svg#entypo") format("svg");
+  src: url("/Assets/fonts/entypo/entypo.eot");
+  src: url("/Assets/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("/Assets/fonts/entypo/entypo.woff") format("woff"), url("/Assets/fonts/entypo/entypo.ttf") format("truetype"), url("/Assets/fonts/entypo/entypo.svg#entypo") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13284,7 +13284,7 @@ header.page.heading nav.actions a:hover {
   color: #516199 !important;
 }
 header.page.heading nav.actions.right {
-  margin-top: 24px;
+  margin-top: 29px;
 }
 
 /* ---------------------------------------------
@@ -13829,6 +13829,7 @@ div.actions:hover + .form-group {
 }
 .modal-dialog .modal-content .modal-footer button {
   padding: 10px 12px 9px;
+    margin: 0 5px;
 }
 .modal-dialog .modal-content .modal-footer button i {
   font-size: 24px;
@@ -14132,6 +14133,9 @@ div.actions:hover + .form-group {
 }
 #dashboard .dash-grid > .grid-row .grid-block.two-wide {
   width: 100%;
+}
+#dashboard .dash-grid > .grid-row .grid-block.budgeting {
+  width: 50%;
 }
 @media only screen and (min-width: 60em) {
   #dashboard .dash-grid > .grid-row .grid-block.two-wide {
@@ -14896,7 +14900,7 @@ div.actions:hover + .form-group {
 .empty-content {
   border: 1px solid #BCBEC0;
   border-radius: 8px;
-  padding: 90px;
+  padding: 10px;
 }
 .empty-content h1, .empty-content h2, .empty-content h3, .empty-content h4, .empty-content h5, .empty-content h6 {
   color: #BCBEC0;
@@ -15688,21 +15692,9 @@ div.actions:hover + .form-group {
 #new-invoice-items .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
-  width: 68%;
+  width: 70%;
 }
-#new-invoice-items .faux-table .cell.total-label {
-  color: #6d6e71;
-  font-size: 12px;
-  padding: 14px 9px 14px 12px;
-  text-align: right;
-  width: 20%;
-}
-#new-invoice-items .faux-table .cell.amount {
-  color: #1a1a1a;
-  margin-right: -21px;
-  padding: 14px 9px 14px 12px;
-  width: 12%;
-}
+
 #new-invoice-items .faux-table .new-invoice-actions {
   display: inline-block;
 }
@@ -15722,23 +15714,8 @@ div.actions:hover + .form-group {
 #new-invoice-items .new-invoice-item .cell::after {
   display: none;
 }
-#new-invoice-items .new-invoice-item .cell.type, #new-invoice-items .new-invoice-item .cell.description, #new-invoice-items .new-invoice-item .cell.quantity, #new-invoice-items .new-invoice-item .cell.price, #new-invoice-items .new-invoice-item .cell.cost {
-  padding: 14px 9px;
-}
-#new-invoice-items .new-invoice-item .cell.type .form-group, #new-invoice-items .new-invoice-item .cell.description .form-group, #new-invoice-items .new-invoice-item .cell.quantity .form-group, #new-invoice-items .new-invoice-item .cell.price .form-group, #new-invoice-items .new-invoice-item .cell.cost .form-group {
-  height: 36px;
-  margin: 0;
-}
-#new-invoice-items .new-invoice-item .cell.type .form-group:before, #new-invoice-items .new-invoice-item .cell.type .form-group:after, #new-invoice-items .new-invoice-item .cell.description .form-group:before, #new-invoice-items .new-invoice-item .cell.description .form-group:after, #new-invoice-items .new-invoice-item .cell.quantity .form-group:before, #new-invoice-items .new-invoice-item .cell.quantity .form-group:after, #new-invoice-items .new-invoice-item .cell.price .form-group:before, #new-invoice-items .new-invoice-item .cell.price .form-group:after, #new-invoice-items .new-invoice-item .cell.cost .form-group:before, #new-invoice-items .new-invoice-item .cell.cost .form-group:after {
-  content: " ";
-  display: table;
-}
-#new-invoice-items .new-invoice-item .cell.type .form-group:after, #new-invoice-items .new-invoice-item .cell.description .form-group:after, #new-invoice-items .new-invoice-item .cell.quantity .form-group:after, #new-invoice-items .new-invoice-item .cell.price .form-group:after, #new-invoice-items .new-invoice-item .cell.cost .form-group:after {
-  clear: both;
-}
-#new-invoice-items .new-invoice-item .cell.type .form-group input[type="text"], #new-invoice-items .new-invoice-item .cell.description .form-group input[type="text"], #new-invoice-items .new-invoice-item .cell.quantity .form-group input[type="text"], #new-invoice-items .new-invoice-item .cell.price .form-group input[type="text"], #new-invoice-items .new-invoice-item .cell.cost .form-group input[type="text"] {
-  height: 36px;
-}
+
+
 #new-invoice-items .new-invoice-item .cell.type {
   padding-left: 0;
 }
@@ -15873,39 +15850,7 @@ div.actions:hover + .form-group {
 #new-voucher-items .faux-table .cell:last-of-type {
   border-right: 0;
 }
-#new-voucher-items .faux-table .cell.expense-account {
-  width: 30%;
-}
-#new-voucher-items .faux-table .cell.pay-from-account {
-  padding-left: 12px;
-  width: 30%;
-}
-#new-voucher-items .faux-table .cell.description {
-  padding-left: 12px;
-  width: 30%;
-}
-#new-voucher-items .faux-table .cell.cost {
-  padding-left: 12px;
-  width: 10%;
-}
-#new-voucher-items .faux-table .cell.space {
-  min-height: 100%;
-  padding: 14px 9px;
-  width: 75%;
-}
-#new-voucher-items .faux-table .cell.total-label {
-  color: #6d6e71;
-  font-size: 12px;
-  padding: 14px 9px 14px 12px;
-  text-align: right;
-  width: 15%;
-}
-#new-voucher-items .faux-table .cell.amount {
-  color: #1a1a1a;
-  margin-right: -21px;
-  padding: 14px 9px 14px 12px;
-  width: 10%;
-}
+
 #new-voucher-items .faux-table .new-voucher-actions {
   display: inline-block;
 }
@@ -15925,29 +15870,7 @@ div.actions:hover + .form-group {
 #new-voucher-items .new-voucher-item .cell::after {
   display: none;
 }
-#new-voucher-items .new-voucher-item .cell.expense-account, #new-voucher-items .new-voucher-item .cell.pay-from-account, #new-voucher-items .new-voucher-item .cell.description, #new-voucher-items .new-voucher-item .cell.cost {
-  padding: 14px 9px;
-}
-#new-voucher-items .new-voucher-item .cell.expense-account .form-group, #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group, #new-voucher-items .new-voucher-item .cell.description .form-group, #new-voucher-items .new-voucher-item .cell.cost .form-group {
-  height: 36px;
-  margin: 0;
-}
-#new-voucher-items .new-voucher-item .cell.expense-account .form-group:before, #new-voucher-items .new-voucher-item .cell.expense-account .form-group:after, #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group:before, #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group:after, #new-voucher-items .new-voucher-item .cell.description .form-group:before, #new-voucher-items .new-voucher-item .cell.description .form-group:after, #new-voucher-items .new-voucher-item .cell.cost .form-group:before, #new-voucher-items .new-voucher-item .cell.cost .form-group:after {
-  content: " ";
-  display: table;
-}
-#new-voucher-items .new-voucher-item .cell.expense-account .form-group:after, #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group:after, #new-voucher-items .new-voucher-item .cell.description .form-group:after, #new-voucher-items .new-voucher-item .cell.cost .form-group:after {
-  clear: both;
-}
-#new-voucher-items .new-voucher-item .cell.expense-account .form-group input[type="text"], #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group input[type="text"], #new-voucher-items .new-voucher-item .cell.description .form-group input[type="text"], #new-voucher-items .new-voucher-item .cell.cost .form-group input[type="text"] {
-  height: 36px;
-}
-#new-voucher-items .new-voucher-item .cell.expense-account {
-  padding-left: 0;
-}
-#new-voucher-items .new-voucher-item .cell.cost {
-  line-height: 36px;
-}
+
 #new-voucher-items .new-voucher-item .cell .fancy-select {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -17039,6 +16962,32 @@ i.popover-pencil {
 
 }
 
+.chart-dot-1 { margin-right: 25px; }
+.chart-dot-1:after { background: #476B6B; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-2 { margin-right: 25px; }
+.chart-dot-2:after { background: #B82E00; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-3 { margin-right: 25px; }
+.chart-dot-3:after { background: #936E00; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-4 { margin-right: 25px; }
+.chart-dot-4:after { background: #000063; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-5 { margin-right: 25px; }
+.chart-dot-5:after { background: #004000; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-6 { margin-right: 25px; }
+.chart-dot-6:after { background: #6E9300; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-7 { margin-right: 25px; }
+.chart-dot-7:after { background: #8A2E5C; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-8 { margin-right: 25px; }
+.chart-dot-8:after { background: #5C8A8A; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+.chart-dot-9 { margin-right: 25px; }
+.chart-dot-9:after { background: #660033; content: ""; position: absolute; border-radius: 30%; height: 8px; width: 8px; margin-top: 7px; }
+
+
+
+
+
+
+
+
 
 span.acct-balance {
   float: right;
@@ -17191,11 +17140,11 @@ a.ellipsis {
   font-weight: normal;
   font-style: normal;
   font-family: 'icomoon';
-  src:url('../fonts/icomoon/icomoon.eot');
-  src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff') format('woff'),
-    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  src:url('/Assets/fonts/icomoon/icomoon.eot');
+  src:url('/Assets/fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/Assets/fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('/Assets/fonts/icomoon/icomoon.woff') format('woff'),
+    url('/Assets/fonts/icomoon/icomoon.svg#icomoon') format('svg');
 }
 
 /* ---------------------------------------------
@@ -17290,8 +17239,7 @@ a.ellipsis {
     right: 0;
     bottom: 50%;
     margin: 0 auto;
-    max-width: 300px;
-    max-height: 100px;
+    max-width: 300px; 
     border-radius: 5px;
     width: 100%;
   }
@@ -17447,223 +17395,12 @@ a.ellipsis {
     display: none;
   }
 
-          /* ---------------------------------------------
-              PROGRESS BUTTON STYLES
-            ------------------------------------------- */
-
-          .progress-buttons {
-
-          }
-          .progress-button {
-            position: relative;
-            display: inline-block;
-            outline: none;
-            border: none;
-            color: #fff;
-            font-size: 1em;
-            line-height: 3;
-          }
-
-          .progress-button[disabled],
-          .progress-button[disabled].state-loading {
-            cursor: default;
-          }
-
-          .progress-button .content {
-            position: relative;
-            display: block;
-          }
-
-          .progress-button .content::before,
-          .progress-button .content::after  {
-            position: absolute;
-            right: 20px;
-            color: #fff !important;
-            font-family: "icomoon";
-            opacity: 0;
-            -webkit-transition: opacity 0.3s 0.3s;
-            transition: opacity 0.3s 0.3s;
-          }
-
-          .progress-button.error .content::before {
-            color: #fff !important;
-          }
-
-
-          .progress-button .content::before {
-            content: "\e600"; /* Checkmark for success */
-          }
-
-          .progress-button .content::after {
-            content: "\e601"; /* Checkmark for success */
-          }
-
-
-          .progress-button.state-success .content::before,
-          .progress-button.state-error .content::after {
-            opacity: 1;
-          }
-
-          .progress-button.error .content::before {
-            content: "\e601"; /* Cross for error */
-          }
-
-
-          .progress-button.error .content::after {
-            opacity: 1;
-          }
-
-          .notransition {
-            -webkit-transition: none !important;
-            transition: none !important;
-          }
-
-
-          .progress-button[data-horizontal] .progress-inner {
-            top: 0;
-            width: 0;
-            height: 100%;
-            -webkit-transition: width 0.3s, opacity 0.3s;
-            transition: width 0.3s, opacity 0.3s;
-          }
-
-          .progress-button[data-vertical] .progress-inner {
-            bottom: 0;
-            width: 100%;
-            height: 0;
-            -webkit-transition: height 0.3s, opacity 0.3s;
-            transition: height 0.3s, opacity 0.3s;
-          }
-
-          /* Necessary 3d styles for buttons with perspective */
-
-          .progress-button[data-perspective] {
-            position: relative;
-            display: inline-block;
-            padding: 0;
-            background: transparent;
-            -webkit-perspective: 900px;
-            perspective: 900px;
-          }
-
-          .progress-button[data-perspective] .content {
-            padding: 0 60px;
-            background: #1d9650;
-          }
-
-          .progress-button[data-perspective] .progress-wrap {
-            display: block;
-            -webkit-transition: -webkit-transform 0.2s;
-            transition: transform 0.2s;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-          }
-
-          .progress-button[data-perspective] .content,
-          .progress-button[data-perspective] .progress {
-            outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
-          }
-
-          /* Individual styles */
-          /* Choose the effect(s) you want, delete the rest */
-
-          /* Fill horizontal */
-          /* ====================== */
-
-          .progress-button[data-style="fill"][data-horizontal] {
-            overflow: hidden;
-          }
-
-          .progress-button[data-style="fill"][data-horizontal] .content {
-            z-index: 10;
-            -webkit-transition: -webkit-transform 0.3s;
-            transition: transform 0.3s;
-          }
-
-          .progress-button[data-style="fill"][data-horizontal] .content::before,
-          .progress-button[data-style="fill"][data-horizontal] .content::after {
-            top: 100%;
-            right: auto;
-            left: 50%;
-            -webkit-transition: opacity 0.3s;
-            transition: opacity 0.3s;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-          }
-
-          .progress-button[data-style="fill"][data-horizontal].state-success .content,
-          .progress-button[data-style="fill"][data-horizontal].state-error .content {
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-          }
-
-          button.progress-button {
-            padding: 1.5px 12px !important;
-            background: #2db5ab;
-            border: 1px solid #2db5ab;
-            border-radius: 3px !important;
-          }
-
-          button.progress-button:hover {
-            background: #fff;
-            color: #2db5ab;
-            border: 1px solid #2db5ab;
-          }
-
-          .progress-button.state-error .progress-inner {
-            background: #dd5c4e !important;
-          }
-
-         .progress-button.error[data-style="fill"][data-horizontal] .content::before {
-           top: 100%;
-           right: auto;
-           left: 50%;
-           -webkit-transition: opacity 0.3s;
-           transition: opacity 0.3s;
-           -webkit-transform: translateX(-50%);
-           transform: translateX(-50%);
-         }
-         
-        .progress-button:hover .content::before,
-        .progress-button:hover .content::after  {
-          color: #2db5ab;
-        }
-
-        .progress-button.success:hover .content::before {
-          color: #2db5ab !important;
-
-        }
-
-
-
-        .progress-button[disabled].state-loading {
-          background-color: #fff !important;
-          color: rgba(45, 181, 171, 1) !important;
-        }
-
-        .progress-button .progress-inner {
-          position: absolute;
-          left: 0;
-          background: rgba(45, 181, 171, 0.4) !important;
-          border: none !important;
-        }
-
-        .progress-button.state-error {
-          border: 1px solid #dd5c4e !important;
-          background: #dd5c4e !important;
-        }
-
-        .progress-button.error.state-success {
-          border: 1px solid #dd5c4e !important;
-          background: #dd5c4e !important;
-        }
-
-        .progress-button.error:hover .content::before {
-          color: #fff !important;
-        }
-
-      .action-button {
-        margin-right: 10px;
-      }  
-
-
+  
+  /** All others **/
+  a.noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+    color: #2db5ab;
+}
