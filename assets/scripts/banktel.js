@@ -1,72 +1,91 @@
-( function() {
 
-  'use strict';
+function clearMenus() {
+    $(".menu.expanded .level-up").closest(".level").css("left", "-201px");
+}
 
-// Inst fancy-select on selects with class '.dropdown'
-  $('.dropdown').fancySelect();
+function showMenu() {
+    // Expand menu on larger screens
+    if ($(window).width() <= 1280) {
+        clearMenus();
+        $('.menu').removeClass('expanded');
+    } else {
+        if ($('.menu').hasClass('expanded')) {
+            return;
+        } else {
+            $('.menu').addClass('expanded');
+        };
+    }
+}
 
-// Inst Datepicker
-  $.datepicker.setDefaults({
-    dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    inline: true,
-    showAnim: "fadeIn",
-    showOtherMonths: true
-  });
-  $('.input-group.date input').datepicker();
+(function () {
 
-// Inst Sortable Tiers
-  $('.draggable-container').sortable({
-    axis: 'y',
-    cursor: "move",
-    items: '.tier',
-    handle: ".btn-tier-drag",
-    refresh: true,
-    zIndex: 1010
-  });
+    'use strict';
 
-// Remove tier
-  $(".draggable-container").on('click', '.btn-tier-remove', function () {
-    $( this ).closest('.tier').remove();
-  });
+    // Inst fancy-select on selects with class '.dropdown'
+    $('.dropdown').fancySelect();
 
-// Expand menu on larger screens
-  if( $( window ).width() <= 1280 ) {
-    $( '.menu' ).removeClass( 'expanded' );
-  };
+    // Inst Datepicker
+    $.datepicker.setDefaults({
+        dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        inline: true,
+        showAnim: "fadeIn",
+        showOtherMonths: true
+    });
+    $('.input-group.date input').datepicker();
 
-// Expand menu on initial click/touch on smaller screens 
-   $( document.body ).on( 'click', '.menu', function(){
-      $( '.menu' ).toggleClass( 'expanded' ),
-        $('.menu-collapse').toggleClass('rotator');
-      return false;
+    // Inst Sortable Tiers
+    $('.draggable-container').sortable({
+        axis: 'y',
+        cursor: "move",
+        items: '.tier',
+        handle: ".btn-tier-drag",
+        refresh: true,
+        zIndex: 1010
     });
 
-// Menu, downward traversal
-  $( document.body ).on('click', '.menu.expanded .level-down', function () {
-    $( this ).next( ".level" ).css( "left", "0" );
-    return false;
-  });
+    // Remove tier
+    $(".draggable-container").on('click', '.btn-tier-remove', function () {
+        $(this).closest('.tier').remove();
+    });
 
-// Menu, upward traversal
-  $( document.body ).on('click', '.menu.expanded .level-up', function () {
-    $( this ).closest( ".level" ).css( "left", "-201px" );
-    return false;
-  });
 
-  // Expand or collapse menu on resize of window
-    $( window ).on( 'resize', function() {
-      if( $( window ).width() < 1280 ) {
-        if( $( '.menu' ).hasClass( 'expanded' ) ) {
-          $( '.menu' ).removeClass( 'expanded' );
-        };
-      } else if ( $( window ).width() >= 1280 ) {
-        if( $( '.menu' ).hasClass( 'expanded' ) ) {
-          return false;
-        } else {
-          $( '.menu' ).addClass( 'expanded' );
-        };
-      };
-    } );
+
+    $('.menu').on('click', '.menu-collapse', function () {
+        $('.menu').toggleClass('expanded');
+    });
+
+
+    $('.menu-collapse').on('click', function () {
+        $(this).toggleClass('rotator');
+    });
+    // Menu, downward traversal
+    $(document.body).on('click', '.menu.expanded .level-down', function () {
+        $(this).next(".level").css("left", "0");
+        return false;
+    });
+
+    // Menu, upward traversal
+    $(document.body).on('click', '.menu.expanded .level-up', function () {
+        $(this).closest(".level").css("left", "-201px");
+        return false;
+    });
+
+    // Expand or collapse menu on resize of window
+    $(window).on('resize', function () {
+        showMenu();
+        //if ($(window).width() < 1280) {
+        //    clearMenus();
+        //    if ($('.menu').hasClass('expanded')) {
+        //        $('.menu').removeClass('expanded');
+        //    };
+        //} else if ($(window).width() >= 1280) {
+        //    if ($('.menu').hasClass('expanded')) {
+        //        return false;
+        //    } else {
+        //        $('.menu').addClass('expanded');
+        //    };
+        //};
+    });
 
     // if($('.menu').hasClass('closed')) {
 
@@ -93,27 +112,27 @@
 //= require bootstrap/popover
 
 // Avoid `console` errors in browsers that lack a console.
-(function() {
-  'use strict';
-  var method;
-  var noop = function () {};
-  var methods = [
-    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-    'timeStamp', 'trace', 'warn'
-  ];
-  var length = methods.length;
-  var console = (window.console = window.console || {});
+(function () {
+    'use strict';
+    var method;
+    var noop = function () { };
+    var methods = [
+      'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+      'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+      'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+      'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || {});
 
-  while (length--) {
-    method = methods[length];
+    while (length--) {
+        method = methods[length];
 
-    // Only stub undefined methods.
-    if (!console[method]) {
-      console[method] = noop;
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
     }
-  }
 }());
 
 // Place any jQuery/helper plugins in here.
