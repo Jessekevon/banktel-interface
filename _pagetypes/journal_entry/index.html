@@ -20,6 +20,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel="stylesheet" href="/assets/styles/normalize.css">
           <link rel="stylesheet" href="/assets/styles/banktel.css">
+          <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
           <script src="/assets/scripts/modernizr.js"></script>
           <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -27,6 +28,7 @@
           <![endif]-->
         </head>
         <body>
+          <div class="loading loaded"></div>
             <div class="app">
 
               <header class="topbar navbar" id="topbar" role="navigation">
@@ -132,7 +134,7 @@
 
 
                   <div class="master-container view" id="journal-entry">
-
+<div class="sticky-wrapper">
                     <header class="page heading">
                       <div class="container journal-header-container">
 
@@ -288,7 +290,7 @@
                       </div>
                     </div> <!-- .content.block #create-new-journal -->
 
-
+</div>
 
                     <div class="content block" id="transactions">
                       <div class="container">
@@ -807,8 +809,9 @@ $('body').on('click', function (e) {
 
 $('#transactions .transaction-details > p').ellipsis();
 
-
-
+$("window").load(function() {
+  $("loading").removeClass("loaded");
+});
 
 </script>
         </body>
