@@ -17377,7 +17377,7 @@ a.ellipsis {
   ------------------------------------------- */
 
 
-  .pace .pace-progress {
+/*  .pace .pace-progress {
     background: #2db5ab;
     position: fixed;
     z-index: 2000;
@@ -17394,17 +17394,17 @@ a.ellipsis {
   .pace-inactive {
     display: none;
   }
-
+*/
   
   /** All others **/
-  a.noTransition {
+/*  a.noTransition {
     -moz-transition: none;
     -webkit-transition: none;
     -o-transition: color 0 ease-in;
     transition: none;
     color: #2db5ab;
 }
-
+*/
 /* ---------------------------------------------
     Full Screen Loading Animation
   ------------------------------------------- */
