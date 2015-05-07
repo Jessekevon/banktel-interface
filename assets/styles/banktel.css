@@ -17419,8 +17419,9 @@ a.ellipsis {
     right: 0;
     bottom: 0;
     left: 0;
+    opacity: 1;
   }
 
   .loading.loaded {
-    display: none;
+    opacity: 0;
   }
