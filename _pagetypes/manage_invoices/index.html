@@ -10,9 +10,9 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="/assets/styles/normalize.css">
   <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
   <script src="/assets/scripts/modernizr.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -139,167 +139,168 @@
 
           <div class="content block" id="outstanding-invoices">
             <div class="container">
-
               <header class="block-heading tier static">
                 <div class="indicator"></div>
                 <h2 class="block title">Outstanding Invoices</h2>
-              </header> <!-- header.block.heading.tier.static -->
 
-              <div class="block-contents">
-                <div class="faux-table">
-                  <header class="table-head tier static">
-                    <div class="indicator"></div>
-                    <div class="cell issue-date">Issue Date</div>
-                    <div class="cell due-date">Due Date</div>
-                    <div class="cell invoice-number">Invoice No.</div>
-                    <div class="cell customer">Customer</div>
-                    <div class="cell balance">Balance</div>
-                    <div class="cell status">Status</div>
-                  </header> <!-- .table-head.tier.static -->
+                <div class="table-search form-group right has-feedback">
+                  <div>
+                    <input class="form-control" id="select-outstandinginvoices" name="select-outstandinginvoices" placeholder="Enter or search option" style="width: 250px;" /><span class="form-control-feedback"><i class="entypo-search"></i></span>
+                  </div>
+                </div>
+              </header>
+              <div id="grid_outstandinginvoices">
 
-                  <ul class="table-content">
-                    <li class="tier status-sent">
+                <div class="block-contents">
+                  <div class="faux-table">
+                    <header class="table-head tier static">
                       <div class="indicator"></div>
-                      <div class="cell issue-date">1/23/2014</div>
-                      <div class="cell due-date">2/8/2014</div>
-                      <div class="cell invoice-number">012392</div>
-                      <div class="cell customer">
-                        <span>Anderson Services</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
+                      <div class="cell issue-date sorted" for="InvoiceDate">
+                        <p>Issue Date</p>
+                        <span><i class="entypo-chevron-down"></i></span>
                       </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Sent</a></div>
-                    </li>
+                      <div class="cell due-date" for="DueDate">
+                        <p>Due Date</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                      <div class="cell invoice-number" for="DocumentNumber">
+                        <p>Invoice #</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                      <div class="cell customer" for="Customer">
+                        <p>Customer</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                      <div class="cell balance" for="RemainingAmount">
+                        <p>Balance</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                      <div class="cell status" for="Status">
+                        <p>Status</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                      <div class="cell paymentstatus" for="PaymentStatus">
+                        <p>Payment</p>
+                        <span><i class="entypo-chevron-down"></i></span>
+                      </div>
+                    </header>
+                    <ul class="table-content">
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>06/10/2014</span></div>
+                        <div class="cell due-date"><span>07/10/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2007</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Big Jakes Hardware</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=8');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=8');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$2,613.00</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>08/14/2014</span></div>
+                        <div class="cell due-date"><span>09/13/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2008</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Century Construction Company</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=9');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=9');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$8,876.50</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>07/03/2014</span></div>
+                        <div class="cell due-date"><span>08/02/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2010</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Redbird Fencing</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=11');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=11');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$1,039.20</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>08/31/2014</span></div>
+                        <div class="cell due-date"><span>09/30/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2015</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Big Jakes Hardware</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=16');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=16');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$86.60</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>11/10/2014</span></div>
+                        <div class="cell due-date"><span>12/10/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2021</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Century Construction Company</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=22');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=22');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$1,732.00</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                      <li class="tier status-posted paymentstatus-pastdue">
+                        <div class="indicator"></div>
+                        <div class="cell issue-date"><span>11/10/2014</span></div>
+                        <div class="cell due-date"><span>12/10/2014</span></div>
+                        <div class="cell invoice-number"><span>INV2022</span></div>
+                        <div class="cell with-nav-actions short customer">
+                          <span>Redbird Fencing</span>
+                          <nav class="actions long">
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('Invoice', 'Edit', 'InvoiceId=23');">Edit</a>
+                            <a class="btn btn-primary btn-hidden inverted" href="javascript:bt_page.openPage('CustomerPayment', 'Create', 'InvoiceId=23');">Apply Payment</a>
+                          </nav>
+                        </div>
+                        <div class="cell balance"><span>$8,660.00</span></div>
+                        <div class="cell status"><a class="btn" href="">Posted</a></div>
+                        <div class="cell paymentstatus" nowrap><a class="btn" href="">PastDue</a></div>
+                      </li>
+                    </ul>
 
-                    <li class="tier status-sent">
+
+                    <footer class="paging tier static">
                       <div class="indicator"></div>
-                      <div class="cell issue-date">1/23/2014</div>
-                      <div class="cell due-date">2/8/2014</div>
-                      <div class="cell invoice-number">012457</div>
-                      <div class="cell customer">
-                        <span>Baker Botts Attorneys</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
+                      <div class="cell">Showing 1 - 6 of 24 items</div>
+                      <div class="pagingcontrols">
+                        <span>Page 1 of 4</span>
+                        <span><a class="nohover" href="javascript: bt_page.showPage('2' , &#39;search_OutstandingInvoices&#39;);">Next</a></span>
                       </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Sent</a></div>
-                    </li>
+                    </footer>
 
-                    <li class="tier status-draft">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">Not sent yet</div>
-                      <div class="cell due-date">n/a</div>
-                      <div class="cell invoice-number">228290</div>
-                      <div class="cell customer">
-                        <span>Beadle Consulting LLC</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Draft</a></div>
-                    </li>
 
-                    <li class="tier status-outstanding">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/14/2014</div>
-                      <div class="cell due-date">1/29/2014</div>
-                      <div class="cell invoice-number">192840</div>
-                      <div class="cell customer">
-                        <span>Bennu Coffee</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Outstanding</a></div>
-                    </li>
+                  </div>
+                  <!-- .faux-table -->
+                </div>
 
-                    <li class="tier status-past_due">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/12/2014</div>
-                      <div class="cell due-date">1/27/2014</div>
-                      <div class="cell invoice-number">478201</div>
-                      <div class="cell customer">
-                        <span>Boardwalk Cleaning Company</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Past Due</a></div>
-                    </li>
-
-                    <li class="tier status-past_due">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/12/2014</div>
-                      <div class="cell due-date">1/27/2014</div>
-                      <div class="cell invoice-number">928401</div>
-                      <div class="cell customer">
-                        <span>Hopdoddy Burger Bar</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Past Due</a></div>
-                    </li>
-
-                    <li class="tier status-draft">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">Not sent yet</div>
-                      <div class="cell due-date">n/a</div>
-                      <div class="cell invoice-number">292894</div>
-                      <div class="cell customer">
-                        <span>The Waller Creek Conservancy</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Draft</a></div>
-                    </li>
-
-                    <li class="tier status-draft">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date disabled">Not sent yet</div>
-                      <div class="cell due-date disabled">n/a</div>
-                      <div class="cell invoice-number">409122</div>
-                      <div class="cell customer">
-                        <span>McGuire Mormon Group</span>
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted" href="">Edit</a>
-                          <a class="btn btn-primary btn-hidden inverted" href="">Apply Payment</a>
-                        </nav>
-                      </div>
-                      <div class="cell balance">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Draft</a></div>
-                    </li>
-                  </ul>
-                </div> <!-- .faux-table -->
-              </div> <!-- .block.content -->
-
-            </div> <!-- .container -->
-          </div> <!-- .content.block #outstanding-invoices -->
-
+              </div>
+            </div>
+          </div>
 
 
           <div class="content block" id="recently-paid">
@@ -322,7 +323,7 @@
                 <div class="faux-table">
                   <header class="table-head tier static">
                     <div class="indicator"></div>
-                    <div class="cell issue-date">Issue Date</div>
+                    <div class="cell issue-date sorted">Issue Date</div>
                     <div class="cell received-on">Received On</div>
                     <div class="cell invoice-number">Invoice No.</div>
                     <div class="cell customer">Customer</div>

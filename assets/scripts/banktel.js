@@ -8,11 +8,14 @@ function showMenu() {
     if ($(window).width() <= 1280) {
         clearMenus();
         $('.menu').removeClass('expanded');
+        $('#logo').addClass('new-icon');
+
     } else {
         if ($('.menu').hasClass('expanded')) {
             return;
         } else {
             $('.menu').addClass('expanded');
+            $('#logo').removeClass('new-icon');
         };
     }
 }
@@ -58,6 +61,12 @@ function showMenu() {
     $('.menu-collapse').on('click', function () {
         $(this).toggleClass('rotator');
     });
+
+
+    $('.menu-collapse').on('click', function () {
+        $('#logo').toggleClass('new-icon');
+    });
+
     // Menu, downward traversal
     $(document.body).on('click', '.menu.expanded .level-down', function () {
         $(this).next(".level").css("left", "0");

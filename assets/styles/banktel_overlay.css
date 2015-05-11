@@ -226,13 +226,33 @@ header.page.heading nav.actions a {
 
 .menu-system .topbar-branding {
     /* Updating to new biz logo 
-    background: url(/assets/images/BankTEL-logo@2x.png) center no-repeat;
+    background: url(/assets/images/logo@2x.png) center no-repeat;
     background-size: 150.67px 53px;*/
     background: url(/assets/images/biz-new.png), #464747;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 122px auto;
     height: 120px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+
+}
+
+.menu-system .topbar-branding.new-icon {
+  background: url(/assets/images/logo-icon@2x.png), #464747;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px auto;
+  height: 120px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 
 }
 
@@ -569,8 +589,10 @@ header.page.heading nav.actions .popover-content a.btn:hover {
     }
 
     .faux-table .table-head .cell.sorted {
-        color: #6D6E71 !important;
+        color: #2DB5AB !important;
         cursor: default;
+        font-weight: 400;
+
     }
 
         .faux-table .table-head .cell.sorted i {
