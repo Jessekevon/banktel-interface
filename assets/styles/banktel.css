@@ -1,4 +1,4 @@
-/* ---------------------------------------------
+ ---------------------------------------------
 
     PROJECT BANKTEL
     Master Styles
@@ -13256,7 +13256,10 @@ header.page.heading .page.title {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  padding: 24px 18px 24px 0;
+  /* Changing this to match the design more closely 
+  padding: 24px 18px 24px 0;*/
+  padding: 0 0 0 24px;
+
 }
 header.page.heading .page.title a {
   color: #fff;
@@ -13270,6 +13273,9 @@ header.page.heading nav.actions {
   font-size: 12px;
   margin: 0;
   padding: 0;
+  /* Changing this to match the design more closely 
+  padding: 24px 18px 24px 0;*/
+  padding: 0 24px;
 }
 header.page.heading nav.actions a {
   background: #516199;
@@ -13285,7 +13291,8 @@ header.page.heading nav.actions a:hover {
   color: #516199 !important;
 }
 header.page.heading nav.actions.right {
-  margin-top: 29px;
+  /* Changing this to match the design more closely 
+  margin-top: 29px;*/
 }
 
 /* ---------------------------------------------
@@ -17421,6 +17428,64 @@ a.ellipsis {
 }
 */
 
+/* Come back to this, just testing out for now */
+
+html body .app > main {
+  padding-top: 0;
+}
+
+.topbar.navbar {
+  background: #464747;
+  border-bottom: 1px solid #333;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.topbar.navbar .topbar-buttons {
+  float: right;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+.topbar.navbar a.topbar-item {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  background: transparent;
+  border-left: 1px solid #333;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  float: right;
+  line-height: 58px;
+  margin: 0 !important;
+  position: relative;
+  text-align: center;
+  width: auto;
+  padding: 0 15px;
+}
+
+.bottom-pane {
+  border-bottom: 1px solid #d1d3d4;
+}
+/* Updating the height for the blue top bar to match design and maintain consitancy */
+
+header.page.heading {
+  height: 60px;
+  line-height: 60px;
+}
+
+.sticky-header-wrapper {
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+}
+
 .sticky-wrapper {
   position: relative;
   width: 100%;
@@ -17431,6 +17496,25 @@ a.ellipsis {
 .fixit {
   position: fixed;
 }
+
+.topbar.navbar {
+  z-index: 3100;
+  position: fixed;
+}
+
+.topbar-branding {
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.topbar.navbar .topbar-buttons {
+  position: fixed;
+  right: 0;
+  height: 58px;
+  line-height: 58px;
+  
+}
+
 /* ---------------------------------------------
     Full Screen Loading Animation
   ------------------------------------------- */
@@ -17529,7 +17613,8 @@ a.ellipsis {
 
 
 
+
+
 /*  .loading.loaded {
     opacity: 0;
   }
-*/
