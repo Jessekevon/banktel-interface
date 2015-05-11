@@ -46,7 +46,12 @@
                 </div>
 
 
-              </header> <!-- header.navbar.topbar#topbar -->
+              </header> 
+
+
+
+              
+              <!-- header.navbar.topbar#topbar -->
 
               <main>
 
@@ -100,6 +105,19 @@
                           <li><a href="">Account Setup</a></li>
                           <li><a href="">Reports</a></li>
                           <li><a href="">View Settings</a></li>
+                          <li><a href="">Chart of Accounts</a></li>
+                          <li><a href="">Recent Transactions</a></li>
+                          <li><a href="">Batch Entry</a></li>
+                          <li><a href="">Account Setup</a></li>
+                          <li><a href="">Reports</a></li>
+                          <li><a href="">View Settings</a></li>
+                          <li><a href="">Chart of Accounts</a></li>
+                          <li><a href="">Recent Transactions</a></li>
+                          <li><a href="">Batch Entry</a></li>
+                          <li><a href="">Account Setup</a></li>
+                          <li><a href="">Reports</a></li>
+                          <li><a href="">View Settings</a></li>
+
                         </ul>
                       </li>
                       <li>
@@ -127,175 +145,175 @@
                     </ul>
                   </nav>
                 </section> <!-- section.menu-system -->
+                <div class="loading">
+                  <span class="loader loader-quart"><!-- <p class="loading">Loading...</p> --></span>
+                </div>
 
                 <div class="app-content">
+                  <div class="sticky-wrapper">
+                    <div class="fixit">
+                                      <header class="page heading">
+                                        <div class="container-fluid journal-header-container">
 
-                  <div class="loading">
-                    <span class="loader loader-quart"> </span>
+                                          <h1 class="page title"><a href="#">Journal Entry</a></h1>
+
+                                          <nav class="actions">
+                                            <a class="btn btn-primary" href="">Create Another</a>
+                                          </nav> <!-- nav.actions -->
+
+                                          <nav class="actions right">
+
+                                            <div class="control-switch">
+                                              <label>
+                                                <span>status: <span>Open</span></span>
+                                                <input type="checkbox" />
+                                                <div class="track">
+                                                  <div class="switch"></div>
+                                                </div>
+                                              </label>
+                                            </div> <!-- .control-switch -->
+
+                                          </nav> <!-- nav.actions -->
+                                          </div> <!-- .container -->
+
+
+                                        <ul id='improved'>
+
+                                          <li>
+
+                                            <div class='drawer-content'>
+                                              <div class='drawer-content-wrapper'>
+                                              <div class="container-fluid">
+                                              <div class="col-md-1"></div>
+                                              <div class="col-md-4 textit">
+                                                <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div id="dropzone" class="fade">
+                                                  <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                                    <div id="drop">
+                                                      <p>Drag attachments here</p>
+
+                                                      <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
+                                                      <input type="file" name="upl" multiple />
+                                                    </div>
+
+                                                    <ul>
+                                                      <!-- The file uploads will be shown here -->
+                                                    </ul>
+
+                                                  </form>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-2 loader-buttons">
+                                              <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
+                                              <br>
+                                              <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
+                                            </div>
+                                            <div class="col-md-1"></div>
+
+                                          </div> 
+                                          </div> 
+                                            </div>
+                                          </li>
+                                          </ul>
+
+                                      </header> <!-- header.page-heading -->
+
+
+                                      <div class="content block bottom-pane" id="create-new-journal">
+                                        <div class="container-fluid">
+                                          <form class="form-horizontal" role="form">
+
+                                            <div class="row">
+
+                                              <section class="col-xs-12" id="journal-information">
+
+                                                <div class="row">
+                                                  <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+
+                                                    <div class="form-group journal-number">
+                                                      <label for="select-journal-number" class="col-sm-4 col-lg-3 control-label">Journal No.</label>
+                                                      <div class="col-sm-8 col-lg-9">
+                                                        <select class="chosen form-control" name="select-journal-number" data-placeholder="Enter or search for journal number">
+                                                          <option></option>
+                                                          <option>111-000-2391</option>
+                                                          <option>111-000-2357</option>
+                                                          <option>111-000-2401</option>
+                                                          <option>112-000-2391</option>
+                                                          <option>112-000-2357</option>
+                                                          <option>112-000-2401</option>
+                                                          <option>113-000-2391</option>
+                                                          <option>113-000-2357</option>
+                                                          <option>113-000-2401</option>
+                                                          <option>114-000-2391</option>
+                                                          <option>114-000-2357</option>
+                                                          <option>114-000-2401</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                      <label for="transaction-date" class="col-sm-4 col-lg-3 control-label">Transaction Date</label>
+                                                      <div class="col-sm-8 col-lg-9">
+                                                        <div class="date-key">
+                                                          <div class="input-group date">
+                                                            <input type="text" class="form-control" id="transaction-date" name="transaction-date" placeholder="04/18/2014">
+                                                            <label for="transaction-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                  </div> <!-- .section-contents -->
+
+                                                  <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+
+                                                    <div class="form-group">
+                                                      <label for="journal-reference" class="col-sm-3 control-label">Reference</label>
+                                                      <div class="col-sm-9">
+                                                        <textarea class="form-control" name="journal-reference" placeholder="(optional)"></textarea>
+                                                      </div>
+                                                    </div>
+
+                                                  </div> <!-- .section-contents -->
+
+                                                  <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4 section-contents">
+
+                                                    <div class="form-group radio-group">
+                                                      <label class="col-sm-12 control-label">Recurring?</label>
+                                                      <div class="col-xs-12">
+                                                        <div class="radio-inline">
+                                                          <input type="radio" name="transactions-recurring" id="transactions-recurring-yes" value="Yes">
+                                                          <label for="transactions-recurring-yes" class="radio-inline entypo-check">Yes</label>
+                                                        </div>
+                                                        <div class="radio-inline">
+                                                          <input type="radio" name="transactions-recurring" id="transactions-recurring-no" value="No" checked>
+                                                          <label for="transactions-recurring-no" class="radio-inline entypo-check">No</label>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                  </div> <!-- .section-contents -->
+                                                </div>
+
+                                              </section> <!-- #journal-information -->
+
+                                            </div>
+
+                                          </form>
+                                        </div>
+                                      </div> <!-- .content.block #create-new-journal -->
+</div>
                   </div>
 
-
                   <div class="master-container view" id="journal-entry">
-<div class="sticky-wrapper">
-                    <header class="page heading">
-                      <div class="container journal-header-container">
 
-                        <h1 class="page title"><a href="#">Journal Entry</a></h1>
-
-                        <nav class="actions">
-                          <a class="btn btn-primary" href="">Create Another</a>
-                        </nav> <!-- nav.actions -->
-
-                        <nav class="actions right">
-
-                          <div class="control-switch">
-                            <label>
-                              <span>status: <span>Open</span></span>
-                              <input type="checkbox" />
-                              <div class="track">
-                                <div class="switch"></div>
-                              </div>
-                            </label>
-                          </div> <!-- .control-switch -->
-
-                        </nav> <!-- nav.actions -->
-                        </div> <!-- .container -->
-
-
-                      <ul id='improved'>
-
-                        <li>
-
-                          <div class='drawer-content'>
-                            <div class='drawer-content-wrapper'>
-                            <div class="container">
-                            <div class="col-md-1"></div>
-                            <div class="col-md-4 textit">
-                              <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
-                            </div>
-                            <div class="col-md-4">
-                              <div id="dropzone" class="fade">
-                                <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                                  <div id="drop">
-                                    <p>Drag attachments here</p>
-
-                                    <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
-                                    <input type="file" name="upl" multiple />
-                                  </div>
-
-                                  <ul>
-                                    <!-- The file uploads will be shown here -->
-                                  </ul>
-
-                                </form>
-
-                              </div>
-
-                          </div>
-                          <div class="col-md-2 loader-buttons">
-                            <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
-                            <br>
-                            <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
-                          </div>
-                          <div class="col-md-1"></div>
-
-                        </div> 
-                        </div> 
-                          </div>
-                        </li>
-                        </ul>
-
-                    </header> <!-- header.page-heading -->
-
-
-                    <div class="content block" id="create-new-journal">
-                      <div class="container">
-                        <form class="form-horizontal" role="form">
-
-                          <div class="row">
-
-                            <section class="col-xs-12" id="journal-information">
-
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
-
-                                  <div class="form-group journal-number">
-                                    <label for="select-journal-number" class="col-sm-4 col-lg-3 control-label">Journal No.</label>
-                                    <div class="col-sm-8 col-lg-9">
-                                      <select class="chosen form-control" name="select-journal-number" data-placeholder="Enter or search for journal number">
-                                        <option></option>
-                                        <option>111-000-2391</option>
-                                        <option>111-000-2357</option>
-                                        <option>111-000-2401</option>
-                                        <option>112-000-2391</option>
-                                        <option>112-000-2357</option>
-                                        <option>112-000-2401</option>
-                                        <option>113-000-2391</option>
-                                        <option>113-000-2357</option>
-                                        <option>113-000-2401</option>
-                                        <option>114-000-2391</option>
-                                        <option>114-000-2357</option>
-                                        <option>114-000-2401</option>
-                                      </select>
-                                    </div>
-                                  </div>
-
-                                  <div class="form-group">
-                                    <label for="transaction-date" class="col-sm-4 col-lg-3 control-label">Transaction Date</label>
-                                    <div class="col-sm-8 col-lg-9">
-                                      <div class="date-key">
-                                        <div class="input-group date">
-                                          <input type="text" class="form-control" id="transaction-date" name="transaction-date" placeholder="04/18/2014">
-                                          <label for="transaction-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div> <!-- .section-contents -->
-
-                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
-
-                                  <div class="form-group">
-                                    <label for="journal-reference" class="col-sm-3 control-label">Reference</label>
-                                    <div class="col-sm-9">
-                                      <textarea class="form-control" name="journal-reference" placeholder="(optional)"></textarea>
-                                    </div>
-                                  </div>
-
-                                </div> <!-- .section-contents -->
-
-                                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4 section-contents">
-
-                                  <div class="form-group radio-group">
-                                    <label class="col-sm-12 control-label">Recurring?</label>
-                                    <div class="col-xs-12">
-                                      <div class="radio-inline">
-                                        <input type="radio" name="transactions-recurring" id="transactions-recurring-yes" value="Yes">
-                                        <label for="transactions-recurring-yes" class="radio-inline entypo-check">Yes</label>
-                                      </div>
-                                      <div class="radio-inline">
-                                        <input type="radio" name="transactions-recurring" id="transactions-recurring-no" value="No" checked>
-                                        <label for="transactions-recurring-no" class="radio-inline entypo-check">No</label>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div> <!-- .section-contents -->
-                              </div>
-
-                            </section> <!-- #journal-information -->
-
-                          </div>
-
-                        </form>
-                      </div>
-                    </div> <!-- .content.block #create-new-journal -->
-
-</div>
 
                     <div class="content block" id="transactions">
-                      <div class="container">
+                      <div class="container-fluid">
 
                         <header class="block-heading tier static">
                           <div class="indicator"></div>
