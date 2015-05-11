@@ -17476,17 +17476,35 @@ header.page.heading {
 /* ---------------------------------------------
     Breadcrumbs
   ------------------------------------------- */
-/*  .new-icon {
+/*  svg {
     height: 20px;
     width: auto;
     fill: #ace63c; 
 
+  }*/
+
+  .svg-wrapper {
+    float: left;
+    display: inline-block;
   }
-*/ 
+
+ 
+ .breadcrumbs svg {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: -4px;
+  margin-right: 2px;
+ }
+
+ .breadcrumbs svg a:hover path {
+  fill: #516199;
+ }
+
  .breadcrumbs {
     float: left;
     border: 1px solid #d1d3d4;
-    padding: 15px 20px;
+    padding: 15px 20px 5px 20px;
     margin-bottom: 40px;
     margin-left: 20px;
     line-height: 1.3;
@@ -17538,7 +17556,7 @@ header.page.heading {
   }
   .loading {
     position: absolute;
-    background: #2ad5ab;
+    background: #2db5ab;
     z-index: 10;
     width: 100%;
     height: 100%;
@@ -17549,28 +17567,32 @@ header.page.heading {
     opacity: 1;
     z-index: 3000;
 
-/*    position: absolute;
-    background: #2ad5ab;
-    z-index: 2000;
-    width: 100%;
-    height: 100%;
-*/
   }
 
-  p.loading {
-    font-size: 40px;
-    color: #fff;
+  .loading p {
+    display: inline-block;
     position: relative;
-    left: 130%;
-    top: 20%;
+    width: 165px;
+    height: 25px;
+    vertical-align: middle;
+    z-index: 3000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 150px;
+    right: 0;
+    opacity: 1;
+    color: #fff;
+    font-weight: 100;
 
   }
 
   .loader {
     display: inline-block;
     position: relative;
-    width: 125px;
-    height: 125px;
+    width: 80px;
+    height: 80px;
     vertical-align: middle;
     z-index: 3000;
     margin: auto;
