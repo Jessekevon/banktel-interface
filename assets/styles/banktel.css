@@ -1,4 +1,4 @@
- ---------------------------------------------
+/* ---------------------------------------------
 
     PROJECT BANKTEL
     Master Styles
@@ -17379,55 +17379,6 @@ a.ellipsis {
     }
   }
 
-
-/* ---------------------------------------------
-    PACE LOADER STYLES
-  ------------------------------------------- */
-
-
-/*  .pace .pace-progress {
-    background: #2db5ab;
-    position: fixed;
-    z-index: 2000;
-    bottom: 0;
-    left: 0;
-    height: 15px;
-
-    -webkit-transition: width 1s;
-    -moz-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s;
-  }
-
-  .pace-inactive {
-    display: none;
-  }
-*/
-  
-  /** All others **/
-/*  a.noTransition {
-    -moz-transition: none;
-    -webkit-transition: none;
-    -o-transition: color 0 ease-in;
-    transition: none;
-    color: #2db5ab;
-}
-*/
-
-/*.sticky-wrapper {
-    position: fixed;
-    width: 100%;
-    margin-top: -36px;
-    z-index: 2;
-}
-
-#transactions {
-  position: relative;
-  top: 250px;
-  z-index: 1;
-}
-*/
-
 /* Come back to this, just testing out for now */
 
 html body .app > main {
@@ -17512,8 +17463,68 @@ header.page.heading {
   right: 0;
   height: 58px;
   line-height: 58px;
-  
+
 }
+
+#create-new-journal {
+  background: #fff;
+  margin-top: 0;
+   padding-top: 0; 
+  padding-bottom: 17px;
+}
+
+/* ---------------------------------------------
+    Breadcrumbs
+  ------------------------------------------- */
+/*  .new-icon {
+    height: 20px;
+    width: auto;
+    fill: #ace63c; 
+
+  }
+*/ 
+ .breadcrumbs {
+    float: left;
+    border: 1px solid #d1d3d4;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    line-height: 1.3;
+    position: relative;
+  }
+  .breadcrumbs a {
+    color: #939598; 
+    padding: 0 5px;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .breadcrumbs a:hover {
+    color: #516199;
+  }
+  .breadcrumbs ul {
+    margin: 0;
+    padding: 0;
+ }
+  .breadcrumbs li:first-child a {
+    padding-left: 0;
+  }
+  .breadcrumbs li {
+    margin-bottom: 9px; 
+    display: inline;
+  }
+
+  .breadcrumbs li:not(:first-child):after {
+    content: "/";
+    color: #939598;
+
+  }
+  .breadcrumbs li:last-child:after {content: "";}
+  .breadcrumbs span {
+    color: #516199;
+    padding: 0 5px;
+    font-size: 12px;
+  }
 
 /* ---------------------------------------------
     Full Screen Loading Animation

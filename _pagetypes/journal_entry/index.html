@@ -184,7 +184,7 @@
               </div>
               <!-- .container -->
 
-
+<!-- Begin Dropdown Drawer -->
               <ul id='improved'>
 
                 <li>
@@ -227,13 +227,30 @@
                   </div>
                 </li>
               </ul>
-
+<!-- End Dropdown Drawer -->
             </header>
             <!-- header.page-heading -->
 
 
             <div class="content block bottom-pane" id="create-new-journal">
               <div class="container-fluid">
+                <section class="breadcrumbs">
+                  <ul>
+                    <li>
+<!--                       <a href="#"><img src="/assets/images/home-icon@2x"></a>
+ -->                    </li>
+                    <li>
+                      <a href="#">General Ledger</a>
+                    </li>
+                    <li>
+                      <a href="/news">Chart of Accounts</a>
+                    </li>
+                    <li>
+                      <span>Journal Entry</span>
+                    </li>
+                  </ul>
+                </section>
+
                 <form class="form-horizontal" role="form">
 
                   <div class="row">
@@ -241,11 +258,11 @@
                     <section class="col-xs-12" id="journal-information">
 
                       <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+                        <div class="col-xs-6 col-md-5 col-lg-4 section-contents">
 
                           <div class="form-group journal-number">
-                            <label for="select-journal-number" class="col-sm-4 col-lg-3 control-label">Journal No.</label>
-                            <div class="col-sm-8 col-lg-9">
+                            <label for="select-journal-number" class="col-xs-4 col-lg-3 control-label">Journal No.</label>
+                            <div class="col-xs-8 col-lg-9">
                               <select class="chosen form-control" name="select-journal-number" data-placeholder="Enter or search for journal number">
                                 <option></option>
                                 <option>111-000-2391</option>
@@ -265,8 +282,8 @@
                           </div>
 
                           <div class="form-group">
-                            <label for="transaction-date" class="col-sm-4 col-lg-3 control-label">Transaction Date</label>
-                            <div class="col-sm-8 col-lg-9">
+                            <label for="transaction-date" class="col-xs-4 col-lg-3 control-label">Transaction Date</label>
+                            <div class="col-xs-8 col-lg-9">
                               <div class="date-key">
                                 <div class="input-group date">
                                   <input type="text" class="form-control" id="transaction-date" name="transaction-date" placeholder="04/18/2014">
@@ -279,11 +296,11 @@
                         </div>
                         <!-- .section-contents -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+                        <div class="col-xs-6 col-md-5 col-lg-4 section-contents">
 
                           <div class="form-group">
-                            <label for="journal-reference" class="col-sm-3 control-label">Reference</label>
-                            <div class="col-sm-9">
+                            <label for="journal-reference" class="col-xs-3 control-label">Reference</label>
+                            <div class="col-xs-9">
                               <textarea class="form-control" name="journal-reference" placeholder="(optional)"></textarea>
                             </div>
                           </div>
@@ -291,10 +308,10 @@
                         </div>
                         <!-- .section-contents -->
 
-                        <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4 section-contents">
+                        <div class="col-xs-6 col-md-2 col-lg-4 section-contents">
 
                           <div class="form-group radio-group">
-                            <label class="col-sm-12 control-label">Recurring?</label>
+                            <label class="col-xs-12 control-label">Recurring?</label>
                             <div class="col-xs-12">
                               <div class="radio-inline">
                                 <input type="radio" name="transactions-recurring" id="transactions-recurring-yes" value="Yes">
