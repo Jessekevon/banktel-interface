@@ -16272,6 +16272,8 @@ li.working span.cancel {
 
    .drawer-content { 
      display:none;
+     width: 100%;
+
    }
 
  .drawer-content-wrapper {
@@ -16401,6 +16403,15 @@ i.popover-pencil {
   margin-bottom: -15px;
 }
 
+/* Updated Drawer Styles */
+.drawer-content textarea {
+  color: #fff !important;
+  background: transparent !important;
+}
+.drawer-content textarea {
+  color: #fff !important;
+  height: 110px;
+}
 
 
 
@@ -17433,6 +17444,7 @@ html body .app > main {
 .header-container {
   height: 60px;
   line-height: 60px;
+  overflow: hidden;
 }
 
 .sticky-header-wrapper {
@@ -17474,8 +17486,9 @@ html body .app > main {
   background: #fff;
   margin-top: 0;
    padding-top: 0; 
-  padding-bottom: 17px;
+   margin-bottom: 0 !important;
 }
+
 
 /* ---------------------------------------------
     Breadcrumbs
