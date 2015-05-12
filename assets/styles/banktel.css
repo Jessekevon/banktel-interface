@@ -15043,7 +15043,8 @@ div.actions:hover + .form-group {
 #vendor-info {
   background: #fff;
   margin-top: 0;
-  padding-top: 42px;
+  /* Removing this to allow the breadcrumb nav to sit up against the section 
+  padding-top: 42px;*/
   padding-bottom: 42px;
 }
 #vendor-info:before, #vendor-info:after {
@@ -15363,7 +15364,8 @@ div.actions:hover + .form-group {
 #search-register {
   background: #fff;
   margin-top: 0;
-  padding-top: 32px;
+  /* Removing this to allow the breadcrumb nav to sit up against the section 
+  padding-top: 32px;*/
   padding-bottom: 17px;
 }
 #search-register:before, #search-register:after {
@@ -15626,7 +15628,8 @@ div.actions:hover + .form-group {
 #create-new-invoice {
   background: #fff;
   margin-top: 0;
-  padding-top: 32px;
+  /* Removing this to allow the breadcrumb nav to sit up against the section 
+  padding-top: 32px;*/
   padding-bottom: 17px;
 }
 #create-new-invoice:before, #create-new-invoice:after {
@@ -15806,7 +15809,8 @@ div.actions:hover + .form-group {
 #create-new-voucher {
   background: #fff;
   margin-top: 0;
-  padding-top: 32px;
+  /* Removing this to allow the breadcrumb nav to sit up against the section 
+  padding-top: 32px;*/
   padding-bottom: 17px;
 }
 #create-new-voucher:before, #create-new-voucher:after {
@@ -17466,6 +17470,10 @@ html body .app > main {
   line-height: 60px;
 }
 
+.sticky-content-wrapper {
+  position: relative;
+}
+
 .sticky-wrapper {
   position: relative;
   width: 100%;
@@ -17565,13 +17573,13 @@ header.page.heading nav.actions.right {
  }
 
  .breadcrumbs {
-    float: left;
     border: 1px solid #d1d3d4;
     padding: 15px 20px 5px 20px;
     margin-bottom: 40px;
     margin-left: 20px;
     line-height: 1.3;
     position: relative;
+    display: inline-block;
   }
   .breadcrumbs a {
     color: #939598; 
