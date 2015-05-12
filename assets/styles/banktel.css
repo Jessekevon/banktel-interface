@@ -17428,7 +17428,18 @@ html body .app > main {
   position: relative;
   text-align: center;
   width: auto;
-  padding: 0 15px;
+  padding: 0 30px;
+}
+
+.topbar.navbar a.topbar-item:hover {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  background: #3a3a3a;
+  text-decoration: none;
+}
+
+.topbar-icon {
+  padding-right: 9px;
 }
 
 .bottom-pane {
@@ -17459,6 +17470,14 @@ html body .app > main {
   min-height: 250px;
   z-index: 2000;
 }
+
+.sticky-wrapper-bottom {
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+  z-index: 2000;
+}
+
 
 .fixit {
   position: fixed;

@@ -10,9 +10,9 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="/assets/styles/normalize.css">
   <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
   <script src="/assets/scripts/modernizr.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -95,26 +95,11 @@
 
 
   <div class="app">
-
-    <header class="topbar navbar" id="topbar" role="navigation">
-      <div class="topbar-branding" id="logo"></div>
-      <div class="topbar-buttons" id="topbar-buttons">
-        <ul class="topbar-nav nav nav-pills">
-          <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
-          <li>
-            <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
-            <ul class="topbar-dropdown dropdown-menu pull-right">
-              <li><a href="#">Account Settings</a></li>
-              <li><a href="#">Log Out</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </header> <!-- header.navbar.topbar#topbar -->
-
     <main>
 
       <section class="menu-system">
+        <div class="topbar-branding" id="logo"></div>
+
         <nav class="menu closed expanded">
           <ul class="level">
             <li>
@@ -127,15 +112,15 @@
                   <a class="level-down has-children" href="">Dashboard Settings</a>
                   <ul class="level">
                     <li><a class="level-up" href="">Dashboard Settings</a></li>
-                          <a class="level-down has-children" href="">Fourth Level</a>
-                          <ul class="level">
-                            <li><a class="level-up" href="">Fourth Level</a></li>
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
-                            <li><a href="">Option 3</a></li>
-                            <li><a href="">Option 4</a></li>
-                            <li><a href="">Option 5</a></li>
-                          </ul>
+                    <a class="level-down has-children" href="">Fourth Level</a>
+                    <ul class="level">
+                      <li><a class="level-up" href="">Fourth Level</a></li>
+                      <li><a href="">Option 1</a></li>
+                      <li><a href="">Option 2</a></li>
+                      <li><a href="">Option 3</a></li>
+                      <li><a href="">Option 4</a></li>
+                      <li><a href="">Option 5</a></li>
+                    </ul>
                     <li><a href="">Option 1</a></li>
                     <li><a href="">Option 2</a></li>
                     <li><a href="">Option 3</a></li>
@@ -164,6 +149,19 @@
                 <li><a href="">Account Setup</a></li>
                 <li><a href="">Reports</a></li>
                 <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+
               </ul>
             </li>
             <li>
@@ -186,13 +184,39 @@
             </li>
             <li><a href=""><i class="entypo-folder"></i> <span>Reports</span></a></li>
             <li><a href=""><i class="entypo-cog"></i> <span>Settings</span></a></li>
-            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i><div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div></div>
+            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
+              <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
+            </div>
 
           </ul>
         </nav>
-      </section> <!-- section.menu-system -->
+      </section>
+      <!-- section.menu-system -->
 
       <div class="app-content">
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
+          <div class="sticky-header-wrapper">
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+            <div class="topbar-buttons" id="topbar-buttons">
+              <ul class="topbar-nav nav nav-pills">
+                <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                <li>
+                  <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                  <ul class="topbar-dropdown dropdown-menu pull-right">
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </header>
+        </div><!--sticky header wrapper -->
 
         <div class="master-container view" id="journal-entry">
 
@@ -755,6 +779,11 @@
     this.disabled = true;
   } );
 })();
+
+$(window).load(function(){
+    $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+});
+
 
   </script>
 
