@@ -6181,7 +6181,9 @@ select[multiple].input-lg,
 }
 .has-feedback .form-control-feedback {
   position: absolute;
-  top: 25px;
+  /* updating this to top:0 specifically for manage invoices page template 
+  top: 25px; */
+  top:0;
   right: 0;
   display: block;
   width: 34px;
@@ -15436,7 +15438,7 @@ div.actions:hover + .form-group {
   width: 10%;
 }
 #register-transactions .faux-table .table-head .cell {
-  color: #939598 !important;
+  color: #939598;
   cursor: pointer;
   -webkit-transition: color, 0.1s;
   transition: color, 0.1s;
@@ -15471,10 +15473,10 @@ div.actions:hover + .form-group {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-#register-transactions .faux-table .table-head .cell.sorted {
+/*#register-transactions .faux-table .table-head .cell.sorted {
   color: #6D6E71 !important;
   cursor: default;
-}
+}*/
 #register-transactions .faux-table .table-head .cell.sorted i {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -17508,6 +17510,13 @@ html body .app > main {
    margin-bottom: 0 !important;
 }
 
+/* Make sure this overwrites all other existing 'sorted' styles */
+.faux-table .table-head .cell.sorted {
+    color: #2DB5AB !important;
+    cursor: default;
+    font-weight: 400;
+
+}
 
 /* ---------------------------------------------
     Breadcrumbs

@@ -328,157 +328,38 @@
             </div>
           </div>
 
-
-          <div class="content block" id="recently-paid">
-            <div class="container">
-
+      <div class="content block" id="recently-paid">
+          <div class="container">
               <header class="block-heading tier static">
-                <div class="indicator"></div>
-                <h2 class="block title">Recently Paid</h2>
+                  <div class="indicator"></div>
+                  <h2 class="block title">Paid Bills</h2>
+                  <div class="table-search form-group right has-feedback">
+                      <div>
+                          <input class="form-control" id="select-paidbills" name="select-paidbills"
+                              placeholder="Enter or search option" style="width: 250px;" /><span class="form-control-feedback"><i class="entypo-search"></i></span>
+                      </div>
+                  </div>
+                  <select class=" filter" id="filter-by-time" name="filter-by-time">
+                      <option value="30">Past 30 Days</option>
+                      <option value="90">Past 3 Months</option>
+                      <option value="180">Past 6 Months</option>
+                      <option value="270">Past 9 Months</option>
+                      <option value="">All</option>
+                  </select>
+              </header>
+              <div id="grid_paidbills">
 
-                <select class="dropdown filter" id="filter-by-time" name="filter-by-time">
-                  <option>Past 30 Days</option>
-                  <option>Past 9 Months</option>
-                  <option>Past 6 Months</option>
-                  <option>Past 3 Months</option>
-                </select>
+  <div class="block-contents">
+      <div class="faux-table">
+              <div class="empty-content">
+                  <h1>No Results Found</h1>
+              </div>            
+      </div>
+  </div>
 
-              </header> <!-- header.block.heading -->
-
-              <div class="block-contents">
-                <div class="faux-table">
-                  <header class="table-head tier static">
-                    <div class="indicator"></div>
-                    <div class="cell issue-date sorted">Issue Date</div>
-                    <div class="cell received-on">Received On</div>
-                    <div class="cell invoice-number">Invoice No.</div>
-                    <div class="cell customer">Customer</div>
-                    <div class="cell amount">Amount</div>
-                    <div class="cell status">Status</div>
-                  </header> <!-- .table-head.tier.static -->
-
-                  <ul class="table-content">
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/23/2014</div>
-                      <div class="cell received-on">2/8/2014</div>
-                      <div class="cell invoice-number">012392</div>
-                      <div class="cell customer">
-                        <span>Anderson Services</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/23/2014</div>
-                      <div class="cell received-on">2/8/2014</div>
-                      <div class="cell invoice-number">012457</div>
-                      <div class="cell customer">
-                        <span>Baker Botts Attorneys</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">Not sent yet</div>
-                      <div class="cell received-on">n/a</div>
-                      <div class="cell invoice-number">228290</div>
-                      <div class="cell customer">
-                        <span>Beadle Consulting LLC</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/14/2014</div>
-                      <div class="cell received-on">1/29/2014</div>
-                      <div class="cell invoice-number">192840</div>
-                      <div class="cell customer">
-                        <span>Bennu Coffee</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/12/2014</div>
-                      <div class="cell received-on">1/27/2014</div>
-                      <div class="cell invoice-number">478201</div>
-                      <div class="cell customer">
-                        <span>Boardwalk Cleaning Company</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">1/12/2014</div>
-                      <div class="cell received-on">1/27/2014</div>
-                      <div class="cell invoice-number">928401</div>
-                      <div class="cell customer">
-                        <span>Hopdoddy Burger Bar</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date">Not sent yet</div>
-                      <div class="cell received-on">n/a</div>
-                      <div class="cell invoice-number">292894</div>
-                      <div class="cell customer">
-                        <span>The Waller Creek Conservancy</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-
-                    <li class="tier status-paid">
-                      <div class="indicator"></div>
-                      <div class="cell issue-date disabled">Not sent yet</div>
-                      <div class="cell received-on disabled">n/a</div>
-                      <div class="cell invoice-number">409122</div>
-                      <div class="cell customer">
-                        <span>McGuire Mormon Group</span>
-                      </div>
-                      <div class="cell amount">$297.34</div>
-                      <div class="cell status">
-                        <a class="btn" href="">Paid</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div> <!-- .faux-table -->
-              </div> <!-- .block-contents -->
-              <footer class="block-footing tier static">
-                <div class="indicator"></div>
-                <a class="btn btn-primary" href="">View All Invoices <i class="entypo-chevron-thin-right"></i></a>
-              </footer>
-
-            </div> <!-- .container -->
-          </div> <!-- .content.block #recently-paid -->
+              </div>
+          </div>
+      </div> 
 
 
 
