@@ -11565,8 +11565,8 @@ i.collapse-icon:hover {
   ------------------------------------------- */
 @font-face {
   font-family: 'entypo';
-  src: url("/Assets/fonts/entypo/entypo.eot");
-  src: url("/Assets/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("/Assets/fonts/entypo/entypo.woff") format("woff"), url("/Assets/fonts/entypo/entypo.ttf") format("truetype"), url("/Assets/fonts/entypo/entypo.svg#entypo") format("svg");
+  src: url("/assets/fonts/entypo/entypo.eot");
+  src: url("/assets/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/entypo/entypo.woff") format("woff"), url("/assets/fonts/entypo/entypo.ttf") format("truetype"), url("/assets/fonts/entypo/entypo.svg#entypo") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17160,11 +17160,11 @@ a.ellipsis {
   font-weight: normal;
   font-style: normal;
   font-family: 'icomoon';
-  src:url('/Assets/fonts/icomoon/icomoon.eot');
-  src:url('/Assets/fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('/Assets/fonts/icomoon/icomoon.ttf') format('truetype'),
-    url('/Assets/fonts/icomoon/icomoon.woff') format('woff'),
-    url('/Assets/fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  src:url('/assets/fonts/icomoon/icomoon.eot');
+  src:url('/assets/fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('/assets/fonts/icomoon/icomoon.woff') format('woff'),
+    url('/assets/fonts/icomoon/icomoon.svg#icomoon') format('svg');
 }
 
 /* ---------------------------------------------
