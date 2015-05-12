@@ -17589,7 +17589,7 @@ html body .app > main {
   .loading p {
     display: inline-block;
     position: relative;
-    width: 165px;
+    width: 200px;
     height: 25px;
     vertical-align: middle;
     z-index: 3000;
@@ -17602,14 +17602,14 @@ html body .app > main {
     opacity: 1;
     color: #fff;
     font-weight: 100;
-
+    text-align: center;
   }
 
   .loader {
     display: inline-block;
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     vertical-align: middle;
     z-index: 3000;
     margin: auto;
