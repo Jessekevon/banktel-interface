@@ -233,10 +233,11 @@
 
                       </div> <!-- .container -->
                     </header> <!-- header.page-heading -->
-          </div>
+          </div><!--sticky-header-wrapper-->
 
+          <div class="content block bottom-pane" id="create-new-invoice">
+            <div class="sticky-content-wrapper">
 
-          <div class="content block" id="create-new-invoice">
             <div class="container-fluid">
                             <div class="row">
                             <section class="breadcrumbs">
@@ -386,7 +387,7 @@
               </form>
             </div>
           </div> <!-- .content.block #create-new-invoice -->
-
+</div><!-- sticky content wrapper -->
 
 
           <div class="content block" id="new-invoice-items">
@@ -812,6 +813,12 @@ $(window).load(function(){
     $('.loading').delay(800).fadeOut(function(){$(this).remove()});
 });
 
+
+$(document).ready(function() {
+  var elementAheight = $('.bottom-pane').height();
+    $('.block-contents').css('padding-top', elementAheight + 'px');
+
+})
 
   </script>
 

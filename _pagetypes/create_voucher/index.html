@@ -237,7 +237,7 @@
           </div>
 
 
-          <div class="content block" id="create-new-voucher">
+          <div class="content block bottom-pane" id="create-new-voucher">
             <div class="container-fluid">
                             <div class="row">
                             <section class="breadcrumbs">
@@ -770,6 +770,11 @@
     $(window).load(function(){
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
+    $(document).ready(function() {
+      var elementAheight = $('.bottom-pane').height();
+        $('.block-contents').css('padding-top', elementAheight + 'px');
+
+    })
 
   </script>
 

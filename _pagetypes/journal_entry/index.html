@@ -295,6 +295,10 @@
                             </div>
                           </div>
 
+
+
+
+
                         </div>
                         <!-- .section-contents -->
 
@@ -931,6 +935,13 @@
     $(window).load(function(){
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
+
+    $(document).ready(function() {
+      var elementAheight = $('.bottom-pane').height();
+        $('#transactions').css('padding-top', elementAheight + 'px');
+
+    })
+
   </script>
 </body>
 

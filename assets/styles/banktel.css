@@ -17472,6 +17472,8 @@ html body .app > main {
 
 .sticky-content-wrapper {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .sticky-wrapper {
@@ -17495,10 +17497,37 @@ html body .app > main {
   z-index: 2000;
 }
 
+.bottom-pane {
+  position: fixed;
+  z-index: 2000;
+/*  width: 100%;
+*/  height: auto;
+}
+
+#transactions {
+  margin-top: -140px !important;
+}
+
+.absolute-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.master-container {
+  float: left;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
 header.page.heading nav.actions.right {
   position: fixed;
   right: 0;
 }
+
 
 .quick-balance.left {
   margin: 0 !important;
