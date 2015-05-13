@@ -199,86 +199,87 @@
 
       <div class="app-content">
         <div class="app-wrapper">
-        <div class="loading">
-          <p>Processing your request...</p>
-          <span class="loader loader-quart"></span>
-        </div>
-
-        <div class="sticky-header-wrapper">
-          <header class="topbar navbar" id="topbar" role="navigation">
-            <div class="container-fluid">
-              <div class="topbar-buttons" id="topbar-buttons">
-                <ul class="topbar-nav nav nav-pills">
-                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
-                  <li>
-                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
-                    <ul class="topbar-dropdown dropdown-menu pull-right">
-                      <li><a href="#">Account Settings</a></li>
-                      <li><a href="#">Log Out</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </header>
-        </div>
-        <!--sticky header wrapper -->
-
-        <div class="master-container view" id="journal-entry">
+          <div class="loading">
+            <p>Processing your request...</p>
+            <span class="loader loader-quart"></span>
+          </div>
 
           <div class="sticky-header-wrapper">
-
-            <header class="page heading fixit">
+            <header class="topbar navbar" id="topbar" role="navigation">
               <div class="container-fluid">
-
-                <h1 class="page title"><a href="#">Invoice for CC West Printing</a></h1>
-
-                <nav class="actions" id="page-actions">
-                  <a class="btn btn-primary" href="">Edit Customer</a>
-                </nav>
-                <!-- nav.actions #page-actions -->
-
+                <div class="topbar-buttons" id="topbar-buttons">
+                  <ul class="topbar-nav nav nav-pills">
+                    <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                    <li>
+                      <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                      <ul class="topbar-dropdown dropdown-menu pull-right">
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Log Out</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <!-- .container -->
             </header>
-            <!-- header.page-heading -->
           </div>
-          <!--sticky-header-wrapper-->
-<div class="bottom-pane-container">
-          <div class="content block bottom-pane" id="create-new-invoice">
-            <div class="sticky-content-wrapper">
+          <!--sticky header wrapper -->
 
-              <div class="container-fluid">
-                  <section class="breadcrumbs">
-                    <ul>
+          <div class="master-container view" id="journal-entry">
 
-                      <div class="svg-wrapper">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-                          <a href="#">
-                            <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+            <div class="sticky-header-wrapper">
+
+              <header class="page heading fixit">
+                <div class="container-fluid">
+
+                  <h1 class="page title"><a href="#">Invoice for CC West Printing</a></h1>
+
+                  <nav class="actions" id="page-actions">
+                    <a class="btn btn-primary" href="">Edit Customer</a>
+                  </nav>
+                  <!-- nav.actions #page-actions -->
+
+                </div>
+                <!-- .container -->
+              </header>
+              <!-- header.page-heading -->
+            </div>
+            <!--sticky-header-wrapper-->
+            <div class="bottom-pane-container">
+              <div class="content block bottom-pane" id="create-new-invoice">
+                <div class="sticky-content-wrapper">
+
+                  <div class="container-fluid">
+                  <div class="row">
+                    <section class="breadcrumbs">
+                      <ul>
+
+                        <div class="svg-wrapper">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                            <a href="#">
+                              <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
                                                         c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
                                                         h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
-                          </a>
-                        </svg>
-                      </div>
+                            </a>
+                          </svg>
+                        </div>
 
 
-                      <li>
-                        <a href="#">General Ledger</a>
-                      </li>
-                      <li>
-                        <a href="/news">Chart of Accounts</a>
-                      </li>
-                      <li>
-                        <span>Journal Entry</span>
-                      </li>
-                    </ul>
-                  </section>
+                        <li>
+                          <a href="#">Accounts Payable</a>
+                        </li>
+                        <li>
+                          <a href="#">Invoices</a>
+                        </li>
+                        <li>
+                          <span>Create Invoice</span>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                    <form class="form-horizontal" role="form">
 
-                <form class="form-horizontal" role="form">
 
-
-                    <section class="col-xs-12 col-md-9" id="new-invoice-information">
+                      <section class="col-xs-12 col-md-9" id="new-invoice-information">
 
                         <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
 
@@ -355,7 +356,7 @@
                         </div>
                         <!-- .section-contents -->
 
-                      <!-- .row -->
+                        <!-- .row -->
 
 
                         <div class="col-xs-12 section-contents">
@@ -370,410 +371,411 @@
                         </div>
                         <!-- .section-contents -->
 
-                      <!-- .row -->
+                        <!-- .row -->
 
-                    </section>
-                    <!-- #new-invoice-information -->
+                      </section>
+                      <!-- #new-invoice-information -->
 
-                    <section class="col-xs-12 col-md-3" id="edit-customer-information">
+                      <section class="col-xs-12 col-md-3" id="edit-customer-information">
 
-                      <header class="section-heading">
-                        <h2 class="section title">Client Details <span class="right entypo-pencil" data-toggle="modal" data-target="#modal-editCustomerInfo"></span></h2>
-                      </header>
+                        <header class="section-heading">
+                          <h2 class="section title">Client Details <span class="right entypo-pencil" data-toggle="modal" data-target="#modal-editCustomerInfo"></span></h2>
+                        </header>
 
-                      <div class="section-contents">
-                        <h6 class="customer-name">CC West Printing</h6>
-                        <div class="customer-address">
-                          <p class="street-1">19592 West Braker Highway</p>
-                          <p class="street-2">Suite 992765</p>
-                          <p class="city-state-zip">Austin, TX 78720</p>
-                        </div>
-                      </div>
-                      <!-- .section-contents -->
-
-                      <!-- .row -->
-
-                    </section>
-                    <!-- #edit-customer-information -->
-
-
-                </form>
-              </div>
-            </div>
-            <!-- .content.block #create-new-invoice -->
-          </div>
-          <!-- sticky content wrapper -->
-</div><!--bottom-pane-container-->
-
-          <div class="content block" id="new-invoice-items">
-            <div class="container-fluid">
-
-              <div class="block-contents">
-                <div class="faux-table">
-                  <header class="table-head tier static">
-                    <div class="indicator"></div>
-                    <div class="cell type">Type</div>
-                    <div class="cell description">Description</div>
-                    <div class="cell quantity">Qty.</div>
-                    <div class="cell price">Price</div>
-                    <div class="cell cost">Cost</div>
-                  </header>
-                  <!-- .table-head.tier.static -->
-
-                  <ul class="table-content">
-                    <div class="draggable-container">
-
-                      <li class="tier with-actions new-invoice-item">
-                        <div class="indicator"></div>
-
-                        <div class="cell type">
-                          <div class="actions">
-                            <div class="tier-teaser">
-                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
-                            </div>
-                            <!-- .tier-trigger -->
-
-                            <nav class="tier-actions">
-                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
-                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
-                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
-                            </nav>
-                            <!-- nav.tier-actions -->
-                          </div>
-                          <!-- div.actions -->
-
-                          <div class="form-group grid-form">
-                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
-                              <option></option>
-                              <option>Item</option>
-                              <option>Item A</option>
-                              <option>Item B</option>
-                              <option>Item C</option>
-                            </select>
+                        <div class="section-contents">
+                          <h6 class="customer-name">CC West Printing</h6>
+                          <div class="customer-address">
+                            <p class="street-1">19592 West Braker Highway</p>
+                            <p class="street-2">Suite 992765</p>
+                            <p class="city-state-zip">Austin, TX 78720</p>
                           </div>
                         </div>
-                        <!-- .cell.type -->
+                        <!-- .section-contents -->
 
-                        <div class="cell description">
-                          <div class="form-group">
-                            <textarea class="form-control" name="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem ac enim ornare porta. Praesent mattis adipiscing diam sed facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem ac enim
-                              ornare porta. Praesent mattis adipiscing diam sed facilisis.</textarea>
-                          </div>
-                        </div>
-                        <!-- .cell.description -->
+                        <!-- .row -->
 
-                        <div class="cell quantity">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-quantity" value="5">
-                          </div>
-                        </div>
-                        <!-- .cell.quantity -->
-
-                        <div class="cell price">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-price" value="$1000">
-                          </div>
-                        </div>
-                        <!-- .cell.price -->
-
-                        <div class="cell cost">
-                          $3,920.25
-                        </div>
-                        <!-- .cell.cost -->
-                      </li>
-                      <!-- .tier.new-invoice-item -->
-
-                      <li class="tier with-actions new-invoice-item">
-                        <div class="indicator"></div>
-
-                        <div class="cell type">
-                          <div class="actions">
-                            <div class="tier-teaser">
-                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
-                            </div>
-                            <!-- .tier-trigger -->
-
-                            <nav class="tier-actions">
-                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
-                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
-                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
-                            </nav>
-                            <!-- nav.tier-actions -->
-                          </div>
-                          <!-- div.actions -->
-
-                          <div class="form-group grid-form">
-                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
-                              <option></option>
-                              <option>Item</option>
-                              <option>Item A</option>
-                              <option>Item B</option>
-                              <option>Item C</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!-- .cell.type -->
-
-                        <div class="cell description">
-                          <div class="form-group">
-                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
-                          </div>
-                        </div>
-                        <!-- .cell.description -->
-
-                        <div class="cell quantity">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-quantity" placeholder="1">
-                          </div>
-                        </div>
-                        <!-- .cell.quantity -->
-
-                        <div class="cell price">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-price" placeholder="$0.00">
-                          </div>
-                        </div>
-                        <!-- .cell.price -->
-
-                        <div class="cell cost">
-                          $0.00
-                        </div>
-                        <!-- .cell.cost -->
-                      </li>
-                      <!-- .tier.new-invoice-item -->
-
-                      <li class="tier with-actions new-invoice-item">
-                        <div class="indicator"></div>
-
-                        <div class="cell type">
-                          <div class="actions">
-                            <div class="tier-teaser">
-                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
-                            </div>
-                            <!-- .tier-trigger -->
-
-                            <nav class="tier-actions">
-                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
-                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
-                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
-                            </nav>
-                            <!-- nav.tier-actions -->
-                          </div>
-                          <!-- div.actions -->
-
-                          <div class="form-group grid-form">
-                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
-                              <option></option>
-                              <option>Item</option>
-                              <option>Item A</option>
-                              <option>Item B</option>
-                              <option>Item C</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!-- .cell.type -->
-
-                        <div class="cell description">
-                          <div class="form-group">
-                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
-                          </div>
-                        </div>
-                        <!-- .cell.description -->
-
-                        <div class="cell quantity">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-quantity" placeholder="1">
-                          </div>
-                        </div>
-                        <!-- .cell.quantity -->
-
-                        <div class="cell price">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-price" placeholder="$0.00">
-                          </div>
-                        </div>
-                        <!-- .cell.price -->
-
-                        <div class="cell cost">
-                          $0.00
-                        </div>
-                        <!-- .cell.cost -->
-                      </li>
-                      <!-- .tier.new-invoice-item -->
-
-                      <li class="tier with-actions new-invoice-item">
-                        <div class="indicator"></div>
-
-                        <div class="cell type">
-                          <div class="actions">
-                            <div class="tier-teaser">
-                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
-                            </div>
-                            <!-- .tier-trigger -->
-
-                            <nav class="tier-actions">
-                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
-                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
-                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
-                            </nav>
-                            <!-- nav.tier-actions -->
-                          </div>
-                          <!-- div.actions -->
-
-                          <div class="form-group grid-form">
-                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
-                              <option></option>
-                              <option>Item</option>
-                              <option>Item A</option>
-                              <option>Item B</option>
-                              <option>Item C</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!-- .cell.type -->
-
-                        <div class="cell description">
-                          <div class="form-group">
-                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
-                          </div>
-                        </div>
-                        <!-- .cell.description -->
-
-                        <div class="cell quantity">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-quantity" placeholder="1">
-                          </div>
-                        </div>
-                        <!-- .cell.quantity -->
-
-                        <div class="cell price">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-price" placeholder="$0.00">
-                          </div>
-                        </div>
-                        <!-- .cell.price -->
-
-                        <div class="cell cost">
-                          $0.00
-                        </div>
-                        <!-- .cell.cost -->
-                      </li>
-                      <!-- .tier.new-invoice-item -->
-
-                      <li class="tier with-actions new-invoice-item">
-                        <div class="indicator"></div>
-
-                        <div class="cell type">
-                          <div class="actions">
-                            <div class="tier-teaser">
-                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
-                            </div>
-                            <!-- .tier-trigger -->
-
-                            <nav class="tier-actions">
-                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
-                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
-                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
-                            </nav>
-                            <!-- nav.tier-actions -->
-                          </div>
-                          <!-- div.actions -->
-
-                          <div class="form-group grid-form">
-                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
-                              <option></option>
-                              <option>Item</option>
-                              <option>Item A</option>
-                              <option>Item B</option>
-                              <option>Item C</option>
-                            </select>
-                          </div>
-                        </div>
-                        <!-- .cell.type -->
-
-                        <div class="cell description">
-                          <div class="form-group">
-                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
-                          </div>
-                        </div>
-                        <!-- .cell.description -->
-
-                        <div class="cell quantity">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-quantity" placeholder="1">
-                          </div>
-                        </div>
-                        <!-- .cell.quantity -->
-
-                        <div class="cell price">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="item-price" placeholder="$0.00">
-                          </div>
-                        </div>
-                        <!-- .cell.price -->
-
-                        <div class="cell cost">
-                          $0.00
-                        </div>
-                        <!-- .cell.cost -->
-                      </li>
-                      <!-- .tier.new-invoice-item -->
-                    </div>
-
-                    <li class="tier static new-invoice-totals">
-                      <div class="indicator"></div>
-                      <div class="cell space"></div>
-                      <div class="cell total-label">Subtotal</div>
-                      <div class="cell amount">$3,920.25</div>
-                    </li>
-
-                    <li class="tier static new-invoice-totals">
-                      <div class="indicator"></div>
-                      <div class="cell space"></div>
-                      <div class="cell total-label">+ Sales Tax (<span class="tax-percentage">8</span>%)</div>
-                      <div class="cell amount">$313.62</div>
-                    </li>
-
-                    <li class="tier static new-invoice-totals">
-                      <div class="indicator"></div>
-                      <div class="cell space"></div>
-                      <div class="cell total-label">Invoice Total:</div>
-                      <div class="cell amount">$4,233.87</div>
-                    </li>
+                      </section>
+                      <!-- #edit-customer-information -->
 
 
-                  </ul>
-                  <!-- ul.table-content -->
-                  <div class="new-invoice-actions">
-                    <!--                     <a class="btn btn-primary">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></a>
-                   -->
-                    <div class="progress-buttons">
-
-                      <button id="notification-trigger" class="btn btn-primary progress-button action-button">
-                        <span class="content">Save<i class="entypo-save"></i></span>
-                      </button>
-
-                      <button id="notification-trigger-error" class="btn btn-primary progress-button action-button">
-                        <span class="content">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></span>
-                      </button>
-
-
-                    </div>
+                    </form>
                   </div>
-
                 </div>
-                <!-- .faux-table -->
+                <!-- .content.block #create-new-invoice -->
               </div>
-              <!-- .block-contents -->
-
+              <!-- sticky content wrapper -->
             </div>
-            <!-- .container -->
-          </div>
-          <!-- .content.block #new-invoice-items -->
+            <!--bottom-pane-container-->
 
+            <div class="content block" id="new-invoice-items">
+              <div class="container-fluid">
+
+                <div class="block-contents">
+                  <div class="faux-table">
+                    <header class="table-head tier static">
+                      <div class="indicator"></div>
+                      <div class="cell type">Type</div>
+                      <div class="cell description">Description</div>
+                      <div class="cell quantity">Qty.</div>
+                      <div class="cell price">Price</div>
+                      <div class="cell cost">Cost</div>
+                    </header>
+                    <!-- .table-head.tier.static -->
+
+                    <ul class="table-content">
+                      <div class="draggable-container">
+
+                        <li class="tier with-actions new-invoice-item">
+                          <div class="indicator"></div>
+
+                          <div class="cell type">
+                            <div class="actions">
+                              <div class="tier-teaser">
+                                <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                              </div>
+                              <!-- .tier-trigger -->
+
+                              <nav class="tier-actions">
+                                <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                                <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                                <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                              </nav>
+                              <!-- nav.tier-actions -->
+                            </div>
+                            <!-- div.actions -->
+
+                            <div class="form-group grid-form">
+                              <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                                <option></option>
+                                <option>Item</option>
+                                <option>Item A</option>
+                                <option>Item B</option>
+                                <option>Item C</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- .cell.type -->
+
+                          <div class="cell description">
+                            <div class="form-group">
+                              <textarea class="form-control" name="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem ac enim ornare porta. Praesent mattis adipiscing diam sed facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed sem ac enim
+                                ornare porta. Praesent mattis adipiscing diam sed facilisis.</textarea>
+                            </div>
+                          </div>
+                          <!-- .cell.description -->
+
+                          <div class="cell quantity">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-quantity" value="5">
+                            </div>
+                          </div>
+                          <!-- .cell.quantity -->
+
+                          <div class="cell price">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-price" value="$1000">
+                            </div>
+                          </div>
+                          <!-- .cell.price -->
+
+                          <div class="cell cost">
+                            $3,920.25
+                          </div>
+                          <!-- .cell.cost -->
+                        </li>
+                        <!-- .tier.new-invoice-item -->
+
+                        <li class="tier with-actions new-invoice-item">
+                          <div class="indicator"></div>
+
+                          <div class="cell type">
+                            <div class="actions">
+                              <div class="tier-teaser">
+                                <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                              </div>
+                              <!-- .tier-trigger -->
+
+                              <nav class="tier-actions">
+                                <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                                <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                                <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                              </nav>
+                              <!-- nav.tier-actions -->
+                            </div>
+                            <!-- div.actions -->
+
+                            <div class="form-group grid-form">
+                              <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                                <option></option>
+                                <option>Item</option>
+                                <option>Item A</option>
+                                <option>Item B</option>
+                                <option>Item C</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- .cell.type -->
+
+                          <div class="cell description">
+                            <div class="form-group">
+                              <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                            </div>
+                          </div>
+                          <!-- .cell.description -->
+
+                          <div class="cell quantity">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-quantity" placeholder="1">
+                            </div>
+                          </div>
+                          <!-- .cell.quantity -->
+
+                          <div class="cell price">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-price" placeholder="$0.00">
+                            </div>
+                          </div>
+                          <!-- .cell.price -->
+
+                          <div class="cell cost">
+                            $0.00
+                          </div>
+                          <!-- .cell.cost -->
+                        </li>
+                        <!-- .tier.new-invoice-item -->
+
+                        <li class="tier with-actions new-invoice-item">
+                          <div class="indicator"></div>
+
+                          <div class="cell type">
+                            <div class="actions">
+                              <div class="tier-teaser">
+                                <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                              </div>
+                              <!-- .tier-trigger -->
+
+                              <nav class="tier-actions">
+                                <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                                <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                                <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                              </nav>
+                              <!-- nav.tier-actions -->
+                            </div>
+                            <!-- div.actions -->
+
+                            <div class="form-group grid-form">
+                              <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                                <option></option>
+                                <option>Item</option>
+                                <option>Item A</option>
+                                <option>Item B</option>
+                                <option>Item C</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- .cell.type -->
+
+                          <div class="cell description">
+                            <div class="form-group">
+                              <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                            </div>
+                          </div>
+                          <!-- .cell.description -->
+
+                          <div class="cell quantity">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-quantity" placeholder="1">
+                            </div>
+                          </div>
+                          <!-- .cell.quantity -->
+
+                          <div class="cell price">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-price" placeholder="$0.00">
+                            </div>
+                          </div>
+                          <!-- .cell.price -->
+
+                          <div class="cell cost">
+                            $0.00
+                          </div>
+                          <!-- .cell.cost -->
+                        </li>
+                        <!-- .tier.new-invoice-item -->
+
+                        <li class="tier with-actions new-invoice-item">
+                          <div class="indicator"></div>
+
+                          <div class="cell type">
+                            <div class="actions">
+                              <div class="tier-teaser">
+                                <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                              </div>
+                              <!-- .tier-trigger -->
+
+                              <nav class="tier-actions">
+                                <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                                <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                                <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                              </nav>
+                              <!-- nav.tier-actions -->
+                            </div>
+                            <!-- div.actions -->
+
+                            <div class="form-group grid-form">
+                              <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                                <option></option>
+                                <option>Item</option>
+                                <option>Item A</option>
+                                <option>Item B</option>
+                                <option>Item C</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- .cell.type -->
+
+                          <div class="cell description">
+                            <div class="form-group">
+                              <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                            </div>
+                          </div>
+                          <!-- .cell.description -->
+
+                          <div class="cell quantity">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-quantity" placeholder="1">
+                            </div>
+                          </div>
+                          <!-- .cell.quantity -->
+
+                          <div class="cell price">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-price" placeholder="$0.00">
+                            </div>
+                          </div>
+                          <!-- .cell.price -->
+
+                          <div class="cell cost">
+                            $0.00
+                          </div>
+                          <!-- .cell.cost -->
+                        </li>
+                        <!-- .tier.new-invoice-item -->
+
+                        <li class="tier with-actions new-invoice-item">
+                          <div class="indicator"></div>
+
+                          <div class="cell type">
+                            <div class="actions">
+                              <div class="tier-teaser">
+                                <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                              </div>
+                              <!-- .tier-trigger -->
+
+                              <nav class="tier-actions">
+                                <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                                <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                                <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                              </nav>
+                              <!-- nav.tier-actions -->
+                            </div>
+                            <!-- div.actions -->
+
+                            <div class="form-group grid-form">
+                              <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                                <option></option>
+                                <option>Item</option>
+                                <option>Item A</option>
+                                <option>Item B</option>
+                                <option>Item C</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- .cell.type -->
+
+                          <div class="cell description">
+                            <div class="form-group">
+                              <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                            </div>
+                          </div>
+                          <!-- .cell.description -->
+
+                          <div class="cell quantity">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-quantity" placeholder="1">
+                            </div>
+                          </div>
+                          <!-- .cell.quantity -->
+
+                          <div class="cell price">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="item-price" placeholder="$0.00">
+                            </div>
+                          </div>
+                          <!-- .cell.price -->
+
+                          <div class="cell cost">
+                            $0.00
+                          </div>
+                          <!-- .cell.cost -->
+                        </li>
+                        <!-- .tier.new-invoice-item -->
+                      </div>
+
+                      <li class="tier static new-invoice-totals">
+                        <div class="indicator"></div>
+                        <div class="cell space"></div>
+                        <div class="cell total-label">Subtotal</div>
+                        <div class="cell amount">$3,920.25</div>
+                      </li>
+
+                      <li class="tier static new-invoice-totals">
+                        <div class="indicator"></div>
+                        <div class="cell space"></div>
+                        <div class="cell total-label">+ Sales Tax (<span class="tax-percentage">8</span>%)</div>
+                        <div class="cell amount">$313.62</div>
+                      </li>
+
+                      <li class="tier static new-invoice-totals">
+                        <div class="indicator"></div>
+                        <div class="cell space"></div>
+                        <div class="cell total-label">Invoice Total:</div>
+                        <div class="cell amount">$4,233.87</div>
+                      </li>
+
+
+                    </ul>
+                    <!-- ul.table-content -->
+                    <div class="new-invoice-actions">
+                      <!--                     <a class="btn btn-primary">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></a>
+                   -->
+                      <div class="progress-buttons">
+
+                        <button id="notification-trigger" class="btn btn-primary progress-button action-button">
+                          <span class="content">Save<i class="entypo-save"></i></span>
+                        </button>
+
+                        <button id="notification-trigger-error" class="btn btn-primary progress-button action-button">
+                          <span class="content">Save &amp; Preview <i class="entypo-chevron-thin-right"></i></span>
+                        </button>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- .faux-table -->
+                </div>
+                <!-- .block-contents -->
+
+              </div>
+              <!-- .container -->
+            </div>
+            <!-- .content.block #new-invoice-items -->
+
+          </div>
+          <!-- .master-container.view #journal-entry -->
         </div>
-        <!-- .master-container.view #journal-entry -->
-</div>
       </div>
       <!-- .app-content -->
     </main>
@@ -897,8 +899,6 @@ $(document).ready(function() {
 //     $('.bottom-pane-container').css('width', elementAwidth + 'px');
 
 // })
-
-
   </script>
 
 </body>

@@ -137,23 +137,24 @@
         </div>
 
         <div class="sticky-header-wrapper">
-        <header class="topbar navbar" id="topbar" role="navigation">
-          <div class="container-fluid">
-          <div class="topbar-buttons" id="topbar-buttons">
-            <ul class="topbar-nav nav nav-pills">
-              <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
-              <li>
-                <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
-                <ul class="topbar-dropdown dropdown-menu pull-right">
-                  <li><a href="#">Account Settings</a></li>
-                  <li><a href="#">Log Out</a></li>
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+              <div class="topbar-buttons" id="topbar-buttons">
+                <ul class="topbar-nav nav nav-pills">
+                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                  <li>
+                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                    <ul class="topbar-dropdown dropdown-menu pull-right">
+                      <li><a href="#">Account Settings</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
+          </header>
         </div>
-        </header>
-      </div><!--sticky header wrapper -->
+        <!--sticky header wrapper -->
 
         <div class="sticky-wrapper">
           <div class="fixit">
@@ -186,44 +187,44 @@
               </div>
               <!-- .container -->
 
-<!-- Begin Dropdown Drawer -->
-                  <div class='drawer-content'>
-                    <div class='drawer-content-wrapper'>
-                      <div class="container-fluid">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-4 textit">
-                          <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
-                        </div>
-                        <div class="col-md-4">
-                          <div id="dropzone" class="fade">
-                            <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                              <div id="drop">
-                                <p>Drag attachments here</p>
+              <!-- Begin Dropdown Drawer -->
+              <div class='drawer-content'>
+                <div class='drawer-content-wrapper'>
+                  <div class="container-fluid">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 textit">
+                      <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
+                    </div>
+                    <div class="col-md-4">
+                      <div id="dropzone" class="fade">
+                        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                          <div id="drop">
+                            <p>Drag attachments here</p>
 
-                                <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
-                                <input type="file" name="upl" multiple />
-                              </div>
-
-                              <ul>
-                                <!-- The file uploads will be shown here -->
-                              </ul>
-
-                            </form>
-
+                            <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
+                            <input type="file" name="upl" multiple />
                           </div>
 
-                        </div>
-                        <div class="col-md-2 loader-buttons">
-                          <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
-                          <br>
-                          <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
-                        </div>
-                        <div class="col-md-1"></div>
+                          <ul>
+                            <!-- The file uploads will be shown here -->
+                          </ul>
+
+                        </form>
 
                       </div>
+
                     </div>
+                    <div class="col-md-2 loader-buttons">
+                      <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
+                      <br>
+                      <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
+                    </div>
+                    <div class="col-md-1"></div>
+
                   </div>
-<!-- End Dropdown Drawer -->
+                </div>
+              </div>
+              <!-- End Dropdown Drawer -->
             </header>
             <!-- header.page-heading -->
 
@@ -232,13 +233,16 @@
               <div class="container-fluid">
                 <section class="breadcrumbs">
                   <ul>
-                                          
-                                            <div class="svg-wrapper"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-                                                  <a href="#"><path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
-                                            c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
-                                            h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" /></a>
-                                            </svg></div>
 
+                    <div class="svg-wrapper">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                        <a href="#">
+                          <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+                                            c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
+                                            h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
+                        </a>
+                      </svg>
+                    </div>
 
 
                     <li>
@@ -294,9 +298,6 @@
                               </div>
                             </div>
                           </div>
-
-
-
 
 
                         </div>
@@ -941,7 +942,6 @@
         $('#transactions').css('padding-top', elementAheight + 'px');
 
     })
-
   </script>
 </body>
 

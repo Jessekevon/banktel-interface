@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
@@ -19,6 +22,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
+
 <body class="">
 
 
@@ -127,42 +131,71 @@
           <span class="loader loader-quart"></span>
         </div>
 
-          <div class="sticky-header-wrapper">
+        <div class="sticky-header-wrapper">
           <header class="topbar navbar" id="topbar" role="navigation">
             <div class="container-fluid">
-            <div class="topbar-buttons" id="topbar-buttons">
-              <ul class="topbar-nav nav nav-pills">
-                <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
-                <li>
-                  <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
-                  <ul class="topbar-dropdown dropdown-menu pull-right">
-                    <li><a href="#">Account Settings</a></li>
-                    <li><a href="#">Log Out</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="topbar-buttons" id="topbar-buttons">
+                <ul class="topbar-nav nav nav-pills">
+                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                  <li>
+                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                    <ul class="topbar-dropdown dropdown-menu pull-right">
+                      <li><a href="#">Account Settings</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
           </header>
-        </div><!--sticky header wrapper -->
-
+        </div>
+        <!--sticky header wrapper -->
 
 
         <div class="master-container view" id="manage-invoices">
           <div class="sticky-header-wrapper">
 
-          <header class="page heading fixit">
-            <div class="container-fluid">
+            <header class="page heading fixit">
+              <div class="container-fluid">
 
-              <h1 class="page title"><a href="#">Manage Invoices</a></h1>
+                <h1 class="page title"><a href="#">Manage Invoices</a></h1>
 
-              <nav class="actions" id="page-actions">
-                <a class="btn btn-primary" href="">Create Invoice</a>
-              </nav> <!-- nav.actions #page-actions -->
+                <nav class="actions" id="page-actions">
+                  <a class="btn btn-primary" href="">Create Invoice</a>
+                </nav>
+                <!-- nav.actions #page-actions -->
 
-            </div> <!-- .container -->
-          </header> <!-- header.page-heading -->
-</div>
+              </div>
+              <!-- .container -->
+            </header>
+            <!-- header.page-heading -->
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <section class="breadcrumbs">
+                <ul>
+
+                  <div class="svg-wrapper">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                      <a href="#">
+                        <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+                                          c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
+                                          h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
+                      </a>
+                    </svg>
+                  </div>
+
+
+                  <li>
+                    <a href="#">Accounts Payable</a>
+                  </li>
+                  <li>
+                    <span>Manage Invoices</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
 
           <div class="content block" id="outstanding-invoices">
             <div class="container-fluid">
@@ -329,50 +362,53 @@
             </div>
           </div>
 
-      <div class="content block" id="recently-paid">
-          <div class="container-fluid">
+          <div class="content block" id="recently-paid">
+            <div class="container-fluid">
               <header class="block-heading tier static">
-                  <div class="indicator"></div>
-                  <h2 class="block title">Paid Bills</h2>
-                  <div class="table-search form-group right has-feedback">
-                      <div>
-                          <input class="form-control" id="select-paidbills" name="select-paidbills"
-                              placeholder="Enter or search option" style="width: 250px;" /><span class="form-control-feedback"><i class="entypo-search"></i></span>
-                      </div>
+                <div class="indicator"></div>
+                <h2 class="block title">Paid Bills</h2>
+                <div class="table-search form-group right has-feedback">
+                  <div>
+                    <input class="form-control" id="select-paidbills" name="select-paidbills" placeholder="Enter or search option" style="width: 250px;" /><span class="form-control-feedback"><i class="entypo-search"></i></span>
                   </div>
-                  <select class=" filter" id="filter-by-time" name="filter-by-time">
-                      <option value="30">Past 30 Days</option>
-                      <option value="90">Past 3 Months</option>
-                      <option value="180">Past 6 Months</option>
-                      <option value="270">Past 9 Months</option>
-                      <option value="">All</option>
-                  </select>
+                </div>
+                <select class=" filter" id="filter-by-time" name="filter-by-time">
+                  <option value="30">Past 30 Days</option>
+                  <option value="90">Past 3 Months</option>
+                  <option value="180">Past 6 Months</option>
+                  <option value="270">Past 9 Months</option>
+                  <option value="">All</option>
+                </select>
               </header>
               <div id="grid_paidbills">
 
-  <div class="block-contents">
-      <div class="faux-table">
-              <div class="empty-content">
-                  <h1>No Results Found</h1>
-              </div>            
-      </div>
-  </div>
+                <div class="block-contents">
+                  <div class="faux-table">
+                    <div class="empty-content">
+                      <h1>No Results Found</h1>
+                    </div>
+                  </div>
+                </div>
 
               </div>
+            </div>
           </div>
-      </div> 
 
 
+        </div>
+        <!-- .master-container.view #manage-invoices -->
 
-        </div> <!-- .master-container.view #manage-invoices -->
-
-      </div> <!-- .app-content -->
+      </div>
+      <!-- .app-content -->
     </main>
 
-  </div> <!-- .app -->
+  </div>
+  <!-- .app -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script>
+  <script>
+    window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')
+  </script>
   <script src="/assets/scripts/jquery-ui.js"></script>
   <script src="/assets/scripts/bootstrap.js"></script>
   <script src="/assets/scripts/plugins.js"></script>
@@ -381,8 +417,8 @@
     $(window).load(function(){
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
-
   </script>
 
 </body>
+
 </html>
