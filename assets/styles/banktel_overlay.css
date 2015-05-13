@@ -3040,12 +3040,16 @@ textarea {
 }
 
 #new-voucher-items .faux-table .cell.expense-account {
-  width: 15%;
+  /* Updating to 20% to allow for more room 
+  width: 15%;*/
+  width: 20%;
 }
 
 #new-voucher-items .faux-table .cell.pay-from-account {
   padding-left: 12px;
-  width: 15%;
+  /* Updating to 20% to allow for more room 
+  width: 15%;*/
+  width: 20%;
 }
 
 #new-voucher-items .faux-table .cell.inventory {
@@ -3067,6 +3071,14 @@ textarea {
   padding-left: 12px;
   width: 42%;
 }
+
+#new-voucher-items .faux-table .cell.description {
+  padding-left: 12px;
+  /*Updating to 40% 
+  width: 42%;*/
+  width: 50%;
+}
+
 
 #new-voucher-items .faux-table .cell.description.short {
   padding-left: 12px;
@@ -4338,7 +4350,9 @@ textarea {
 }
 
 #register-transactions .faux-table .cell.transaction-details {
-  width: 24%;
+  /* Updating to 44% to allow for more room 
+  width: 24%;*/
+  width: 44%;
 }
 
 #register-transactions .faux-table .cell.cleared {
