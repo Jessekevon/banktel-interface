@@ -389,7 +389,9 @@ header.page.heading nav.actions .popover-content a.btn:hover {
 }*/
 
 .memo-container {
-    padding-top: 5px;
+    /* Updating this to 3px
+    padding-top: 5px;*/
+    padding-top: 3px;
 }
 
 .popover-content p {
@@ -825,7 +827,8 @@ tier.with-actions .actioncolumn > p {
 }
 
 li.tier nav.actions {
-    float: right;
+    /* Removing the float on this for the time being, should be floated left against the label 
+    float: right;*/
     white-space: nowrap;
     width: 40%;
 }

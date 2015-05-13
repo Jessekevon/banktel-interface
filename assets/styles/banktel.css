@@ -11215,7 +11215,8 @@ section.menu-system nav.menu .level {
   left: 0;
   width: 200px;
   z-index: 1;
-  overflow-y: scroll; 
+  overflow-y: scroll;
+   
   /* SECOND LEVEL */
 }
 section.menu-system nav.menu .level .level {
