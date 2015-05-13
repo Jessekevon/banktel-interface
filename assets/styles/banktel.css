@@ -17395,390 +17395,393 @@ a.ellipsis {
     }
   }
 
-/* Come back to this, just testing out for now */
-
-html body .app > main {
-  padding-top: 0;
-}
-
-.topbar.navbar {
-  background: #464747;
-  border-bottom: 1px solid #333;
-  height: 60px;
-  line-height: 60px;
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
-
-.topbar.navbar .topbar-buttons {
-  float: right;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: auto;
-}
-
-.topbar.navbar a.topbar-item {
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  background: transparent;
-  border-left: 1px solid #333;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 400;
-  float: right;
-  line-height: 58px;
-  margin: 0 !important;
-  position: relative;
-  text-align: center;
-  width: auto;
-  padding: 0 30px;
-}
-
-.topbar.navbar a.topbar-item:hover {
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  background: #3a3a3a;
-  text-decoration: none;
-}
-
-.topbar-icon {
-  padding-right: 9px;
-}
-
-.bottom-pane {
-  border-bottom: 1px solid #d1d3d4;
-}
-/* Updating the height for the blue top bar to match design and maintain consitancy */
-#improved li {
-  position: relative;
-  margin-bottom: -15px;
-  overflow: hidden;
-  width: 100%;
-}
-.header-container {
-  height: 60px;
-  line-height: 60px;
-  overflow: hidden;
-}
-
-.sticky-header-wrapper {
-  position: relative;
-  height: 60px;
-  line-height: 60px;
-}
-
-.sticky-content-wrapper {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.sticky-wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 250px;
-  z-index: 2000;
-}
-
-.sticky-wrapper-bottom {
-  position: relative;
-  width: 100%;
-  min-height: 190px;
-  z-index: 2000;
-}
-
-
-.fixit {
-  position: fixed;
-  width: 100%;
-  z-index: 2000;
-}
-
-.bottom-pane {
-  position: fixed;
-  z-index: 2000;
-/*  width: 100%;
-*/  height: auto;
-}
-
-#transactions {
-  margin-top: -140px !important;
-}
-
-.absolute-wrapper {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.master-container {
-  float: left;
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-header.page.heading nav.actions.right {
-  position: fixed;
-  right: 0;
-}
-
-
-.quick-balance.left {
-  margin: 0 !important;
-  height: 40px !important;
-  line-height: 40px !important;
-  margin-top: 10px !important;
-  padding: 0 20px !important;
-
-}
-
-.topbar.navbar {
-  z-index: 3100;
-  position: fixed;
-}
-
-.topbar-branding {
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
-}
-
-.topbar.navbar .topbar-buttons {
-  position: fixed;
-  right: 0;
-  height: 58px;
-  line-height: 58px;
-
-}
-
-#create-new-journal {
-  background: #fff;
-  margin-top: 0;
-   padding-top: 0; 
-   margin-bottom: 0 !important;
-}
-
-
-
-/* Make sure this overwrites all other existing 'sorted' styles */
-.faux-table .table-head .cell.sorted {
-    color: #2DB5AB !important;
-    cursor: default;
-    font-weight: 400;
-
-}
 
 /* ---------------------------------------------
-    Breadcrumbs
+    UI Updates and Overrides For Drop 1
   ------------------------------------------- */
-/*  svg {
-    height: 20px;
-    width: auto;
-    fill: #ace63c; 
 
-  }*/
-
-  .svg-wrapper {
-    float: left;
-    display: inline-block;
+  html body .app > main {
+    padding-top: 0;
   }
 
- 
- .breadcrumbs svg {
-  height: 25px;
-  width: 25px;
-  position: relative;
-  top: -4px;
-  margin-right: 2px;
- }
+  /* ---------------------------------------------
+      Topbar Updates
+    ------------------------------------------- */
 
- .breadcrumbs svg a:hover path {
-  fill: #516199;
- }
 
- .breadcrumbs {
-    border: 1px solid #d1d3d4;
-    padding: 15px 20px 5px 20px;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    line-height: 1.3;
+  .topbar.navbar {
+    background: #464747;
+    border-bottom: 1px solid #333;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
     position: relative;
-    display: inline-block;
+    width: 100%;
   }
-  .breadcrumbs a {
-    color: #939598; 
-    padding: 0 5px;
-    text-decoration: underline;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  .breadcrumbs a:hover {
-    color: #516199;
-  }
-  .breadcrumbs ul {
+
+  .topbar.navbar .topbar-buttons {
+    float: right;
+    height: 100%;
     margin: 0;
     padding: 0;
- }
-  .breadcrumbs li:first-child a {
-    padding-left: 0;
-  }
-  .breadcrumbs li {
-    margin-bottom: 9px; 
-    display: inline;
-  }
-
-  .breadcrumbs li:not(:first-child):after {
-    content: "/";
-    color: #939598;
-
-  }
-  .breadcrumbs li:last-child:after {content: "";}
-  .breadcrumbs span {
-    color: #516199;
-    padding: 0 5px;
-    font-size: 12px;
-  }
-
-/* ---------------------------------------------
-    Full Screen Loading Animation
-  ------------------------------------------- */
-  html body .app > main .menu-system {
     position: relative;
-    z-index: 3100;
-  }
-  html body .app > main .app-content {
-    position: relative;
-  }
-  .loading {
-    position: absolute;
-    background: #2db5ab;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    z-index: 3000;
-
+    width: auto;
   }
 
-  .loading p {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 25px;
-    vertical-align: middle;
-    z-index: 3000;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 150px;
-    right: 0;
-    opacity: 1;
+  .topbar.navbar a.topbar-item {
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+    background: transparent;
+    border-left: 1px solid #333;
     color: #fff;
-    font-weight: 100;
-    text-align: center;
-  }
-
-  .loader {
-    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    float: right;
+    line-height: 58px;
+    margin: 0 !important;
     position: relative;
-    width: 65px;
-    height: 65px;
-    vertical-align: middle;
-    z-index: 3000;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    text-align: center;
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .topbar.navbar a.topbar-item:hover {
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+    background: #3a3a3a;
+    text-decoration: none;
+  }
+
+  .topbar-icon {
+    padding-right: 9px;
+  }
+
+  .topbar.navbar {
+    z-index: 3100;
+    position: fixed;
+  }
+
+  .topbar-branding {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+  }
+
+  .topbar.navbar .topbar-buttons {
+    position: fixed;
     right: 0;
-    opacity: 1;
-  }
+    height: 58px;
+    line-height: 58px;
 
-  .loader-quart {
-    border-radius: 50%;
-    border: 6px solid rgba(255, 255, 255, 0.4);
-  }
-  .loader-quart:after {
-    content: '';
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    bottom: -6px;
-    left: -6px;
-    border-radius: 50%;
-    border: 6px solid transparent;
-    border-top-color: #fff;
-    -webkit-animation: spin 1s linear infinite;
-    -moz-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      tranform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      tranform: rotate(360deg);
-    }
-  }
-
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      tranform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      tranform: rotate(360deg);
-    }
   }
 
 
-  @-moz-keyframes spin {
-    0% {
-      -moz-transform: rotate(0deg);
-      tranform: rotate(0deg);
+  /* ---------------------------------------------
+      Top Pane Updates
+    ------------------------------------------- */
+/*    .app-wrapper {
+      width: 100%;
+    }*/
+    /* Updating the height for the blue top bar to match design and maintain consitancy */
+    #improved li {
+      position: relative;
+      margin-bottom: -15px;
+      overflow: hidden;
+      width: 100%;
     }
-    100% {
-      -moz-transform: rotate(360deg);
-      tranform: rotate(360deg);
+    .header-container {
+      height: 60px;
+      line-height: 60px;
+      overflow: hidden;
     }
+
+    .sticky-header-wrapper {
+      position: relative;
+      height: 60px;
+      /*line-height: 60px;*/
+    }
+    .sticky-wrapper {
+      position: relative;
+      width: 100%;
+      min-height: 250px;
+      z-index: 2000;
+    }
+
+    .fixit {
+      position: fixed;
+      width: 100%;
+      z-index: 2000;
+      height: 60px;
+    }
+
+  .bottom-pane-container {
+    position: relative;
+  }
+  .bottom-pane {
+    border-bottom: 1px solid #d1d3d4;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding-right: 14%;
+
   }
 
-  @-ms-keyframes spin {
-    0% {
-      -ms-transform: rotate(0deg);
-      tranform: rotate(0deg);
-    }
-    100% {
-      -ms-transform: rotate(360deg);
-      tranform: rotate(360deg);
-    }
+  .drawer-content-wrapper {
+    padding-right: 7%;
   }
 
-  @-o-keyframes spin {
-    0% {
-      -o-transform: rotate(0deg);
-      tranform: rotate(0deg);
-    }
-    100% {
-      -o-transform: rotate(360deg);
-      tranform: rotate(360deg);
-    }
+  #transactions {
+    margin-top: -140px !important;
   }
 
-/*  .loading.loaded {
-    opacity: 0;
+  header.page.heading nav.actions.right {
+    position: fixed;
+    right: 0;
   }
+
+  .quick-balance.left {
+    margin: 0 !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    margin-top: 10px !important;
+    padding: 0 20px !important;
+
+  }
+
+  #create-new-journal {
+    background: #fff;
+    margin-top: 0;
+     padding-top: 0; 
+     margin-bottom: 0 !important;
+  }
+
+  header.page.heading .page.title {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 18px 0;
+    padding: 0 0 0 24px;
+    line-height: 24px;
+  }
+
+nav.actions.right {
+  line-height: 60px;
+}
+  header.page.heading nav.actions a {
+    margin: -8px 0 0 !important;
+  }
+
+  header.page.heading nav.actions.right a {
+    margin: -8px 5px -7px 5px !important;
+  }
+
+
+  /* Make sure this overwrites all other existing 'sorted' styles */
+  .faux-table .table-head .cell.sorted {
+      color: #2DB5AB !important;
+      cursor: default;
+      font-weight: 400;
+
+  }
+
+  /* ---------------------------------------------
+      Breadcrumbs
+    ------------------------------------------- */
+    .svg-wrapper {
+      float: left;
+      display: inline-block;
+    }
+
+   
+   .breadcrumbs svg {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: -4px;
+    margin-right: 2px;
+   }
+
+   .breadcrumbs svg a:hover path {
+    fill: #516199;
+   }
+
+   .breadcrumbs {
+      border: 1px solid #d1d3d4;
+      padding: 15px 20px 5px 20px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      line-height: 1.3;
+      position: relative;
+      display: inline-block;
+      border-top: 0;
+    }
+    .breadcrumbs a {
+      color: #939598; 
+      padding: 0 5px;
+      text-decoration: underline;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .breadcrumbs a:hover {
+      color: #516199;
+    }
+    .breadcrumbs ul {
+      margin: 0;
+      padding: 0;
+   }
+    .breadcrumbs li:first-child a {
+      padding-left: 0;
+    }
+    .breadcrumbs li {
+      margin-bottom: 9px; 
+      display: inline;
+    }
+
+    .breadcrumbs li:not(:first-child):after {
+      content: "/";
+      color: #939598;
+
+    }
+    .breadcrumbs li:last-child:after {content: "";}
+    .breadcrumbs span {
+      color: #516199;
+      padding: 0 5px;
+      font-size: 12px;
+    }
+
+  /* ---------------------------------------------
+      Full Screen Loading Animation
+    ------------------------------------------- */
+    html body .app > main .menu-system {
+      position: relative;
+      z-index: 3100;
+    }
+    html body .app > main .app-content {
+      position: relative;
+    }
+    .loading {
+      position: absolute;
+      background: #2db5ab;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      top:0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      z-index: 3000;
+
+    }
+
+    .loading p {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 25px;
+      vertical-align: middle;
+      z-index: 3000;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 150px;
+      right: 0;
+      opacity: 1;
+      color: #fff;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    .loader {
+      display: inline-block;
+      position: relative;
+      width: 65px;
+      height: 65px;
+      vertical-align: middle;
+      z-index: 3000;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 1;
+    }
+
+    .loader-quart {
+      border-radius: 50%;
+      border: 6px solid rgba(255, 255, 255, 0.4);
+    }
+    .loader-quart:after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      bottom: -6px;
+      left: -6px;
+      border-radius: 50%;
+      border: 6px solid transparent;
+      border-top-color: #fff;
+      -webkit-animation: spin 1s linear infinite;
+      -moz-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        tranform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        tranform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        tranform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        tranform: rotate(360deg);
+      }
+    }
+
+
+    @-moz-keyframes spin {
+      0% {
+        -moz-transform: rotate(0deg);
+        tranform: rotate(0deg);
+      }
+      100% {
+        -moz-transform: rotate(360deg);
+        tranform: rotate(360deg);
+      }
+    }
+
+    @-ms-keyframes spin {
+      0% {
+        -ms-transform: rotate(0deg);
+        tranform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        tranform: rotate(360deg);
+      }
+    }
+
+    @-o-keyframes spin {
+      0% {
+        -o-transform: rotate(0deg);
+        tranform: rotate(0deg);
+      }
+      100% {
+        -o-transform: rotate(360deg);
+        tranform: rotate(360deg);
+      }
+    }
