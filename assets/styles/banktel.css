@@ -11758,6 +11758,7 @@ html body .app > main .menu-system {
 html body .app > main .app-content {
   height: 100%;
   overflow-x: hidden;
+  z-index: 4000;
 }
 /* ---------------------------------------------
     APPLICATION HEADER / TOPBAR
