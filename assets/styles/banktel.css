@@ -5668,9 +5668,7 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-y: hidden;
     overflow-x: scroll;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #dddddd;
-    -webkit-overflow-scrolling: touch;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -11757,7 +11755,7 @@ html body .app > main .app-content {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  z-index: 2000;
+  z-index: 4000;
 }
 /* ---------------------------------------------
     APPLICATION HEADER / TOPBAR
@@ -19289,7 +19287,17 @@ nav.menu.closed.expanded i.entypo-chevron-thin-right {
 }
 nav.menu.closed.expanded span {
   opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
 }
 nav.menu.closed span {
   opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
 }
