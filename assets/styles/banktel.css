@@ -11757,8 +11757,7 @@ html body .app > main .app-content {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  -ms-overflow-style: none;
-
+  z-index: 2000;
 }
 /* ---------------------------------------------
     APPLICATION HEADER / TOPBAR
@@ -11922,7 +11921,6 @@ section.menu-system nav.menu .level {
   width: 200px;
   z-index: 1;
   overflow-y: scroll;
-  -ms-overflow-style: none;
   /* SECOND LEVEL */
 }
 
@@ -19276,4 +19274,22 @@ html body .app > main .app-content {
     -o-transform: rotate(360deg);
     tranform: rotate(360deg);
   }
+}
+
+nav.menu.closed.expanded i {
+  display: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+nav.menu.closed.expanded i.entypo-chevron-thin-right {
+  display: inline-block !important;
+}
+nav.menu.closed.expanded span {
+  opacity: 1;
+}
+nav.menu.closed span {
+  opacity: 0;
 }
