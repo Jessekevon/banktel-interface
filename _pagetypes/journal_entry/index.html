@@ -165,7 +165,7 @@
                 <h1 class="page title"><a href="#">Journal Entry</a></h1>
 
                 <nav class="actions">
-                  <a class="btn btn-primary" href="">Create Another</a>
+                  <a class="btn btn-primary loader-button" href="">Create Another</a>
                 </nav>
                 <!-- nav.actions -->
 
@@ -932,10 +932,16 @@
     });
     
     $('#transactions .transaction-details > p').ellipsis();
-    
+
     $(window).load(function(){
         $('.loading').delay(400).fadeOut(function(){$(this).remove()});
     });
+    $(document).ready(function(){
+       $('.loader-button').on('click', function(){
+        $(window).addClass('loading');
+
+       });
+     });
 
     $(document).ready(function() {
       var elementAheight = $('.bottom-pane').height();
