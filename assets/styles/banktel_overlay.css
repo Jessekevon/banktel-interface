@@ -218,10 +218,10 @@ header.page.heading nav.actions a {
   background-repeat: no-repeat;
   background-size: 122px auto;
   height: 120px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-system .topbar-branding.new-icon {
@@ -230,10 +230,10 @@ header.page.heading nav.actions a {
   background-repeat: no-repeat;
   background-size: 35px auto;
   height: 60px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @font-face {

@@ -19281,7 +19281,7 @@ html body .app > main .app-content {
   }
 }
 
-nav.menu.closed.expanded > .level > li {
+/*nav.menu.closed.expanded > .level > li {
   -webkit-transform: translateX(-50px);
   -moz-transform: translateX(-50px);
   -ms-transform: translateX(-50px);
@@ -19334,6 +19334,60 @@ nav.menu.closed li a i {
 
 }
 
+*/
+
+
+
+nav.menu.closed.expanded > .level > li > a > span {
+  display: inline-block;
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  transform: translateX(-50px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+nav.menu.closed > .level > li > a > span {
+display: inline-block;
+-webkit-transform: translateX(-200px);
+-moz-transform: translateX(-200px);
+-ms-transform: translateX(-200px);
+-o-transform: translateX(-200px);
+transform: translateX(-200px);
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+nav.menu.closed.expanded li a i {
+-webkit-transform: translateX(-50px);
+-moz-transform: translateX(-50px);
+-ms-transform: translateX(-50px);
+-o-transform: translateX(-50px);
+transform: translateX(-50px);
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+nav.menu.closed li a i {
+-webkit-transform: translateX(0);
+-moz-transform: translateX(0);
+-ms-transform: translateX(0);
+-o-transform: translateX(0);
+transform: translateX(0);
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
 
 
 
