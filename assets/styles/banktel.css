@@ -11757,6 +11757,8 @@ html body .app > main .app-content {
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 2000;
+  -ms-overflow-style: none;
+
 }
 /* ---------------------------------------------
     APPLICATION HEADER / TOPBAR
@@ -13553,7 +13555,7 @@ body {
   margin: 0;
   padding: 0;'
   overflow-x: scroll;
-  -ms-overflow-style: none;
+  -ms-overflow-style: scroll;
 }
 
 body {
