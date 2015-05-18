@@ -19354,11 +19354,11 @@ nav.menu.closed.expanded > .level > li > a > span {
 
 nav.menu.closed > .level > li > a > span {
 display: inline-block;
--webkit-transform: translateX(-200px);
--moz-transform: translateX(-200px);
--ms-transform: translateX(-200px);
--o-transform: translateX(-200px);
-transform: translateX(-200px);
+-webkit-transform: translateX(200px);
+-moz-transform: translateX(200px);
+-ms-transform: translateX(200px);
+-o-transform: translateX(200px);
+transform: translateX(200px);
 -webkit-transition: all 0.2s ease-in-out;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
