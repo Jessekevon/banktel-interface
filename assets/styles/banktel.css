@@ -11926,6 +11926,7 @@ section.menu-system nav.menu .level {
   width: 200px;
   z-index: 1;
   overflow-y: scroll;
+  -ms-overflow-style: scrollbar;
   /* SECOND LEVEL */
 }
 
@@ -12056,6 +12057,11 @@ a.collapse-link {
   top: 14px;
 }
 
+/*.menu-collapse.rotator a.collapse-link {
+  padding: 0px 15px;
+
+}
+*/
 i.collapse-icon {
   cursor: pointer;
   color: #fff;
@@ -13547,6 +13553,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none;
 }
 
 body {
