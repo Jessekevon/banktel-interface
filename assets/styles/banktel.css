@@ -19400,37 +19400,20 @@ transition: all 0.2s ease-in-out;
 }
 
 
+/* ---------------------------------------------
+      Print Check Step 1 Template
+    ------------------------------------------- */
+.print-check .breadcrumbs {
+  margin-bottom: 10px;
+}
 
+#checkpaymentlist header.block-heading.print-action-buttons {
+  padding: 30px 37px !important;
+}
 
-/*nav.menu.closed.expanded i {
-  display: none !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.print-action-buttons .btn {
+  padding: 10px 30px !important;
+  margin-right: 8px;
 
 }
-nav.menu.closed.expanded i.entypo-chevron-thin-right {
-  display: inline-block !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 
-}
-nav.menu.closed.expanded span {
-  display: inline-block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-
-}
-nav.menu.closed span {
-display: none;
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
-
-}*/

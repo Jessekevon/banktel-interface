@@ -173,7 +173,7 @@
             </div>
 
 
-            <div class="content block bottom-pane" id="search-register">
+            <div class="content block bottom-pane print-check" id="search-register">
               <div class="container-fluid">
                 <div class="row">
                   <section class="breadcrumbs">
@@ -206,74 +206,51 @@
                 <form class="form-horizontal" role="form">
 
                   <div class="row">
-
-                    <section class="col-xs-12" id="register-information">
-
+                    <section class="col-xs-8">
                       <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-lg-3 section-contents">
+                        <header class="col-xs-12 section-heading">
+                          <h2 class="section title">Print Options </h2>
+                        </header>
+                      </div>
 
-                          <div class="form-group checkbook-id">
-                            <label for="select-checkbook-id" class="col-sm-4 control-label">Checkbook ID</label>
-                            <div class="col-sm-8">
-                              <select class="chosen form-control" name="select-checkbook-id" data-placeholder="Search for account">
-                                <option></option>
-                                <option>Wells Fargo Operating Account</option>
-                                <option>Wells Fargo Savings Account</option>
-                                <option>Wells Fargo Tax Account</option>
-                                <option>Wells Fargo Investment Account</option>
-                              </select>
-                            </div>
-                          </div>
+                      <div class="col-xs-6 section-contents">
 
-                        </div>
-                        <!-- .section-contents -->
-                        <div class="col-xs-12 col-sm-9 section-contents">
-
-                          <div class="form-group">
-                            <label class="col-sm-3 col-lg-1 control-label">Date Range
-                              <br><span>(optional)</span></label>
-                            <div class="col-sm-3 beginning">
-                              <div class="date-key">
-                                <div class="input-group date">
-                                  <input type="text" class="form-control" id="beginning-date" name="beginning-date" placeholder="Beginning Date">
-                                  <label for="beginning-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
-                                </div>
-                              </div>
-                              <!-- .date-key -->
-                              <div class="balance-key">
-                                <input type="text" class="form-control" id="beginning-balance" name="beginning-balance" placeholder="Beginning Balance">
-                              </div>
-                              <!-- .balance-key -->
-                            </div>
-                            <!-- .beginning -->
-
-                            <div class="col-sm-1 range-indicator">
-                              <i class="btn btn-default entypo-right-thin"></i>
-                            </div>
-
-                            <div class="col-sm-3 ending">
-                              <div class="date-key">
-                                <div class="input-group date">
-                                  <input type="text" class="form-control" id="ending-date" name="ending-date" placeholder="Ending Date">
-                                  <label for="ending-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
-                                </div>
-                              </div>
-                              <!-- .date-key -->
-                              <div class="balance-key">
-                                <input type="text" class="form-control" id="ending-balance" name="ending-balance" placeholder="Ending Balance">
-                              </div>
-                              <!-- .balance-key -->
-                            </div>
-                            <!-- .beginning -->
+                        <div class="form-group " for="NextCheckNumber">
+                          <label class="not-required control-label col-sm-3" for="NextCheckNumber">Next Check#</label>
+                          <div class="col-sm-6">
+                            <input class="form-control integer" data-val="true" data-val-number="The field Next Check# must be a number." data-val-required="The Next Check# field is required." id="NextCheckNumber" name="NextCheckNumber" type="text" value="0" />
+                            <span class="field-validation-valid" data-valmsg-for="NextCheckNumber" data-valmsg-replace="true"></span>
                           </div>
                         </div>
-                        <!-- .section-contents -->
+
+                      </div>
+                      <div class="col-xs-6 section-contents">
+
+                        <div class="form-group" for="FormatTypeId">
+                          <label class="not-required control-label col-sm-3" for="FormatTypeId">Check Format</label>
+                          <div class="col-sm-6">
+                            <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                              <option selected="selected" value="1">Check On Top</option>
+                              <option value="2">Check In Middle</option>
+                              <option value="3">Check At Bottom</option>
+                            </select>
+                            <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
 
                       </div>
 
                     </section>
-                    <!-- #register-information -->
-
+                    <section class="col-xs-4">
+                      <div class="row">
+                        <header class="col-xs-12 section-heading">
+                          <h2 class="section title">Bank Account </h2>
+                        </header>
+                      </div>
+                      <div class="col-xs-12 section-contents">
+                        1234567 / 12345678
+                      </div>
+                    </section>
                   </div>
 
                 </form>
@@ -284,299 +261,236 @@
           </div>
           <!-- sticky wrapper -->
 
-          <div class="content block" id="register-transactions">
+          <div class="content block" id="checkpaymentlist">
             <div class="container-fluid">
-
               <header class="block-heading tier static">
                 <div class="indicator"></div>
-                <h2 class="block title">Transactions</h2>
-                <div class="table-search form-group right grid-form">
-                  <select class="chosen form-control" name="select-journal-vendor" data-placeholder="Search Transactions">
-                    <option></option>
-                    <option>Southwest Airlines</option>
-                    <option>Southwestern Homes Magazine</option>
-                    <option>Southwestern Landscaping</option>
-                    <option>Southwest Airlines</option>
-                    <option>Southwestern Homes Magazine</option>
-                    <option>Southwestern Landscaping</option>
-                  </select>
-                </div>
+                <h4 class="block title">Checks That Will Be Printed</h4>
               </header>
-              <!-- header.block.heading -->
-
-
               <div class="block-contents">
                 <div class="faux-table">
                   <header class="table-head tier static">
                     <div class="indicator"></div>
-                    <div class="cell date sorted">
-                      <p>Date</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell type">
-                      <p>Type</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell reference-number">
-                      <p>Ref. #</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell transaction-details">
-                      <p>Transaction Details</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell cleared">
-                      <p>Cleared</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell amount">
-                      <p>Amount</p><span><i class="entypo-chevron-down"></i></span></div>
-                    <div class="cell balance">
-                      <p>Balance</p><span><i class="entypo-chevron-down"></i></span></div>
+                    <div class="cell paydate sorted">Pay Date</div>
+                    <div class="cell checknumber">Check#</div>
+                    <div class="cell amount">Amount</div>
+                    <div class="cell vendor">Vendor</div>
+                    <div class="cell memo">Memo</div>
                   </header>
-                  <!-- .table-head.tier.static -->
-
                   <ul class="table-content">
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-                        <p>City of Austin</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Utilities
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
+                      </div>
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-not-cleared entypo-check"></span></div>
-                      <div class="cell amount debited">-$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Acme Office Supplies</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Central Texas Cleaning</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Repairs &amp; Maintenance
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
+                      </div>
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-not-cleared entypo-check"></span></div>
-                      <div class="cell amount debited">-$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Austin Utilities</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Big Red Sun</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Income
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <ul class="memos">
-                          <li class="memo">
-                            Memo
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .memos -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
+                      </div>
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-cleared entypo-check"></span></div>
-                      <div class="cell amount debited">-$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Time Warner</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Trello</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Income from Equity
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
+                      </div>
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-cleared entypo-check"></span></div>
-                      <div class="cell amount credited">+$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Widget Supplier</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Barclaycard</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Credit Cards
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
+                      </div>
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-cleared entypo-check"></span></div>
-                      <div class="cell amount debited">-$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Granite Office Park</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
+                    <li class="tier static checkpayment">
+                      <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="PrintCheckList_0__Id" name="PrintCheckList[0].Id" type="hidden" value="36" />
                       <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Employee 1</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Payroll
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell paydate">
+                        <div class="input-group date">
+                          <input Value="05/20/2015" class="form-control" data-val="true" data-val-date="The field PayDate must be a date." data-val-required="The PayDate field is required." id="PrintCheckList_0__PayDate" name="PrintCheckList[0].PayDate" type="text" value="5/20/2015 8:37:26 PM"
+                          />
+                          <span class="input-group-addon"><i class="entypo-calendar"></i></span>
+                        </div>
                       </div>
-                      <!-- .cell.transaction-details -->
-
-                      <div class="cell cleared"><span class="has-cleared entypo-check"></span></div>
-                      <div class="cell amount credited">+$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
-                    </li>
-                    <!-- .tier.with-actions.transaction -->
-
-                    <li class="tier transaction">
-                      <div class="indicator"></div>
-                      <div class="cell date">1/1/2014</div>
-                      <div class="cell type">Check</div>
-                      <div class="cell reference-number">CHK10234</div>
-                      <div class="cell transaction-details">
-
-                        <p>Employee 2</p>
-
-                        <ul class="tagged">
-                          <li class="tag">
-                            Payroll
-                            <span class="edit-indicator"><i class="entypo-pencil"></i></span>
-                          </li>
-                        </ul>
-                        <!-- .tagged -->
-
-                        <nav class="actions">
-                          <a class="btn btn-primary btn-hidden inverted">Add Memo</a>
-                        </nav>
-                        <!-- nav.actions -->
-
+                      <div class="cell checknumber">
+                        <input class="form-control" data-val="true" data-val-number="The field CheckNumber must be a number." data-val-required="The CheckNumber field is required." id="PrintCheckList_0__CheckNumber" name="PrintCheckList[0].CheckNumber" type="text"
+                        value="119" />
                       </div>
-                      <!-- .cell.transaction-details -->
+                      <div class="cell amount">
 
-                      <div class="cell cleared"><span class="has-cleared entypo-check"></span></div>
-                      <div class="cell amount credited">+$297.34</div>
-                      <div class="cell balance">$10,255.24</div>
+                        <div class="form-group " for="PrintCheckList_0__CheckAmount">
+                          <label class="not-required control-label hidden" for="PrintCheckList_0__CheckAmount">CheckAmount</label>
+                          <div class="">
+                            <input class="form-control decimal" data-val="true" data-val-number="The field CheckAmount must be a number." data-val-required="The CheckAmount field is required." id="PrintCheckList_0__CheckAmount" name="PrintCheckList[0].CheckAmount" type="text" value="0.00"
+                            />
+                            <span class="field-validation-valid" data-valmsg-for="PrintCheckList[0].CheckAmount" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell vendor">Hakan & Rusty Test</div>
+                      <div class="cell memo">
+                        <div class="form-group">
+                          <textarea class="form-control" cols="20" id="PrintCheckList_0__Memo" name="PrintCheckList[0].Memo" rows="2">
+                          </textarea>
+                        </div>
+                      </div>
                     </li>
-                    <!-- .tier.with-actions.transaction -->
 
                   </ul>
-                  <!-- ul.table-content -->
+
                 </div>
-                <!-- .faux-table -->
+
               </div>
-              <!-- .block-contents -->
-
-              <footer class="block-footing tier static">
+              <header class="block-heading tier static print-action-buttons">
                 <div class="indicator"></div>
-                <!--                 <div class="row transactions-totals">
-                  <div class="table-total right">
-                    <span>Total:</span> $10,255.24
-                  </div>
+                <div class="row transactions-actions drawer-buttons">
+                  <a class="btn btn-primary action-button" href="">Test Print <!-- <i class="entypo-save"></i> --></a>
+                  <a class="btn btn-primary action-button" href="">Print Checks <!-- <i class="entypo-chevron-thin-right"></i> --></a>
                 </div>
-                <div class="row transactions-actions">
-                  <a class="btn btn-primary" href="">Save Draft <i class="entypo-save"></i></a>
-                  <a class="btn btn-primary" href="">Save &amp; Post <i class="entypo-chevron-thin-right"></i></a>
-                </div>
- -->
-              </footer>
-              <!-- .block-footing.tier.static -->
-
+              </header>
 
             </div>
-            <!-- .container -->
           </div>
           <!-- .content.block #transactions -->
 
