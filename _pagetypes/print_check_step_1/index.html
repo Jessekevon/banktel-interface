@@ -505,6 +505,7 @@
   </div>
   <!-- .app -->
 
+
  <div class="modal fade multi-step" id="testPrint">
      <div class="modal-dialog">
          <div class="modal-content">
@@ -616,7 +617,8 @@
                  <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)</a>
                  <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info</a>
                  <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks</a>
-                 <a class="btn btn-primary gray step step-2" data-step="4" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Batch Reprint</a>
+                 <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 2)">Batch Reprint</a>
+
              </div>
          </div>
      </div>
@@ -654,6 +656,11 @@
   sendEvent = function(sel, step) {
       $(sel).trigger('next.m.' + step);
   }
+
+  $('.print-button').on('click', function() {  
+    window.print();  
+    return false;
+  });
   </script>
 
 
