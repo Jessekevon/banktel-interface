@@ -10202,7 +10202,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: black;
+  background-color: rgba(65, 64, 66, 0.95);
 }
 
 .modal-backdrop.fade {
@@ -10211,7 +10211,7 @@ button.close {
 }
 
 .modal-backdrop.in {
-  opacity: 0.5;
+  opacity: 1;
   filter: alpha(opacity=50);
 }
 
@@ -19417,3 +19417,10 @@ transition: all 0.2s ease-in-out;
 
 }
 
+/* ---------------------------------------------
+      Print Check Modal Updates
+    ------------------------------------------- */
+
+    .modal-content .label {
+      display: none;
+    }

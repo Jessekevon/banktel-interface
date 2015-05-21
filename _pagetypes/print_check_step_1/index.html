@@ -482,11 +482,12 @@
                 </div>
 
               </div>
+
               <header class="block-heading tier static print-action-buttons">
                 <div class="indicator"></div>
                 <div class="row transactions-actions drawer-buttons">
-                  <a class="btn btn-primary action-button" href="">Test Print <!-- <i class="entypo-save"></i> --></a>
-                  <a class="btn btn-primary action-button" href="">Print Checks <!-- <i class="entypo-chevron-thin-right"></i> --></a>
+                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#testPrint" href="">Test Print <!-- <i class="entypo-save"></i> --></a>
+                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">Print Checks <!-- <i class="entypo-chevron-thin-right"></i> --></a>
                 </div>
               </header>
 
@@ -504,6 +505,143 @@
   </div>
   <!-- .app -->
 
+
+  <!-- Test Print Modal -->
+<!--   <div class="modal fade" id="testPrint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="js-title-step"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="row hide" data-step="1" data-title="Test Print">
+            <div class="well">
+              <p>Step 1: Feed <strong>Blank Paper</strong> into your printer.</p>
+              <p>When you're ready, click to download a <strong>Test Print PDF</strong> and print a sample.</p>
+            </div>
+          </div>
+          <div class="row hide" data-step="2" data-title="Test Print">
+            <div class="well">As you can see, this is the second and last step!</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default js-btn-step pull-left" data-orientation="cancel" data-dismiss="modal"></button>
+          <button type="button" class="btn btn-success js-btn-step" data-orientation="next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+
+
+
+
+
+ <div class="modal fade multi-step" id="testPrint">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h4 class="modal-title step-1" data-step="1">Test Print</h4>
+                 <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                 <h4 class="modal-title step-3" data-step="3">3 Step</h4>
+                 <h4 class="modal-title step-4" data-step="4">Final Step</h4>
+
+                 <div class="m-progress">
+                     <div class="m-progress-bar-wrapper">
+                         <div class="m-progress-bar">
+                         </div>
+                     </div>
+                     <div class="m-progress-stats">
+                         <span class="m-progress-current">
+                         </span>
+                         /
+                         <span class="m-progress-total">
+                         </span>
+                     </div>
+                     <div class="m-progress-complete">
+                         Completed
+                     </div>
+                 </div>
+             </div>
+             <div class="modal-body step-1" data-step="1">
+                 This is step 1.
+             </div>
+             <div class="modal-body step-2" data-step="2">
+                 This is the second step.
+             </div>
+             <div class="modal-body step-3" data-step="3">
+                 This is third.
+             </div>
+             <div class="modal-body step-4" data-step="4">
+                 This is the final step.
+             </div>
+
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#testPrint', 3)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#testPrint', 4)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Cancel</button>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+ <div class="modal fade multi-step" id="printChecks">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
+                 <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                 <h4 class="modal-title step-3" data-step="3">3 Step</h4>
+                 <h4 class="modal-title step-4" data-step="4">Final Step</h4>
+
+                 <div class="m-progress">
+                     <div class="m-progress-bar-wrapper">
+                         <div class="m-progress-bar">
+                         </div>
+                     </div>
+                     <div class="m-progress-stats">
+                         <span class="m-progress-current">
+                         </span>
+                         /
+                         <span class="m-progress-total">
+                         </span>
+                     </div>
+                     <div class="m-progress-complete">
+                         Completed
+                     </div>
+                 </div>
+             </div>
+             <div class="modal-body step-1" data-step="1">
+                 This is step 1.
+             </div>
+             <div class="modal-body step-2" data-step="2">
+                 This is the second step.
+             </div>
+             <div class="modal-body step-3" data-step="3">
+                 This is third.
+             </div>
+             <div class="modal-body step-4" data-step="4">
+                 This is the final step.
+             </div>
+
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#printChecks', 3)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#printChecks', 4)">Continue</button>
+                 <button type="button" class="btn btn-primary step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</button>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')
@@ -512,6 +650,7 @@
   <script src="/assets/scripts/bootstrap.js"></script>
   <script src="/assets/scripts/plugins.js"></script>
   <script src="/assets/scripts/banktel.js"></script>
+  <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
 
   <script>
     // Inst chosen on .checkbook-id select
@@ -521,24 +660,18 @@
       no_results_text: "Sorry, we were unable to find "
     });
 
-    // Inst chosen on .new-transaction select elements
-    // $('.new-transaction .chosen').chosen({
-    //   allow_single_deselect: true,
-    //   no_results_text: "Sorry, we were unable to find "
-    // });
-
-    // Edit tier on click
-    // $('.tier.transaction .transaction-details p, .tier.transaction .transaction-details .tag, .tier.transaction .payment, .tier.transaction .deposit').click(function(){
-    //   var tierParent = $( this ).closest('.tier.with-actions');
-    //   tierParent.html("<div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div>").removeClass("transaction").addClass("new-transaction");
-    //   $('.new-transaction .chosen').chosen('chosen:updated');
-    // });
   </script>
   <script type="text/javascript">
     $(window).load(function(){
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
   </script>
+  <script>
+  sendEvent = function(sel, step) {
+      $(sel).trigger('next.m.' + step);
+  }
+  </script>
+
 
 </body>
 
