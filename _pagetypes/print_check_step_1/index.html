@@ -505,140 +505,124 @@
   </div>
   <!-- .app -->
 
-
-  <!-- Test Print Modal -->
-<!--   <div class="modal fade" id="testPrint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="js-title-step"></h4>
-        </div>
-        <div class="modal-body">
-          <div class="row hide" data-step="1" data-title="Test Print">
-            <div class="well">
-              <p>Step 1: Feed <strong>Blank Paper</strong> into your printer.</p>
-              <p>When you're ready, click to download a <strong>Test Print PDF</strong> and print a sample.</p>
-            </div>
-          </div>
-          <div class="row hide" data-step="2" data-title="Test Print">
-            <div class="well">As you can see, this is the second and last step!</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default js-btn-step pull-left" data-orientation="cancel" data-dismiss="modal"></button>
-          <button type="button" class="btn btn-success js-btn-step" data-orientation="next"></button>
-        </div>
-      </div>
-    </div>
-  </div>
- -->
-
-
-
-
-
  <div class="modal fade multi-step" id="testPrint">
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
                  <h4 class="modal-title step-1" data-step="1">Test Print</h4>
-                 <h4 class="modal-title step-2" data-step="2">Step 2</h4>
-                 <h4 class="modal-title step-3" data-step="3">3 Step</h4>
-                 <h4 class="modal-title step-4" data-step="4">Final Step</h4>
-
-                 <div class="m-progress">
-                     <div class="m-progress-bar-wrapper">
-                         <div class="m-progress-bar">
-                         </div>
-                     </div>
-                     <div class="m-progress-stats">
-                         <span class="m-progress-current">
-                         </span>
-                         /
-                         <span class="m-progress-total">
-                         </span>
-                     </div>
-                     <div class="m-progress-complete">
-                         Completed
-                     </div>
-                 </div>
+                 <h4 class="modal-title step-2" data-step="2">Test Print</h4>
+                 <h4 class="modal-title step-3" data-step="3">Print Checks</h4>
+                 <h4 class="modal-title step-4" data-step="4">Printing in Process</h4>
+                 <a class="btn btn-primary" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Cancel</a>
              </div>
              <div class="modal-body step-1" data-step="1">
-                 This is step 1.
+                <div class="col-sm-8 step-content">
+                  <p>Step 1 : Feed <strong> Blank Paper</strong> into<br> your printer.</p>
+                  <br>
+                  <p>When you're ready, click to download<br>a <strong>Test Print PDF</strong> and print a sample.</p>
+                </div>
+                <div class="col-sm-4 icon-padding">
+                  <img class="img-responsive print-paper" src="../../assets/images/print@2x.png">
+                </div>
              </div>
              <div class="modal-body step-2" data-step="2">
-                 This is the second step.
+              <div class="col-sm-8 step-content">
+                <p>Step 2: <strong> Review your test print </strong>for errors <br> and inconsistencies, as well as formatting<br> against your actual check template.</p>
+                <br>
+                <p><strong>Is the information from your <br> test print correct?</strong></p>
+              </div>
+
+              <div class="col-sm-4 icon-padding">
+                <img class="img-responsive print-paper" src="../../assets/images/print@2x.png">
+                <img class="img-responsive print-check-icon" src="../../assets/images/print_check@2x.png">
+              </div>
              </div>
              <div class="modal-body step-3" data-step="3">
-                 This is third.
+              <div class="col-sm-8 step-content">
+                <p>Step 3: <strong> Load your check paper </strong>into<br> the printer.</p>
+                <br>
+                <p>When you're ready,<strong>download the <br> print PDF</strong>for the checks in the batch, <br> and print from this document.</p>
+                <br>
+                <p class="print-alert"><strong>Note: </strong>Always check to be sure the check <br> numbers in the PDF match the numbers on <br> the checks you're feeding into the printer!</p>
+              </div>
+              <div class="col-sm-4 icon-padding">
+                <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+              </div>
+
              </div>
              <div class="modal-body step-4" data-step="4">
-                 This is the final step.
+              <div class="col-sm-8 step-content">
+                <p>Step 4: <strong> Check your work. </strong>Did everything <br> go through?</p>
+                <br>
+                <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
+                <br>
+                <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>                
+              </div>
+              <div class="col-sm-4 icon-padding">
+                <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+              </div>
              </div>
 
              <div class="modal-footer">
-                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#testPrint', 3)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#testPrint', 4)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Cancel</button>
+                 <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Download Test Print(PDF)</a>
+                 <a class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#testPrint', 3)">Yes! I'm ready to print.</a>
+                 <a class="btn btn-primary gray step step-2" data-dismiss="modal">Edit Check Info</a>
+                 <a class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#testPrint', 4)">Download Print (PDF)</a>
+                 <a class="btn btn-primary gray step step-3" data-dismiss="modal">Edit Check Info</a>
+                 <a class="btn btn-primary step step-4" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks</a>
+                 <a class="btn btn-primary gray step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Batch Reprint</a>
 
              </div>
          </div>
      </div>
  </div>
+<!-- End Test Pring Modal -->
 
+ <!-- Begin Print Check Modal -->
 
  <div class="modal fade multi-step" id="printChecks">
      <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
                  <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
-                 <h4 class="modal-title step-2" data-step="2">Step 2</h4>
-                 <h4 class="modal-title step-3" data-step="3">3 Step</h4>
-                 <h4 class="modal-title step-4" data-step="4">Final Step</h4>
-
-                 <div class="m-progress">
-                     <div class="m-progress-bar-wrapper">
-                         <div class="m-progress-bar">
-                         </div>
-                     </div>
-                     <div class="m-progress-stats">
-                         <span class="m-progress-current">
-                         </span>
-                         /
-                         <span class="m-progress-total">
-                         </span>
-                     </div>
-                     <div class="m-progress-complete">
-                         Completed
-                     </div>
-                 </div>
+                 <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
+                 <a class="btn btn-primary" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
              </div>
              <div class="modal-body step-1" data-step="1">
-                 This is step 1.
+              <div class="col-sm-8 step-content">
+                <p>Step 1: <strong> Load your check paper </strong>into<br> the printer.</p>
+                <br>
+                <p>When you're ready,<strong>download the <br> print PDF</strong>for the checks in the batch, <br> and print from this document.</p>
+                <br>
+                <p class="print-alert"><strong>Note: </strong>Always check to be sure the check <br> numbers in the PDF match the numbers on <br> the checks you're feeding into the printer!</p>
+              </div>
+              <div class="col-sm-4 icon-padding">
+                <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+              </div>
              </div>
              <div class="modal-body step-2" data-step="2">
-                 This is the second step.
+              <div class="col-sm-8 step-content">
+                <p>Step 2: <strong> Check your work. </strong>Did everything <br> go through?</p>
+                <br>
+                <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
+                <br>
+                <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>                
+              </div>
+              <div class="col-sm-4 icon-padding">
+                <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+              </div>
              </div>
-             <div class="modal-body step-3" data-step="3">
-                 This is third.
-             </div>
-             <div class="modal-body step-4" data-step="4">
-                 This is the final step.
-             </div>
-
              <div class="modal-footer">
-                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#printChecks', 3)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#printChecks', 4)">Continue</button>
-                 <button type="button" class="btn btn-primary step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</button>
-
+                 <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)</a>
+                 <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info</a>
+                 <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks</a>
+                 <a class="btn btn-primary gray step step-2" data-step="4" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Batch Reprint</a>
              </div>
          </div>
      </div>
  </div>
+
+
 
 
 

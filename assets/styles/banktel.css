@@ -19411,7 +19411,7 @@ transition: all 0.2s ease-in-out;
   padding: 30px 37px !important;
 }
 
-.print-action-buttons .btn {
+.print-action-buttons .btn, .modal .btn {
   padding: 10px 30px !important;
   margin-right: 8px;
 
@@ -19424,3 +19424,78 @@ transition: all 0.2s ease-in-out;
     .modal-content .label {
       display: none;
     }
+
+    .modal .btn-primary {
+      color: #ffffff !important;
+      background-color: #2db5ab !important;
+      border-color: white !important;
+    }
+
+    .btn-primary.gray {
+      color: #ffffff !important;
+      background-color: #a7a9ac !important;
+      border-color: #a7a9ac !important;
+    }
+
+    .modal-body {
+       padding: 0; 
+    }
+
+    .icon-padding {
+      padding: 30px 0;
+    }
+
+    .step-content {
+      padding: 30px 20px;
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .modal-dialog .modal-content .modal-header {
+      padding: 20px 20px;
+    }
+
+    .modal img {
+      margin: 0 auto;
+    }
+
+    .modal-header .btn {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      color: #2db5ab !important;
+      background-color: #ffffff !important;
+      border-color: #2db5ab !important;
+      padding: 6px 14px !important;
+    }
+
+    .modal-footer .btn {
+      float: left;
+    }
+
+    img.print-paper {
+      width: 87px;
+      height: auto;
+    }
+
+    img.print-check-icon {
+      height: 35px;
+      width: auto;
+      position: relative;
+      top: 15px;
+    }
+
+    img.printer-icon {
+      width: 150px;
+      height: auto;
+    }
+
+    p.print-alert {
+    color: #DE5C4C;
+    }
+
+
+
+    h4.modal-title {
+
+    }
+
