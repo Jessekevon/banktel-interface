@@ -19403,13 +19403,18 @@ transition: all 0.2s ease-in-out;
 /* ---------------------------------------------
       Print Check Step 1 Template
     ------------------------------------------- */
-.print-check .breadcrumbs {
+.print-check .breadcrumbs, .check-review .breadcrumbs {
   margin-bottom: 10px;
 }
 
 #checkpaymentlist header.block-heading.print-action-buttons {
   padding: 30px 37px !important;
 }
+.check-review footer .drawer-buttons {
+  padding: 30px 0 0 15px !important;
+
+}
+
 
 .print-action-buttons .btn, .modal .btn {
   padding: 10px 30px !important;
