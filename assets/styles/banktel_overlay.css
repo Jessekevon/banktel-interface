@@ -2584,35 +2584,35 @@ textarea {
   float: left;
 }
 
-#outstanding-invoices .faux-table .cell.issue-date {
+/*#outstanding-invoices .faux-table .cell.issue-date {
   width: 10%;
   min-width: 70px;
-}
+}*/
 
-#outstanding-invoices .faux-table .cell.due-date {
+/*#outstanding-invoices .faux-table .cell.due-date {
   width: 10%;
   min-width: 70px;
-}
+}*/
 
-#outstanding-invoices .faux-table .cell.invoice-number {
+/*#outstanding-invoices .faux-table .cell.invoice-number {
   width: 8%;
   min-width: 70px;
-}
+}*/
 
-#outstanding-invoices .faux-table .cell.customer {
+/*#outstanding-invoices .faux-table .cell.customer {
   width: 40%;
   min-width: 320px;
-}
+}*/
 
-#outstanding-invoices .faux-table .cell.balance {
+/*#outstanding-invoices .faux-table .cell.balance {
   width: 10%;
   min-width: 80px;
-}
+}*/
 
-#outstanding-invoices .faux-table .cell.status {
+/*#outstanding-invoices .faux-table .cell.status {
   width: 8%;
   min-width: 60px;
-}
+}*/
 
 #outstanding-invoices .faux-table .cell.paymentstatus {
   width: 12%;

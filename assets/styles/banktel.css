@@ -18,6 +18,9 @@ Copyright (c) 2013 Daniel Eden
 */
 /* Stagger mixin based on https://github.com/digitalfio/Stagger.css */
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
 ._1 {
   -webkit-animation-delay: 0.3s;
   -ms-animation-delay: 0.3s;
@@ -19452,10 +19455,9 @@ transition: all 0.2s ease-in-out;
 
 
 .print-action-buttons .btn, .modal .btn {
-  padding: 12px 15px !important;
-
+  padding: 8px 15px !important;
   margin-right: 8px;
-
+  line-height: 2 !important;
 }
 
 .print-action-buttons .entypo-chevron-thin-right:before {
@@ -19464,6 +19466,57 @@ transition: all 0.2s ease-in-out;
   top: 2px;
   margin-left: 10px;
 }
+
+.entypo-right-open-big:before {
+  content: "\e766";
+  margin-left: 10px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.entypo-doc-text:before {
+  content: "\1f4c4";
+  font-size: 20px;
+  margin-left: 13px;
+  position: relative;
+  top: 3px;
+}
+
+.entypo-cancel:before {
+  content: "\2715";
+  font-size: 19px;
+  margin-left: 13px;
+  position: relative;
+  top: 3px;
+}
+
+.entypo-print {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.entypo-print:before {
+  content: "\e626";
+  font-size: 17px;
+  position: relative;
+  top: 3px;
+}
+
+.entypo-check {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+
+.btn:hover .entypo-check {
+  border: 1px solid #2db5ab;
+
+}
+
 
 /* ---------------------------------------------
       Print Check Modal Updates
@@ -19499,6 +19552,14 @@ transition: all 0.2s ease-in-out;
       display:table-cell;
         vertical-align:middle;
         float:none;
+    }
+
+    .center-bottom {
+      display: table-cell;
+      vertical-align: bottom;
+      float: none;
+      padding: 0;
+
     }
 
 /*    .icon-padding {
@@ -19557,8 +19618,8 @@ transition: all 0.2s ease-in-out;
     }
 
     img.printer-icon {
-      width: 150px;
-      height: auto;
+      /*width: 150px;
+      height: auto;*/
     }
 
     p.print-alert {
@@ -19586,7 +19647,6 @@ transition: all 0.2s ease-in-out;
       padding-left: 0;
       font-size: 13px !important;
       padding-right: 0 !important;
-      padding-left: 0 !important;
       width: 70% !important;
 
     }
@@ -19600,6 +19660,15 @@ transition: all 0.2s ease-in-out;
       font-size: 13px !important;
 
     }
+
+    p.cheat-right {
+      padding-left: 5px !important;
+    }
+
+    .check-review .faux-table ul.table-content li.tier input, .faux-table ul.table-content li.tier select, .faux-table ul.table-content li.tier textarea, .faux-table ul.table-content li.tier .chosen-container-single .chosen-single {
+  border-radius: 2px;
+  padding-left: 8px !important;
+}
 
     .check-review .fancy-select {
       display: inline-block !important;
@@ -19623,8 +19692,8 @@ transition: all 0.2s ease-in-out;
       min-width: 70px;
     }
 
-/*    .check-review .faux-table .cell.due-date {
-      width: 10px !important;
+    .check-review .faux-table .cell.due-date {
+      width: 10% !important;
       min-width: 70px;
     }
 
@@ -19638,18 +19707,22 @@ transition: all 0.2s ease-in-out;
     }
 
     .check-review .faux-table .cell.balance {
-      width: 25% !important;
+      width: 20% !important;
       min-width: 80px;
     }
 
    .check-review .faux-table .cell.status {
-      width: 25% !important;
+      width: 30% !important;
       min-width: 60px;
+    }
+
+   .check-review .faux-table .cell.status input, .check-review .faux-table .cell.status textarea {
+      width: 100% !important;
     }
     .check-review .faux-table .table-head .cell p {
   float: none !important;
 }
-*/
+
 p.result {
   margin-left: 10px !important;
   float: none !important;
@@ -19794,23 +19867,6 @@ text-align: center;
 
 .pay-from-account {
   padding-right: 100px;
-}
-.entypo-print {
-  margin-left: 10px;
-  font-size: 14px;
-}
-
-.entypo-check {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 5px;
-  margin-left: 10px;
-}
-
-
-.btn:hover .entypo-check {
-  border: 1px solid #2db5ab;
-
 }
 
 .check-review .faux-table .cell.issue-date.bulk-cell {
