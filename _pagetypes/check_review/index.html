@@ -423,7 +423,7 @@
                               </li>
                               <li class="tier no-border-bottom status-posted paymentstatus-pastdue">
                                 <div class="indicator"></div>
-                                <div class="cell issue-date">
+                                <div class="cell issue-date bulk-cell">
                                   <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
                                   <label class="form-item-label_checkbox" for="selectall2"></label>
                                   <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
@@ -444,11 +444,10 @@
                               <div class="indicator"></div>
                               <div class="row transactions-actions drawer-buttons">
                                 <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">
-                                  Reprint Selected <!-- <i class="entypo-save"></i> -->
+                                  Reprint Selected <i class="entypo-print" data-text="print"></i>
                                 </a>
-                                <a class="btn btn-primary action-button" data-toggle="modal" href="/_pagetypes/print_success">
-                                  Done Printing <!-- <i class="entypo-chevron-thin-right"></i> -->
-                                </a>
+                                <a class="btn btn-primary action-button gray" data-toggle="modal" href="/_pagetypes/print_success">
+                                  Done Printing <i class="entypo-chevron-thin-right"></i>                                </a>
                               </div>
                             </footer>
                           </div>
@@ -513,10 +512,14 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                          <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)</a>
-                          <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info</a>
-                          <a class="btn btn-primary step step-2" href="/_pagetypes/check_review/">Review Checks</a>
-                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 2)">Batch Reprint</a>
+
+                           <iframe src="../../assets/images/test.pdf" style="display: none" id="PDFtoPrint"></iframe>
+
+                          <a class="btn btn-primary step step-1" data-step="1" value="Print" onclick="sendEvent('#printChecks', 1),document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Run Test Print(PDF)</a>
+
+                          <a class="btn btn-primary gray step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next</a>
+                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish</a>
+                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" onclick="sendEvent('#printChecks', 1)">Back</a>
 
                       </div>
                   </div>
@@ -614,11 +617,6 @@
           sendEvent = function(sel, step) {
               $(sel).trigger('next.m.' + step);
           }
-
-          $('.print-button').on('click', function() {  
-            window.print();  
-            return false;
-          });
           </script>
 
         </body>

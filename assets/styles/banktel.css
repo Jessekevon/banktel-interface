@@ -19458,6 +19458,13 @@ transition: all 0.2s ease-in-out;
 
 }
 
+.print-action-buttons .entypo-chevron-thin-right:before {
+  content: "\e6d8";
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
 /* ---------------------------------------------
       Print Check Modal Updates
     ------------------------------------------- */
@@ -19806,7 +19813,7 @@ text-align: center;
 
 }
 
-
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-@import url(http://fonts.googleapis.com/css?family=PT+Mono);
-
+.check-review .faux-table .cell.issue-date.bulk-cell {
+  width: 160px !important;
+  margin-right: 15px !important;
+}
