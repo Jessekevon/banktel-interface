@@ -18340,7 +18340,7 @@ i.popover-pencil {
   color: #58595B;
 }
 
-.blue-dot {
+/*.blue-dot {
   margin-right: 25px;
 }
 
@@ -18367,7 +18367,7 @@ i.popover-pencil {
   width: 8px;
   margin-top: 7px;
 }
-
+*/
 .chart-dot-1 {
   margin-right: 25px;
 }
@@ -18511,9 +18511,41 @@ span.acct-balance {
   margin-bottom: 9px;
 }
 
+.cash-balances-inner {
+  height: 140px;
+  overflow: scroll;
+}
 .cash-balances hr {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+/*.cash-balances-inner div:nth-child(even) {
+  color: #2DB5AB;
+
+}
+*/.cash-balances-inner div:nth-child(even):before {
+  background: #2DB5AB;
+  content: "";
+  position: relative;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-top: 7px;
+  float: left;
+  margin-right: 10px;
+}
+
+.cash-balances-inner div:nth-child(odd):before {
+  background: #516199;
+  content: "";
+  position: relative;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-top: 7px;
+  float: left;
+  margin-right: 10px;
 }
 
 span.refresh {
