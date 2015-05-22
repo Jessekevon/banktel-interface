@@ -19483,6 +19483,7 @@ transition: all 0.2s ease-in-out;
 
     .center-row {
       display:table;
+      width: 100%;
     }
     .center {
       display:table-cell;
@@ -19491,6 +19492,7 @@ transition: all 0.2s ease-in-out;
     }
 
     .icon-padding {
+      padding-left: 0 !important;
     }
 
   .modal.multi-step  .modal-body {
@@ -19568,7 +19570,7 @@ transition: all 0.2s ease-in-out;
 }
 
 
-    .check-review input, textarea {
+    .check-review input, .check-review textarea {
        background: #ffffff !important; 
       border: 0px !important; 
       -webkit-box-shadow: none !important;
@@ -19577,6 +19579,10 @@ transition: all 0.2s ease-in-out;
       display: inline-block;
       padding-left: 0;
       font-size: 13px !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      width: 70% !important;
+
     }
 
     .check-review input:focus  {
@@ -19640,6 +19646,7 @@ transition: all 0.2s ease-in-out;
 */
 p.result {
   margin-left: 10px !important;
+  float: none !important;
 }
 
 /*    .check-review .cell {
@@ -19777,5 +19784,9 @@ text-align: center;
 .features-box-inner p {
   font-size: 16px;
   color: #a8a8a8;
+}
+
+.pay-from-account {
+  padding-right: 100px;
 }
 
