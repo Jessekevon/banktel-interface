@@ -19455,17 +19455,19 @@ transition: all 0.2s ease-in-out;
 
 
 .print-action-buttons .btn, .modal .btn {
-  padding: 8px 15px !important;
+  padding: 7px 14px !important;
   margin-right: 8px;
 
 }
 
 
 .print-action-buttons .btn, .modal-footer .btn {
-  padding: 8px 15px !important;
+  /*padding: 7px 14px !important;*/
   margin-right: 8px;
   height: 45px;
-  line-height: 2.5 !important;
+  line-height: 45px !important;
+  padding: 0 15px !important;
+
 
 }
 
@@ -19526,7 +19528,6 @@ transition: all 0.2s ease-in-out;
   padding: 2px;
   margin-left: 10px;
   position: relative;
-  top: 1px;
 }
 
 .btn:hover .entypo-check {
