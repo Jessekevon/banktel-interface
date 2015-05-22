@@ -446,8 +446,8 @@
                                 <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">
                                   Reprint Selected <i class="entypo-print" data-text="print"></i>
                                 </a>
-                                <a class="btn btn-primary action-button gray" data-toggle="modal" href="/_pagetypes/print_success">
-                                  Done Printing <i class="entypo-chevron-thin-right"></i>                                </a>
+                                <a class="btn btn-primary action-button " data-toggle="modal" href="/_pagetypes/print_success">
+                                  Done Printing <i class="entypo-right-open-big"></i>                                </a>
                               </div>
                             </footer>
                           </div>
@@ -478,7 +478,7 @@
               <div class="modal-dialog vertical-align-center">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
+                          <h4 class="modal-title step-1" data-step="1">Check Reprint</h4>
                           <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
                           <a class="btn btn-primary" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
                       </div>
@@ -491,8 +491,8 @@
                             <br>
                             <p class="print-alert"><strong>Note: </strong>Always check to be sure the check <br> numbers in the PDF match the numbers on <br> the checks you're feeding into the printer!</p>
                           </div>
-                          <div class="col-sm-4 icon-padding center">
-                            <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+                          <div class="col-sm-4 icon-padding center-bottom">
+                            <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
                           </div>
 
                         </div>
@@ -506,20 +506,21 @@
                             <br>
                             <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>                
                           </div>
-                          <div class="col-sm-4 icon-padding center">
-                            <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+                          <div class="col-sm-4 icon-padding center-bottom">
+                            <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
                           </div>
                         </div>
                       </div>
                       <div class="modal-footer">
 
-                           <iframe src="../../assets/images/test.pdf" style="display: none" id="PDFtoPrint"></iframe>
+                           <iframe src="../../assets/images/PrintCheck.pdf" style="display: none" id="PDFtoPrint"></iframe>
 
-                          <a class="btn btn-primary step step-1" data-step="1" value="Print" onclick="sendEvent('#printChecks', 1),document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Run Test Print(PDF)</a>
+                          <a class="btn btn-primary step step-1" data-step="1" value="Print" onclick="sendEvent('#printChecks', 1),document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Run Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
 
-                          <a class="btn btn-primary gray step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next</a>
-                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish</a>
-                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" onclick="sendEvent('#printChecks', 1)">Back</a>
+                          <a class="btn btn-primary blurple step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next<i class="entypo-right-open-big"></i></a>
+                          <a class="btn btn-primary blurple step step-2 print-button" data-step="2" onclick="sendEvent('#printChecks', 1)"><i class="entypo-left-open-big"></i>Back</a>
+                          <a class="btn btn-primary step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish<i class="entypo-right-open-big"></i></a>
+
 
                       </div>
                   </div>

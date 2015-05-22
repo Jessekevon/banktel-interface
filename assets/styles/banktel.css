@@ -19457,7 +19457,16 @@ transition: all 0.2s ease-in-out;
 .print-action-buttons .btn, .modal .btn {
   padding: 8px 15px !important;
   margin-right: 8px;
-  line-height: 2 !important;
+
+}
+
+
+.print-action-buttons .btn, .modal-footer .btn {
+  padding: 8px 15px !important;
+  margin-right: 8px;
+  height: 45px;
+  line-height: 2.5 !important;
+
 }
 
 .print-action-buttons .entypo-chevron-thin-right:before {
@@ -19470,6 +19479,14 @@ transition: all 0.2s ease-in-out;
 .entypo-right-open-big:before {
   content: "\e766";
   margin-left: 10px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.entypo-left-open-big:before {
+  content: "\e765";
+  margin-right: 10px;
   font-size: 20px;
   position: relative;
   top: 3px;
@@ -19538,6 +19555,25 @@ transition: all 0.2s ease-in-out;
       border-color: #a7a9ac !important;
     }
 
+    .modal .btn-primary.blurple {
+      color: #ffffff !important;
+      background-color: #516199 !important;
+      border-color: white !important;
+    }
+
+/*    .btn-primary.gray {
+      color: #ffffff !important;
+      background-color: #D2D3D5 !important;
+      border-color: #D2D3D5 !important;
+    }
+
+    .btn-primary.gray:hover {
+      color: #D2D3D5 !important;
+      background-color: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+
+*/
     .modal-body {
        padding: 0; 
     }
