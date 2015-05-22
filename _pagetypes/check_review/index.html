@@ -196,7 +196,7 @@
                               <div class="indicator"></div>
                               <div class="cell issue-date" for="InvoiceDate">
 
- <input class="form-item-checkbox checkbox" type="checkbox" name="check0" value="item0" id="selectall"/>
+ <input class="form-item-checkbox checkbox3" type="checkbox" name="check0" value="item0" id="selectall"/>
  <label class="form-item-label_checkbox" for="selectall"></label>
  <p class="result">Result</p>
 
@@ -424,7 +424,7 @@
                               <li class="tier no-border-bottom status-posted paymentstatus-pastdue">
                                 <div class="indicator"></div>
                                 <div class="cell issue-date">
-                                  <input class="form-item-checkbox checkbox" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                  <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
                                   <label class="form-item-label_checkbox" for="selectall2"></label>
                                   <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
                                     <option selected="selected" value="1">Bulk Actions</option>
@@ -585,22 +585,22 @@
             $(document).ready(function() {
                 $('#selectall').click(function(event) {  //on click 
                     if(this.checked) { // check select status
-                        $('.checkbox1').each(function() { //loop through each checkbox
+                        $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
                             this.checked = true;  //select all checkboxes with class "checkbox1"               
                         });
                     }else{
-                        $('.checkbox1').each(function() { //loop through each checkbox
+                        $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
                             this.checked = false; //deselect all checkboxes with class "checkbox1"                       
                         });         
                     }
                 });
                 $('#selectall2').click(function(event) {  //on click 
                     if(this.checked) { // check select status
-                        $('.checkbox1').each(function() { //loop through each checkbox
+                        $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
                             this.checked = true;  //select all checkboxes with class "checkbox1"               
                         });
                     }else{
-                        $('.checkbox1').each(function() { //loop through each checkbox
+                        $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
                             this.checked = false; //deselect all checkboxes with class "checkbox1"                       
                         });         
                     }

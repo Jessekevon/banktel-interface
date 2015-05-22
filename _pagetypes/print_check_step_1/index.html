@@ -493,8 +493,10 @@
               <header class="block-heading tier static print-action-buttons">
                 <div class="indicator"></div>
                 <div class="row transactions-actions drawer-buttons">
-                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#testPrint" href="">Test Print <!-- <i class="entypo-save"></i> --></a>
-                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">Print Checks <!-- <i class="entypo-chevron-thin-right"></i> --></a>
+                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#testPrint" href="">Test Print      <i class="entypo-check" data-text="check"></i>
+</a>
+                  <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">Print Checks<i class="entypo-print" data-text="print"></i>
+</a>
                 </div>
               </header>
 
@@ -588,7 +590,7 @@
              </div>
 
              <div class="modal-footer">
-                 <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Download Test Print(PDF)</a>
+                 <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Download Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></></i></a>
                  <a class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#testPrint', 3)">Yes! I'm ready to print.</a>
                  <a class="btn btn-primary gray step step-2" data-dismiss="modal">Edit Check Info</a>
                  <a class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#testPrint', 4)">Download Print (PDF)</a>
@@ -602,6 +604,7 @@
    </div>
  </div>
 <!-- End Test Pring Modal -->
+
 
  <!-- Begin Print Check Modal -->
 
@@ -649,14 +652,18 @@
                  <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)</a>
                  <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info</a>
                  <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks</a>
-                 <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 2)">Batch Reprint</a>
+                 <iframe src="../../assets/images/test.pdf" style="display: none" id="PDFtoPrint"></iframe>
+
+                 <a class="btn btn-primary gray step step-2" data-step="2" data-dismiss="modal" value="Print" onclick="document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Batch Reprint</a>
+
+
+
 
              </div>
          </div>
      </div>
    </div>
  </div>
-
 
 
 
@@ -696,6 +703,9 @@
     window.print();  
     return false;
   });
+
+
+
   </script>
 
 

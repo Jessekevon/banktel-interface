@@ -19452,7 +19452,8 @@ transition: all 0.2s ease-in-out;
 
 
 .print-action-buttons .btn, .modal .btn {
-  padding: 10px 30px !important;
+  padding: 12px 15px !important;
+
   margin-right: 8px;
 
 }
@@ -19484,6 +19485,8 @@ transition: all 0.2s ease-in-out;
     .center-row {
       display:table;
       width: 100%;
+      margin: 0 auto;
+
     }
     .center {
       display:table-cell;
@@ -19491,10 +19494,10 @@ transition: all 0.2s ease-in-out;
         float:none;
     }
 
-    .icon-padding {
+/*    .icon-padding {
       padding-left: 0 !important;
     }
-
+*/
   .modal.multi-step  .modal-body {
       position: relative;
       padding: 0;
@@ -19507,10 +19510,6 @@ transition: all 0.2s ease-in-out;
     .step-content {
       padding: 30px 20px;
       border-right: 1px solid #e5e5e5;
-    }
-
-    .step-content p {
-      padding-left: 15px;
     }
     .modal-footer {
       border-left: 5px solid #ddd;
@@ -19789,4 +19788,25 @@ text-align: center;
 .pay-from-account {
   padding-right: 100px;
 }
+.entypo-print {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.entypo-check {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+
+.btn:hover .entypo-check {
+  border: 1px solid #2db5ab;
+
+}
+
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
