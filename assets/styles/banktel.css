@@ -19554,10 +19554,33 @@ transition: all 0.2s ease-in-out;
       min-width: 70px;
     }
 
+/*    .check-review .faux-table .cell.due-date {
+      width: 10px !important;
+      min-width: 70px;
+    }
+
+    .check-review .faux-table .cell.invoice-number {
+      width: 10% !important;
+      min-width: 70px;
+    }
+
+    .check-review .faux-table .cell.customer {
+      width: 10% !important;
+    }
+
+    .check-review .faux-table .cell.balance {
+      width: 25% !important;
+      min-width: 80px;
+    }
+
+   .check-review .faux-table .cell.status {
+      width: 25% !important;
+      min-width: 60px;
+    }
     .check-review .faux-table .table-head .cell p {
   float: none !important;
 }
-
+*/
 p.result {
   margin-left: 10px !important;
 }
@@ -19624,5 +19647,33 @@ p.result {
       border-color: #2db5ab !important;
       color: #2db5ab !important;
 
+    }
+
+    .vertical-alignment-helper {
+        display:table;
+        height: 100%;
+        width: 100%;
+        pointer-events:none;
+    }
+    .vertical-align-center {
+        /* To center vertically */
+        display: table-cell;
+        vertical-align: middle;
+        pointer-events:none;
+    }
+    .modal-content {
+        /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+        width:inherit;
+        height:inherit;
+        /* To center horizontally */
+        margin: 0 auto;
+        pointer-events:all;
+    }
+
+
+    .modal.in {
+      -webkit-transform: translate(0, 0) !important;
+      -ms-transform: translate(0, 0) !important;
+      transform: translate(0, 0) !important;
     }
 
