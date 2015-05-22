@@ -19594,8 +19594,7 @@ transition: all 0.2s ease-in-out;
       display: table-cell;
       vertical-align: bottom;
       float: none;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0;
 
     }
 
@@ -19657,6 +19656,8 @@ transition: all 0.2s ease-in-out;
     img.printer-icon {
       /*width: 150px;
       height: auto;*/
+      width: 100%;
+      height: auto;
     }
 
     p.print-alert {
