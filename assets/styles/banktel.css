@@ -19709,3 +19709,48 @@ p.result {
       transform: translate(0, 0) !important;
     }
 
+    /* ---------------------------------------------
+          print success page
+        ------------------------------------------- */
+.success-box-wrapper {
+  background: #ffffff;
+  max-width: 600px;
+  height: 400px;
+}
+
+.features-box-row {
+  margin-top: 60px;
+}
+.features-box {
+/*box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);*/
+background-color: #fff;
+border-top: 5px solid #ddd;
+
+}
+
+
+.features-box h1 {
+  color: #516199;
+font-weight: 100;
+text-align: center;
+}
+
+.features-box-inner {
+  padding: 20px 40px 40px 40px;
+}
+
+.features-box-inner .btn {
+  color: #ffffff !important;
+  background-color: #2db5ab !important;
+  border-color: #ffffff !important;
+  padding: 10px 30px !important;
+  font-weight: 100;
+}
+
+.features-box-inner p {
+  font-size: 16px;
+  color: #a8a8a8;
+}
+

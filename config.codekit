@@ -1,7 +1,16 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18917",
+"creatorBuild": "18966",
 "files": {
+	"\/_pagetypes\/check_review\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_pagetypes\/check_review\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_pagetypes\/create_invoice\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -83,6 +92,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_pagetypes\/print_check_step_1\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_pagetypes\/print_check_step_1\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_pagetypes\/print_success\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_pagetypes\/print_success\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_pagetypes\/register\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -109,6 +136,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/fonts\/entypo\/sftp-config.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/fonts\/entypo\/sftp-config.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/assets\/fonts\/entypo\/sftp-config-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/assets\/fonts\/linecons\/lte-ie7.js": {
 		"fileType": 64,
@@ -172,6 +210,17 @@
 		"initialSize": 6438,
 		"inputAbbreviatedPath": "\/assets\/images\/biz-logo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/biz-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/biz-new.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5662,
+		"inputAbbreviatedPath": "\/assets\/images\/biz-new.png",
+		"outputAbbreviatedPath": "\/assets\/images\/biz-new.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -304,6 +353,17 @@
 		"initialSize": 4629,
 		"inputAbbreviatedPath": "\/assets\/images\/example-client-logo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/example-client-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/home-icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 306,
+		"inputAbbreviatedPath": "\/assets\/images\/home-icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/home-icon@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -484,6 +544,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/logo-icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 795,
+		"inputAbbreviatedPath": "\/assets\/images\/logo-icon@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/logo-icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -506,6 +577,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/logo@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5546,
+		"inputAbbreviatedPath": "\/assets\/images\/logo@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/logo@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/maps.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -524,6 +606,39 @@
 		"initialSize": 1081,
 		"inputAbbreviatedPath": "\/assets\/images\/pages.png",
 		"outputAbbreviatedPath": "\/assets\/images\/pages.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/print@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2016,
+		"inputAbbreviatedPath": "\/assets\/images\/print@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/print@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/print_check@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1520,
+		"inputAbbreviatedPath": "\/assets\/images\/print_check@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/print_check@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/printer@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2404,
+		"inputAbbreviatedPath": "\/assets\/images\/printer@2x.png",
+		"outputAbbreviatedPath": "\/assets\/images\/printer@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -693,6 +808,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/scripts\/jquery-bootstrap-modal-steps.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/jquery-bootstrap-modal-steps.min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/jquery-bootstrap-modal-steps.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/scripts\/jquery-ui.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -765,6 +891,50 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scripts\/jquery.uploadfile.min.js",
 		"outputAbbreviatedPath": "\/assets\/scripts\/min\/jquery.uploadfile.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/min\/banktel-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/min\/banktel-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/min\/banktel-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/min\/bootstrap-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/min\/bootstrap-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/min\/bootstrap-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/min\/jquery-bootstrap-modal-steps.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/min\/jquery-bootstrap-modal-steps.min-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/min\/jquery-bootstrap-modal-steps.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/min\/plugins-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/min\/plugins-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/min\/plugins-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -862,7 +1032,7 @@
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/index.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
