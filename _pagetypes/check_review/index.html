@@ -433,6 +433,11 @@
                                   <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
                                   </span>
                                 </div>
+                                <div class="cell issue-date apply">
+                                  <button id="notification-trigger-error" class="btn btn-primary progress-button action-button">Apply
+                                  </button>
+                                </div>
+
                               </li>
                             </ul>
                             <footer class="block-heading tier static print-action-buttons">
@@ -459,6 +464,12 @@
             </main>
           </div>
           <!-- .app -->
+
+
+
+
+
+
 
           <!-- Begin Print Check Modal -->
 
@@ -514,7 +525,48 @@
           <script src="/assets/scripts/plugins.js"></script>
           <script src="/assets/scripts/banktel.js"></script>
           <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+<script type="text/javascript">
+  
 
+  // Initialize the error message notification
+
+
+  (function() {
+    var bttn = document.getElementById( 'notification-trigger-error' );
+
+    // make sure..
+    bttn.disabled = false;
+    
+    bttn.addEventListener( 'click', function() {
+      // simulate loading (for demo purposes only)
+      classie.add( bttn, 'active' );
+      setTimeout( function() {
+
+        classie.remove( bttn, 'active' );
+        
+        // create the notification
+        var notification = new NotificationFx({
+          message : '<p><strong>Invalid check number!</strong><p>Please update and try again.</p><br>',
+          layout : 'growl',
+          effect : 'scale-two',
+          type : 'error', // notice, warning, error or success 
+          ttl : 30000, // modify the TTL to force user to close
+          onClose : function() {
+            bttn.disabled = false;  
+          }
+        });
+
+        // show the notification
+        notification.show();
+
+      }, 0 );
+      
+      // disable the button (for demo purposes only)
+      this.disabled = true;
+    } );
+  })();
+
+</script>
           <script type="text/javascript">
             $(window).load(function(){
                 $('.loading').delay(800).fadeOut(function(){$(this).remove()});
