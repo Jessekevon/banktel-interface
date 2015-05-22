@@ -19594,7 +19594,8 @@ transition: all 0.2s ease-in-out;
       display: table-cell;
       vertical-align: bottom;
       float: none;
-      padding: 0;
+      padding-left: 0;
+      padding-right: 0;
 
     }
 
