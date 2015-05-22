@@ -195,12 +195,12 @@
                             <header class="table-head tier static">
                               <div class="indicator"></div>
                               <div class="cell issue-date" for="InvoiceDate">
-<!--                                 <p><input class="form-item-checkbox checkbox1" type="checkbox" name="check0" value="item0" id="selectall"/>Result</p>
-                                <span><i class="entypo-chevron-down"></i></span>
- -->
-                                <p><input type="checkbox" id="selectall"/> Result</p>
-                                <span><i class="entypo-chevron-down"></i></span>
-                              </div>
+
+ <input class="form-item-checkbox checkbox" type="checkbox" name="check0" value="item0" id="selectall"/>
+ <label class="form-item-label_checkbox" for="selectall"></label>
+ <p class="result">Result</p>
+
+                                 </div>
                               <div class="cell due-date sorted" for="DueDate">
                                 <p>Pay Date</p>
                                 <span><i class="entypo-chevron-down"></i></span>
@@ -438,10 +438,10 @@
                             <footer class="block-heading tier static print-action-buttons">
                               <div class="indicator"></div>
                               <div class="row transactions-actions drawer-buttons">
-                                <a class="btn btn-primary action-button" data-toggle="modal" data-target="#testPrint" href="">
+                                <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">
                                   Reprint Selected <!-- <i class="entypo-save"></i> -->
                                 </a>
-                                <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">
+                                <a class="btn btn-primary action-button" data-toggle="modal" href="#">
                                   Done Printing <!-- <i class="entypo-chevron-thin-right"></i> -->
                                 </a>
                               </div>
@@ -459,6 +459,52 @@
             </main>
           </div>
           <!-- .app -->
+
+          <!-- Begin Print Check Modal -->
+
+          <div class="modal fade multi-step" id="printChecks">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
+                          <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
+                          <a class="btn btn-primary" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
+                      </div>
+                      <div class="modal-body step-1" data-step="1">
+                       <div class="col-sm-8 step-content">
+                         <p>Step 1: <strong> Load your check paper </strong>into<br> the printer.</p>
+                         <br>
+                         <p>When you're ready,<strong>download the <br> print PDF</strong>for the checks in the batch, <br> and print from this document.</p>
+                         <br>
+                         <p class="print-alert"><strong>Note: </strong>Always check to be sure the check <br> numbers in the PDF match the numbers on <br> the checks you're feeding into the printer!</p>
+                       </div>
+                       <div class="col-sm-4 icon-padding">
+                         <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+                       </div>
+                      </div>
+                      <div class="modal-body step-2" data-step="2">
+                       <div class="col-sm-8 step-content">
+                         <p>Step 2: <strong> Check your work. </strong>Did everything <br> go through?</p>
+                         <br>
+                         <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
+                         <br>
+                         <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>                
+                       </div>
+                       <div class="col-sm-4 icon-padding">
+                         <img class="img-responsive printer-icon" src="../../assets/images/printer@2x.png">
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                          <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)</a>
+                          <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info</a>
+                          <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks</a>
+                          <a class="btn btn-primary gray step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 2)">Batch Reprint</a>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
           <script>
             window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')
@@ -467,6 +513,8 @@
           <script src="/assets/scripts/bootstrap.js"></script>
           <script src="/assets/scripts/plugins.js"></script>
           <script src="/assets/scripts/banktel.js"></script>
+          <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+
           <script type="text/javascript">
             $(window).load(function(){
                 $('.loading').delay(800).fadeOut(function(){$(this).remove()});
@@ -502,5 +550,16 @@
             
             
           </script>
+          <script>
+          sendEvent = function(sel, step) {
+              $(sel).trigger('next.m.' + step);
+          }
+
+          $('.print-button').on('click', function() {  
+            window.print();  
+            return false;
+          });
+          </script>
+
         </body>
       </html>

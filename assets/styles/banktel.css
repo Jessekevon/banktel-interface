@@ -10148,6 +10148,7 @@ button.close {
 
 .modal-open {
   overflow: hidden;
+  /*overflow: scroll;*/
 }
 
 .modal {
@@ -19553,6 +19554,14 @@ transition: all 0.2s ease-in-out;
       min-width: 70px;
     }
 
+    .check-review .faux-table .table-head .cell p {
+  float: none !important;
+}
+
+p.result {
+  margin-left: 10px !important;
+}
+
 /*    .check-review .cell {
       border-right: 1px solid #d1d3d4;
     }
@@ -19561,6 +19570,13 @@ transition: all 0.2s ease-in-out;
       border-bottom: 0px !important;
     }
 
+    .faux-table .table-head .cell span {
+      display: inline-block;
+       float: none !important; 
+      overflow: hidden;
+      position: absolute !important;
+      width: 18px;
+    }
 
     .form-item-label_checkbox {
       text-transform: uppercase;
@@ -19585,6 +19601,11 @@ transition: all 0.2s ease-in-out;
         border: 1px solid #d1d3d4;
         padding: 8px;
         background: #f1f2f2;
+        position: relative;
+        padding: 8px;
+        background: #f1f2f2;
+        top: 4px;
+
     }
 
     /* checked checkbox - black outline and background image for check */
