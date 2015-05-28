@@ -11725,8 +11725,6 @@ p.example {
 html body .app {
   height: 100%;
   position: relative;
-  overflow-x: hidden;
-
 }
 
 html body .app > header {
@@ -11932,13 +11930,11 @@ section.menu-system nav.menu .level {
   left: 0;
   width: 200px;
   z-index: 1;
+  overflow-y: scroll;
   overflow-x:hidden;
   -ms-overflow-style: scrollbar;
 }
 
-.scroll {
-  overflow-y: scroll !important;
-}
 
 section.menu-system nav.menu.closed.expanded .level {
   top: 120px;
@@ -11967,11 +11963,6 @@ section.menu-system nav.menu .level .level {
   left: -201px;
   z-index: 2;
   top: 0px !important;
-  height: 100%;
-}
-
-ul.first-level, ul.second-level, ul.third-level, ul.fourth-level {
-  overflow-y: scroll;
 }
 
 section.menu-system nav.menu .level .level .level {
@@ -11979,17 +11970,13 @@ section.menu-system nav.menu .level .level .level {
   left: -201px;
   z-index: 3;
   top: 0px !important;
-  height: 100%;
-
 }
 
 section.menu-system nav.menu .level .level .level .level {
   background: #707172;
   left: -201px;
   z-index: 3;
-  top: 0px !important;   
-  height: 100%;
- 
+  top: 0px !important;    
 }
 
 section.menu-system nav.menu .level li {
