@@ -11924,9 +11924,8 @@ section.menu-system nav.menu li {
 
 section.menu-system nav.menu .level {
   background: #464747;
-  height: 100%;
   position: absolute;
-  top: 0;
+  top: 120px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -11943,6 +11942,7 @@ section.menu-system nav.menu .level .level {
   background: #2db5ab;
   left: -201px;
   z-index: 2;
+  top: 0px !important;
   /* THIRD LEVEL */
 }
 
@@ -11950,12 +11950,14 @@ section.menu-system nav.menu .level .level .level {
   background: #949599;
   left: -201px;
   z-index: 3;
+  top: 0px !important;
 }
 
 section.menu-system nav.menu .level .level .level .level {
   background: #707172;
   left: -201px;
   z-index: 3;
+  top: 0px !important;    
 }
 
 section.menu-system nav.menu .level li {
@@ -12013,7 +12015,7 @@ section.menu-system nav.menu > .level > li > a > i {
 }
 
 section.menu-system nav.menu > .level > li > a > span {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
 }
 
 section.menu-system nav.menu > .level > li > .level > li {

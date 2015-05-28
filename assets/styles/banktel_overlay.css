@@ -1,4 +1,4 @@
-﻿/****GENERIC LINE ITEM GRID STYLES*/
+/****GENERIC LINE ITEM GRID STYLES*/
 
 .lineitemgrid header.block-heading {
   padding: 14px 14px 14px 22px;
@@ -218,6 +218,10 @@ header.page.heading nav.actions a {
   background-repeat: no-repeat;
   background-size: 122px auto;
   height: 120px;
+  top:0;
+  left:0;
+  width:200px;
+  position: absolute;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
