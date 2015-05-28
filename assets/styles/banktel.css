@@ -11980,7 +11980,7 @@ section.menu-system nav.menu .level .level .level .level {
   top: 0px !important; 
 }
 
-section.menu-system nav.menu .level .level .level + .level {
+section.menu-system nav.menu .level + .level + .level + .level {
   overflow-y: scroll !important;   
 }
 
