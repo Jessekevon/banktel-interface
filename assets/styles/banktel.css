@@ -11930,6 +11930,7 @@ section.menu-system nav.menu .level {
   left: 0;
   width: 200px;
   z-index: 1;
+  overflow-y:hidden;
   overflow-x:hidden;
   -ms-overflow-style: scrollbar;
   /* SECOND LEVEL */

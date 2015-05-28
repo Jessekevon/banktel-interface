@@ -16,7 +16,7 @@ function showMenu() {
         } else {
             $('.menu').addClass('expanded');
             $('#logo').removeClass('new-icon');
-        };
+        }
     }
 }
 
@@ -73,11 +73,18 @@ function showMenu() {
         return false;
     });
 
+
     // Menu, upward traversal
     $(document.body).on('click', '.menu.expanded .level-up', function () {
         $(this).closest(".level").css("left", "-201px");
         return false;
     });
+
+    // $('.has-children').on('click', function () {
+    //     $('.first-level').removeClass('scroll-visible');
+    //     $('.first-level').addClass('scroll-not-visible');
+    // });
+
 
     // Expand or collapse menu on resize of window
     $(window).on('resize', function () {
