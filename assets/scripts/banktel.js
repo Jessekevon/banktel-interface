@@ -80,16 +80,16 @@ function showMenu() {
     });
 
 
-
-    // $('.first-level .level-down').on('click', function () {
-    //     $('.first-level, .third-level, .fourth-level').css("overflow-y", "hidden");
+    // $(document.body).on('click', '.menu.expanded .level-down', function () {
+    //     $(this).next(".level").css({'left' : '0'});
+    //     return false;
     // });
 
-
-    // if ($(".menu").hasClass("second-level")) {
-    //   $('.first-level, .third-level, .fourth-level').css("overflow-y", "hidden");
-    // }
-
+    // // Menu, upward traversal
+    // $(document.body).on('click', '.menu.expanded .level-up', function () {
+    //     $(this).closest(".level").css({'left' : '-201px',  'overflow-y' : 'hidden'});
+    //     return false;
+    // });
 
     // Expand or collapse menu on resize of window
     $(window).on('resize', function () {
