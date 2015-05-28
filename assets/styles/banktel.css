@@ -13583,7 +13583,7 @@ body {
   margin: 0;
   padding: 0;'
   overflow-x: hidden;
-  -ms-overflow-style: scroll;
+  -ms-overflow-x-style: none;
 }
 
 body {
