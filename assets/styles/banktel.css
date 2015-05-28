@@ -12096,6 +12096,10 @@ a.collapse-link {
 
 }
 
+.win a.collapse-link {
+  padding: 0px 15px;
+
+}
 
 /*.menu-collapse.rotator a.collapse-link {
   padding: 0px 15px;
