@@ -234,6 +234,7 @@ header.page.heading nav.actions a {
   background-repeat: no-repeat;
   background-size: 35px auto;
   height: 60px;
+  width: 50px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
