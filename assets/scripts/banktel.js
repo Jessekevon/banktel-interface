@@ -73,17 +73,22 @@ function showMenu() {
         return false;
     });
 
-
     // Menu, upward traversal
     $(document.body).on('click', '.menu.expanded .level-up', function () {
         $(this).closest(".level").css("left", "-201px");
         return false;
     });
 
-    // $('.has-children').on('click', function () {
-    //     $('.first-level').removeClass('scroll-visible');
-    //     $('.first-level').addClass('scroll-not-visible');
+
+
+    // $('.first-level .level-down').on('click', function () {
+    //     $('.first-level, .third-level, .fourth-level').css("overflow-y", "hidden");
     // });
+
+
+    // if ($(".menu").hasClass("second-level")) {
+    //   $('.first-level, .third-level, .fourth-level').css("overflow-y", "hidden");
+    // }
 
 
     // Expand or collapse menu on resize of window
