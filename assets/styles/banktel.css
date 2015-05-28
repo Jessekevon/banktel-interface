@@ -11725,6 +11725,7 @@ p.example {
 html body .app {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 html body .app > header {
