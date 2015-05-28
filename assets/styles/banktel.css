@@ -11930,7 +11930,6 @@ section.menu-system nav.menu .level {
   left: 0;
   width: 200px;
   z-index: 1;
-  overflow-y: scroll;
   overflow-x:hidden;
   -ms-overflow-style: scrollbar;
   /* SECOND LEVEL */
@@ -11964,6 +11963,8 @@ section.menu-system nav.menu .level .level {
   left: -201px;
   z-index: 2;
   top: 0px !important;
+  overflow-y: scroll;
+
   /* THIRD LEVEL */
 }
 
@@ -11972,13 +11973,17 @@ section.menu-system nav.menu .level .level .level {
   left: -201px;
   z-index: 3;
   top: 0px !important;
+  overflow-y: scroll;
+
 }
 
 section.menu-system nav.menu .level .level .level .level {
   background: #707172;
   left: -201px;
   z-index: 3;
-  top: 0px !important;    
+  top: 0px !important;   
+  overflow-y: scroll;
+ 
 }
 
 section.menu-system nav.menu .level li {
