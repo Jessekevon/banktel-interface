@@ -11932,7 +11932,7 @@ section.menu-system nav.menu .level {
   z-index: 1;
   overflow-y: scroll;
   overflow-x:hidden;
-  -ms-overflow-style: scrollbar;
+  -ms-overflow-style: none;
 }
 
 
