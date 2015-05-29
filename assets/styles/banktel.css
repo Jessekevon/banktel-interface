@@ -19949,3 +19949,15 @@ text-align: center;
   width: 160px !important;
   margin-right: 15px !important;
 }
+
+#top {
+  height:20px;
+  width:100%;   
+}
+
+#outer {
+   position:absolute;
+   top:20px;
+   bottom:0px;
+}
+
