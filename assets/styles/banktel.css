@@ -11935,7 +11935,8 @@ section.menu-system nav.menu .level {
   -ms-overflow-style: none;
 }
 
-.win section.menu-system nav.menu .level::-webkit-scrollbar { display: none; }
+section.menu-system nav.menu .level::-webkit-scrollbar { display: none; }
+.mac section.menu-system nav.menu .level::-webkit-scrollbar { display: block; }
 .win section.menu-system nav.menu .level { overflow: -moz-scrollbars-none; }
 
 section.menu-system nav.menu.closed.expanded .level {
