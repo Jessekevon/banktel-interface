@@ -19950,14 +19950,3 @@ text-align: center;
   margin-right: 15px !important;
 }
 
-#top {
-  height:20px;
-  width:100%;   
-}
-
-#outer {
-   position:absolute;
-   top:20px;
-   bottom:0px;
-}
-
