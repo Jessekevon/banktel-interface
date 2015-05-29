@@ -11935,7 +11935,7 @@ section.menu-system nav.menu .level {
   -ms-overflow-style: none;
 }
 
-section.menu-system nav.menu .level::-webkit-scrollbar { width: 0 !important }
+.webkit.chrome.win section.menu-system nav.menu .level::-webkit-scrollbar { width: 0 !important }
 
 
 
