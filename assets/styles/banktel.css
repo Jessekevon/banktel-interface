@@ -10579,6 +10579,7 @@ p.popover-text {
   position: relative;
   display: inline-block;
   word-break: break-word ;
+  word-break: break-all;
 }
 
 .popover > .arrow,
