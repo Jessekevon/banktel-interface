@@ -171,16 +171,10 @@
 
                 <nav class="actions right">
 
-                  <div class="control-switch">
-                    <label>
-                      <span>status: <span>Open</span></span>
-                      <input type="checkbox" />
-                      <div class="track">
-                        <div class="switch"></div>
-                      </div>
-                    </label>
-                  </div>
-                  <!-- .control-switch -->
+
+                  <a href="#" class="head btn btn-hidden inverted">Memo
+                                                <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
+                  </a>
 
                 </nav>
                 <!-- nav.actions -->
@@ -450,7 +444,7 @@
                           </div>
                           <!-- div.actions -->
 
-                          <p>Central Texas Cleaning Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <p class="transaction-ellipsis">Central Texas Cleaning Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           <div class="tag-wrapper">
                             <ul class="tagged">
                               <li class="tag">
@@ -473,9 +467,12 @@
                                   <hr>
                                   <div class="attachment-bottom">
                                     <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/08/doc-icon.png">
-                                    <p><a href="#">1234-CitiMortgage.pdf</a></p>
+                                    <p class="popover-text"><a href="#">veryveryveryveryveryveryveryveryverylong.pdf
+                                    </a></p>
                                   </div>
+                                  <div class="edit-memo">
                                   <a href="#" type="button" class="head btn btn-primary inverted">Edit Memo</a>
+                                </div>
                                 </div>
                               </div>
 
@@ -819,6 +816,8 @@
     </main>
 
   </div>
+
+
   <!-- .app -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
@@ -920,7 +919,9 @@
         });
     });
     
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({
+      html: true
+    });
     
     $('body').on('click', function (e) {
         $('[data-toggle="popover"]').each(function () {

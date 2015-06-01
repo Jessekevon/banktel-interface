@@ -10573,6 +10573,14 @@ p.example {
   display: inline-block;
 }
 
+p.popover-text {
+  padding-left: 10px;
+  width: 150px;
+  position: relative;
+  display: inline-block;
+  word-break: break-word ;
+}
+
 .popover > .arrow,
 .popover > .arrow:after {
   position: absolute;
