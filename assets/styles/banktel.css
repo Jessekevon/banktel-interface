@@ -19965,10 +19965,20 @@ text-align: center;
 
 .status-green {
 color: #24d35e;
+text-transform: uppercase;
 }
 
 .status-red {
   color: #e56e53;
+  text-transform: uppercase;
+}
+
+.status-draft {
+  color: #bfbfbf;
+}
+
+p.status-draft {
+  text-transform: uppercase;
 }
 
 /* Grid changes */
@@ -20000,4 +20010,8 @@ color: #24d35e;
   .main-invoices .faux-table .cell.paymentstatus {
     width: 10% !important;
     min-width: 80px;
+  }
+
+  .main-invoices p {
+    margin-bottom: 0;
   }
