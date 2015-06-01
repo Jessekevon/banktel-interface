@@ -19958,3 +19958,46 @@ text-align: center;
   margin-right: 15px !important;
 }
 
+
+/* ---------------------------------------------
+      Status Indicator Updates
+    ------------------------------------------- */
+
+.status-green {
+color: #24d35e;
+}
+
+.status-red {
+  color: #e56e53;
+}
+
+/* Grid changes */
+
+.main-invoices .faux-table .cell.issue-date {
+    width: 10% !important;
+  }
+
+  .main-invoices .faux-table .cell.due-date {
+    width: 10% !important;
+  }
+
+  .main-invoices .faux-table .cell.invoice-number {
+    width: 10% !important;
+  }
+
+  .main-invoices .faux-table .cell.customer {
+    width: 40% !important;
+  }
+
+  .main-invoices .faux-table .cell.balance {
+    width: 10% !important;
+  }
+
+  .main-invoices .faux-table .cell.status {
+    width: 10% !important;
+  }
+
+  .main-invoices .faux-table .cell.paymentstatus {
+    width: 10% !important;
+    min-width: 80px;
+  }
