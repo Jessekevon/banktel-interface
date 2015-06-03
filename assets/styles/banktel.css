@@ -11110,6 +11110,7 @@ p.popover-text {
   min-width: 126px;
   width: 100%;
   z-index: 50;
+  -ms-overflow-style: scrollbar !important;
   -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
   transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
 }
@@ -11773,7 +11774,7 @@ html body .app > main .app-content {
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 2000;
-  /*-ms-overflow-style: none;*/
+  -ms-overflow-style: none;
 
 }
 /* ---------------------------------------------
