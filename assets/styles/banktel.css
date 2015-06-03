@@ -19155,7 +19155,8 @@ nav.actions.right {
 }
 
 header.page.heading nav.actions a {
-  margin: -8px 0 0 !important;
+  /*margin: -8px 0 0 !important;*/
+  margin: -8px 10px 0 0 !important;
 }
 
 header.page.heading nav.actions.right a {
