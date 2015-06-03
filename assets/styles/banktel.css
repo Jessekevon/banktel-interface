@@ -11195,6 +11195,8 @@ p.popover-text {
   position: absolute;
   top: 0;
   width: 100%;
+  -ms-overflow-style: scrollbar !important;
+
   /*  width: -webkit-calc(100% + 1px);
   width: calc(100% + 1px);
 */
