@@ -651,9 +651,7 @@
 
                  <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
                  <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
-                 <iframe src="../../assets/images/PrintCheck.pdf" style="display: none" id="PDFtoPrint"></iframe>
-
-                 <a class="btn btn-primary gray step step-2" data-step="2" data-dismiss="modal" value="Print" onclick="document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                 <a class="btn btn-primary gray step step-2" data-step="2" data-dismiss="modal" value="Print">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
 
 
 
@@ -686,8 +684,6 @@
       no_results_text: "Sorry, we were unable to find "
     });
 
-
-
   </script>
   <script type="text/javascript">
     $(window).load(function(){
@@ -698,11 +694,6 @@
   sendEvent = function(sel, step) {
       $(sel).trigger('next.m.' + step);
   }
-
-  $('.print-button').on('click', function() {  
-    window.print();  
-    return false;
-  });
 
   $('a.media').media({width:500, height:400});
 
