@@ -19986,6 +19986,31 @@ p.status-draft {
   text-transform: uppercase;
 }
 
+.entypo-search:before {
+  content: "\e78d" !important;
+  position: relative;
+  right: 5px;
+
+}
+
+.chosen-container-single .chosen-search input::-webkit-input-placeholder, .chosen-container-single .chosen-search input:-moz-placeholder, .chosen-container-single .chosen-search input::-moz-placeholder, .chosen-container-single .chosen-search input:-ms-input-placeholder {
+  padding-left: 5px;
+}
+
+
+.chosen-container-single .chosen-search:before {
+  font-family: 'entypo';
+  content: "\e624";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgba(109, 110, 113, 0.4);
+  font-size: 14px;
+
+}
+
+
+
 /* Grid changes */
 
 .main-invoices .faux-table .cell.issue-date {

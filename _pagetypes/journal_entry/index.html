@@ -265,7 +265,7 @@
                             <div class="col-xs-8 col-lg-9">
                               <select class="chosen form-control" name="select-journal-number" data-placeholder="Enter or search for journal number">
                                 <option></option>
-                                <option>111-000-2391</option>
+                                <option selected>111-000-2391</option>
                                 <option>111-000-2357</option>
                                 <option>111-000-2401</option>
                                 <option>112-000-2391</option>
@@ -837,10 +837,13 @@
   <script>
     // Inst chosen on .journal-number select
             $('.journal-number .chosen, .table-search .chosen').chosen({
-              allow_single_deselect: true,
+              // allow_single_deselect: true,
               // disable_search: true,
               no_results_text: "Sorry, we were unable to find "
             });
+
+            $(".chosen-container-single .chosen-search input").attr("placeholder", "Search by keyword or ref.no.");
+
             
             // Inst chosen on .new-transaction select elements
             $('.new-transaction .chosen').chosen({
@@ -873,12 +876,11 @@
         template: '<div class="popover memo-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
         content: function () {
             return $(this).parent().find('.content').html();
-        }
-    
-    
+        }   
     });
     
-    
+    //Dropzone script
+
     $('#fileupload').fileupload({
         dropZone: $('#dropzone')
     });
@@ -922,6 +924,8 @@
     $('[data-toggle="popover"]').popover({
       html: true
     });
+
+    // Trigger popover on 'click'
     
     $('body').on('click', function (e) {
         $('[data-toggle="popover"]').each(function () {
@@ -932,8 +936,12 @@
             }
         });
     });
+
+    // Add ellipsis to trasnactions text
     
     $('#transactions .transaction-details > p').ellipsis();
+
+// Preloader
 
     $(window).load(function(){
         $('.loading').delay(400).fadeOut(function(){$(this).remove()});
@@ -941,6 +949,8 @@
            $(window).addClass('loading');
           });
     });
+
+    // Add padding to top pane based on variable height
 
     $(document).ready(function() {
       var elementAheight = $('.bottom-pane').height();
