@@ -652,6 +652,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/PrintCheck.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68117,
+		"inputAbbreviatedPath": "\/assets\/images\/PrintCheck.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/PrintCheck.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/printer@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

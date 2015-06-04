@@ -19990,6 +19990,7 @@ p.status-draft {
   content: "\e78d" !important;
   position: relative;
   right: 5px;
+  bottom: 1px;
 
 }
 
@@ -20056,3 +20057,4 @@ p.status-draft {
   .main-invoices p {
     margin-bottom: 0;
   }
+
