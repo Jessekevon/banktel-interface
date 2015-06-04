@@ -19993,10 +19993,21 @@ p.status-draft {
 
 }
 
-.chosen-container-single .chosen-search input::-webkit-input-placeholder, .chosen-container-single .chosen-search input:-moz-placeholder, .chosen-container-single .chosen-search input::-moz-placeholder, .chosen-container-single .chosen-search input:-ms-input-placeholder {
+.chosen-container-single .chosen-search input::-webkit-input-placeholder {
   padding-left: 5px;
 }
 
+.chosen-container-single .chosen-search input:-moz-placeholder { /* Firefox 18- */
+  padding-left: 5px;
+}
+
+.chosen-container-single .chosen-search input::-moz-placeholder {  /* Firefox 19+ */
+  padding-left: 5px;
+}
+
+.chosen-container-single .chosen-search input:-ms-input-placeholder {  
+  padding-left: 5px;
+}
 
 .chosen-container-single .chosen-search:before {
   font-family: 'entypo';
