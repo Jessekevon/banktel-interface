@@ -636,16 +636,12 @@
              </div>
              <div class="modal-body step-2" data-step="2">
               <div class="row center-row">
-                <div class="col-sm-8 step-content center">
-                  <p>Step 2: <strong> Check your work. </strong>Did everything <br> go through?</p>
-                  <br>
-                  <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
-                  <br>
-                  <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>                
+                <div class="col-sm-12 step-content center">
+                  <a class="media" href="../../assets/images/PrintCheck.pdf"></a> 
                 </div>
-                <div class="col-sm-4 icon-padding center-bottom">
+                <!-- <div class="col-sm-4 icon-padding center-bottom">
                   <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
-                </div>
+                </div> -->
 
               </div>
 
@@ -655,7 +651,7 @@
 
                  <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
                  <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
-                 <iframe src="../../assets/images/PrintCheck.jpg" style="display: none" id="PDFtoPrint"></iframe>
+                 <iframe src="../../assets/images/PrintCheck.pdf" style="display: none" id="PDFtoPrint"></iframe>
 
                  <a class="btn btn-primary gray step step-2" data-step="2" data-dismiss="modal" value="Print" onclick="document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
 
@@ -680,6 +676,7 @@
   <script src="/assets/scripts/plugins.js"></script>
   <script src="/assets/scripts/banktel.js"></script>
   <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+  <script src="/assets/scripts/media.js"></script>
 
   <script>
     // Inst chosen on .checkbook-id select
@@ -707,23 +704,7 @@
     return false;
   });
 
-  function WindowPrint() {
-  var iframe = document.frames ? window.frames.frames["PDFtoPrint"] :document.getElementById("PDFtoPrint");
-  var ifWin = iframe.contentWindow || iframe;
-  try {
-  ifWin.focus();
-  ifWin.print();
-  }
-  catch(e) {
-  window.print(false);
-  //or when you get Invalid calling object error for IE9 and above
-  //set the browser into IE8 compatibility mode will work
-  }
-
-  return false;
-
-  }
-
+  $('a.media').media({width:500, height:400});
 
   </script>
 
