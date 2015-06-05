@@ -3887,6 +3887,13 @@ Copyright (c) 2013 Daniel Eden
 }
 }
 
+
+iframe {
+  border: 0 !important;
+  margin-bottom: -4px;
+}
+
+
 .zoomOutUp {
   -webkit-animation-name:zoomOutUp;
   animation-name:zoomOutUp
@@ -6182,10 +6189,10 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
 }
 
 .btn:focus,.tagged .tag:focus,.memos .memo:focus,.btn:active:focus,.tagged .tag:active:focus,.memos .memo:active:focus,.btn.active:focus,.tagged .active.tag:focus,.memos .active.memo:focus {
-  outline:thin dotted;
+/*  outline:thin dotted;
   outline:5px auto -webkit-focus-ring-color;
   outline-offset:-2px
-}
+*/}
 
 .btn:hover,.tagged .tag:hover,.memos .memo:hover,.btn:focus,.tagged .tag:focus,.memos .memo:focus {
   color:#333;
@@ -9579,9 +9586,7 @@ button.close {
   -webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);
   box-shadow:0 3px 9px rgba(0,0,0,0.5);
   background-clip:padding-box;
-  outline:none;
-  width: 50% !important;
-
+  outline:none
 }
 
 .modal-backdrop {
@@ -18880,6 +18885,10 @@ label {
   pointer-events:all
 }
 
+.modal-content.add-it {
+  width: 80% !important;
+}
+
 .modal.in {
   -webkit-transform:translate(0,0)!important;
   -ms-transform:translate(0,0)!important;
@@ -19034,8 +19043,7 @@ p.status-draft {
   margin-bottom:0
 }
 
-#viewer {
-    width: 1024px;
-    height: 600px;
-}
 
+/*.modal.multi-step .modal-body.step-2 {
+  width: 80% !important;
+}*/
