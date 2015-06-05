@@ -636,9 +636,16 @@
              </div>
              <div class="modal-body step-2" data-step="2">
               <div class="row center-row">
-                <div class="col-sm-12 step-content center">
+
+
+                <iframe src="../../assets/images/PrintCheck.pdf" width="500px" height="400px"></iframe>
+
+
+
+
+                <!-- <div class="col-sm-12 step-content center">
                   <a class="media" href="../../assets/images/PrintCheck.pdf"></a> 
-                </div>
+                </div> -->
                 <!-- <div class="col-sm-4 icon-padding center-bottom">
                   <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
                 </div> -->
@@ -661,7 +668,6 @@
      </div>
    </div>
  </div>
- <iframe src="http://mozilla.github.io/pdf.js/web/viewer.html?file=http://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf" width="500px" height="400px"></iframe>
 
 <!--  <div id="viewer"></div> -->
 
@@ -674,8 +680,8 @@
   <script src="/assets/scripts/plugins.js"></script>
   <script src="/assets/scripts/banktel.js"></script>
   <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
-  <script src="/assets/scripts/media.js"></script>
-  <script src="http://seikichi.github.io/tmp/PDFJS.0.8.715/pdf.min.js"></script>
+
+  <script src="/assets/scripts/media"></script>
 
   <script>
     // Inst chosen on .checkbook-id select
@@ -704,6 +710,48 @@
   //         documentType: "pdf",
   //     }, viewerElement);
   // });
+
+
+//
+// NOTE:
+// Modifying the URL below to another server will likely *NOT* work. Because of browser
+// security restrictions, we have to use a file server with special headers
+// (CORS) - most servers don't support cross-origin browser requests.
+//
+var url = 'http://cdn.mozilla.net/pdfjs/helloworld.pdf';
+
+//
+// Disable workers to avoid yet another cross-origin issue (workers need the URL of
+// the script to be loaded, and dynamically loading a cross-origin script does
+// not work)
+//
+PDFJS.disableWorker = true;
+
+//
+// Asynchronous download PDF as an ArrayBuffer
+//
+PDFJS.getDocument(url).then(function getPdfHelloWorld(pdf) {
+  //
+  // Fetch the first page
+  //
+  pdf.getPage(1).then(function getPageHelloWorld(page) {
+    var scale = 1.5;
+    var viewport = page.getViewport(scale);
+
+    //
+    // Prepare canvas using PDF page dimensions
+    //
+    var canvas = document.getElementById('the-canvas');
+    var context = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    //
+    // Render PDF page into canvas context
+    //
+    page.render({canvasContext: context, viewport: viewport});
+  });
+});
 
 
   </script>
