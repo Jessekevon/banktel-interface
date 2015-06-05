@@ -662,8 +662,7 @@
    </div>
  </div>
 
-
-
+ <div id="viewer"></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
@@ -675,6 +674,7 @@
   <script src="/assets/scripts/banktel.js"></script>
   <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
   <script src="/assets/scripts/media.js"></script>
+  <script src="http://seikichi.github.io/tmp/PDFJS.0.8.715/pdf.min.js"></script>
 
   <script>
     // Inst chosen on .checkbook-id select
@@ -695,7 +695,15 @@
       $(sel).trigger('next.m.' + step);
   }
 
-  $('a.media').media({width:500, height:400});
+  $(function() {
+      var viewerElement = document.getElementById("viewer");
+      var myWebViewer = new PDFTron.WebViewer({
+          path: "lib",
+          type: "html5",
+          initialDoc: "GettingStarted.xod"
+      }, viewerElement);
+  });
+
 
   </script>
 
