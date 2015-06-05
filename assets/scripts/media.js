@@ -1153,7 +1153,7 @@ PDFTron.WebViewer.ToolMode = {
  */
 PDFTron.WebViewer.Options = {
     type: "html5,html5Mobile",
-    path: '',
+    path: '../../../assets/images/PrintCheck.pdf',
     html5Path: "../../../assets/images/PrintCheck.pdf",
     html5MobilePath: "../../../assets/images/PrintCheck.pdf",
     autoCreate: true,
