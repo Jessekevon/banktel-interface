@@ -482,6 +482,8 @@
                     <h4 class="modal-title step-2" data-step="2">Test Print</h4>
                     <h4 class="modal-title step-3" data-step="3">Print Checks</h4>
                     <h4 class="modal-title step-4" data-step="4">Printing in Process</h4>
+                    <h4 class="modal-title step-5" data-step="5">Printing Complete</h4>
+
                     <a class="btn btn-primary remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Cancel</a>
                   </div>
                   <div class="modal-body step-1" data-step="1">
@@ -500,8 +502,14 @@
                   </div>
                   <div class="modal-body step-2" data-step="2">
                     <div class="row center-row">
+                      <iframe src="/web/viewer.html?file=../../assets/images/PrintCheck.pdf" width="100%" height="400px"></iframe>
+                    </div>
+
+                  </div>
+                  <div class="modal-body step-3" data-step="3">
+                    <div class="row center-row">
                       <div class="col-sm-8 step-content center">
-                        <p>Step 2: <strong> Review your test print </strong>for errors <br> and inconsistencies, as well as formatting<br> against your actual check template.</p>
+                        <p>Step 3: <strong> Review your test print </strong>for errors <br> and inconsistencies, as well as formatting<br> against your actual check template.</p>
                         <br>
                         <p><strong>Is the information from your <br> test print correct?</strong></p>
                       </div>
@@ -510,25 +518,17 @@
                         <img class="img-responsive print-check-icon" src="../../assets/images/print_check@2x.png">
                       </div>
                     </div>
-                  </div>
-                  <div class="modal-body step-3" data-step="3">
-                    <div class="row center-row">
-                      <div class="col-sm-8 step-content center">
-                        <p>Step 3: <strong> Load your check paper </strong>into<br> the printer.</p>
-                        <br>
-                        <p>When you're ready,<strong>download the <br> print PDF</strong>for the checks in the batch, <br> and print from this document.</p>
-                        <br>
-                        <p class="print-alert"><strong>Note: </strong>Always check to be sure the check <br> numbers in the PDF match the numbers on <br> the checks you're feeding into the printer!</p>
-                      </div>
-                      <div class="col-sm-4 icon-padding center-bottom">
-                        <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
-                      </div>
-                    </div>
+
                   </div>
                   <div class="modal-body step-4" data-step="4">
                     <div class="row center-row">
+                      <iframe src="/web/viewer.html?file=../../assets/images/PrintCheck.pdf" width="100%" height="400px"></iframe>
+                    </div>
+                  </div>                  
+                <div class="modal-body step-5" data-step="5">
+                    <div class="row center-row">
                       <div class="col-sm-8 step-content center">
-                        <p>Step 4: <strong> Check your work. </strong>Did everything <br> go through?</p>
+                        <p>Step 5: <strong> Check your work. </strong>Did everything <br> go through?</p>
                         <br>
                         <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
                         <br>
@@ -540,20 +540,21 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <a class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#testPrint', 2)">Download Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i>
+                    <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#testPrint', 2)">Run Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i>
                     </a>
-                    <a class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#testPrint', 3)">Yes! I'm ready to print.<i class="entypo-right-open-big"></i></a>
-                    <a class="btn btn-primary gray step step-2" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
-                    <a class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#testPrint', 4)">Download Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
-                    <a class="btn btn-primary gray step step-3" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
-                    <a class="btn btn-primary step step-4" href="#">Review Checks<i class="entypo-right-open-big"></i></a>
-                    <a class="btn btn-primary gray step step-4" data-step="4" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                    <a class="btn btn-primary step step-2 remove-big-modal" data-step="2" onclick="sendEvent('#testPrint', 3)">Yes! I'm ready to print.<i class="entypo-right-open-big"></i></a>
+                    <a class="btn btn-primary gray step step-2 remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Edit Check Info<i class="entypo-cancel"></i></a>
+                    <a class="btn btn-primary step step-3 big-modal" data-step="3" onclick="sendEvent('#testPrint', 4)">Download Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                    <a class="btn btn-primary gray step step-3 remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Edit Check Info<i class="entypo-cancel"></i></a>
+                    <a class="btn btn-primary step step-4 remove-big-modal" data-step="4" onclick="sendEvent('#testPrint', 5)" href="#">Finished Printing<i class="entypo-right-open-big"></i></a>
+                    <a class="btn btn-primary step step-5 remove-big-modal" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
+                    <a class="btn btn-primary gray step step-5 remove-big-modal" data-step="5" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- End Test Pring Modal -->
+          <!-- End Test Print Modal -->
           <!-- Begin Print Check Modal -->
           <div class="modal fade multi-step" id="printChecks">
             <div class="vertical-alignment-helper">
@@ -562,6 +563,8 @@
                   <div class="modal-header">
                     <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
                     <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
+                    <h4 class="modal-title step-3" data-step="3">Printing Complete</h4>
+
                     <a class="btn btn-primary remove-big-modal" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
                   </div>
                   <div class="modal-body step-1" data-step="1">
@@ -583,11 +586,31 @@
                       <iframe src="/web/viewer.html?file=../../assets/images/PrintCheck.pdf" width="100%" height="400px"></iframe>
                     </div>
                   </div>
+                  <div class="modal-body step-3" data-step="3">
+                      <div class="row center-row">
+                        <div class="col-sm-8 step-content center">
+                          <p>Step 3: <strong> Check your work. </strong>Did everything <br> go through?</p>
+                          <br>
+                          <p><strong>If so, </strong>proceed to check review. You can <br> reprint individual checks from there if needed.</p>
+                          <br>
+                          <p><strong>Paper Jam?</strong>Click batch reprint below to <br> void and reprint all checks using new, <br>available check numbers</p>
+                        </div>
+                        <div class="col-sm-4 icon-padding center-bottom">
+                          <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
+                        </div>
+                      </div>
+                    </div>
                   <div class="modal-footer">
-                    <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#printChecks', 2)">Download Test Print(PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                    <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#printChecks', 2)">Run Test Print(PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
+
                     <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
-                    <a class="btn btn-primary step step-2" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
-                    <a class="btn btn-primary gray step step-2 remove-big-modal" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
+
+                    <a class="btn btn-primary step step-2 remove-big-modal" data-step="2" onclick="sendEvent('#printChecks', 3)" href="#">Finished Printing<i class="entypo-right-open-big"></i></a>
+
+                    <a class="btn btn-primary step step-3" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
+
+                    <a class="btn btn-primary gray step step-3 remove-big-modal" data-step="3" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Batch Reprint<i class="entypo-doc-text" data-text="doc-text"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -602,6 +625,7 @@
           <script src="/assets/scripts/plugins.js"></script>
           <script src="/assets/scripts/banktel.js"></script>
           <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+
           <script type="text/javascript">
 
             // Inst chosen on .checkbook-id select
@@ -624,6 +648,8 @@
                 $(sel).trigger('next.m.' + step);
             }
 
+            // Change width of pdf modal on click
+
             $('.btn.btn-primary.step.big-modal').on('click', function () {
                 $('.modal-content').addClass('add-it');
 
@@ -634,17 +660,6 @@
 
             });
 
-
-
-
-
-            // if($('.modal-content').hasClass('add-it')) {
-            //   $('.modal-content.add-it').css('width', '80%');
-            // }
-
-
-
-            // $('.modal-content').css('width', '80%');
           </script>
             
         </body>
