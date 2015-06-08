@@ -18887,6 +18887,11 @@ label {
 
 .modal-content.add-it {
   width: 80% !important;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+
 }
 
 .modal.in {
@@ -19042,8 +19047,3 @@ p.status-draft {
 .main-invoices p {
   margin-bottom:0
 }
-
-
-/*.modal.multi-step .modal-body.step-2 {
-  width: 80% !important;
-}*/
