@@ -111,4 +111,6 @@
 
         initialize();
     });
+
+
 }(jQuery);

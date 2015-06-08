@@ -536,7 +536,7 @@
           <script src="/assets/scripts/bootstrap.js"></script>
           <script src="/assets/scripts/plugins.js"></script>
           <script src="/assets/scripts/banktel.js"></script>
-          <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+          <script src="/assets/scripts/jquery-bootstrap-modal-steps.js"></script>
 <script type="text/javascript">
   
 
@@ -615,9 +615,13 @@
             
           </script>
           <script>
+
+          // initializes the multi step modal 
+
           sendEvent = function(sel, step) {
               $(sel).trigger('next.m.' + step);
           }
+
           // Change width of pdf modal on click
 
           $('.btn.btn-primary.step.big-modal').on('click', function () {
