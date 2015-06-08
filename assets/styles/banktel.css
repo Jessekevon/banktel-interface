@@ -6195,8 +6195,8 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
 */}
 
 .btn:hover,.tagged .tag:hover,.memos .memo:hover,.btn:focus,.tagged .tag:focus,.memos .memo:focus {
-  color:#333;
-  text-decoration:none
+  text-decoration:none;
+  outline: none;
 }
 
 .btn:active,.tagged .tag:active,.memos .memo:active,.btn.active,.tagged .active.tag,.memos .active.memo {
@@ -6243,7 +6243,8 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
 
 .btn-default.disabled,.btn-default.disabled:hover,.btn-default.disabled:focus,.btn-default.disabled:active,.btn-default.disabled.active,.btn-default[disabled],.btn-default[disabled]:hover,.btn-default[disabled]:focus,.btn-default[disabled]:active,.btn-default[disabled].active,fieldset[disabled] .btn-default,fieldset[disabled] .btn-default:hover,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:active,fieldset[disabled] .btn-default.active {
   background-color:#fff;
-  border-color:#ccc
+  border-color:#ccc;
+  outline: none;
 }
 
 .btn-default .badge {
@@ -6257,10 +6258,11 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
   border-color:#fff
 }
 
-.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active {
+.btn-primary:hover,.btn-primary:active,.btn-primary.active {
   color:#fff;
   background-color:#25948c;
-  border-color:#e0e0e0
+  border-color:#e0e0e0;
+  outline: none;
 }
 
 .open .btn-primary.dropdown-toggle {
@@ -13375,10 +13377,18 @@ header.page.heading nav.actions a {
 }
 
 header.page.heading nav.actions a:hover {
-  background:#fff;
-  border-color:#fff;
+  background:#fff !important;
+  border-color:#fff !important;
   color:#516199!important
 }
+
+
+header.page.heading nav.actions button:hover {
+  background:#fff !important;
+  border-color:#fff !important;
+  color:#516199!important
+}
+
 
 header.page.heading nav.actions.right {
 /* Changing this to match the design more closely 
@@ -14145,7 +14155,9 @@ div.actions:hover + p,div.actions:hover + .form-group {
 #dashboard {
   background:#ebeced;
   min-height:900px;
-  height:100%
+  height:100%;
+  /* add margin top to accomodate new fixed top pane */
+    margin-top: 60px;
 }
 
 #dashboard .dash-grid {
@@ -19046,4 +19058,15 @@ p.status-draft {
 
 .main-invoices p {
   margin-bottom:0
+}
+/* ---------------------------------------------
+      Dashboard Rearrange UI 
+    ------------------------------------------- */
+
+#text-swap:after {
+  content: "Rearrange";
+
+}
+#text-swap.on:after {
+  content: "Apply & Save";
 }

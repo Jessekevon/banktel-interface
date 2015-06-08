@@ -209,6 +209,18 @@
                   </header>
                 </div>
                 <!--sticky header wrapper -->
+                <header class="page heading fixit">
+                  <div class="container-fluid">
+                    <h1 class="page title"><a href="#">Dashboard</a></h1>
+                    <nav class="actions right">
+                      <button id="text-swap" class="btn btn-primary"></button>
+
+                    </nav>
+                    <!-- nav.actions -->
+                  </div>
+                  <!-- .container -->
+                </header>
+
                 <div class="master-container view" id="dashboard">
                   <div class="dash-grid container-fluid">
                     <div class="grid-row">
@@ -518,6 +530,9 @@
           <script type="text/javascript">
             $(window).load(function(){
                 $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+            });
+            $("#text-swap").on("click", function() {
+              $(this).toggleClass("on");
             });
           </script>
         </body>
