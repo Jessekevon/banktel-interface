@@ -480,8 +480,8 @@
                   <div class="modal-header">
                     <h4 class="modal-title step-1" data-step="1">Test Print</h4>
                     <h4 class="modal-title step-2" data-step="2">Test Print</h4>
-                    <h4 class="modal-title step-3" data-step="3">Print Checks</h4>
-                    <h4 class="modal-title step-4" data-step="4">Printing in Process</h4>
+                    <h4 class="modal-title step-3" data-step="3">Test Print Review</h4>
+                    <h4 class="modal-title step-4" data-step="4">Print Preview</h4>
                     <h4 class="modal-title step-5" data-step="5">Printing Complete</h4>
 
                     <a class="btn btn-primary remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Cancel</a>
@@ -542,9 +542,9 @@
                   <div class="modal-footer">
                     <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#testPrint', 2)">Run Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i>
                     </a>
-                    <a class="btn btn-primary step step-2 remove-big-modal" data-step="2" onclick="sendEvent('#testPrint', 3)">Yes! I'm ready to print.<i class="entypo-right-open-big"></i></a>
+                    <a class="btn btn-primary step step-2 remove-big-modal" data-step="2" onclick="sendEvent('#testPrint', 3)">Done With Test Print<i class="entypo-right-open-big"></i></a>
                     <a class="btn btn-primary gray step step-2 remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Edit Check Info<i class="entypo-cancel"></i></a>
-                    <a class="btn btn-primary step step-3 big-modal" data-step="3" onclick="sendEvent('#testPrint', 4)">Download Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                    <a class="btn btn-primary step step-3 big-modal" data-step="3" onclick="sendEvent('#testPrint', 4)">Yes. I Am Ready to Print!<i class="entypo-doc-text" data-text="doc-text"></i></a>
                     <a class="btn btn-primary gray step step-3 remove-big-modal" data-dismiss="modal" onclick="sendEvent('#testPrint', 1)">Edit Check Info<i class="entypo-cancel"></i></a>
                     <a class="btn btn-primary step step-4 remove-big-modal" data-step="4" onclick="sendEvent('#testPrint', 5)" href="#">Finished Printing<i class="entypo-right-open-big"></i></a>
                     <a class="btn btn-primary step step-5 remove-big-modal" href="http://banktel-interface.herokuapp.com/_pagetypes/check_review/">Review Checks<i class="entypo-right-open-big"></i></a>
@@ -562,7 +562,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h4 class="modal-title step-1" data-step="1">Print Checks</h4>
-                    <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
+                    <h4 class="modal-title step-2" data-step="2">Print Preview</h4>
                     <h4 class="modal-title step-3" data-step="3">Printing Complete</h4>
 
                     <a class="btn btn-primary remove-big-modal" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
@@ -601,7 +601,7 @@
                       </div>
                     </div>
                   <div class="modal-footer">
-                    <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#printChecks', 2)">Run Test Print(PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
+                    <a class="btn btn-primary step step-1 big-modal" data-step="1" onclick="sendEvent('#printChecks', 2)">Print Checks<i class="entypo-doc-text" data-text="doc-text"></i></a>
 
                     <a class="btn btn-primary gray step step-1" data-dismiss="modal">Edit Check Info<i class="entypo-cancel"></i></a>
 
