@@ -19070,3 +19070,48 @@ p.status-draft {
 #text-swap.on:after {
   content: "Apply & Save";
 }
+
+.grid-block.scale-1.rearrange {
+  transform: scale(0.95);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.grid-block.scale-2.rearrange {
+  transform: scale(0.97);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+
+.grid-block { 
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.accounts-graph {
+  height: 110px !important;
+  /* Making this height too large results in no breathing room for view more button*/
+}
+
+/*.grid-block.rearrange.wiggle {
+    animation: wiggle .1s infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-.5deg);
+  }
+  100% {
+    transform: rotate(.5deg);
+  }
+}
+*/
