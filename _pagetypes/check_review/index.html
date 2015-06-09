@@ -479,8 +479,8 @@
                   <div class="modal-content">
                       <div class="modal-header">
                           <h4 class="modal-title step-1" data-step="1">Check Reprint</h4>
-                          <h4 class="modal-title step-2" data-step="2">Printing in Process</h4>
-                          <a class="btn btn-primary" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
+                          <h4 class="modal-title step-2" data-step="2">Print Preview</h4>
+                          <a class="btn btn-primary remove-big-modal" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Cancel</a>
                       </div>
                       <div class="modal-body step-1" data-step="1">
                         <div class="row center-row">
@@ -499,6 +499,9 @@
                       </div>
                       <div class="modal-body step-2" data-step="2">
                         <div class="row center-row">
+                          <iframe src="/web/viewer.html?file=../../assets/images/PrintCheck.pdf" width="100%" height="400px"></iframe>
+                        </div>
+                        <!-- <div class="row center-row">
                           <div class="col-sm-8 step-content center">
                             <p>Step 2: <strong> Check your work. </strong>Did everything <br> go through?</p>
                             <br>
@@ -509,17 +512,14 @@
                           <div class="col-sm-4 icon-padding center-bottom">
                             <img class="img-responsive printer-icon" src="../../assets/images/print-icon2@2x.png">
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="modal-footer">
+                          <a class="btn btn-primary step step-1 big-modal" data-step="1" value="Print" onclick="sendEvent('#printChecks', 2)">Print Checks<i class="entypo-doc-text" data-text="doc-text"></i></a>
 
-                           <iframe src="../../assets/images/PrintCheck.pdf" style="display: none" id="PDFtoPrint"></iframe>
-
-                          <a class="btn btn-primary step step-1" data-step="1" value="Print" onclick="sendEvent('#printChecks', 1),document.getElementById('PDFtoPrint').focus(); document.getElementById('PDFtoPrint').contentWindow.print();">Run Test Print (PDF)<i class="entypo-doc-text" data-text="doc-text"></i></a>
-
-                          <a class="btn btn-primary blurple step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next<i class="entypo-right-open-big"></i></a>
-                          <a class="btn btn-primary blurple step step-2 print-button" data-step="2" onclick="sendEvent('#printChecks', 1)"><i class="entypo-left-open-big"></i>Back</a>
-                          <a class="btn btn-primary step step-2 print-button" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish<i class="entypo-right-open-big"></i></a>
+                          <!-- <a class="btn btn-primary blurple step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next<i class="entypo-right-open-big"></i></a> -->
+                          <a class="btn btn-primary blurple step step-2 print-button remove-big-modal" data-step="2" onclick="sendEvent('#printChecks', 1)"><i class="entypo-left-open-big"></i>Back</a>
+                          <a class="btn btn-primary step step-2 print-button remove-big-modal" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish<i class="entypo-right-open-big"></i></a>
 
 
                       </div>
@@ -536,7 +536,7 @@
           <script src="/assets/scripts/bootstrap.js"></script>
           <script src="/assets/scripts/plugins.js"></script>
           <script src="/assets/scripts/banktel.js"></script>
-          <script src="/assets/scripts/jquery-bootstrap-modal-steps.min.js"></script>
+          <script src="/assets/scripts/jquery-bootstrap-modal-steps.js"></script>
 <script type="text/javascript">
   
 
@@ -615,9 +615,25 @@
             
           </script>
           <script>
+
+          // initializes the multi step modal 
+
           sendEvent = function(sel, step) {
               $(sel).trigger('next.m.' + step);
           }
+
+          // Change width of pdf modal on click
+
+          $('.btn.btn-primary.step.big-modal').on('click', function () {
+              $('.modal-content').addClass('add-it');
+
+          });
+
+          $('.btn.btn-primary.remove-big-modal').on('click', function () {
+              $('.modal-content').removeClass('add-it');
+
+          });
+
           </script>
 
         </body>

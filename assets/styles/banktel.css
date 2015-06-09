@@ -3887,6 +3887,13 @@ Copyright (c) 2013 Daniel Eden
 }
 }
 
+
+iframe {
+  border: 0 !important;
+  margin-bottom: -4px;
+}
+
+
 .zoomOutUp {
   -webkit-animation-name:zoomOutUp;
   animation-name:zoomOutUp
@@ -6182,14 +6189,14 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
 }
 
 .btn:focus,.tagged .tag:focus,.memos .memo:focus,.btn:active:focus,.tagged .tag:active:focus,.memos .memo:active:focus,.btn.active:focus,.tagged .active.tag:focus,.memos .active.memo:focus {
-  outline:thin dotted;
+/*  outline:thin dotted;
   outline:5px auto -webkit-focus-ring-color;
   outline-offset:-2px
-}
+*/}
 
 .btn:hover,.tagged .tag:hover,.memos .memo:hover,.btn:focus,.tagged .tag:focus,.memos .memo:focus {
-  color:#333;
-  text-decoration:none
+  text-decoration:none;
+  outline: none;
 }
 
 .btn:active,.tagged .tag:active,.memos .memo:active,.btn.active,.tagged .active.tag,.memos .active.memo {
@@ -6236,7 +6243,8 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
 
 .btn-default.disabled,.btn-default.disabled:hover,.btn-default.disabled:focus,.btn-default.disabled:active,.btn-default.disabled.active,.btn-default[disabled],.btn-default[disabled]:hover,.btn-default[disabled]:focus,.btn-default[disabled]:active,.btn-default[disabled].active,fieldset[disabled] .btn-default,fieldset[disabled] .btn-default:hover,fieldset[disabled] .btn-default:focus,fieldset[disabled] .btn-default:active,fieldset[disabled] .btn-default.active {
   background-color:#fff;
-  border-color:#ccc
+  border-color:#ccc;
+  outline: none;
 }
 
 .btn-default .badge {
@@ -6250,10 +6258,11 @@ textarea.input-lg,.input-group-lg > textarea.form-control,.input-group-lg > text
   border-color:#fff
 }
 
-.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active {
+.btn-primary:hover,.btn-primary:active,.btn-primary.active {
   color:#fff;
   background-color:#25948c;
-  border-color:#e0e0e0
+  border-color:#e0e0e0;
+  outline: none;
 }
 
 .open .btn-primary.dropdown-toggle {
@@ -9579,9 +9588,7 @@ button.close {
   -webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);
   box-shadow:0 3px 9px rgba(0,0,0,0.5);
   background-clip:padding-box;
-  outline:none;
-  width: 50% !important;
-
+  outline:none
 }
 
 .modal-backdrop {
@@ -13370,10 +13377,18 @@ header.page.heading nav.actions a {
 }
 
 header.page.heading nav.actions a:hover {
-  background:#fff;
-  border-color:#fff;
+  background:#fff !important;
+  border-color:#fff !important;
   color:#516199!important
 }
+
+
+header.page.heading nav.actions button:hover {
+  background:#fff !important;
+  border-color:#fff !important;
+  color:#516199!important
+}
+
 
 header.page.heading nav.actions.right {
 /* Changing this to match the design more closely 
@@ -14140,7 +14155,9 @@ div.actions:hover + p,div.actions:hover + .form-group {
 #dashboard {
   background:#ebeced;
   min-height:900px;
-  height:100%
+  height:100%;
+  /* add margin top to accomodate new fixed top pane */
+    margin-top: 60px;
 }
 
 #dashboard .dash-grid {
@@ -18880,6 +18897,15 @@ label {
   pointer-events:all
 }
 
+.modal-content.add-it {
+  width: 80% !important;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+
+}
+
 .modal.in {
   -webkit-transform:translate(0,0)!important;
   -ms-transform:translate(0,0)!important;
@@ -19033,9 +19059,59 @@ p.status-draft {
 .main-invoices p {
   margin-bottom:0
 }
+/* ---------------------------------------------
+      Dashboard Rearrange UI 
+    ------------------------------------------- */
 
-#viewer {
-    width: 1024px;
-    height: 600px;
+#text-swap:after {
+  content: "Rearrange";
+
+}
+#text-swap.on:after {
+  content: "Apply & Save";
 }
 
+.grid-block.scale-1.rearrange {
+  transform: scale(0.95);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.grid-block.scale-2.rearrange {
+  transform: scale(0.97);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+
+.grid-block { 
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.accounts-graph {
+  height: 110px !important;
+  /* Making this height too large results in no breathing room for view more button*/
+}
+
+/*.grid-block.rearrange.wiggle {
+    animation: wiggle .1s infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-.5deg);
+  }
+  100% {
+    transform: rotate(.5deg);
+  }
+}
+*/
