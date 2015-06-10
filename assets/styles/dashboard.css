@@ -300,7 +300,7 @@
     @include vendor(transform, rotate(180deg));
 }
 */
-@media (max-width: 768px) {
+@media (max-width: 1099px) {
   .grid-stack-item {
     position: relative !important;
     width: auto !important;
@@ -315,3 +315,5 @@
     height: auto !important; } }
 .grid-stack .inner {
   padding: 22px 18px 18px; }
+
+/*# sourceMappingURL=dashboard.css.map */
