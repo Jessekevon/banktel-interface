@@ -6,7 +6,8 @@
   position: relative;
 }
 .grid-stack .grid-stack-placeholder > .placeholder-content {
-  border: 1px dashed lightgray;
+  // border: 1px dashed lightgray;
+  border: 1px dashed rgba(179, 179, 179, 0.8);
   margin: 0;
   position: absolute;
   top: 0;
