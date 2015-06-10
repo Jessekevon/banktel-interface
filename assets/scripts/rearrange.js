@@ -50,6 +50,9 @@ $(function() {
 	};
 
 	$('.grid-stack').gridstack(options);
+	var grid = $('.grid-stack').data('gridstack');
+	// grid.disable();
+
 
 	function saveGrid() {
 		this.serialized_data = _.map($('.grid-stack > .grid-stack-item:visible'), function(el) {
@@ -86,5 +89,16 @@ $(function() {
 	saveGrid();
 	loadGrid();
 
+	$("#text-swap").on("click", function() {
+		$(this).toggleClass("on");
+		$('.grid-block.scale-1').toggleClass("rearrange");
+		$('.grid-block.scale-2').toggleClass("rearrange");
+
+		if($(this).hasClass('on')) {
+			grid.enable();
+		} else {
+			grid.disable();
+		}
+	});
 	// console.log(serialized_data);
 });
