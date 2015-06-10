@@ -79,45 +79,6 @@ function showMenu() {
         return false;
     });
 
-
-    // $(document.body).on('click', '.menu.expanded .level-down', function () {
-    //     $(this).next(".level").css({'left' : '0'});
-    //     return false;
-    // });
-
-    // // Menu, upward traversal
-    // $(document.body).on('click', '.menu.expanded .level-up', function () {
-    //     $(this).closest(".level").css({'left' : '-201px',  'overflow-y' : 'hidden'});
-    //     return false;
-    // });
-
-    // Expand or collapse menu on resize of window
-    $(window).on('resize', function () {
-        showMenu();
-        //if ($(window).width() < 1280) {
-        //    clearMenus();
-        //    if ($('.menu').hasClass('expanded')) {
-        //        $('.menu').removeClass('expanded');
-        //    };
-        //} else if ($(window).width() >= 1280) {
-        //    if ($('.menu').hasClass('expanded')) {
-        //        return false;
-        //    } else {
-        //        $('.menu').addClass('expanded');
-        //    };
-        //};
-    });
-
-    // if($('.menu').hasClass('closed')) {
-
-    // }
-
-
-
-
-
-
-
 }());
 //= require bootstrap/affix
 //= require bootstrap/alert
