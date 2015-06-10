@@ -9700,7 +9700,7 @@ button.close {
 }
 
 .tooltip.top {
-  margin-top:-3px;
+  margin-top:13px;
   padding:5px 0
 }
 
@@ -9722,11 +9722,18 @@ button.close {
 .tooltip-inner {
   max-width:200px;
   padding:3px 8px;
-  color:#fff;
+  color:#000;
   text-align:center;
   text-decoration:none;
-  background-color:#000;
-  border-radius:4px
+  background-color:#fff;
+  border:1px solid #ccc;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:em(13.5);
+  -webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+  box-shadow:0 5px 10px rgba(0,0,0,0.2);
+  background-clip:padding-box;
+  padding: 14px;
+
 }
 
 .tooltip-arrow {
@@ -9738,25 +9745,25 @@ button.close {
 }
 
 .tooltip.top .tooltip-arrow {
-  bottom:0;
+  bottom:1px;
   left:50%;
   margin-left:-5px;
   border-width:5px 5px 0;
-  border-top-color:#000
+  border-top-color:#fff;
 }
 
 .tooltip.top-left .tooltip-arrow {
   bottom:0;
   left:5px;
   border-width:5px 5px 0;
-  border-top-color:#000
+  border-top-color:#fff;
 }
 
 .tooltip.top-right .tooltip-arrow {
   bottom:0;
   right:5px;
   border-width:5px 5px 0;
-  border-top-color:#000
+  border-top-color:#fff;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -9764,7 +9771,7 @@ button.close {
   left:0;
   margin-top:-5px;
   border-width:5px 5px 5px 0;
-  border-right-color:#000
+  border-right-color:#fff
 }
 
 .tooltip.left .tooltip-arrow {
@@ -9772,7 +9779,7 @@ button.close {
   right:0;
   margin-top:-5px;
   border-width:5px 0 5px 5px;
-  border-left-color:#000
+  border-left-color:#fff
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -9780,21 +9787,21 @@ button.close {
   left:50%;
   margin-left:-5px;
   border-width:0 5px 5px;
-  border-bottom-color:#000
+  border-bottom-color:#000;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
   top:0;
   left:5px;
   border-width:0 5px 5px;
-  border-bottom-color:#000
+  border-bottom-color:#000;
 }
 
 .tooltip.bottom-right .tooltip-arrow {
   top:0;
   right:5px;
   border-width:0 5px 5px;
-  border-bottom-color:#000
+  border-bottom-color:#000;
 }
 
 .popover {
@@ -12882,13 +12889,18 @@ i.collapse-icon:hover {
   hyphens:auto
 }
 
-.ellipsis {
+/*.ellipsis {
   overflow:hidden;
   -ms-text-overflow:ellipsis;
   text-overflow:ellipsis;
   white-space:nowrap;
   width:250px
-/* change as needed */
+}*/
+
+.ellipsis {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
 }
 
 /* ---------------------------------------------
