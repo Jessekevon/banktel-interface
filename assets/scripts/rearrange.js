@@ -14,6 +14,7 @@ $(function() {
 	];
 
 	var options = {
+		animate: true,
 		cell_height: 210,
 		vertical_margin: 18,
 	};
