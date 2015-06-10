@@ -45,7 +45,7 @@ $(function() {
 	})
 
 	var options = {
-		cell_height: 280,
+		cell_height: 210,
 		vertical_margin: 18,
 	};
 
