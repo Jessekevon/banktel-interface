@@ -80,7 +80,7 @@ $(function() {
 		});
 	}
 
-	$('#load').click(this.loadDefaultGrid);
+	$('#reset').click(this.loadDefaultGrid);
 
 	$('.grid-stack').on('change', function(e, items) {
 		// console.debug(items);
