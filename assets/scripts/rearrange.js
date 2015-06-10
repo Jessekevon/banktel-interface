@@ -26,6 +26,19 @@ $(function() {
 	grid = $('.grid-stack').data('gridstack');
 	grid.disable();
 
+	if(sessionStorage.gridData) {
+		$('div[class*="_"]').removeClass(function (index, css) {
+			console.debug(css.match(/_.+/g));
+    		return css.match(/_.+/g);
+		});
+
+		$('div[class*="_"]')[0].className = $('div[class*="_"]')[0].className.replace(/_.+/g, '');
+
+		_.each(JSON.parse(sessionStorage.gridData), function(el) {
+			grid.update($(el.name), el.x, el.y, el.width, el.height);
+		});
+	}
+
 
 	// Methods
 	// --------------------------------------------------------------
@@ -48,6 +61,7 @@ $(function() {
 				name: '.' + node.el[0].classList[0]
             };
 		}, this);
+		sessionStorage.gridData = JSON.stringify(serializedData);
 	};
 
 	/**
@@ -66,7 +80,8 @@ $(function() {
 		_.each(defaultSerialization, function(el) {
 			grid.update($(el.name), el.x, el.y, el.width, el.height);
 		});
-	};
+		this.saveGrid();
+	}.bind(this);
 
 	/**
 	*	Trigger for rearrange/save button
