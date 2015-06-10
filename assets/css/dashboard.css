@@ -44,8 +44,7 @@
   display: none; }
 
 .grid-stack > .grid-stack-item.ui-draggable-dragging, .grid-stack > .grid-stack-item.ui-resizable-resizing {
-  z-index: 100;
-  cursor: move; }
+  z-index: 100; }
 
 .grid-stack > .grid-stack-item.ui-draggable-dragging > .grid-stack-item-content,
 .grid-stack > .grid-stack-item.ui-draggable-dragging > .grid-stack-item-content, .grid-stack > .grid-stack-item.ui-resizable-resizing > .grid-stack-item-content,
@@ -313,5 +312,3 @@
 
   .grid-stack {
     height: auto !important; } }
-.grid-stack .inner {
-  padding: 22px 18px 18px; }
