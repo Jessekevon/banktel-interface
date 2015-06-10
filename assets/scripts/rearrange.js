@@ -25,8 +25,8 @@ $(function() {
 	});
 	//*/
 
-	this.defaultSerialization = [
-		{ x: 0, y: 4, width: 4, height: 2, name: ".my-accounts" },
+	var defaultSerialization = [
+		{ x: 0, y: 0, width: 4, height: 2, name: ".my-accounts" },
 		{ x: 4, y: 0, width: 4, height: 2, name: ".top-5-accounts" },
 		{ x: 8, y: 0, width: 4, height: 1, name: ".cash-forecast" },
 		{ x: 8, y: 1, width: 4, height: 1, name: ".bill-payment-vs-invoice-receipts" },
@@ -41,7 +41,7 @@ $(function() {
 	// grid.remove_all();
 
 	_.each(this.defaultSerialization, function(node) {
-		// grid.move()
+		// console.log('...');
 	})
 
 	var options = {
@@ -73,11 +73,11 @@ $(function() {
 		// console.debug(items);
 	}
 
-	function loadDefaultGrid() {
-		_.each(this.defaultSerialization, function(el) {
-			var el = $(el.name);
-			console.debug(el);
-		})
+	this.loadDefaultGrid = function() {
+		console.debug('loading default grid...', defaultSerialization);
+		_.each(defaultSerialization, function(el) {
+			grid.update($(el.name), el.x, el.y, el.width, el.height);
+		});
 	}
 
 	$('#load').click(this.loadDefaultGrid);
@@ -89,6 +89,9 @@ $(function() {
 	saveGrid();
 	loadGrid();
 
+	/**
+	*	Trigger for rearrange/save button
+	*/
 	$("#text-swap").on("click", function() {
 		$(this).toggleClass("on");
 		$('.grid-block.scale-1').toggleClass("rearrange");
@@ -100,5 +103,6 @@ $(function() {
 			grid.disable();
 		}
 	});
+	
 	// console.log(serialized_data);
 });
