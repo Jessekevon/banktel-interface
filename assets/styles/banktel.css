@@ -13395,6 +13395,10 @@ header.page.heading nav.actions.right {
   margin-top: 29px;*/
 }
 
+.actions.right button {
+  margin: 0 5px;
+}
+
 /* ---------------------------------------------
     MODULE - Faux Table
   ------------------------------------------- */
@@ -14157,7 +14161,7 @@ div.actions:hover + p,div.actions:hover + .form-group {
   min-height:900px;
   height:100%;
   /* add margin top to accomodate new fixed top pane */
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 #dashboard .dash-grid {
