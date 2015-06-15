@@ -79,7 +79,21 @@ function showMenu() {
         return false;
     });
 
+    //Swap out control switch text
+
+    $('.track').on('click', function () {
+        $('.status').toggleClass('on');
+    });
+
+    // $('.accordion-title').on('click', function () {
+    //     $(this).toggleClass('is-expanded');
+    //     $('.accordion-content').toggleClass('is-expanded');
+    //     $('.accordion-content').toggleClass('is-collapsed');
+    // });
+
+
 }());
+
 //= require bootstrap/affix
 //= require bootstrap/alert
 //= require bootstrap/button
@@ -118,3 +132,5 @@ function showMenu() {
 }());
 
 // Place any jQuery/helper plugins in here.
+
+
