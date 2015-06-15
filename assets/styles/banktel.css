@@ -9541,7 +9541,7 @@ button.close {
 }
 
 .modal-open {
-  overflow:hidden
+  overflow:hidden;
 /*overflow: scroll;*/
 }
 
@@ -10458,7 +10458,7 @@ th.visible-print,td.visible-print {
   min-width:126px;
   width:100%;
   z-index:50;
-  -ms-overflow-style:scrollbar!important;
+  -ms-overflow-style:scrollbar !important;
   -webkit-transition:opacity 300ms ease-out,top 300ms ease-out,visibility 300ms ease-out;
   transition:opacity 300ms ease-out,top 300ms ease-out,visibility 300ms ease-out
 }
@@ -11268,7 +11268,6 @@ section.menu-system nav.menu .level {
   z-index:1;
   overflow-y:scroll;
   overflow-x:hidden;
-  -ms-overflow-style:none
 }
 
 .win section.menu-system nav.menu .level::-webkit-scrollbar {
