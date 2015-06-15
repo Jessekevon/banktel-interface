@@ -1,546 +1,558 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
+  <link rel="stylesheet" href="/assets/styles/dashboard.css">
+  <script src="/assets/scripts/modernizr.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <!--[if IE 7]>         
-  <html class="no-js lt-ie9 lt-ie8">
-    <![endif]-->
-    <!--[if IE 8]>         
-    <html class="no-js lt-ie9">
-      <![endif]-->
-      <!--[if gt IE 8]><!--> 
-      <html class="no-js">
-        <!--<![endif]-->
-        <head>
-          <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <title></title>
-          <meta name="description" content="">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="/assets/styles/normalize.css">
-          <link rel="stylesheet" href="/assets/styles/banktel.css">
-          <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
-          <script src="/assets/scripts/modernizr.js"></script>
-          <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-          <![endif]-->
-        </head>
-        <body>
-          <!-- Modal -->
-          <div class="modal fade" id="modal-editCustomerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <form class="form-horizontal" role="form">
-                  <div class="modal-header tier static">
-                    <div class="indicator"></div>
-                    <h4 class="modal-title">
-                      Edit Client Details: CC West Printing
-                      <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
-                    </h4>
-                  </div>
-                  <div class="modal-body tier">
-                    <div class="indicator"></div>
-                    <div class="form-group">
-                      <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
-                      <div class="col-sm-4">
-                        <select class="dropdown form-control" name="vendor-city-state-zip">
-                          <option selected="selected">Austin</option>
-                          <option>Amarillo</option>
-                          <option>Dallas</option>
-                          <option>Houston</option>
-                          <option>San Antonio</option>
-                          <option>Tyler</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-3">
-                        <select class="dropdown form-control" name="vendor-city-state-zip">
-                          <option>AK</option>
-                          <option selected="selected">TX</option>
-                          <option>AR</option>
-                          <option>AZ</option>
-                          <option>CA</option>
-                          <option>CO</option>
-                          <option>CT</option>
-                          <option>DE</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-3">
-                        <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer tier static">
-                    <div class="indicator"></div>
-                    <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
-                  </div>
-                </form>
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-editCustomerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="form-horizontal" role="form">
+
+          <div class="modal-header tier static">
+            <div class="indicator"></div>
+            <h4 class="modal-title">
+              Edit Client Details: CC West Printing
+              <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+            </h4>
+          </div>
+
+          <div class="modal-body tier">
+            <div class="indicator"></div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
               </div>
             </div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+              <div class="col-sm-4">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option selected="selected">Austin</option>
+                  <option>Amarillo</option>
+                  <option>Dallas</option>
+                  <option>Houston</option>
+                  <option>San Antonio</option>
+                  <option>Tyler</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option>AK</option>
+                  <option selected="selected">TX</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DE</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
+              </div>
+            </div>
+
           </div>
-          <div class="app">
-            <main>
-              <section class="menu-system">
-                <div class="topbar-branding" id="logo"></div>
-                <nav class="menu closed expanded">
+
+          <div class="modal-footer tier static">
+            <div class="indicator"></div>
+            <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="app">
+
+    <main>
+
+      <section class="menu-system">
+        <div class="topbar-branding" id="logo"></div>
+
+        <nav class="menu closed expanded">
+          <ul class="level">
+            <li>
+              <a class="level-down" href=""><i class="entypo-line-graph"></i> <span>Dashboard</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Dashboard</a></li>
+                <li><a href="">My Dashboard</a></li>
+
+                <li>
+                  <a class="level-down has-children" href="">Dashboard Settings</a>
                   <ul class="level">
-                    <li>
-                      <a class="level-down" href=""><i class="entypo-line-graph"></i> <span>Dashboard</span></a>
-                      <ul class="level">
-                        <li><a class="level-up" href="">Dashboard</a></li>
-                        <li><a href="">My Dashboard</a></li>
-                        <li>
-                          <a class="level-down has-children" href="">Dashboard Settings</a>
-                          <ul class="level">
-                            <li><a class="level-up" href="">Dashboard Settings</a></li>
-                            <a class="level-down has-children" href="">Fourth Level</a>
-                            <ul class="level">
-                              <li><a class="level-up" href="">Fourth Level</a></li>
-                              <li><a href="">Option 1</a></li>
-                              <li><a href="">Option 2</a></li>
-                              <li><a href="">Option 3</a></li>
-                              <li><a href="">Option 4</a></li>
-                              <li><a href="">Option 5</a></li>
-                            </ul>
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
-                            <li><a href="">Option 3</a></li>
-                            <li><a href="">Option 4</a></li>
-                            <li><a href="">Option 5</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a class="level-down has-children" href="">Widget Settings</a>
-                          <ul class="level">
-                            <li><a class="level-up" href="">Widget Settings</a></li>
-                            <li><a href="">Colors &amp; Styles</a></li>
-                            <li><a href="">Configure Widgets</a></li>
-                            <li><a href="">3rd Party Apps</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="level-down" href=""><i class="entypo-text-doc"></i> <span>General Ledger</span></a>
-                      <ul class="level">
-                        <li><a class="level-up" href="">General Ledger</a></li>
-                        <li><a href="">Chart of Accounts</a></li>
-                        <li><a href="">Recent Transactions</a></li>
-                        <li><a href="">Batch Entry</a></li>
-                        <li><a href="">Account Setup</a></li>
-                        <li><a href="">Reports</a></li>
-                        <li><a href="">View Settings</a></li>
-                        <li><a href="">Chart of Accounts</a></li>
-                        <li><a href="">Recent Transactions</a></li>
-                        <li><a href="">Batch Entry</a></li>
-                        <li><a href="">Account Setup</a></li>
-                        <li><a href="">Reports</a></li>
-                        <li><a href="">View Settings</a></li>
-                        <li><a href="">Chart of Accounts</a></li>
-                        <li><a href="">Recent Transactions</a></li>
-                        <li><a href="">Batch Entry</a></li>
-                        <li><a href="">Account Setup</a></li>
-                        <li><a href="">Reports</a></li>
-                        <li><a href="">View Settings</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="level-down" href=""><i class="entypo-pie-chart"></i> <span>Budget</span></a>
-                      <ul class="level">
-                        <li><a class="level-up" href="">Budget</a></li>
-                        <li>
-                          <a class="level-down has-children" href="">Budget by Department</a>
-                          <ul class="level">
-                            <li><a class="level-up" href="">Budget By Department</a></li>
-                            <li><a href="">Operations</a></li>
-                            <li><a href="">Marketing</a></li>
-                            <li><a href="">Personnel</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="">Create Budget</a></li>
-                        <li><a href="">Approvals</a></li>
-                        <li><a href="">Reports</a></li>
-                      </ul>
-                    </li>
-                    <li><a href=""><i class="entypo-folder"></i> <span>Reports</span></a></li>
-                    <li><a href=""><i class="entypo-cog"></i> <span>Settings</span></a></li>
-                    <div class="menu-collapse">
-                      <i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
-                      <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
-                    </div>
+                    <li><a class="level-up" href="">Dashboard Settings</a></li>
+                    <a class="level-down has-children" href="">Fourth Level</a>
+                    <ul class="level">
+                      <li><a class="level-up" href="">Fourth Level</a></li>
+                      <li><a href="">Option 1</a></li>
+                      <li><a href="">Option 2</a></li>
+                      <li><a href="">Option 3</a></li>
+                      <li><a href="">Option 4</a></li>
+                      <li><a href="">Option 5</a></li>
+                    </ul>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                    <li><a href="">Option 4</a></li>
+                    <li><a href="">Option 5</a></li>
                   </ul>
-                </nav>
-              </section>
-              <!-- section.menu-system -->
-              <div class="app-content">
-                <div class="loading">
-                  <p>Processing your request...</p>
-                  <span class="loader loader-quart"></span>
-                </div>
-                <div class="sticky-header-wrapper">
-                  <header class="topbar navbar" id="topbar" role="navigation">
-                    <div class="container-fluid">
-                      <div class="topbar-buttons" id="topbar-buttons">
-                        <ul class="topbar-nav nav nav-pills">
-                          <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
-                          <li>
-                            <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
-                            <ul class="topbar-dropdown dropdown-menu pull-right">
-                              <li><a href="#">Account Settings</a></li>
-                              <li><a href="#">Log Out</a></li>
-                            </ul>
-                          </li>
-                        </ul>
+                </li>
+                <li>
+                  <a class="level-down has-children" href="">Widget Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Widget Settings</a></li>
+                    <li><a href="">Colors &amp; Styles</a></li>
+                    <li><a href="">Configure Widgets</a></li>
+                    <li><a href="">3rd Party Apps</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-text-doc"></i> <span>General Ledger</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">General Ledger</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-pie-chart"></i> <span>Budget</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Budget</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Budget by Department</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Budget By Department</a></li>
+                    <li><a href="">Operations</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Personnel</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Budget</a></li>
+                <li><a href="">Approvals</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </li>
+            <li><a href=""><i class="entypo-folder"></i> <span>Reports</span></a></li>
+            <li><a href=""><i class="entypo-cog"></i> <span>Settings</span></a></li>
+            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
+              <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
+            </div>
+
+          </ul>
+        </nav>
+      </section>
+      <!-- section.menu-system -->
+
+      <div class="app-content">
+
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
+          <div class="sticky-header-wrapper">
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+            <div class="topbar-buttons" id="topbar-buttons">
+              <ul class="topbar-nav nav nav-pills">
+                <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                <li>
+                  <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                  <ul class="topbar-dropdown dropdown-menu pull-right">
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </header>
+        </div><!--sticky header wrapper -->
+
+        <header class="page heading fixit">
+          <div class="container-fluid">
+            <h1 class="page title"><a href="#">Dashboard</a></h1>
+            <nav class="actions right">
+              <button id="reset" class="btn btn-primary">Reset</button>
+              <button id="text-swap" class="btn btn-primary"></button>
+            </nav>
+            <!-- nav.actions -->
+          </div>
+          <!-- .container -->
+        </header>
+
+        <div class="master-container view" id="dashboard">
+        <!-- For Testing -->
+        <!-- <button id="save">Save Grid</button> <button id="load">Load Grid</button> -->
+        <!-- /For Testing -->
+          <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+
+            <!-- Item 1 -->
+            <div class="my-accounts grid-block grid-stack-item scale-1" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _1">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">My Accounts</h4>
+                      <p class="title-subheading">Cash Balances</p>
+                    </div>
+                    <a href="#"><img class="settings-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/settings-gray.png"/></a>
+                  </header>
+                  <div class="accounts-graph"></div>
+                  <div class="cash-balances">
+                    <div class="acct-title">
+                      <span class="acct-quarter">Q2 2014</span><span class="acct-date">May 27</span>
+                    </div>
+                    <div class="cash-balances-inner">
+                      <div class="acct-row">
+                        <span class="blue-dot"></span><h6>Javalina Operating Account</h6>
+                        <span class="acct-balance"><h6>$113,063.80</h6></span>
+                        <hr>
                       </div>
+                      <div class="acct-row">
+                        <span class="green-dot"></span><h6>Javalina Payroll</h6>
+                        <span class="acct-balance"><h6>$1,400.74</h6></span>
+                        <hr>
+                      </div>
+                      <div class="acct-row">
+                        <span class="blue-dot"></span><h6>Austin First Natioinal Fuel</h6>
+                        <span class="acct-balance"><h6>$16,079.61</h6></span>
+                        <hr>
+                      </div>
+                      <div class="acct-row">
+                        <span class="green-dot"></span><h6>Escrow Account</h6>
+                        <span class="acct-balance"><h6>$16,310.04</h6></span>
+                        <hr>
+                      </div>
+                      <div class="acct-row">
+                        <span class="blue-dot"></span><h6>Amex Card</h6>
+                        <span class="acct-balance"><h6>$1,552.45</h6></span>
+                        <hr>
+                      </div>
+                      <div class="acct-row">
+                        <span class="blue-dot"></span><h6>Test Card 1</h6>
+                        <span class="acct-balance"><h6>$1,552.45</h6></span>
+                        <hr>
+                      </div>
+                      <div class="acct-row">
+                        <span class="blue-dot"></span><h6>Test Card 2</h6>
+                        <span class="acct-balance"><h6>$1,552.45</h6></span>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="view-all btn btn-primary btn-hidden inverted">View All Accounts</a>
+                </div>
+              </div>
+            </div>
+            <!-- /Item 1 -->
+
+            <!-- Item 2 -->
+            <div class="top-5-accounts grid-block grid-stack-item scale-1" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _2">
+                <div class="inner">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"  >  
+                    <header>
+                      <div class="title">
+                        <h4 class="title-heading">Top 5 Accounts</h4>
+                      </div>
+                    </header>
+                    <div class="switch-light-wrapper">
+                      <div class="switch-toggle switch-candy">
+                        <input id="week" name="view" type="radio" checked>
+                        <label for="week" onclick="">Customers</label>
+
+                        <input id="month" name="view" type="radio">
+                        <label for="month" onclick="">Vendors</label>
+
+                        <a></a>
+                      </div>
+                    </div>
+
+                    <div class="aux-new total">
+                      <p class="aux-label">Total</p>
+                      <p class="aux-value">$385,450.43</p>
+                      <hr>
+                    <p class="aux-label">67% of Global Revenue</p>
+                    </div>
+                    <div class="dashboard-select">
+                    <select class="dropdown filter" id="filter-by-time" name="filter-by-time">
+                      <option>Top Accounts : Lifetime</option>
+                      <option>Top Accounts : This Year</option>
+                      <option>Top Accounts : Current Month</option>
+                    </select>
+                    </div>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"></div>
+
+                  </div><!-- row -->
+
+                  <table class="table dashboard-table">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Customer Since</th>
+                        <th>Total Spend</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Fleishman-Hillard</td>
+                        <td>MAY 2011</td>
+                        <td>$92,192.34</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Ovation Partners</td>
+                        <td>JUN 2012</td>
+                        <td>$86,405.54</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Shell Oil Company</td>
+                        <td>JUL 2012</td>
+                        <td>$66,414.00</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Acme Aircraft Supplies</td>
+                        <td>AUG 2012</td>
+                        <td>$611.00</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Johnson & Johnson</td>
+                        <td>OCT 2012</td>
+                        <td>$77,294.27</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- /Item 2 -->
+
+            <!-- Item 3 -->
+            <div class="cash-forecast grid-block grid-stack-item scale-1" data-gs-x="8" data-gs-y="0" data-gs-width="4" data-gs-height="1">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _3">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">Cash Forecast</h4>
                     </div>
                   </header>
                 </div>
-                <!--sticky header wrapper -->
-                <header class="page heading fixit">
-                  <div class="container-fluid">
-                    <h1 class="page title"><a href="#">Dashboard</a></h1>
-                    <nav class="actions right">
-                      <button id="text-swap" class="btn btn-primary"></button>
+              </div>
+            </div>
+            <!-- /Item 3 -->
 
-                    </nav>
-                    <!-- nav.actions -->
+            <!-- Item 4 -->
+            <div class="bill-payment-vs-invoice-receipts grid-block grid-stack-item scale-1" data-gs-x="8" data-gs-y="1" data-gs-width="4" data-gs-height="1">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _4">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">Bill Payment vs. Invoice Receipts</h4>
+                    </div>
+                  </header>
+
+                  <div class="left bar-heading">
+                    <p class="title">Average Bill<br>Payment</p>
+                    <p class="quantity">18</p>
                   </div>
-                  <!-- .container -->
-                </header>
+                  <div class="right bar-heading">
+                    <p class="title">Average Invoice<br>Payment Receipt</p>
+                    <p class="quantity">36</p>
+                  </div>
 
-                <div class="master-container view" id="dashboard">
-                  <div class="dash-grid container-fluid">
-                    <div class="grid-row">
-                      <div class="grid-block scale-1 one-wide two-tall my-accounts">
-                        <div class="grid-block-content animated bounceInDown _1">
-                          <div class="grid-block-inner">
-                            <header>
-                              <div class="title">
-                                <h4 class="title-heading">My Accounts</h4>
-                                <p class="title-subheading">Cash Balances</p>
-                              </div>
-                              <a href="#"><img class="settings-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/settings-gray.png"/></a>
-                            </header>
-                            <div class="accounts-graph">
-                            </div>
-                            <div class="cash-balances">
-                              <div class="acct-title">
-                                <span class="acct-quarter">Q2 2014</span><span class="acct-date">May 27</span>
-                              </div>
-                              <div class="cash-balances-inner">
-                                <div class="acct-row">
-                                  <span class="blue-dot"></span>
-                                  <h6>Javalina Operating Account</h6>
-                                  <span class="acct-balance">
-                                    <h6>$113,063.80</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="green-dot"></span>
-                                  <h6>Javalina Payroll</h6>
-                                  <span class="acct-balance">
-                                    <h6>$1,400.74</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="blue-dot"></span>
-                                  <h6>Austin First Natioinal Fuel</h6>
-                                  <span class="acct-balance">
-                                    <h6>$16,079.61</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="green-dot"></span>
-                                  <h6>Escrow Account</h6>
-                                  <span class="acct-balance">
-                                    <h6>$16,310.04</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="blue-dot"></span>
-                                  <h6>Amex Card</h6>
-                                  <span class="acct-balance">
-                                    <h6>$1,552.45</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="blue-dot"></span>
-                                  <h6>Test Card 1</h6>
-                                  <span class="acct-balance">
-                                    <h6>$1,552.45</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                                <div class="acct-row">
-                                  <span class="blue-dot"></span>
-                                  <h6>Test Card 2</h6>
-                                  <span class="acct-balance">
-                                    <h6>$1,552.45</h6>
-                                  </span>
-                                  <hr>
-                                </div>
-                              </div>
-                            </div>
-                            <a href="#" class="view-all btn btn-primary btn-hidden inverted">View All Accounts</a>
-                          </div><!--grid block inner -->
-                        </div>
-                      </div>
-                      <div class="grid-block scale-1 one-wide two-tall top-5-accounts">
-                        <div class="grid-block-content animated bounceInDown _2">
-                          <div class="grid-block-inner"> 
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"  >
-                                <header>
-                                  <div class="title">
-                                    <h4 class="title-heading">Top 5 Accounts</h4>
-                                  </div>
-                                </header>
-                                <div class="switch-light-wrapper">
-                                  <div class="switch-toggle switch-candy">
-                                    <input id="week" name="view" type="radio" checked>
-                                    <label for="week" onclick="">Customers</label>
-                                    <input id="month" name="view" type="radio">
-                                    <label for="month" onclick="">Vendors</label>
-                                    <a></a>
-                                  </div>
-                                </div>
-                                <div class="aux-new total">
-                                  <p class="aux-label">Total</p>
-                                  <p class="aux-value">$385,450.43</p>
-                                  <hr>
-                                  <p class="aux-label">67% of Global Revenue</p>
-                                </div>
-                                <div class="dashboard-select">
-                                  <select class="dropdown filter" id="filter-by-time" name="filter-by-time">
-                                    <option>Top Accounts : Lifetime</option>
-                                    <option>Top Accounts : This Year</option>
-                                    <option>Top Accounts : Current Month</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5"></div>
-                            </div>
-                            <!-- row -->
-                            <table class="table dashboard-table">
-                              <thead>
-                                <tr>
-                                  <th></th>
-                                  <th>Name</th>
-                                  <th>Customer Since</th>
-                                  <th>Total Spend</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>Fleishman-Hillard</td>
-                                  <td>MAY 2011</td>
-                                  <td>$92,192.34</td>
-                                </tr>
-                                <tr>
-                                  <td>2</td>
-                                  <td>Ovation Partners</td>
-                                  <td>JUN 2012</td>
-                                  <td>$86,405.54</td>
-                                </tr>
-                                <tr>
-                                  <td>3</td>
-                                  <td>Shell Oil Company</td>
-                                  <td>JUL 2012</td>
-                                  <td>$66,414.00</td>
-                                </tr>
-                                <tr>
-                                  <td>4</td>
-                                  <td>Acme Aircraft Supplies</td>
-                                  <td>AUG 2012</td>
-                                  <td>$611.00</td>
-                                </tr>
-                                <tr>
-                                  <td>5</td>
-                                  <td>Johnson & Johnson</td>
-                                  <td>OCT 2012</td>
-                                  <td>$77,294.27</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                        </div><!-- grid block inner -->
-                        <!-- grid block content -->
-                      </div>
-                      <div class="grid-block scale-1 grid-block-stacked one-wide two-tall">
-                        <div class="grid-block one-tall cash-forecast">
-                          <div class="grid-block-content animated bounceInDown _3">
-                            <header>
-                              <div class="title">
-                                <h4 class="title-heading">Cash Forecast</h4>
-                              </div>
-                            </header>
-                          </div>
-                        </div>
-                        <div class="grid-block one-tall bill-payment-vs-invoice-receipts">
-                          <div class="grid-block-content animated bounceInDown _4">
-                            <header>
-                              <div class="title">
-                                <h4 class="title-heading">Bill Payment vs. Invoice Receipts</h4>
-                              </div>
-                            </header>
-                            <div class="left bar-heading">
-                              <p class="title">Average Bill<br>Payment</p>
-                              <p class="quantity">18</p>
-                            </div>
-                            <div class="right bar-heading">
-                              <p class="title">Average Invoice<br>Payment Receipt</p>
-                              <p class="quantity">36</p>
-                            </div>
-                            <div class="double-bar">
-                              <div class="bar-content">
-                                <div class="left bar-quantity" data-quantity="18"></div>
-                                <div class="right bar-quantity" data-quantity="36"></div>
-                              </div>
-                              <div class="bar-origin">0</div>
-                            </div>
-                            <div class="bar-average">
-                              <p class="left average">Avg. Amount: $1,789.22</p>
-                              <p class="right average">Avg. Amount: $3,564.13</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- .grid-block-stacked -->
+                  <div class="double-bar">
+                    <div class="bar-content">
+                      <div class="left bar-quantity" data-quantity="18"></div>
+                      <div class="right bar-quantity" data-quantity="36"></div>
                     </div>
-                    <!-- .row -->
-                    <div class="grid-row">
-                      <div class="grid-block scale-2 grid-block-stacked two-wide two-tall">
-                        <div class="grid-block two-wide one-tall accounts-payable">
-                          <div class="grid-block-content animated bounceInDown _5">
-                            <header>
-                              <div class="title">
-                                <h4 class="title-heading">Accounts Payable</h4>
-                                <p class="title-subheading">Aging</p>
-                              </div>
-                              <div class="aux">
-                                <p class="aux-label">Total</p>
-                                <p class="aux-value">$20,900</p>
-                              </div>
-                            </header>
-                            <ul class="net-at-a-glance six-up">
-                              <li class="net-current">
-                                <p class="net-title">Current</p>
-                                <p class="net-total">$12,900</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-15">
-                                <p class="net-title">Net-15</p>
-                                <p class="net-total">$5,500</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-30">
-                                <p class="net-title">Net-30</p>
-                                <p class="net-total">$2,500</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-45">
-                                <p class="net-title">Net-45</p>
-                                <p class="net-total">$1,250</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-60">
-                                <p class="net-title">Net-60</p>
-                                <p class="net-total">$625</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-75">
-                                <p class="net-title">Net-75</p>
-                                <p class="net-total">$0</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="grid-block two-wide one-tall accounts-receivable">
-                          <div class="grid-block-content animated bounceInDown _6">
-                            <header>
-                              <div class="title">
-                                <h4 class="title-heading">Accounts Receivable</h4>
-                                <p class="title-subheading">Aging</p>
-                              </div>
-                              <div class="aux">
-                                <p class="aux-label">Total</p>
-                                <p class="aux-value">$27,450</p>
-                              </div>
-                            </header>
-                            <ul class="net-at-a-glance two-up">
-                              <li class="net-current">
-                                <p class="net-title">Current</p>
-                                <p class="net-total">$15,900</p>
-                              </li>
-                              <!--
-                                -->
-                              <li class="net-30">
-                                <p class="net-title">Net-30</p>
-                                <p class="net-total">$9,500</p>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="grid-block scale-1 one-wide two-tall profit-and-loss">
-                        <div class="grid-block-content animated bounceInDown _7">
-                          <header>
-                            <div class="title">
-                              <h4 class="title-heading">Profit &amp; Loss</h4>
-                            </div>
-                          </header>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- .grid-row -->
+                    <div class="bar-origin">0</div>
+                  </div>
+
+                  <div class="bar-average">
+                    <p class="left average">Avg. Amount: $1,789.22</p>
+                    <p class="right average">Avg. Amount: $3,564.13</p>
                   </div>
                 </div>
-                <!-- .master-container.view #dashboard -->
               </div>
-              <!-- .app-content -->
-            </main>
+            </div>
+            <!-- /Item 4 -->
+
+            <!-- Item 5 -->
+            <div class="accounts-payable grid-block grid-stack-item scale-1" data-gs-x="0" data-gs-y="2" data-gs-width="8" data-gs-height="1">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _5">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">Accounts Payable</h4>
+                      <p class="title-subheading">Aging</p>
+                    </div>
+                    <div class="aux">
+                      <p class="aux-label">Total</p>
+                      <p class="aux-value">$20,900</p>
+                    </div>
+                  </header>
+                  <ul class="net-at-a-glance six-up">
+                    <li class="net-current">
+                      <p class="net-title">Current</p>
+                      <p class="net-total">$12,900</p>
+                    </li>
+                    <li class="net-15">
+                      <p class="net-title">Net-15</p>
+                      <p class="net-total">$5,500</p>
+                    </li>
+                    <li class="net-30">
+                      <p class="net-title">Net-30</p>
+                      <p class="net-total">$2,500</p>
+                    </li>
+                    <li class="net-45">
+                      <p class="net-title">Net-45</p>
+                      <p class="net-total">$1,250</p>
+                    </li>
+                    <li class="net-60">
+                      <p class="net-title">Net-60</p>
+                      <p class="net-total">$625</p>
+                    </li>
+                    <li class="net-75">
+                      <p class="net-title">Net-75</p>
+                      <p class="net-total">$0</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /Item 5 -->
+
+            <!-- Item 6 -->
+            <div class="accounts-receivable grid-block grid-stack-item scale-1" data-gs-x="0" data-gs-y="3" data-gs-width="8" data-gs-height="1">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _6">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">Accounts Receivable</h4>
+                      <p class="title-subheading">Aging</p>
+                    </div>
+                    <div class="aux">
+                      <p class="aux-label">Total</p>
+                      <p class="aux-value">$27,450</p>
+                    </div>
+                  </header>
+                  <ul class="net-at-a-glance two-up">
+                    <li class="net-current">
+                      <p class="net-title">Current</p>
+                      <p class="net-total">$15,900</p>
+                    </li>
+                    <li class="net-30">
+                      <p class="net-title">Net-30</p>
+                      <p class="net-total">$9,500</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /Item 6 -->
+
+            <!-- Item 7 -->
+            <div class="profit-and-loss grid-block grid-stack-item scale-1" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2">
+              <div class="grid-block-content grid-stack-item-content animated bounceInDown _7">
+                <div class="inner">
+                  <header>
+                    <div class="title">
+                      <h4 class="title-heading">Profit &amp; Loss</h4>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+            <!-- /Item 7 -->
+
           </div>
 
-          <!-- .app -->
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script>
-          <script src="/assets/scripts/jquery-ui.js"></script>
-          <script src="/assets/scripts/bootstrap.js"></script>
-          <script src="/assets/scripts/plugins.js"></script>
-          <script src="/assets/scripts/banktel.js"></script>
-          <script type="text/javascript">
-            $(window).load(function(){
-                $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-            });
-            $("#text-swap").on("click", function() {
-              $(this).toggleClass("on");
-              $('.grid-block.scale-1').toggleClass("rearrange");
-              $('.grid-block.scale-2').toggleClass("rearrange");
-            });
-          </script>
-        </body>
-      </html>
+        </div> <!-- .master-container.view #dashboard -->
+
+      </div> <!-- .app-content -->
+    </main>
+
+  </div> <!-- .app -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+  
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script> -->
+  <!-- <script src="/assets/scripts/jquery-ui.js"></script> -->
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+  <script src="http://troolee.github.io/gridstack.js/gridstack.js"></script>
+  <script src="/assets/scripts/rearrange.js"></script>
+  <script type="text/javascript">
+    $(window).load(function(){
+        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+    });
+  </script>
+
+</body>
+</html>
