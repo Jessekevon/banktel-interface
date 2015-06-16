@@ -19122,3 +19122,7 @@ p.status-draft {
   height: 110px !important;
   /* Making this height too large results in no breathing room for view more button*/
 }
+
+.sticky-header-wrapper {
+  overflow-x: hidden;
+}
