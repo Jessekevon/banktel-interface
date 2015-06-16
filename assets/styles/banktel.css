@@ -11231,7 +11231,7 @@ section.menu-system nav.menu {
   border-right:1px solid #333;
   height:100%;
   overflow:hidden;
-  position:relative
+  position:relative;
 /* FIRST LEVEL */
 }
 
@@ -11267,6 +11267,8 @@ section.menu-system nav.menu .level {
   z-index:1;
   overflow-y:scroll;
   overflow-x:hidden;
+  -ms-overflow-style: none;
+
 }
 
 .win section.menu-system nav.menu .level::-webkit-scrollbar {
@@ -17620,7 +17622,8 @@ span.acct-balance {
 
 .cash-balances-inner {
   height:140px;
-  overflow:scroll
+  overflow-y:scroll;
+  overflow-x: hidden;
 }
 
 .cash-balances hr {
