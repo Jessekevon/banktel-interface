@@ -11104,7 +11104,7 @@ html body .app > main .app-content {
   height:100%;
   overflow-x:hidden;
   overflow-y:scroll;
-  z-index:2000;
+  /*z-index:2000;*/
 }
 
 /* ---------------------------------------------
@@ -19123,11 +19123,9 @@ p.status-draft {
 }
 
 
-.heading-primary {
-  font-size: 2em;
-  padding: 2em;
-  text-align: center;
-}
+/* ---------------------------------------------
+      Collapsible Sections Role Privileges UI 
+    ------------------------------------------- */
 
 .accordion dl {
   border: 1px solid #ddd;
@@ -19287,3 +19285,19 @@ p.status-draft {
   }
 }
 
+
+/* ---------------------------------------------
+      Scrollbar Z Index Fix 
+    ------------------------------------------- */
+
+.master-container {
+  z-index: -2 !important;
+}
+
+.navbar.topbar {
+  z-index: 1 !important;
+}
+
+.fixit {
+  z-index: 1 !important;
+}
