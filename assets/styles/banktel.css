@@ -11105,7 +11105,6 @@ html body .app > main .app-content {
   overflow-x:hidden;
   overflow-y:scroll;
   z-index:2000;
-  -ms-overflow-style:none
 }
 
 /* ---------------------------------------------
