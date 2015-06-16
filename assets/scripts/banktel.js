@@ -22,9 +22,9 @@ function showMenu() {
 
 (function () {
 
-    // $(window).load(function(){
-    //     $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-    // });
+    $(window).load(function(){
+        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+    });
 
 
     'use strict';
