@@ -122,11 +122,11 @@
                 </nav>
               </section>
               <!-- section.menu-system -->
+              <div class="loading">
+                <p>Processing your request...</p>
+                <span class="loader loader-quart"></span>
+              </div>
               <div class="app-content">
-                <div class="loading">
-                  <p>Processing your request...</p>
-                  <span class="loader loader-quart"></span>
-                </div>
                 <div class="sticky-header-wrapper">
                   <header class="topbar navbar" id="topbar" role="navigation">
                     <div class="container-fluid">
@@ -268,10 +268,6 @@
 
 </script>
           <script type="text/javascript">
-            $(window).load(function(){
-                $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-            });
-            
             // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
             
             $(document).ready(function() {

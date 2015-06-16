@@ -197,13 +197,12 @@
         </nav>
       </section>
       <!-- section.menu-system -->
+      <div class="loading">
+        <p>Processing your request...</p>
+        <span class="loader loader-quart"></span>
+      </div>
 
       <div class="app-content">
-        <div class="loading">
-          <p>Processing your request...</p>
-          <span class="loader loader-quart"></span>
-        </div>
-
         <div class="sticky-header-wrapper">
           <header class="topbar navbar" id="topbar" role="navigation">
             <div class="container-fluid">
@@ -839,9 +838,6 @@
   </script>
 
   <script type="text/javascript">
-    $(window).load(function(){
-        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-    });
     $(document).ready(function() {
       var elementAheight = $('.bottom-pane').height();
         $('.block-contents').css('padding-top', elementAheight + 'px');

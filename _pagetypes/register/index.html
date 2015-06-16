@@ -125,13 +125,12 @@
         </nav>
       </section>
       <!-- section.menu-system -->
+      <div class="loading">
+        <p>Processing your request...</p>
+        <span class="loader loader-quart"></span>
+      </div>
 
       <div class="app-content">
-        <div class="loading">
-          <p>Processing your request...</p>
-          <span class="loader loader-quart"></span>
-        </div>
-
         <div class="sticky-header-wrapper">
           <header class="topbar navbar" id="topbar" role="navigation">
             <div class="container-fluid">
@@ -619,11 +618,6 @@
     //   tierParent.html("<div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div>").removeClass("transaction").addClass("new-transaction");
     //   $('.new-transaction .chosen').chosen('chosen:updated');
     // });
-  </script>
-  <script type="text/javascript">
-    $(window).load(function(){
-        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-    });
   </script>
 
 </body>

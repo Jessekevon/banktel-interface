@@ -198,13 +198,12 @@
         </nav>
       </section>
       <!-- section.menu-system -->
+      <div class="loading">
+        <p>Processing your request...</p>
+        <span class="loader loader-quart"></span>
+      </div>
 
       <div class="app-content">
-        <div class="loading">
-          <p>Processing your request...</p>
-          <span class="loader loader-quart"></span>
-        </div>
-
         <div class="sticky-header-wrapper">
           <header class="topbar navbar" id="topbar" role="navigation">
             <div class="container-fluid">
@@ -224,32 +223,32 @@
           </header>
         </div>
         <!--sticky header wrapper -->
+        <div class="sticky-header-wrapper">
+
+          <header class="page heading fixit">
+            <div class="container-fluid">
+
+              <h1 class="page title"><a href="#">Manage Invoices</a></h1>
+
+              <nav class="actions">
+                <a class="btn btn-primary" href="">Add New Bill</a>
+              </nav>
+              <!-- nav.actions -->
+
+
+              <nav class="actions right">
+                <a class="btn btn-primary" href="">Back to Vendor List</a>
+              </nav>
+              <!-- nav.actions -->
+
+            </div>
+            <!-- .container -->
+          </header>
+          <!-- header.page-heading -->
+        </div>
 
         <div class="master-container view" id="manage-vendor">
 
-          <div class="sticky-header-wrapper">
-
-            <header class="page heading fixit">
-              <div class="container-fluid">
-
-                <h1 class="page title"><a href="#">Manage Invoices</a></h1>
-
-                <nav class="actions">
-                  <a class="btn btn-primary" href="">Add New Bill</a>
-                </nav>
-                <!-- nav.actions -->
-
-
-                <nav class="actions right">
-                  <a class="btn btn-primary" href="">Back to Vendor List</a>
-                </nav>
-                <!-- nav.actions -->
-
-              </div>
-              <!-- .container -->
-            </header>
-            <!-- header.page-heading -->
-          </div>
 
 
           <div class="content block" id="vendor-info">
@@ -571,11 +570,6 @@
   <script src="/assets/scripts/bootstrap.js"></script>
   <script src="/assets/scripts/plugins.js"></script>
   <script src="/assets/scripts/banktel.js"></script>
-  <script type="text/javascript">
-    $(window).load(function(){
-        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-    });
-  </script>
 
 </body>
 

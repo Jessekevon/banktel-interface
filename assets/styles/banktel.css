@@ -11104,7 +11104,7 @@ html body .app > main .app-content {
   height:100%;
   overflow-x:hidden;
   overflow-y:scroll;
-  /*z-index:2000;*/
+  z-index:2000;
 }
 
 /* ---------------------------------------------
@@ -11120,7 +11120,7 @@ html body .app > main .app-content {
   line-height:70px;
   margin:0;
   position:relative;
-  width:100%
+  width:100%;
 /* INSTANCE BRANDING */
 /* HEADER BUTTONS & ACTIONS */
 }
