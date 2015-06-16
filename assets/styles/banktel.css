@@ -11260,6 +11260,7 @@ section.menu-system nav.menu ul,section.menu-system nav.menu li {
 section.menu-system nav.menu .level {
   background:#464747;
   position:absolute;
+  top: 0;
   right:0;
   bottom:0;
   left:0;
@@ -11276,7 +11277,7 @@ section.menu-system nav.menu .level {
 }
 
 section.menu-system nav.menu.closed.expanded .level {
-  top:120px;
+  /*top:120px;*/
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
@@ -11284,7 +11285,7 @@ section.menu-system nav.menu.closed.expanded .level {
 }
 
 section.menu-system nav.menu.closed .level {
-  top:60px;
+  /*top:60px;*/
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
@@ -12917,8 +12918,8 @@ html,body {
   height:100%;
   margin:0;
   padding:0;
-  'overflow-x:hidden;
-  -ms-overflow-x-style:none
+  overflow-x:hidden;
+  -ms-overflow-style:none !important;
 }
 
 body {
