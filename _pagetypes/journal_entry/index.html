@@ -129,12 +129,13 @@
         </nav>
       </section>
       <!-- section.menu-system -->
-      <div class="loading">
-        <p>Processing your request...</p>
-        <span class="loader loader-quart"></span>
-      </div>
 
       <div class="app-content">
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
         <div class="sticky-header-wrapper">
           <header class="topbar navbar" id="topbar" role="navigation">
             <div class="container-fluid">
@@ -934,6 +935,15 @@
             });
             $this.tooltip('show');
         }
+    });
+
+// Preloader
+
+    $(window).load(function(){
+        $('.loading').delay(400).fadeOut(function(){$(this).remove()});
+          $('.loader-button').on('click', function(){
+           $(window).addClass('loading');
+          });
     });
 
     // Add padding to top pane based on variable height
