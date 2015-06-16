@@ -2,7 +2,8 @@
   filter: none; }
 
 .grid-stack {
-  position: relative; }
+  position: relative;
+  margin: 0 7px; }
 
 .grid-stack .grid-stack-placeholder > .placeholder-content {
   border: 1px dashed rgba(179, 179, 179, 0.8);
@@ -25,9 +26,9 @@
   margin: 0;
   position: absolute;
   top: 0;
-  left: 10px;
-  right: 10px;
-  bottom: 0;
+  left: 7px;
+  right: 7px;
+  bottom: -3px;
   width: auto;
   z-index: 0 !important;
   overflow-x: hidden;
@@ -315,5 +316,3 @@
     height: auto !important; } }
 .grid-stack .inner {
   padding: 22px 18px 18px; }
-
-/*# sourceMappingURL=dashboard.css.map */

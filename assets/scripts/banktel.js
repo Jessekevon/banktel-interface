@@ -22,6 +22,11 @@ function showMenu() {
 
 (function () {
 
+    $(window).load(function(){
+        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+    });
+
+
     'use strict';
 
     // Inst fancy-select on selects with class '.dropdown'
@@ -85,11 +90,45 @@ function showMenu() {
         $('.status').toggleClass('on');
     });
 
-    // $('.accordion-title').on('click', function () {
-    //     $(this).toggleClass('is-expanded');
-    //     $('.accordion-content').toggleClass('is-expanded');
-    //     $('.accordion-content').toggleClass('is-collapsed');
-    // });
+    // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
+    
+    $(document).ready(function() {
+        $('#selectall').click(function(event) {  //on click 
+            if(this.checked) { // check select status
+                $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"               
+                });
+            }else{
+                $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                });         
+            }
+        });
+        $('#selectall2').click(function(event) {  //on click 
+            if(this.checked) { // check select status
+                $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"               
+                });
+            }else{
+                $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                });         
+            }
+        });
+    
+    });
+
+    // Change width of pdf modal on click
+
+    $('.btn.btn-primary.step.big-modal').on('click', function () {
+        $('.modal-content').addClass('add-it');
+
+    });
+
+    $('.btn.btn-primary.remove-big-modal').on('click', function () {
+        $('.modal-content').removeClass('add-it');
+
+    });
 
 
 }());

@@ -14172,7 +14172,7 @@ div.actions:hover + p,div.actions:hover + .form-group {
   min-height:900px;
   height:100%;
   /* add margin top to accomodate new fixed top pane */
-    margin-top: 80px;
+    margin-top: 74px;
 }
 
 #dashboard .dash-grid {

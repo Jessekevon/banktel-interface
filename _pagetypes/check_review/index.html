@@ -580,59 +580,10 @@
 
 </script>
           <script type="text/javascript">
-            $(window).load(function(){
-                $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-            });
-            
-            // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
-            
-            $(document).ready(function() {
-                $('#selectall').click(function(event) {  //on click 
-                    if(this.checked) { // check select status
-                        $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
-                            this.checked = true;  //select all checkboxes with class "checkbox1"               
-                        });
-                    }else{
-                        $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
-                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
-                        });         
-                    }
-                });
-                $('#selectall2').click(function(event) {  //on click 
-                    if(this.checked) { // check select status
-                        $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
-                            this.checked = true;  //select all checkboxes with class "checkbox1"               
-                        });
-                    }else{
-                        $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
-                            this.checked = false; //deselect all checkboxes with class "checkbox1"                       
-                        });         
-                    }
-                });
-            
-            });
-            
-            
-          </script>
-          <script>
 
-          // initializes the multi step modal 
-
-          sendEvent = function(sel, step) {
-              $(sel).trigger('next.m.' + step);
-          }
-
-          // Change width of pdf modal on click
-
-          $('.btn.btn-primary.step.big-modal').on('click', function () {
-              $('.modal-content').addClass('add-it');
-
-          });
-
-          $('.btn.btn-primary.remove-big-modal').on('click', function () {
-              $('.modal-content').removeClass('add-it');
-
-          });
+            sendEvent = function(sel, step) {
+                $(sel).trigger('next.m.' + step);
+            }
 
           </script>
 
