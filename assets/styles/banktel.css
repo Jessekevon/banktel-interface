@@ -14172,7 +14172,7 @@ div.actions:hover + p,div.actions:hover + .form-group {
   ------------------------------------------- */
 #dashboard {
   background:#ebeced;
-  min-height:900px;
+  min-height:910px;
   height:100%;
   /* add margin top to accomodate new fixed top pane */
     margin-top: 74px;
