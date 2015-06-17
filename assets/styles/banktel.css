@@ -19212,7 +19212,7 @@ none
 /* contains the draggable element and dragger rail markup */
   position:absolute;
   top:0;
-  left:0;
+  left:5px;
   bottom:0;
   right:0;
   height:auto
@@ -19226,11 +19226,10 @@ none
   width:10px;
   height:100%;
   margin:0 auto;
-  -webkit-border-radius:16px;
+  /*-webkit-border-radius:16px;
   -moz-border-radius:16px;
-  border-radius:16px;
-  margin-right:/*border-radius: 0;*/
-0
+  border-radius:16px;*/
+  border-radius: 0;
 }
 
 .mCSB_scrollTools .mCSB_dragger {
@@ -19595,7 +19594,6 @@ none
 /*background-color: rgba(255,255,255,0.5);*/
   filter:alpha(opacity=20);
   -ms-filter:alpha(opacity=20);
-  margin-right:0
 }
 
 .mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
@@ -19603,6 +19601,5 @@ none
 /*background-color: rgba(255,255,255,0.5);*/
   filter:alpha(opacity=50);
   -ms-filter:alpha(opacity=50);
-  margin-right:0
 }
         
