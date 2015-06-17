@@ -26,7 +26,6 @@ function showMenu() {
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
 
-
     'use strict';
 
     // Inst fancy-select on selects with class '.dropdown'
