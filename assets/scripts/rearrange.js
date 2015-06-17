@@ -3,6 +3,9 @@ $(function() {
 	// Variables
 	// --------------------------------------------------------------
 	var grid, serializedData;
+
+	// The initial placements are set on the HTML elements
+	// These are the same coords, used for the reset button
 	var defaultSerialization = [
 		{ x: 0, y: 0, width: 4, height: 2, name: ".my-accounts" },
 		{ x: 4, y: 0, width: 4, height: 2, name: ".top-5-accounts" },
@@ -26,14 +29,13 @@ $(function() {
 	grid = $('.grid-stack').data('gridstack');
 	grid.disable();
 
+	
+	/**
+	*	Demo to show that the save functionality is working
+	*
+	*	Updates grid if it has been saved to sessionStorage
+	*/
 	if(sessionStorage.gridData) {
-		$('div[class*="_"]').removeClass(function (index, css) {
-			console.debug(css.match(/_.+/g));
-    		return css.match(/_.+/g);
-		});
-
-		$('div[class*="_"]')[0].className = $('div[class*="_"]')[0].className.replace(/_.+/g, '');
-
 		_.each(JSON.parse(sessionStorage.gridData), function(el) {
 			grid.update($(el.name), el.x, el.y, el.width, el.height);
 		});
@@ -61,6 +63,9 @@ $(function() {
 				name: '.' + node.el[0].classList[0]
             };
 		}, this);
+
+		// Part of the demo to show the save functionality
+		// Saves grid info in sessionStorage so it's destroyed on close
 		sessionStorage.gridData = JSON.stringify(serializedData);
 	};
 
@@ -107,6 +112,8 @@ $(function() {
 	// --------------------------------------------------------------
 	$('#reset').click(this.loadDefaultGrid);
 	$('#text-swap').click(this.rearrangeOrSave);
+
+	// For testing
 	$('#save').click(this.saveGrid);
 	$('#load').click(this.loadGrid);
 });
