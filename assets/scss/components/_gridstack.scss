@@ -4,6 +4,7 @@
 
 .grid-stack {
   position: relative;
+  margin: 0 7px;
 }
 .grid-stack .grid-stack-placeholder > .placeholder-content {
   // border: 1px dashed lightgray;
@@ -27,9 +28,9 @@
   margin: 0;
   position: absolute;
   top: 0;
-  left: 10px;
-  right: 10px;
-  bottom: 0;
+  left: 7px;
+  right: 7px;
+  bottom: -3px;
   width: auto;
   z-index: 0 !important;
   overflow-x: hidden;

@@ -636,29 +636,11 @@
               no_results_text: "Sorry, we were unable to find "
             });
 
-            // Preloader
-
-            $(window).load(function(){
-                $('.loading').delay(800).fadeOut(function(){$(this).remove()});
-            });
-
             // Initializes the multi step modal 
 
             sendEvent = function(sel, step) {
                 $(sel).trigger('next.m.' + step);
             }
-            
-            // Change width of pdf modal on click
-
-            $('.btn.btn-primary.step.big-modal').on('click', function () {
-                $('.modal-content').addClass('add-it');
-
-            });
-
-            $('.btn.btn-primary.remove-big-modal').on('click', function () {
-                $('.modal-content').removeClass('add-it');
-
-            });
 
           </script>
             

@@ -22,6 +22,11 @@ function showMenu() {
 
 (function () {
 
+    $(window).load(function(){
+        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+    });
+
+
     'use strict';
 
     // Inst fancy-select on selects with class '.dropdown'
@@ -79,46 +84,54 @@ function showMenu() {
         return false;
     });
 
+    //Swap out control switch text
 
-    // $(document.body).on('click', '.menu.expanded .level-down', function () {
-    //     $(this).next(".level").css({'left' : '0'});
-    //     return false;
-    // });
-
-    // // Menu, upward traversal
-    // $(document.body).on('click', '.menu.expanded .level-up', function () {
-    //     $(this).closest(".level").css({'left' : '-201px',  'overflow-y' : 'hidden'});
-    //     return false;
-    // });
-
-    // Expand or collapse menu on resize of window
-    $(window).on('resize', function () {
-        showMenu();
-        //if ($(window).width() < 1280) {
-        //    clearMenus();
-        //    if ($('.menu').hasClass('expanded')) {
-        //        $('.menu').removeClass('expanded');
-        //    };
-        //} else if ($(window).width() >= 1280) {
-        //    if ($('.menu').hasClass('expanded')) {
-        //        return false;
-        //    } else {
-        //        $('.menu').addClass('expanded');
-        //    };
-        //};
+    $('.track').on('click', function () {
+        $('.status').toggleClass('on');
     });
 
-    // if($('.menu').hasClass('closed')) {
+    // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
+    
+    $(document).ready(function() {
+        $('#selectall').click(function(event) {  //on click 
+            if(this.checked) { // check select status
+                $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"               
+                });
+            }else{
+                $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                });         
+            }
+        });
+        $('#selectall2').click(function(event) {  //on click 
+            if(this.checked) { // check select status
+                $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"               
+                });
+            }else{
+                $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+                });         
+            }
+        });
+    
+    });
 
-    // }
+    // Change width of pdf modal on click
 
+    $('.btn.btn-primary.step.big-modal').on('click', function () {
+        $('.modal-content').addClass('add-it');
 
+    });
 
+    $('.btn.btn-primary.remove-big-modal').on('click', function () {
+        $('.modal-content').removeClass('add-it');
 
-
-
+    });
 
 }());
+
 //= require bootstrap/affix
 //= require bootstrap/alert
 //= require bootstrap/button
@@ -157,3 +170,5 @@ function showMenu() {
 }());
 
 // Place any jQuery/helper plugins in here.
+
+
