@@ -417,7 +417,14 @@
   <script src="/assets/scripts/jquery.jscrollpane.js"></script> -->
   
 <script type="text/javascript">
-  $('.app-content').perfectScrollbar();
+  // $('.app-content').perfectScrollbar();
+
+  (function($){
+      $(window).load(function(){
+          $(".app-content").mCustomScrollbar({theme:"minimal"});
+      });
+  })(jQuery);
+
 </script>
 </body>
 
