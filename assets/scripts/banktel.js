@@ -130,7 +130,6 @@ function showMenu() {
 
     });
 
-
 }());
 
 //= require bootstrap/affix
