@@ -126,7 +126,6 @@
                 <p>Processing your request...</p>
                 <span class="loader loader-quart"></span>
               </div>
-
               <div class="app-content">
                 <div class="sticky-header-wrapper">
                   <header class="topbar navbar" id="topbar" role="navigation">
@@ -221,7 +220,7 @@
                                   <nav class="actions right">
                                     <a class="btn btn-primary remove-big-modal" href="">Cancel</a>
                                   </nav>
-                                </div> -->
+                                  </div> -->
                               </div>
                             </section>
                           </div>
@@ -237,366 +236,705 @@
                         <div class="indicator"></div>
                         <h4 class="block title">Privileges</h4>
                       </header>
+                      <!-- begin collapseable drawer -->
+                      <div class="accordion">
+                        <dl>
+
+                          <!-- Accordion 1 -->
+
+                          <dt>
+                            <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Accounts Payable</a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
 
 
-                  <!-- begin collapseable drawer -->
-
-                  <div class="accordion">
-                    <dl>
-                      <dt>
-                        <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Accounts Payable</a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
-                                             <div id="grid_outstandinginvoices">
-                                               <div class="block-contents">
-                                                 <div class="faux-table">
-                                                   <header class="table-head tier static">
-                                                     <div class="indicator"></div>
-                                                     <div class="cell issue-date" for="InvoiceDate">
-
-                                                      <div class="cell issue-date bulk-cell">
-                                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
-                                                        <label class="form-item-label_checkbox" for="selectall2"></label>
-                                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                          <option selected="selected" value="1">Bulk Actions</option>
-                                                          <option value="2">Delete</option>
-                                                        </select>
-                                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                        </span>
-                                                      </div>
-
-                                                        </div>
-                                                     <div class="cell due-date sorted" for="DueDate">
-                                                       <p class="cheat-right">Pay Date</p>
-                                                       <span><i class="entypo-chevron-down"></i></span>
-                                                     </div>
-                                                     <div class="cell invoice-number" for="DocumentNumber">
-                                                       <p class="cheat-right">Check #</p>
-                                                       <span><i class="entypo-chevron-down"></i></span>
-                                                     </div>
-                                                     <div class="cell customer" for="Customer">
-                                                       <p>Amount</p>
-                                                       <span><i class="entypo-chevron-down"></i></span>
-                                                     </div>
-                                                     <div class="cell balance" for="RemainingAmount">
-                                                       <p>Vendor</p>
-                                                       <span><i class="entypo-chevron-down"></i></span>
-                                                     </div>
-                                                     <div class="cell status" for="Status">
-                                                       <p class="cheat-right">Memo</p>
-                                                       <span><i class="entypo-chevron-down"></i></span>
-                                                     </div>
-                                                   </header>
-                                                   <ul class="table-content chk-container">
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
-                                                         <label class="form-item-label_checkbox" for="check1"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check2" value="item2" id="check2"/>
-                                                         <label class="form-item-label_checkbox" for="check2"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check3" value="item3" id="check3"/>
-                                                         <label class="form-item-label_checkbox" for="check3"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check4" value="item4" id="check4"/>
-                                                         <label class="form-item-label_checkbox" for="check4"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check5" value="item5" id="check5"/>
-                                                         <label class="form-item-label_checkbox" for="check5"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date">
-                                                         <input class="form-item-checkbox checkbox1" type="checkbox" name="check6" value="item6" id="check6"/>
-                                                         <label class="form-item-label_checkbox" for="check6"></label>
-
-                                                         <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
-                                                           <option selected="selected" value="1">Success!</option>
-                                                           <option value="2">Failed</option>
-                                                         </select>
-                                                         <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell due-date">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="5/15/2015" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell invoice-number">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="114" />
-                                                         </span>
-                                                       </div>
-                                                       <div class="cell with-nav-actions short customer">
-                                                         <span>$250.00</span>
-                                                       </div>
-                                                       <div class="cell balance"><span>Acme Office</span></div>
-                                                       <div class="cell status">
-                                                         <span>
-                                                         <input type="text" class="form-control" placeholder="Memo 1 Copy" />
-                                                         </span>
-                                                       </div>
-                                                     </li>
-                                                     <li class="tier no-border-bottom status-posted paymentstatus-pastdue">
-                                                       <div class="indicator"></div>
-                                                       <div class="cell issue-date apply">
-                                                         <button id="notification-trigger-error" class="btn btn-primary progress-button action-button">Apply
-                                                         </button>
-                                                       </div>
-
-                                                     </li>
-                                                   </ul>
-                                                   <footer class="block-heading tier static print-action-buttons">
-                                                     <div class="indicator"></div>
-                                                     <div class="row transactions-actions drawer-buttons">
-                                                       <a class="btn btn-primary action-button" data-toggle="modal" data-target="#printChecks" href="">
-                                                         Reprint Selected <i class="entypo-print" data-text="print"></i>
-                                                       </a>
-                                                       <a class="btn btn-primary action-button " data-toggle="modal" href="/_pagetypes/print_success">
-                                                         Done Printing <i class="entypo-right-open-big"></i>                                </a>
-                                                     </div>
-                                                   </footer>
-                                                 </div>
-                                                 <!-- .faux-table -->
-                                               </div>
-                                             </div>
-
-                      </dd>
-                      <dt>
-                        <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
-                          Accounts Receivable</a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
-                          General Ledger
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
-                          Inventory
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
-                          Main Category
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-
-                      <dt>
-                        <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
-                          Report
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">
-                          Sales Order
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">
-                          System
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-                      <dt>
-                        <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">
-                          Setup
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
-
-                      <dt>
-                        <a href="#accordion10" aria-expanded="false" aria-controls="accordion10" class="accordion-title accordionTitle js-accordionTrigger">
-                          User Management
-                        </a>
-                      </dt>
-                      <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-                      </dd>
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
 
 
-                    </dl>
-                  </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 2 -->
+                          <dt>
+                            <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                            Accounts Receivable</a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 3 -->
+
+                          <dt>
+                            <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                            General Ledger
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 4 -->
+
+
+                          <dt>
+                            <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+                            Inventory
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 5 -->
+
+                          <dt>
+                            <a href="#accordion5" aria-expanded="false" aria-controls="accordion5" class="accordion-title accordionTitle js-accordionTrigger">
+                            Main Category
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 6 -->
+
+
+                          <dt>
+                            <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">
+                            Report
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 7 -->
+
+                          <dt>
+                            <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">
+                            Sales Order
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 8 -->
+
+                          <dt>
+                            <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">
+                            System
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accorion 9 -->
+
+                          <dt>
+                            <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">
+                            Setup
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- Accordion 10 -->
+
+                          <dt>
+                            <a href="#accordion10" aria-expanded="false" aria-controls="accordion10" class="accordion-title accordionTitle js-accordionTrigger">
+                            User Management
+                            </a>
+                          </dt>
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion10" aria-hidden="true">
+                            <div id="grid_outstandinginvoices">
+                              <div class="block-contents">
+                                <div class="faux-table">
+                                  <header class="table-head tier static">
+                                    <div class="indicator"></div>
+
+                                    <div class="cell issue-date" for="InvoiceDate">
+                                      <div class="cell issue-date bulk-cell">
+                                        <input class="form-item-checkbox checkbox2" type="checkbox" name="check5" value="item5" id="selectall2"/>
+                                        <label class="form-item-label_checkbox" for="selectall2"></label>
+                                        <select class="dropdown form-control" data-val="true" data-val-required="The Check Format field is required." id="FormatTypeId" name="FormatTypeId">
+                                          <option selected="selected" value="1">Bulk Actions</option>
+                                          <option value="2">Delete</option>
+                                        </select>
+                                        <span class="field-validation-valid" data-valmsg-for="FormatTypeId" data-valmsg-replace="true">
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </header>
+                                  <ul class="table-content chk-container">
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                    <li class="tier status-posted paymentstatus-pastdue">
+                                      <div class="indicator"></div>
+                                      <div class="cell issue-date">
+                                        <input class="form-item-checkbox checkbox1" type="checkbox" name="check" value="item1" id="check1"/>
+                                        <label class="form-item-label_checkbox" for="check1"></label>
+                                      </div>
+                                    </li>
+
+                                  </ul>
+                                </div>
+                                <!-- .faux-table -->
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- End Accordion 10 -->
+
+                        </dl><!-- end accordion list -->
+                      </div><!-- end accordion div -->
+
 
                     </div>
                   </div>
@@ -619,7 +957,5 @@
           <script src="/assets/scripts/jquery-bootstrap-modal-steps.js"></script>
           <!-- classList polyfill -->
           <script src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
-
-            
         </body>
       </html>
