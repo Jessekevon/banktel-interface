@@ -82,12 +82,38 @@ function showMenu() {
         $(this).closest(".level").css("left", "-201px");
         return false;
     });
+    // Initialize Custom Scrollbar
+    $(".app-content").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    $(".options").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    // $(".chosen-results").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    // $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
 
     //Swap out control switch text
 
-    $('.track').on('click', function () {
-        $('.status').toggleClass('on');
-    });
+    // $('.track').on('click', function () {
+    //     $('.status').toggleClass('on');
+    // });
+
+
+    // $('.control-switch').on('click', function () {
+    //     $(this).toggleClass('on');
+    // });
+
+
+
+    // $('.track').on('click', function () {
+    //     $(this).toggleClass('on');
+    // });
+
+    // $( '.track' ).on( 'click', function() {
+    //   $('.control-switch').next().toggleClass( 'on' );
+    // });
+
+
+    // $( '.track' ).on( 'click', function( event ) {
+    //   $( event.target ).closest( '.status' ).toggleClass( 'on' );
+    // });
+
 
     // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
     

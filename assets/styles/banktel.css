@@ -10678,7 +10678,6 @@ th.visible-print,td.visible-print {
   margin:0;
   padding:0;
   max-height:186px;
-  -webkit-overflow-scrolling:touch
 }
 
 .chosen-container .chosen-results li {
@@ -13109,12 +13108,12 @@ a i,button i {
   display:inline-block;
   height:25px;
   margin-left:9px;
-  vertical-align:middle;
-  width:45px;
+/*  vertical-align:middle;
+*/  width:45px;
   -webkit-transition-duration:.4s;
   transition-duration:.4s;
   -webkit-transition-property:background-color,-webkit-box-shadow;
-  transition-property:background-color,box-shadow
+  transition-property:background-color,box-shadow;
 /* SWITCH INDICATOR */
 }
 
@@ -19633,13 +19632,20 @@ background-color: rgba(136, 136, 136, 0.9);
 
 .accordion p {
   display: inline-block;
-  margin: 0;
+  margin: 0 0 0 15px;
 }
 
 .accordion {
   position: relative;
   background-color: #eee;
 }
+
+
+.accordion .cell {
+  height: 60px;
+  line-height: 60px !important;
+}
+
 
 .accordionTitle {
   background-color: #fff;
@@ -19769,18 +19775,88 @@ background-color: rgba(136, 136, 136, 0.9);
   }
 }
 
+.accordion .control-switch span {
+  color: #000 !important;
+}
+
+.accordion .tier.gray {
+  background: #ebeced;
+}
+
+.accordion .fancy-select {
+  display: inline-block;
+  position: relative;
+  top: 12px;
+  margin-left: 15px;
+}
+
+/*.track:before {
+  content: "Granted";
+  color:#24d35e;
+  font-weight: 100;
+}
+
+.track.on:before {
+  content: "Denied";
+  color:#e56e53;
+  font-weight: 100;
+
+}*/
+
+/*.control-switch:before {
+  content: "Granted";
+  color:#24d35e;
+  font-weight: 100;
+}
+
+
+.control-switch.on:before {
+  content: "Denied";
+  color:#e56e53;
+  font-weight: 100;
+}*/
+
+/*.control-switch input[type="checkbox"] + .status:before {
+  content: "Granted";
+  color:#24d35e;
+  font-weight: 100;
+  position: relative;
+  z-index: 1;
+}
+.control-switch input[type="checkbox"]:checked + .status:before {
+  content: "Denied";
+  color:#e56e53;
+  font-weight: 100;
+  position: relative;
+  z-index: 1;
+}*/
+
 .status:after {
   content: "Granted";
-  color: #000;
+  color:#24d35e;
+  font-weight: 100;
 }
 
 
 .status.on:after {
   content: "Denied";
-  color: #000;
+  color:#e56e53;
+  font-weight: 100;
 }
 
+.accordion .table-head p {
+  height: 60px;
+  line-height: 60px;
+}
 
+.cell-border-left {
+  border-left: 1px solid #ccc;
+}
+
+.accordion-gray {
+  color: #939598 !important;
+
+}
 
 /*
 html body .app > main .menu-system {
