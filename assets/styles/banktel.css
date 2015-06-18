@@ -10541,10 +10541,6 @@ th.visible-print,td.visible-print {
   position:absolute;
   top:0;
   width:100%;
-  -ms-overflow-style:scrollbar!important;
-/*  width: -webkit-calc(100% + 1px);
-  width: calc(100% + 1px);
-*/
   z-index:1010
 }
 
@@ -10882,7 +10878,7 @@ th.visible-print,td.visible-print {
   display:none;
   font-weight:300;
   padding:.4em;
-  width:17em
+  width:17em;
 /* MULTI-DATEPICKER STYLES */
 }
 

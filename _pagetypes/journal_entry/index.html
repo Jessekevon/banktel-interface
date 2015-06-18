@@ -852,22 +852,7 @@
               // disable_search: true,
               no_results_text: "Sorry, we were unable to find "
             });
-
-
-            
-            // Edit tier on click
-            // $('.tier.transaction .transaction-details p, .tier.transaction .transaction-details .tag, .tier.transaction .payment, .tier.transaction .deposit').click(function(){
-            //   var tierParent = $( this ).closest('.tier.with-actions');
-            //   tierParent.html("<div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div>").removeClass("transaction").addClass("new-transaction");
-            //   $('.new-transaction .chosen').chosen('chosen:updated');
-            // });
-            
-            // Insert new tier beneath tier clicked
-            $(".draggable-container").on('click', '.btn-tier-add', function () {
-              $(".draggable-container").prepend($("<li class='tier with-actions new-transaction'><div class='indicator'></div><div class='cell transaction-details'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Vendor / Customer'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select><select class='chosen form-control' name='select-journal-vendor' data-placeholder='Account'><option></option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option><option>Southwest Airlines</option><option>Southwestern Homes Magazine</option><option>Southwestern Landscaping</option></select></div></div><div class='cell payment'><div class='form-group'><input type='text' class='form-control' name='payment-total'></div></div><div class='cell deposit'><div class='form-group'><input type='text' class='form-control' name='deposit-total'></div></div><div class='cell balance'></div></li>"));
-              $('.new-transaction .chosen').chosen('chosen:updated');
-            });
-  </script>
+      </script>
 
   <script type="text/javascript">
 
@@ -955,7 +940,8 @@
 
     })
 
-    $(".chosen-drop").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    // $(".chosen").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+
 
   </script>
 </body>
