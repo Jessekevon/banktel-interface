@@ -19632,7 +19632,8 @@ background-color: rgba(136, 136, 136, 0.9);
 }
 
 .accordion p {
-  padding: 1em 2em 1em 2em;
+  display: inline-block;
+  margin: 0;
 }
 
 .accordion {
@@ -19767,6 +19768,18 @@ background-color: rgba(136, 136, 136, 0.9);
             transform: scale(0.9) rotateX(-60deg);
   }
 }
+
+.status:after {
+  content: "Granted";
+  color: #000;
+}
+
+
+.status.on:after {
+  content: "Denied";
+  color: #000;
+}
+
 
 
 /*
