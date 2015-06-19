@@ -10,17 +10,17 @@ var gulp = require('gulp'),
 	livereload = require('gulp-livereload');
 
 var paths = {
-	css: 	['./assets/styles/dashboard.css'],
-	scss: 	['./assets/scss/**/*.scss'],
+	css: 	['./assets/styles/theme.css'],
+	scss: 	'./assets/scss/**/*.scss',
 	js: 	['assets/scripts/rearrange.js']
 };
 
 gulp.task('styles', function() {
-	return sass(paths.scss, { style: 'expanded' })
+	return sass('./assets/scss/theme.scss', { style: 'expanded' })
     	.pipe(autoprefixer('last 2 version'))
     	.pipe(gulp.dest('assets/styles/'))
-    	.pipe(rename({suffix: '.min'}))
-    	.pipe(minifycss())
+    	// .pipe(rename({suffix: '.min'}))
+    	// .pipe(minifycss())
     	.pipe(gulp.dest('assets/styles/'))
     	.pipe(notify({ message: 'finished: styles' }));
 });

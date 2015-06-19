@@ -1,0 +1,168 @@
+@import "themes/default";
+
+// Overwrite Existing CSS
+// ------------------------------------------------------------------
+
+a {
+	color: $color-anchor;
+
+	&:hover,
+	&:focus {
+		color: $color-anchor-hover;
+	}
+}
+
+.btn-primary {
+	color: $color-button-font;
+	background-color: $color-button-bg;
+	border-color: $color-button-border;
+
+	&:hover {
+		color: $color-button-font-hover;
+		background-color: $color-button-bg-hover;
+		border-color: $color-button-border-hover;
+	}
+}
+
+.loading {
+	background-color: $color-loading-bg;
+
+	p {
+		color: $color-loading-font;
+	}
+}
+
+.loader-quart {
+	border-color: $color-loading-animation;
+}
+
+.menu-system {
+	.topbar-branding {
+		background-color: $color-top-and-sidebar-bg;
+		border-bottom: 1px solid $color-top-and-sidebar-border;
+		border-right: 1px solid $color-top-and-sidebar-border;
+	}
+}
+
+.topbar {
+	&.navbar {
+		background-color: $color-top-and-sidebar-bg;
+		border-bottom: 1px solid $color-top-and-sidebar-border;
+
+		a {
+			&.topbar-item {
+				border-left: 1px solid $color-top-and-sidebar-border;
+				color: $color-top-font;
+
+				&:hover {
+					background-color: $color-top-button-hover;
+				}
+			}
+		}
+	}
+}
+
+section {
+	&.menu-system {
+		nav {
+			&.menu {
+				border-right: 1px solid $color-top-and-sidebar-border;
+
+				.level {
+					background-color: $color-top-and-sidebar-bg;
+
+					li {
+						a {
+							border-bottom: 1px solid $color-top-and-sidebar-border;
+							color: $color-sidebar-font;
+
+							&:hover {
+								background-color: $color-sidebar-button-hover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-collapse {
+	i {
+		&.collapse-icon {
+			color: $color-sidebar-collapse-button-font;
+		}
+	}
+
+	a {
+		color: $color-sidebar-collapse-button-font;
+	}
+
+	&:hover {
+		i {
+			&.collapse-icon {
+				color: $color-sidebar-collapse-button-font-hover;
+			}
+		}
+
+		a {
+			&.collapse-link {
+				color: $color-sidebar-collapse-button-font-hover;
+			}
+		}
+	}
+}
+
+header {
+	&.page {
+		&.heading {
+			background-color: $color-dashboard-bg;
+
+			.page {
+				&.title {
+					a {
+						color: $color-dashboard-font;
+					}
+				}
+			}
+
+			nav {
+				&.actions {
+					button {
+						color: $color-dashboard-button-font;
+						background-color: $color-dashboard-button-bg;
+						border-color: $color-dashboard-button-border;
+						
+						&:hover {
+							color: $color-dashboard-button-font-hover !important;
+							background-color: $color-dashboard-button-bg-hover !important;
+							border-color: $color-dashboard-button-border-hover !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body,
+#dashboard {
+	background-color: $color-grid-bg;
+}
+
+.grid-stack {
+	> .grid-stack-item {
+		> .grid-stack-item-content {
+			background-color: $color-grid-item-bg;
+		}
+	}
+}
+
+.accounts-graph {
+	background-color: $color-grid-item-bg;
+}
+
+#dashboard .grid-block header .title h4.title-heading,
+#dashboard .grid-block header .title p.title-heading {
+	color: $color-grid-item-font-primary;
+}

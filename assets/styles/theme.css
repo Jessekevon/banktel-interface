@@ -1,0 +1,114 @@
+/**
+*	1. Anchors
+*	2.
+*	3.
+*	4.
+*/
+a {
+  color: #2DB5AB;
+}
+a:hover, a:focus {
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+.btn-primary:hover {
+  color: #2DB5AB !important;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.loading {
+  background-color: #2DB5AB;
+}
+.loading p {
+  color: #FFFFFF;
+}
+
+.loader-quart {
+  border-color: #2DB5AB;
+}
+
+.menu-system .topbar-branding {
+  background-color: #464747;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+
+.topbar.navbar {
+  background-color: #464747;
+  border-bottom: 1px solid #333333;
+}
+.topbar.navbar a.topbar-item {
+  border-left: 1px solid #333333;
+  color: #FFFFFF;
+}
+.topbar.navbar a.topbar-item:hover {
+  background-color: #3A3A3A;
+}
+
+section.menu-system nav.menu {
+  border-right: 1px solid #333333;
+}
+section.menu-system nav.menu .level {
+  background-color: #464747;
+}
+section.menu-system nav.menu .level li a {
+  border-bottom: 1px solid #333333;
+  color: #FFFFFF;
+}
+section.menu-system nav.menu .level li a:hover {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.menu-collapse i.collapse-icon {
+  color: #A1A2A3;
+}
+.menu-collapse a {
+  color: #A1A2A3;
+}
+.menu-collapse:hover i.collapse-icon {
+  color: #FFFFFF;
+}
+.menu-collapse:hover a.collapse-link {
+  color: #FFFFFF;
+}
+
+header.page.heading {
+  background-color: #516199;
+}
+header.page.heading .page.title a {
+  color: #FFFFFF;
+}
+header.page.heading nav.actions button {
+  color: #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+header.page.heading nav.actions button:hover {
+  color: #516199 !important;
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+body,
+#dashboard {
+  background-color: #EBECED;
+}
+
+.grid-stack > .grid-stack-item > .grid-stack-item-content {
+  background-color: #FFFFFF;
+}
+
+.accounts-graph {
+  background-color: #FFFFFF;
+}
+
+#dashboard .grid-block header .title h4.title-heading,
+#dashboard .grid-block header .title p.title-heading {
+  color: #4D6699;
+}
