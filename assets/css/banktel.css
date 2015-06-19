@@ -8109,9 +8109,9 @@ p.popover-text {
   width: 100%; }
 
 .chosen-container-single .chosen-drop {
+  height: 186px;
   margin-top: 35px;
-  background-clip: padding-box;
-  height: 175px; }
+  background-clip: padding-box; }
 
 .grid-form .chosen-container-single .chosen-drop {
   margin-top: -1px;
@@ -8132,7 +8132,8 @@ p.popover-text {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  max-height: 186px; }
 
 .chosen-container .chosen-results li {
   border-bottom: 1px solid #d1d3d4;
@@ -15410,16 +15411,6 @@ p.status-draft {
   background-color: rgba(136, 136, 136, 0.9);
   filter: alpha(opacity=90);
   -ms-filter: alpha(opacity=90); }
-
-.modal .mCSB_container {
-  overflow: hidden;
-  width: auto;
-  height: auto;
-  /* min-height: 100%; */
-  display: table;
-  height: 100%;
-  width: 100%;
-  pointer-events: none; }
 
 /* ---------------------------------------------
       Role Privileges Accordion UI 

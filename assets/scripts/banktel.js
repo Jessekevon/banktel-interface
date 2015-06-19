@@ -85,6 +85,7 @@ function showMenu() {
     // Initialize Custom Scrollbar
     $(".app-content").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     $(".options").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     // $(".chosen-results").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     // $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
 
