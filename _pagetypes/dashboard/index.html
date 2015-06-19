@@ -258,41 +258,41 @@
                       <span class="acct-quarter">Q2 2014</span><span class="acct-date">May 27</span>
                     </div>
                     <div class="cash-balances-inner">
-                      <div class="acct-row">
+                      <section class="acct-row">
                         <span class="blue-dot"></span><h6>Javalina Operating Account</h6>
                         <span class="acct-balance"><h6>$113,063.80</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="green-dot"></span><h6>Javalina Payroll</h6>
                         <span class="acct-balance"><h6>$1,400.74</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="blue-dot"></span><h6>Austin First Natioinal Fuel</h6>
                         <span class="acct-balance"><h6>$16,079.61</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="green-dot"></span><h6>Escrow Account</h6>
                         <span class="acct-balance"><h6>$16,310.04</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="blue-dot"></span><h6>Amex Card</h6>
                         <span class="acct-balance"><h6>$1,552.45</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="blue-dot"></span><h6>Test Card 1</h6>
                         <span class="acct-balance"><h6>$1,552.45</h6></span>
                         <hr>
-                      </div>
-                      <div class="acct-row">
+                      </section>
+                      <section class="acct-row">
                         <span class="blue-dot"></span><h6>Test Card 2</h6>
                         <span class="acct-balance"><h6>$1,552.45</h6></span>
                         <hr>
-                      </div>
+                      </section>
                     </div>
                   </div>
                   <a href="#" class="view-all btn btn-primary btn-hidden inverted">View All Accounts</a>
@@ -545,11 +545,17 @@
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
   <!-- <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script> -->
   <!-- <script src="/assets/scripts/jquery-ui.js"></script> -->
-  <script type="text/javascript" src="/assets/scripts/bootstrap.js"></script>
-  <script type="text/javascript" src="/assets/scripts/plugins.js"></script>
-  <script type="text/javascript" src="/assets/scripts/banktel.js"></script>
-  <script type="text/javascript" src="http://troolee.github.io/gridstack.js/gridstack.js"></script>
-  <script type="text/javascript" src="/assets/scripts/rearrange.js"></script>
+
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+  <script src="http://troolee.github.io/gridstack.js/gridstack.js"></script>
+  <script src="/assets/scripts/rearrange.js"></script>
+  <script src="/assets/scripts/slimscroll.js"></script>
+  <script type="text/javascript">
+    $(".app-content").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    $(".cash-balances-inner").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+  </script>
 
 </body>
 </html>

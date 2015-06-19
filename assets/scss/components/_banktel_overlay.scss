@@ -1,232 +1,188 @@
 /****GENERIC LINE ITEM GRID STYLES*/
-
 .lineitemgrid header.block-heading {
-  padding: 14px 14px 14px 22px;
-}
+  padding: 14px 14px 14px 22px; }
 
 .lineitemgrid .faux-table {
-  position: relative;
-}
+  position: relative; }
 
 .lineitemgrid .faux-table .tier {
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 .lineitemgrid .faux-table .cell {
   border-right: 1px solid #d1d3d4;
   float: left;
-  line-height: normal;
-}
+  line-height: normal; }
 
 .lineitemgrid .faux-table .cell:last-of-type {
-  border-right: 0;
-}
+  border-right: 0; }
 
 .lineitemgrid .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
-  width: 70%;
-}
+  width: 70%; }
 
 .lineitemgrid .lineitem:before,
 .lineitemgrid .lineitem:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .lineitemgrid .lineitem:after {
-  clear: both;
-}
+  clear: both; }
 
 .lineitemgrid .lineitem .cell {
   line-height: normal;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 13px;
-}
+  padding-bottom: 13px; }
 
 .lineitemgrid .lineitem .cell::after {
-  display: none;
-}
+  display: none; }
 
 .lineitemgrid .lineitem .cell .fancy-select {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 .lineitemgrid .lineitem .cell textarea {
   -webkit-transition: height, 0.3s;
   transition: height, 0.3s;
   min-height: 36px;
   height: 36px;
-  line-height: 26px;
-}
+  line-height: 26px; }
 
 .lineitemgrid .lineitem .cell input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 .lineitemgrid .lineitem .chosen-container {
   float: left;
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 .lineitemgrid .lineitem .chosen-container:last-of-type {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .lineitemgrid .totals {
-  border-bottom: 0;
-}
+  border-bottom: 0; }
 
 .lineitemgrid .totals .cell {
   font-size: 12px;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 .lineitemgrid .totals .cell:not(.space) {
-  border-bottom: 1px solid #d1d3d4;
-}
+  border-bottom: 1px solid #d1d3d4; }
 
 .lineitemgrid .totals .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 .lineitemgrid .totals .cell:after {
-  display: none;
-}
+  display: none; }
 
 .lineitemgrid .totals:last-of-type .cell {
   border-bottom: 0;
   color: #1a1a1a;
   font-size: 15px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .lineitemgrid .table-head:before,
 .lineitemgrid .table-head:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .lineitemgrid .table-head:after {
-  clear: both;
-}
+  clear: both; }
 
 .lineitemgrid .table-head > * {
-  line-height: 34px !important;
-}
+  line-height: 34px !important; }
 
 .lineitemgrid .lineitem .cell {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 .lineitemgrid .lineitem .cell .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 .lineitemgrid .lineitem .cell .form-group:before,
 .lineitemgrid .lineitem .cell .form-group:after {
   content: " ";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
 .lineitemgrid .lineitem .cell .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 .lineitemgrid .totals .cell {
-  line-height: 36px;
-}
-/**************************************/
-/**************************************/
-/**************************************/
-/**************************************/
-/**************************************/
-/**************************************/
+  line-height: 36px; }
 
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
 a.nohover:hover {
-  color: inherit;
-}
+  color: inherit; }
 
 #loginfi {
-  color: #fff !important;
-}
+  color: #fff !important; }
 
 .field-validation-error {
-  color: hsla(6, 68%, 59%, 1);
+  color: #de5e4f;
   font-size: 11px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .pace .pace-progress {
   display: none;
-  /*Disabling as per Boyce*/
-}
+  /*Disabling as per Boyce*/ }
 
 ul#improved {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 p.example {
   width: 100%;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 .required {
-  font-weight: 400!important;
-}
+  font-weight: 400 !important; }
 
 .faux-table .paging {
   height: 50px;
   vertical-align: middle;
-  line-height: 50px;
-}
+  line-height: 50px; }
 
 .faux-table .paging .pagingcontrols {
   float: right;
   position: relative;
   /*left: -40%;
-        text-align: left;*/
-}
+        text-align: left;*/ }
 
 .faux-table .paging .pagingcontrols span {
   padding-left: 10px;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 .faux-table .footer {
   color: #1a1a1a;
   font-size: 15px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 header.page.heading nav.actions a {
-  margin: -7px 5px -7px 5px;
-}
+  margin: -7px 5px -7px 5px; }
 
 .menu-system .topbar-branding {
   /* Updating to new biz logo 
     background: url(/assets/images/logo@2x.png) center no-repeat;
     background-size: 150.67px 53px;*/
-  
   background: url(/assets/images/logo@2x.png), #464747;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 122px auto;
   height: 120px;
-  top:0;
-  left:0;
-  width:200px;
+  top: 0;
+  left: 0;
+  width: 200px;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.2s ease-in-out; }
 
 .menu-system .topbar-branding.new-icon {
   background: url(/assets/images/logo-icon@2x.png), #464747;
@@ -238,84 +194,71 @@ header.page.heading nav.actions a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.2s ease-in-out; }
 
 @font-face {
   font-family: 'entypo';
   src: url("/Assets/fonts/entypo/entypo.eot");
   src: url("/Assets/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("/Assets/fonts/entypo/entypo.woff") format("woff"), url("/Assets/fonts/entypo/entypo.ttf") format("truetype"), url("/Assets/fonts/entypo/entypo.svg#entypo") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-
+  font-style: normal; }
 textarea {
-  color: #6d6e71 !important;
-}
+  color: #6d6e71 !important; }
 
 .drawer-content textarea {
-  color: #fff !important;
-}
+  color: #fff !important; }
 
 a.clip img {
   width: 28px;
-  height: 28px;
-}
-/*DASHBOARDs*/
+  height: 28px; }
 
+/*DASHBOARDs*/
 .accounts-graph {
   background-color: #fff;
-  height: 125px;
-}
+  height: 125px; }
+
 /*******/
 /*****************************************************/
 /*FOLLOWING ARE ADJUSTMENTS TO HAVE THE MEMO BUTTON CONTAINERS LOOK OK IN THE HEADER AREA -- INSTEAD OF THE ORIGINAL DESIGN*/
 /*****************************************************/
-
 header.page.heading nav.actions .memo-container {
   background: none repeat scroll 0 0 #516199;
   border-color: #fff;
   /*color: #fff;*/
-  
   line-height: 22px;
   margin: -7px 0 0;
   padding: 6px 18px;
-  float: right;
-}
+  float: right; }
 
 header.page.heading nav.actions .memo-container a.popover-memo.memo.btn.btn-primary {
   background: none repeat scroll 0 0 transparent;
   border: 1px solid #fff;
-  color: #fff;
-}
+  color: #fff; }
 
 header.page.heading nav.actions .memo-container a.btn.btn-primary.inverted {
   background: none repeat scroll 0 0 transparent;
-  border: 1px solid #fff!important;
-  color: #fff!important;
-}
+  border: 1px solid #fff !important;
+  color: #fff !important; }
 
 header.page.heading nav.actions .popover-content a {
   background: none;
-  color: inherit!important;
+  color: inherit !important;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 header.page.heading nav.actions .memo-container .popover-content a.btn.btn-primary.inverted {
   background: none repeat scroll 0 0 transparent;
   border-color: #2db5ab !important;
   color: #2db5ab !important;
   margin-top: 10px;
-  padding: inherit;
-}
+  padding: inherit; }
 
 header.page.heading nav.actions .popover-content .inverted:hover {
   background-color: #2db5ab;
   border-color: #fff;
   color: #fff !important;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
+
 /*header.page.heading nav.actions a.popover-memo.memo.btn.btn-primary
 {
         background: none repeat scroll 0 0 #516199;
@@ -366,64 +309,51 @@ header.page.heading nav.actions .popover-content a.btn:hover {
     margin: inherit;
     padding: inherit;
 }*/
-
 .memo-container {
   /* Updating this to 3px
     padding-top: 5px;*/
-  
-  padding-top: 3px;
-}
+  padding-top: 3px; }
 
 .popover-content p {
-  padding-left: 10px;
-}
+  padding-left: 10px; }
+
 /*****************************************************/
 /*******************END MEMO CHANGES******************/
 /*****************************************************/
-
 .alert_base {
   background: none repeat scroll 0 0 #e56e53;
-  color: #fff;
-}
+  color: #fff; }
 
 .alert_base a {
-  color: #fff;
-}
+  color: #fff; }
 
 .attachment-icon {
   width: 15px;
   height: 19px;
-  float: left;
-}
+  float: left; }
 
 .popover.top a {
-  color: #231f20;
-}
+  color: #231f20; }
 
 .popover.top a:hover {
-  color: #4aa9a5;
-}
+  color: #4aa9a5; }
 
 .section-heading {
-  border-bottom: 0;
-}
+  border-bottom: 0; }
 
 .section-heading .section.title {
   border-bottom: 1px solid #d1d3d4;
   margin-bottom: 0;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .block-heading .right {
   float: right;
   margin-right: 18px;
-  margin-top: 4px;
-}
+  margin-top: 4px; }
 
 .block-heading,
 .block-footing {
-  padding-right: 0px;
-}
+  padding-right: 0px; }
 
 .status .has-cleared,
 .status .has-not-cleared {
@@ -435,60 +365,48 @@ header.page.heading nav.actions .popover-content a.btn:hover {
   margin-right: 32px;
   margin-top: 17px;
   text-align: center;
-  width: 19px;
-}
+  width: 19px; }
 
 .status .has-cleared {
   border-color: #2db5ab;
   color: #2db5ab;
-  background-color: rgba(45, 181, 171, 0.24);
-}
+  background-color: rgba(45, 181, 171, 0.24); }
 
 .status .has-not-cleared {
   background-color: #e56e53;
   border-color: #e56e53;
-  color: #fff;
-}
+  color: #fff; }
 
 .actions .status {
   color: #fff;
   font-weight: 500;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 .gridedit ul.table-content li.tier {
-  line-height: normal;
-}
+  line-height: normal; }
 
 .gridedit .table-head > * {
-  line-height: 34px !important;
-}
+  line-height: 34px !important; }
 
 .gridedit .lineitem .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 .gridedit .faux-table .cell {
   border-right: 1px solid #D1D3D4;
   float: left;
-  /*line-height: 2.6;*/
-}
+  /*line-height: 2.6;*/ }
 
 .gridedit .faux-table .cell {
-  /*line-height: 36px;*/
-}
+  /*line-height: 36px;*/ }
 
 .gridedit .lineitem .cell:after {
-  display: none;
-}
+  display: none; }
 
 .gridedit .faux-table .cell:after {
-  content: " ";
-}
+  content: " "; }
 
 .tier.with-actions div.actions {
   background: none repeat scroll 0 0 rgba(205, 92, 92, 0.5);
@@ -504,39 +422,33 @@ header.page.heading nav.actions .popover-content a.btn:hover {
   position: absolute;
   top: 0;
   transition: width 0.4s ease 0s;
-  width: 12px;
-}
+  width: 12px; }
 
 .row-striped {
-  background-color: #a7a9ac;
-}
+  background-color: #a7a9ac; }
 
 .empty-content {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .faux-table .table-head .cell {
   color: #939598 !important;
   cursor: pointer;
   -webkit-transition: color, 0.1s;
-  transition: color, 0.1s;
-}
+  transition: color, 0.1s; }
 
 .faux-table .table-head .cell p {
   display: inline-block;
   float: left;
   margin: 0;
   margin-right: 3px;
-  padding: 0;
-}
+  padding: 0; }
 
 .faux-table .table-head .cell span {
   display: inline-block;
   float: left;
   overflow: hidden;
   position: relative;
-  width: 18px;
-}
+  width: 18px; }
 
 .faux-table .table-head .cell span i {
   -webkit-transition: -webkit-transform, 0.1s;
@@ -544,78 +456,65 @@ header.page.heading nav.actions .popover-content a.btn:hover {
   display: inline-block;
   -webkit-transform: translate3d(0, -54px, 0);
   -ms-transform: translate3d(0, -54px, 0);
-  transform: translate3d(0, -54px, 0);
-}
+  transform: translate3d(0, -54px, 0); }
 
 .faux-table .table-head .cell:hover {
-  color: #2DB5AB !important;
-}
+  color: #2DB5AB !important; }
 
 .faux-table .table-head .cell:hover i {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+  transform: translate3d(0, 0, 0); }
 
 .faux-table .table-head .cell span {
   display: inline-block;
   float: left;
   overflow: hidden;
   position: relative;
-  width: 18px;
-}
+  width: 18px; }
 
 .faux-table .table-head .cell.sorted {
   color: #2DB5AB !important;
   cursor: default;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .faux-table .table-head .cell.sorted i {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+  transform: translate3d(0, 0, 0); }
 
 #new-voucher-items .new-voucher-totals:first-of-type .cell {
-  color: inherit;
-}
+  color: inherit; }
+
 /* ---------------------------------------------
     ACTION COLUMN STYLES
   ------------------------------------------- */
-
 .tier.with-actions .actioncolumn:before,
 .tier.with-actions .actioncolumn:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .tier.with-actions .actioncolumn:after {
-  clear: both;
-}
+  clear: both; }
 
 .tier.with-actions .actioncolumn > div.actions,
 .tier.with-actions .actioncolumn > p,
 .tier.with-actions .actioncolumn > .tagged,
 .tier.with-actions .actioncolumn > .memos,
 .tier.with-actions .actioncolumn > nav.actions {
-  float: left;
-}
+  float: left; }
 
 tier.with-actions .actioncolumn > p {
   -webkit-transition: padding-left 0.4s ease;
-  transition: padding-left 0.4s ease;
-}
+  transition: padding-left 0.4s ease; }
 
 .tier.with-actions .actioncolumn div.actions:before,
 .tier.with-actions .actioncolumn div.actions:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .tier.with-actions .actioncolumn div.actions:after {
-  clear: both;
-}
+  clear: both; }
 
 .tier.with-actions .actioncolumn div.actions .tier-teaser {
   background: #a7a9ac;
@@ -627,12 +526,10 @@ tier.with-actions .actioncolumn > p {
   width: 12px;
   z-index: 9;
   -webkit-transition: width 0.4s ease;
-  transition: width 0.4s ease;
-}
+  transition: width 0.4s ease; }
 
 .tier.with-actions .actioncolumn div.actions .tier-teaser .kicker {
-  height: 100%;
-}
+  height: 100%; }
 
 .tier.with-actions .actioncolumn div.actions .tier-teaser .kicker i {
   color: #fff;
@@ -641,8 +538,7 @@ tier.with-actions .actioncolumn > p {
   text-align: center;
   width: 12px;
   -webkit-transition: font-size 0.4s ease;
-  transition: font-size 0.4s ease;
-}
+  transition: font-size 0.4s ease; }
 
 .tier.with-actions .actioncolumn div.actions nav.tier-actions {
   background: #a7a9ac;
@@ -655,107 +551,87 @@ tier.with-actions .actioncolumn > p {
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .tier.with-actions .actioncolumn div.actions nav.tier-actions a {
   display: inline-block;
   color: #dedfe0;
   margin: 0 3px;
   padding: 0;
-  width: 30px;
-}
+  width: 30px; }
 
 .tier.with-actions .actioncolumn div.actions nav.tier-actions a i {
   border-radius: 3px;
   color: #dedfe0;
   font-size: 30px;
-  line-height: 63px;
-}
+  line-height: 63px; }
 
 .tier.with-actions .actioncolumn div.actions:hover {
-  width: 135px;
-}
+  width: 135px; }
 
 .tier.with-actions .actioncolumn div.actions:hover .tier-teaser {
-  width: 0;
-}
+  width: 0; }
 
 .tier.with-actions .actioncolumn div.actions:hover .tier-teaser .kicker i {
-  font-size: 0;
-}
+  font-size: 0; }
 
 .tier.with-actions .actioncolumn div.actions:hover nav.tier-actions a i.entypo-drag:hover,
 .tier.with-actions .actioncolumn div.actions:hover nav.tier-actions a i.entypo-drag:active {
   background: #fff;
-  color: #a7a9ac;
-}
+  color: #a7a9ac; }
 
 .tier.with-actions .actioncolumn div.actions:hover nav.tier-actions a i.entypo-add:hover {
   background: #fff;
-  color: #a7a9ac;
-}
+  color: #a7a9ac; }
 
 .tier.with-actions .actioncolumn div.actions:hover nav.tier-actions a i.entypo-remove:hover {
   background: #dd5c4e;
   border-radius: 999px;
-  color: #a7a9ac;
-}
+  color: #a7a9ac; }
 
 .approved {
   color: #516199 !important;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .approved input {
   color: #516199 !important;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .has-feedback .form-control.hasDatepicker {
-  padding-right: 0px;
-}
-/* Need to review this, looks like this should be text aligned left on several pages, making that change until otherwise noted*/
+  padding-right: 0px; }
 
+/* Need to review this, looks like this should be text aligned left on several pages, making that change until otherwise noted*/
 .radio-group:not(.inline) > label {
   margin: 0px;
   /*text-align: right !important;*/
   /*margin-left: 27px;*/
-  
-  text-align: left !important;
-}
+  text-align: left !important; }
 
 .fancy-select {
-  line-height: 16px;
-}
+  line-height: 16px; }
 
 .fancy-select .options {
-  min-width: 100%;
-}
+  min-width: 100%; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .cell.edit {
   min-height: 100%;
-  padding: 15px 18px 14px;
-}
+  padding: 15px 18px 14px; }
 
 .paybills .btn-primary {
   background: none repeat scroll 0 0 #2DB5AB;
   border: 1px solid #2DB5AB;
   color: #FFFFFF;
-  padding: 12px;
-}
+  padding: 12px; }
 
 .paybills .btn-primary:hover {
   background: none repeat scroll 0 0 #FFFFFF;
-  color: #2AD5AB;
-}
+  color: #2AD5AB; }
+
 /*ELLIPSES ON OVERFLOW*/
 /**********************/
-
 .table-content .with-nav-actions > span,
 .table-content .cell > span {
   overflow: hidden;
@@ -763,16 +639,14 @@ tier.with-actions .actioncolumn > p {
   white-space: nowrap;
   cursor: default;
   /*display:  block;*/
-  
   display: -moz-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .table-content .cell > span {
   display: inline-block;
-  vertical-align: top;
-}
+  vertical-align: top; }
+
 /* ---------------------------------------------
     This was breaking the grid on our end of things, removing it now until we hear otherwise
     ------------------------------------------- 
@@ -814,7 +688,6 @@ li.tier nav.actions.long {
 /* ---------------------------------------------
     CONTROLS WITHIN GRID ADJUSTMENTS
   ------------------------------------------- */
-
 .tier .col-xs-1,
 .tier .col-sm-1,
 .tier .col-md-1,
@@ -864,261 +737,209 @@ li.tier nav.actions.long {
 .tier .col-md-12,
 .tier .col-lg-12 {
   padding-left: 0px;
-  padding-right: 0px;
-}
+  padding-right: 0px; }
 
 .tier .has-feedback .form-control-feedback {
-  right: 0px;
-}
+  right: 0px; }
+
 /* ---------------------------------------------
     STATUS
   ------------------------------------------- */
-
 [class*="paymentstatus-"] .paymentstatus a.btn {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .status-open .status .btn,
 .paymentstatus-paidoff .paymentstatus .btn {
-  color: #24D35E;
-}
+  color: #24D35E; }
 
 .paymentstatus-outstanding .paymentstatus a.btn {
   background: #efcf11;
-  color: #FFF;
-}
+  color: #FFF; }
 
 .status-open .status a.btn,
 .paymentstatus-paidoff .paymentstatus a.btn {
   background: none repeat scroll 0 0 #24D35E;
-  color: #FFFFFF;
-}
+  color: #FFFFFF; }
 
 .status-void .status {
-  color: #BABABA;
-}
+  color: #BABABA; }
 
 .status-void .status a.btn {
-  border-color: #BABABA;
-}
+  border-color: #BABABA; }
 
 .status-voided .status {
-  color: #BABABA;
-}
+  color: #BABABA; }
 
 .status-voided .status a.btn {
   background: #e56e53;
-  color: #fff;
-}
+  color: #fff; }
 
 .status-closed .status {
-  color: #fff;
-}
+  color: #fff; }
 
 .status-closed .status a.btn {
   background: #24D35E;
-  color: #fff;
-}
+  color: #fff; }
 
 .statusdetail-fullyreceived .statusdetail a.btn {
   background: #24D35E;
-  color: #fff;
-}
+  color: #fff; }
 
 .statusdetail-notreceived .statusdetail a.btn {
   color: #000;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 .statusdetail-partiallyreceived .statusdetail a.btn {
   color: #000;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 .statusdetail-fulfilled .statusdetail a.btn {
   background: #24D35E;
-  color: #fff;
-}
+  color: #fff; }
 
 .statusdetail-notfulfilled .statusdetail a.btn {
   color: #000;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 .statusdetail-partiallyfulfilled .statusdetail a.btn {
   color: #000;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 .status-posted .status a.btn {
   background: #24d35e;
-  color: #fff;
-}
+  color: #fff; }
 
 .status-issued .status a.btn {
   background: #24d35e;
-  color: #fff;
-}
+  color: #fff; }
 
 a.btn.status-draft {
   color: #000;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 a.btn.status-draft:hover {
-  color: #000;
-}
+  color: #000; }
 
 a.btn.status-activated {
   background: #24d35e;
-  color: #fff!important;
-}
+  color: #fff !important; }
 
 a.btn.status-activated:hover {
   background: #24d35e;
-  color: #fff;
-}
+  color: #fff; }
 
 .paymentstatus-pastdue .paymentstatus {
-  color: #BABABA;
-}
+  color: #BABABA; }
 
 .paymentstatus-pastdue .paymentstatus a.btn {
   background: #e56e53;
-  color: #fff;
-}
+  color: #fff; }
 
 .paymentstatus-none .paymentstatus {
-  color: #bababa;
-}
+  color: #bababa; }
 
 .paymentstatus-none .paymentstatus a.btn {
   color: #bababa;
-  border-color: #bababa;
-}
+  border-color: #bababa; }
 
 .status-completed .status a.btn {
   background: none repeat scroll 0 0 #24d35e;
-  color: #fff;
-}
+  color: #fff; }
 
 .status-assigned .status a.btn {
   background: none repeat scroll 0 0 #949599;
-  color: #fff;
-}
+  color: #fff; }
 
 #vendor-info .vendor-contact {
-  list-style: none outside none;
-}
+  list-style: none outside none; }
 
 #vendor-info .vendor-address,
 #vendor-info .vendor-contact {
-  line-height: 24px;
-}
+  line-height: 24px; }
 
 #vendor-info .vendor-contact li a i {
   font-size: 11px;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 #vendor-info #secondary-addresses .form-group {
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
+
 /* ---------------------------------------------
     INSTANCE - BATCH
   ------------------------------------------- */
-
 #batchlist .faux-table .cell.name {
   width: 40%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #batchlist .faux-table .cell.description {
   width: 60%;
-  min-width: 400px;
-}
+  min-width: 400px; }
 
 textarea {
   border-radius: 0;
-  min-height: 90px;
-}
+  min-height: 90px; }
+
 /* ---------------------------------------------
     INSTANCE - JOURNAL ENTRY LIST
   ------------------------------------------- */
-
 #journalentrylist .faux-table .cell.date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #journalentrylist .faux-table .cell.journalentry {
   width: 30%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #journalentrylist .faux-table .cell.description {
   width: 60%;
-  min-width: 200px;
-}
+  min-width: 200px; }
+
 /* ---------------------------------------------
     INSTANCE - JOURNAL ENTRY LINE ITEM
   ------------------------------------------- */
-
 #journalentrylineitems header.block-heading {
-  padding: 14px 14px 14px 22px;
-}
+  padding: 14px 14px 14px 22px; }
 
 #journalentrylineitems .faux-table {
-  position: relative;
-}
+  position: relative; }
 
 #journalentrylineitems .faux-table .tier {
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 #journalentrylineitems .faux-table .cell {
   border-right: 1px solid #d1d3d4;
   float: left;
   /*line-height: normal;*/
-  
-  padding-left: 12px;
-}
+  padding-left: 12px; }
+
 /*#journalentrylineitems .faux-table .cell::after {
             content: "\00A0";
         }*/
-
 #journalentrylineitems .faux-table .cell:last-of-type {
-  border-right: 0;
-}
+  border-right: 0; }
 
 #journalentrylineitems .faux-table .cell.type {
-  width: 20%;
-}
+  width: 20%; }
 
 #journalentrylineitems .faux-table .cell.description {
-  width: 35%;
-}
+  width: 35%; }
 
 #journalentrylineitems .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #journalentrylineitems .faux-table .cell.price {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #journalentrylineitems .faux-table .cell.cost {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #journalentrylineitems .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
-  width: 68%;
-}
+  width: 68%; }
 
 #journalentrylineitems .faux-table .cell.total-label {
   color: #6d6e71;
@@ -1126,61 +947,51 @@ textarea {
   font-weight: 700;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 20%;
-}
+  width: 20%; }
 
 #journalentrylineitems .faux-table .cell.total-display {
   color: #6d6e71;
   font-size: 12px;
   font-weight: 700;
   padding: 14px 9px 14px 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #journalentrylineitems .faux-table .cell.amount {
   color: #1a1a1a;
   margin-right: -21px;
   padding: 14px 9px 14px 12px;
-  width: 12%;
-}
+  width: 12%; }
 
 #journalentrylineitems .faux-table .cell.memo {
   padding: 14px 9px 14px 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #journalentrylineitems .faux-table .new-invoice-actions {
-  display: inline-block;
-}
+  display: inline-block; }
 
 #journalentrylineitems .journalentrylineitem:before,
 #journalentrylineitems .journalentrylineitem:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #journalentrylineitems .journalentrylineitem:after {
-  clear: both;
-}
+  clear: both; }
 
 #journalentrylineitems .journalentrylineitem .cell {
   line-height: normal;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 13px;
-}
+  padding-bottom: 13px; }
 
 #journalentrylineitems .journalentrylineitem .cell::after {
-  display: none;
-}
+  display: none; }
 
 #journalentrylineitems .journalentrylineitem .cell.type,
 #journalentrylineitems .journalentrylineitem .cell.description,
 #journalentrylineitems .journalentrylineitem .cell.quantity,
 #journalentrylineitems .journalentrylineitem .cell.price,
 #journalentrylineitems .journalentrylineitem .cell.cost {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #journalentrylineitems .journalentrylineitem .cell.type .form-group,
 #journalentrylineitems .journalentrylineitem .cell.description .form-group,
@@ -1188,8 +999,7 @@ textarea {
 #journalentrylineitems .journalentrylineitem .cell.price .form-group,
 #journalentrylineitems .journalentrylineitem .cell.cost .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #journalentrylineitems .journalentrylineitem .cell.type .form-group:before,
 #journalentrylineitems .journalentrylineitem .cell.type .form-group:after,
@@ -1202,96 +1012,79 @@ textarea {
 #journalentrylineitems .journalentrylineitem .cell.cost .form-group:before,
 #journalentrylineitems .journalentrylineitem .cell.cost .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #journalentrylineitems .journalentrylineitem .cell.type .form-group:after,
 #journalentrylineitems .journalentrylineitem .cell.description .form-group:after,
 #journalentrylineitems .journalentrylineitem .cell.quantity .form-group:after,
 #journalentrylineitems .journalentrylineitem .cell.price .form-group:after,
 #journalentrylineitems .journalentrylineitem .cell.cost .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #journalentrylineitems .journalentrylineitem .cell.type .form-group input[type="text"],
 #journalentrylineitems .journalentrylineitem .cell.description .form-group input[type="text"],
 #journalentrylineitems .journalentrylineitem .cell.quantity .form-group input[type="text"],
 #journalentrylineitems .journalentrylineitem .cell.price .form-group input[type="text"],
 #journalentrylineitems .journalentrylineitem .cell.cost .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #journalentrylineitems .journalentrylineitem .cell.type {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 #journalentrylineitems .journalentrylineitem .cell.cost {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #journalentrylineitems .journalentrylineitem .cell .fancy-select {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 #journalentrylineitems .journalentrylineitem .cell .options {
-  width: 100%;
-}
+  width: 100%; }
 
 #journalentrylineitems .journalentrylineitem .cell textarea {
   -webkit-transition: height, 0.3s;
   transition: height, 0.3s;
   min-height: 36px;
   height: 36px;
-  line-height: 26px;
-}
+  line-height: 26px; }
 
 #journalentrylineitems .journalentrylineitem .cell input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #journalentrylineitems .journalentrylineitem .chosen-container {
   float: left;
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 #journalentrylineitems .journalentrylineitem .chosen-container:last-of-type {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 #journalentrylineitems .new-invoice-totals {
-  border-bottom: 0;
-}
+  border-bottom: 0; }
 
 #journalentrylineitems .new-invoice-totals .cell {
   font-size: 12px;
-  line-height: 20px;
-}
+  line-height: 20px; }
 
 #journalentrylineitems .new-invoice-totals .cell:not(.space) {
-  border-bottom: 1px solid #d1d3d4;
-}
+  border-bottom: 1px solid #d1d3d4; }
 
 #journalentrylineitems .new-invoice-totals:last-of-type .cell {
   border-bottom: 0;
   color: #1a1a1a;
   font-size: 15px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 #journalentrylineitems .table-head:before,
 #journalentrylineitems .table-head:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #journalentrylineitems .table-head:after {
-  clear: both;
-}
+  clear: both; }
 
 #journalentrylineitems .table-head > * {
-  line-height: 34px !important;
-}
+  line-height: 34px !important; }
+
 /*#journalentrylineitems .new-invoice-actions {
   display: inline-block;
   padding: 18px 18px 18px 22px;
@@ -1309,74 +1102,56 @@ textarea {
   background: #fff;
   color: #2ad5ab;
 }*/
-
 #journalentrylineitems .faux-table .cell.account {
   width: 30%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #journalentrylineitems .faux-table .cell.debit {
   width: 20%;
   padding-left: 12px;
-  min-width: 80px;
-}
-
-#journalentrylineitems.gridedit .faux-table .table-content .cell.debit {}
+  min-width: 80px; }
 
 #journalentrylineitems .faux-table .cell.credit {
   width: 20%;
   padding-left: 12px;
-  min-width: 80px;
-}
-
-#journalentrylineitems.gridedit .faux-table .table-content .cell.credit {}
+  min-width: 80px; }
 
 #journalentrylineitems .faux-table .cell.description {
   width: 30%;
   padding-left: 12px;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #journalentrylineitems .faux-table .cell.total-label {
   width: 20%;
   padding-left: 12px;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #journalentrylineitems .faux-table .cell.total-display {
   width: 15%;
   padding-left: 12px;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /*#journalentrylineitems .lineitem .cell:after {
     display: none;
 }*/
-
 #journalentrylineitems .faux-table .cell.totals {
   width: 20%;
-  padding-left: 12px;
-}
+  padding-left: 12px; }
 
 #journalentrylineitems .faux-table .cell.journalentry {
   width: 15%;
-  padding-left: 12px;
-}
-
-#journalentrylineitems.gridedit .faux-table .table-content .cell.credit {}
+  padding-left: 12px; }
 
 #journalentrylineitems .faux-table .cell.date {
-  width: 10%;
-}
+  width: 10%; }
 
 #journalentrylineitems .faux-table .table-head .cell {
-  padding: 0px 0px 0px 9px;
-}
+  padding: 0px 0px 0px 9px; }
 
 .tier.with-actions .account:before,
 .tier.with-actions .account:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 .tier.with-actions .type div.actions .tier-teaser,
 .tier.with-actions .account div.actions .tier-teaser {
@@ -1388,8 +1163,7 @@ textarea {
   position: relative;
   transition: width 0.4s ease 0s;
   width: 12px;
-  z-index: 9;
-}
+  z-index: 9; }
 
 .tier.with-actions .type div.actions nav.tier-actions,
 .tier.with-actions .account div.actions nav.tier-actions {
@@ -1403,8 +1177,8 @@ textarea {
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
+
 /*
 
 #journalentrylineitems .faux-table .cell.description {
@@ -1415,624 +1189,511 @@ textarea {
     padding: 14px 9px 14px 12px;
 }
     */
-
 #accountdetailsinquiry .faux-table .cell.date {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #accountdetailsinquiry .faux-table .cell.journalentry {
   width: 20%;
   padding-left: 12px;
-  min-width: 140px;
-}
+  min-width: 140px; }
 
 #accountdetailsinquiry .faux-table .cell.debit {
   width: 15%;
-  min-width: 90px;
-}
+  min-width: 90px; }
 
 #accountdetailsinquiry .faux-table .cell.credit {
   width: 15%;
-  min-width: 90px;
-}
+  min-width: 90px; }
 
 #accountdetailsinquiry .faux-table .cell.description {
   width: 35%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #accountdetailsinquiry .faux-table .cell.totals {
   width: 35%;
   padding-left: 12px;
-  min-width: 220px;
-}
+  min-width: 220px; }
+
 /* ---------------------------------------------
     INSTANCE - AGING PERIOD LIST
   ------------------------------------------- */
-
 #agingPeriodLineItems .faux-table .cell.period {
-  width: 20%;
-}
+  width: 20%; }
 
 #agingPeriodLineItems .faux-table .cell.from {
-  width: 10%;
-}
+  width: 10%; }
 
 #agingPeriodLineItems .faux-table .cell.to {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - ACCOUNT SUMMARY INQUIRY
   ------------------------------------------- */
-
 #accountsummaryinquiry .faux-table .cell.period {
   width: 20%;
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 #accountsummaryinquiry .faux-table .cell.debit {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #accountsummaryinquiry .faux-table .cell.credit {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #accountsummaryinquiry .faux-table .cell.netchange {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #accountsummaryinquiry .faux-table .cell.periodbalance {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - USER LIST
   ------------------------------------------- */
-
 #userlist .faux-table .cell.fullname {
   width: 30%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #userlist .faux-table .cell.username {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #userlist .faux-table .cell.emailaddress {
   width: 30%;
-  min-width: 280px;
-}
+  min-width: 280px; }
+
 /* ---------------------------------------------
     INSTANCE - TENANT LIST
   ------------------------------------------- */
-
 #tenantlist .faux-table .cell.select {
-  width: 30px;
-}
+  width: 30px; }
 
 #tenantlist .faux-table .cell.name {
-  width: auto;
-}
+  width: auto; }
+
 /* ---------------------------------------------
     INSTANCE - ROLE LIST
   ------------------------------------------- */
-
 #rolelist .faux-table .cell.select {
   width: 30px;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #rolelist .faux-table .cell.organization {
   width: 20%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #rolelist .faux-table .cell.name {
   width: 60%;
-  min-width: 120px;
-}
+  min-width: 120px; }
+
 /* ---------------------------------------------
     INSTANCE - ADDRESS LIST
   ------------------------------------------- */
-
 #addresslist .faux-table .cell.name {
   width: 25%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #addresslist .faux-table .cell.contact {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #addresslist .faux-table .cell.street {
   width: 35%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #addresslist .faux-table .cell.city {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #addresslist .faux-table .cell.state {
   width: 10%;
-  min-width: 50px;
-}
+  min-width: 50px; }
+
 /* ---------------------------------------------
     INSTANCE - SHIPPING METHOD
   ------------------------------------------- */
-
 #shippingmethodlist .faux-table .cell.name {
   width: 30%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #shippingmethodlist .faux-table .cell.description {
   width: 50%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #shippingmethodlist .faux-table .cell.type {
   width: auto;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - PAYMENT TERM
   ------------------------------------------- */
-
 #paymenttermlist .faux-table .cell.name {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #paymenttermlist .faux-table .cell.description {
   width: 50%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #paymenttermlist .faux-table .cell.duetype {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #paymenttermlist .faux-table .cell.duetypeperiod {
   width: auto;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE -  RECEIVABLE TRANSACTION INQUIRY
   ------------------------------------------- */
-
 #receivabletranslist .faux-table .cell.invoicenumber {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #receivabletranslist .faux-table .cell.invoicedate {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #receivabletranslist .faux-table .cell.customer {
   width: 30%;
-  min-width: 260px;
-}
+  min-width: 260px; }
 
 #receivabletranslist .faux-table .cell.invoiceamount {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #receivabletranslist .faux-table .cell.remainingamount {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #receivabletranslist .faux-table .cell.status {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
+
 /* ---------------------------------------------
     INSTANCE - VENDOR CLASS
   ------------------------------------------- */
-
 #vendorclasslist .faux-table .cell.default {
   width: 8%;
-  min-width: 20px;
-}
+  min-width: 20px; }
 
 #vendorclasslist .faux-table .cell.name {
   width: 30%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #vendorclasslist .faux-table .cell.description {
   width: 62%;
-  min-width: 200px;
-}
+  min-width: 200px; }
+
 /* ---------------------------------------------
     INSTANCE - CUSTOMER CLASS
   ------------------------------------------- */
-
 #customerclasslist .faux-table .cell.default {
   width: 8%;
-  min-width: 16px;
-}
+  min-width: 16px; }
 
 #customerclasslist .faux-table .cell.name {
   width: 30%;
-  min-width: 240px;
-}
+  min-width: 240px; }
 
 #customerclasslist .faux-table .cell.description {
   width: auto;
-  min-width: 180px;
-}
+  min-width: 180px; }
+
 /* ---------------------------------------------
     INSTANCE - CUSTOMER 
   ------------------------------------------- */
-
 #customerlist .faux-table .cell.code {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #customerlist .faux-table .cell.name {
   width: 40%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #customerlist .faux-table .cell.contactinfo {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #customerlist .faux-table .cell.comments {
   width: 30%;
-  min-width: 160px;
-}
+  min-width: 160px; }
+
 /* ---------------------------------------------
     INSTANCE - VENDOR 
   ------------------------------------------- */
-
 #vendorlist .faux-table .cell.name {
   width: 40%;
-  min-width: 260px;
-}
+  min-width: 260px; }
 
 #vendorlist .faux-table .cell.code {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #vendorlist .faux-table .cell.contactinfo {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #vendorlist .faux-table .cell.comments {
   width: 30%;
-  min-width: 180px;
-}
+  min-width: 180px; }
+
 /* ---------------------------------------------
     INSTANCE - USER LIST
   ------------------------------------------- */
-
 #userlist .faux-table .cell.firstname {
-  width: 15%;
-}
+  width: 15%; }
 
 #userlist .faux-table .cell.lastname {
-  width: 15%;
-}
+  width: 15%; }
 
 #userlist .faux-table .cell.email {
-  width: 20%;
-}
+  width: 20%; }
 
 #userlist .faux-table .cell.username {
-  width: 20%;
-}
+  width: 20%; }
 
 #userlist .faux-table .cell.resetpassword {
-  width: 15%;
-}
+  width: 15%; }
 
 #userlist .faux-table .cell.status {
-  width: 5%;
-}
+  width: 5%; }
+
 /* ---------------------------------------------
     INSTANCE - ROLE LIST
   ------------------------------------------- */
-
 #userrolelist .faux-table .cell.username {
-  width: 30%;
-}
+  width: 30%; }
 
 #userrolelist .faux-table .cell.rolename {
-  width: 30%;
-}
+  width: 30%; }
 
 #userrolelist .faux-table .cell.status {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - FISCAL PERIOD LIST
   ------------------------------------------- */
-
 #fiscalperiodlist .faux-table .cell.name {
   width: 30%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #fiscalperiodlist .faux-table .cell.sequenceno {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #fiscalperiodlist .faux-table .cell.begindate {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #fiscalperiodlist .faux-table .cell.enddate {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - SEGMENT LIST
   ------------------------------------------- */
-
 #segmentlist .faux-table .cell.segment {
-  width: 30%;
-}
+  width: 30%; }
 
 #segmentlist .faux-table .cell.name {
-  width: 30%;
-}
+  width: 30%; }
 
 #segmentlist .faux-table .cell.value {
-  width: 30%;
-}
+  width: 30%; }
 
 #segmentlist .faux-table .cell.importstatus {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - IMPORT ACCOUNT LIST
   ------------------------------------------- */
-
 #importaccounts #accountlist .faux-table .cell.account {
   width: 10%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaccounts #accountlist .faux-table .cell.description {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaccounts #accountlist .faux-table .cell.category {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaccounts #accountlist .faux-table .cell.postingtype {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaccounts #accountlist .faux-table .cell.typicalbalance {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaccounts #accountlist .faux-table .cell.status {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importaccounts #accountlist .faux-table .cell.importstatus {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - ACCOUNT CATEGORY LIST
   ------------------------------------------- */
-
 #accountcategorylist .faux-table .cell.description {
   width: 50%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #accountcategorylist .faux-table .cell.importstatus {
   width: 50%;
-  min-width: 200px;
-}
+  min-width: 200px; }
+
 /* ---------------------------------------------
     INSTANCE - IMPORT ADDRESS LIST
   ------------------------------------------- */
-
 #importaddress #addresslist .faux-table .cell.name {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importaddress #addresslist .faux-table .cell.contactname {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importaddress #addresslist .faux-table .cell.line1 {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importaddress #addresslist .faux-table .cell.city {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importaddress #addresslist .faux-table .cell.state {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importaddress #addresslist .faux-table .cell.country {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importaddress #addresslist .faux-table .cell.zipcode {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importaddress #addresslist .faux-table .cell.tel1 {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importaddress #addresslist .faux-table .cell.importstatus {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - INVENTORY CODE LIST
   ------------------------------------------- */
-
 #inventorycodelist .faux-table .cell.name {
   width: 40%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #inventorycodelist .faux-table .cell.code {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #inventorycodelist .faux-table .cell.price {
   width: 10%;
-  min-width: 120px;
-}
+  min-width: 120px; }
+
 /* ---------------------------------------------
     INSTANCE - BANK LIST
   ------------------------------------------- */
-
 #banklist .faux-table .cell.name {
   width: 30%;
-  min-width: 150px;
-}
+  min-width: 150px; }
 
 #banklist .faux-table .cell.branch {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #banklist .faux-table .cell.city {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #banklist .faux-table .cell.description {
   width: 20%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #banklist .faux-table .cell.transitnumber {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #banklist .faux-table .cell.status {
   width: 10%;
-  min-width: 50px;
-}
+  min-width: 50px; }
 
 #bankrecbanklist .faux-table .cell.name {
-  width: 40%;
-}
+  width: 40%; }
 
 #bankrecbanklist .faux-table .cell.url {
-  width: 60%;
-}
+  width: 60%; }
 
 #bankrecbanklist .faux-table .cell.branch {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #bankrecbanklist .faux-table .cell.city {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #bankrecbanklist .faux-table .cell.description {
   width: 20%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #bankrecbanklist .faux-table .cell.status {
   width: 10%;
-  min-width: 50px;
-}
+  min-width: 50px; }
+
 /* ---------------------------------------------
     INSTANCE - TAX UNIT
   ------------------------------------------- */
-
 #taxunitlist .faux-table .cell.name {
-  width: 30%;
-}
+  width: 30%; }
 
 #taxunitlist .faux-table .cell.description {
-  width: 50%;
-}
+  width: 50%; }
 
 #taxunitlist .faux-table .cell.taxrate {
-  width: auto;
-}
+  width: auto; }
+
 /* ---------------------------------------------
     INSTANCE - TEN99 SETUP LINEITEM LIST 
   ------------------------------------------- */
-
 #ten99list .faux-table .cell.description {
   width: 40%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #ten99list .faux-table .cell.taxtype {
   width: 40%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #ten99list .faux-table .cell.box {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - TAX AUTHORITY
   ------------------------------------------- */
-
 #taxauthoritylist .faux-table .cell.name {
   width: 30%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #taxauthoritylist .faux-table .cell.description {
   width: 50%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #taxauthoritylist .faux-table .cell.rate {
   width: auto;
-  min-width: 120px;
-}
+  min-width: 120px; }
+
 /*#taxauthoritylist header.block-heading {
   padding: 14px 14px 14px 22px;
 }
@@ -2071,744 +1732,587 @@ textarea {
 /* ---------------------------------------------
     INSTANCE - PAYMENT INSTRUMENT LIST
   ------------------------------------------- */
-
 #paymentinstrumentlist .faux-table .cell.name {
   width: 45%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #paymentinstrumentlist .faux-table .cell.type {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #paymentinstrumentlist .faux-table .cell.description {
   width: 40%;
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 #bankaccountlist .faux-table .cell.name {
-  width: 50%;
-}
+  width: 50%; }
 
 #bankaccountlist .faux-table .cell.type {
-  width: 10%;
-}
+  width: 10%; }
 
 #bankaccountlist .faux-table .cell.description {
-  width: 40%;
-}
+  width: 40%; }
 
 #bankrecbankaccountlist .faux-table .cell.status {
-  width: 10%;
-}
+  width: 10%; }
 
 #bankrecbankaccountlist .faux-table .cell.name {
-  width: 50%;
-}
+  width: 50%; }
 
 #bankrecbankaccountlist .faux-table .cell.type {
-  width: 10%;
-}
+  width: 10%; }
 
 #bankrecbankaccountlist .faux-table .cell.description {
-  width: 30%;
-}
+  width: 30%; }
+
 /* ---------------------------------------------
     INSTANCE - FISCAL YEAR LIST
   ------------------------------------------- */
-
 #fiscalyearlist .faux-table .cell.year {
   width: 20%;
-  min-width: 240px;
-}
+  min-width: 240px; }
 
 #fiscalyearlist .faux-table .cell.periods {
   width: 20%;
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 #fiscalyearlist .faux-table .cell.begindate {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #fiscalyearlist .faux-table .cell.enddate {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - `TOMER PAYMENT AGING LIST
   ------------------------------------------- */
-
 #custpmtaginglist .faux-table .cell.period {
-  width: 40%;
-}
+  width: 40%; }
 
 #custpmtaginglist .faux-table .cell.amount {
-  width: auto;
-}
+  width: auto; }
+
 /* ---------------------------------------------
     INSTANCE - VOUCHERS
   ------------------------------------------- */
-
 #vouchers .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #vouchers .faux-table .cell.payabletype {
-  width: 8%;
-}
+  width: 8%; }
 
 #vouchers .faux-table .cell.issue-date {
-  width: 10%;
-}
+  width: 10%; }
 
 #vouchers .faux-table .cell.due-date {
-  width: 10%;
-}
+  width: 10%; }
 
 #vouchers .faux-table .cell.voucher-number {
-  width: 8%;
-}
+  width: 8%; }
 
 #vouchers .faux-table .cell.vendor {
-  width: 36%;
-}
+  width: 36%; }
 
 #vouchers .faux-table .cell.invoiceamount {
-  width: 8%;
-}
+  width: 8%; }
 
 #vouchers .faux-table .cell.remainingamount {
-  width: 8%;
-}
+  width: 8%; }
 
 #vouchers .faux-table .cell.pendingamount {
-  width: 8%;
-}
+  width: 8%; }
 
 #vouchers .faux-table .cell.status {
-  width: 8%;
-}
+  width: 8%; }
+
 /* ---------------------------------------------
     INSTANCE - payabletransactioninquiry
   ------------------------------------------- */
-
 #payabletransactioninquiry .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #payabletransactioninquiry .faux-table .cell.payabletype {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #payabletransactioninquiry .faux-table .cell.issue-date {
   width: 12%;
-  min-width: 90px;
-}
+  min-width: 90px; }
 
 #payabletransactioninquiry .faux-table .cell.due-date {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payabletransactioninquiry .faux-table .cell.voucher-number {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payabletransactioninquiry .faux-table .cell.vendor {
   width: 20%;
-  min-width: 260px;
-}
+  min-width: 260px; }
 
 #payabletransactioninquiry .faux-table .cell.invoiceamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payabletransactioninquiry .faux-table .cell.remainingamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payabletransactioninquiry .faux-table .cell.pendingamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payabletransactioninquiry .faux-table .cell.status {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 .edit-page-content {
   background: none repeat scroll 0 0 #FFFFFF;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
+
 /* ---------------------------------------------
     INSTANCE - RECENTLY PAID VOUCHERS
   ------------------------------------------- */
-
 #recently-paid .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #recently-paid .faux-table .cell.issue-date {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid .faux-table .cell.received-on {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid .faux-table .cell.voucher-number {
-  width: 13%;
-}
+  width: 13%; }
 
 #recently-paid .faux-table .cell.vendor {
-  width: 25%;
-}
+  width: 25%; }
 
 #recently-paid .faux-table .cell.invoiceamount {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid .faux-table .cell.remainingamount {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid .faux-table .cell.status {
-  width: 11%;
-}
+  width: 11%; }
+
 /* ---------------------------------------------
     INSTANCE - VENDOR VOUCHERS
   ------------------------------------------- */
-
 #vendor-vouchers .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #vendor-vouchers .faux-table .cell.billdate {
-  width: 10%;
-}
+  width: 10%; }
 
 #vendor-vouchers .faux-table .cell.vouchernumber {
-  width: 17%;
-}
+  width: 17%; }
 
 #vendor-vouchers .faux-table .cell.billamount {
-  width: 17%;
-}
+  width: 17%; }
 
 #vendor-vouchers .faux-table .cell.paid {
-  width: 17%;
-}
+  width: 17%; }
 
 #vendor-vouchers .faux-table .cell.remainingamount {
-  width: 17%;
-}
+  width: 17%; }
 
 #vendor-vouchers .faux-table .cell.paymentstatus {
-  width: 11%;
-}
+  width: 11%; }
 
 #vendor-vouchers .faux-table .cell.status {
-  width: 11%;
-}
+  width: 11%; }
+
 /* ---------------------------------------------
     INSTANCE - PAYMENT LIST
   ------------------------------------------- */
-
 #paymentlist .faux-table .cell.vendor {
-  width: 20%;
-}
+  width: 20%; }
 
 #paymentlist .faux-table .cell.batch {
-  width: 15%;
-}
+  width: 15%; }
 
 #paymentlist .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #paymentlist .faux-table .cell.paymentnumber {
-  width: 20%;
-}
+  width: 20%; }
 
 #paymentlist .faux-table .cell.date {
-  width: 10%;
-}
+  width: 10%; }
 
 #paymentlist .faux-table .cell.status {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - CHECK PAYMENT LIST
   ------------------------------------------- */
-
 #checkpaymentlist1 .faux-table .cell.select {
-  width: 3%;
-}
+  width: 3%; }
 
 #checkpaymentlist1 .faux-table .cell.vendor {
-  width: 20%;
-}
+  width: 20%; }
 
 #checkpaymentlist1 .faux-table .cell.paymentsource {
-  width: 12%;
-}
+  width: 12%; }
 
 #checkpaymentlist1 .faux-table .cell.paymentnumber {
-  width: 10%;
-}
+  width: 10%; }
 
 #checkpaymentlist1 .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #checkpaymentlist1 .faux-table .cell.description {
-  width: 25%;
-}
+  width: 25%; }
 
 #checkpaymentlist1 .faux-table .cell.date {
-  width: 10%;
-}
+  width: 10%; }
 
 #checkpaymentlist1 .faux-table .cell.status {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - ELECTRONIC PAYMENT LIST
   ------------------------------------------- */
-
 #electronicpaymentlist .faux-table .cell.pay {
-  width: 8%;
-}
+  width: 8%; }
 
 #electronicpaymentlist .faux-table .cell.vendor {
-  width: 20%;
-}
+  width: 20%; }
 
 #electronicpaymentlist .faux-table .cell.paymentsource {
-  width: 12%;
-}
+  width: 12%; }
 
 #electronicpaymentlist .faux-table .cell.paymentnumber {
-  width: 8%;
-}
+  width: 8%; }
 
 #electronicpaymentlist .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #electronicpaymentlist .faux-table .cell.description {
-  width: 24%;
-}
+  width: 24%; }
 
 #electronicpaymentlist .faux-table .cell.date {
-  width: 10%;
-}
+  width: 10%; }
 
 #electronicpaymentlist .faux-table .cell.status {
-  width: 8%;
-}
+  width: 8%; }
+
 /* ---------------------------------------------
     INSTANCE - PAYMENT APPLY LIST
   ------------------------------------------- */
-
 #payment #paymentapplylist .faux-table .cell.voucherno {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .cell.vouchername {
-  width: 30%;
-}
+  width: 30%; }
 
 #payment #paymentapplylist .faux-table .cell.date {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .cell.invoiceamount {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .cell.remainingamount {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .cell.pendingamount {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .cell.paymentamount {
-  width: 10%;
-}
+  width: 10%; }
 
 #payment #paymentapplylist .faux-table .table-total {
-  width: 12%;
-}
+  width: 12%; }
+
 /* ---------------------------------------------
     INSTANCE - AGING LIST
   ------------------------------------------- */
-
 #aginglist .faux-table .cell.period {
-  width: 50%;
-}
+  width: 50%; }
 
 #aginglist .faux-table .cell.amount {
-  width: 50%;
-}
+  width: 50%; }
+
 /* ---------------------------------------------
     INSTANCE - 3 COLUMN LIST
   ------------------------------------------- */
-
 #threecolumnlist .faux-table .cell.column1 {
-  width: 30%;
-}
+  width: 30%; }
 
 #threecolumnlist .faux-table .cell.column2 {
-  width: 30%;
-}
+  width: 30%; }
 
 #threecolumnlist .faux-table .cell.column3 {
-  width: 34%;
-}
+  width: 34%; }
+
 /* ---------------------------------------------
     INSTANCE - PAID INVOICE LIST
   ------------------------------------------- */
-
 #invoice-paid .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #invoice-paid .faux-table .cell.issue-date {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #invoice-paid .faux-table .cell.received-on {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #invoice-paid .faux-table .cell.invoice-number {
   width: 12%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #invoice-paid .faux-table .cell.customer {
   width: 52%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #invoice-paid .faux-table .cell.amount {
   width: 12%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - RECENT VOUCHER TRANSACTIONS
   ------------------------------------------- */
-
 #recently-paid-bills .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #recently-paid-bills .faux-table .cell.payment-date {
-  width: 10%;
-}
+  width: 10%; }
 
 #recently-paid-bills .faux-table .cell.payment-number {
-  width: 15%;
-}
+  width: 15%; }
 
 #recently-paid-bills .faux-table .cell.payment-type {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-bills .faux-table .cell.bill-number {
-  width: 13%;
-}
+  width: 13%; }
 
 #recently-paid-bills .faux-table .cell.check-number {
-  width: 12%;
-}
+  width: 12%; }
 
 #recently-paid-bills .faux-table .cell.paid-amount {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-bills .faux-table .cell.payment-status {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-bills .faux-table .cell.status {
-  width: 11%;
-}
+  width: 11%; }
+
 /* ---------------------------------------------
     INSTANCE - RECENT INVOICE TRANSACTIONS
   ------------------------------------------- */
-
 #recently-paid-invoices .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #recently-paid-invoices .faux-table .cell.payment-date {
-  width: 15%;
-}
+  width: 15%; }
 
 #recently-paid-invoices .faux-table .cell.payment-number {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-invoices .faux-table .cell.payment-type {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-invoices .faux-table .cell.invoice-number {
-  width: 25%;
-}
+  width: 25%; }
 
 #recently-paid-invoices .faux-table .cell.paid-amount {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-invoices .faux-table .cell.payment-status {
-  width: 11%;
-}
+  width: 11%; }
 
 #recently-paid-invoices .faux-table .cell.status {
-  width: 11%;
-}
+  width: 11%; }
 
 #outstanding-invoices .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 /*#outstanding-invoices .faux-table .cell.issue-date {
   width: 10%;
   min-width: 70px;
 }*/
-
 /*#outstanding-invoices .faux-table .cell.due-date {
   width: 10%;
   min-width: 70px;
 }*/
-
 /*#outstanding-invoices .faux-table .cell.invoice-number {
   width: 8%;
   min-width: 70px;
 }*/
-
 /*#outstanding-invoices .faux-table .cell.customer {
   width: 40%;
   min-width: 320px;
 }*/
-
 /*#outstanding-invoices .faux-table .cell.balance {
   width: 10%;
   min-width: 80px;
 }*/
-
 /*#outstanding-invoices .faux-table .cell.status {
   width: 8%;
   min-width: 60px;
 }*/
-
 #outstanding-invoices .faux-table .cell.paymentstatus {
   width: 12%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #recurring-invoices .faux-table .cell.customer {
-  width: 35%;
-}
+  width: 35%; }
 
 #recurring-invoices .faux-table .cell.name {
-  width: 35%;
-}
+  width: 35%; }
 
 #recurring-invoices .faux-table .cell.invoice-number {
-  width: 15%;
-}
+  width: 15%; }
 
 #recurring-invoices .faux-table .cell.balance {
-  width: 15%;
-}
+  width: 15%; }
+
 /* ---------------------------------------------
     INSTANCE - CUSTOMER INVOICES
   ------------------------------------------- */
-
 #customer-invoices .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #customer-invoices .faux-table .cell.invoicedate {
-  width: 10%;
-}
+  width: 10%; }
 
 #customer-invoices .faux-table .cell.invoicenumber {
-  width: 15%;
-}
+  width: 15%; }
 
 #customer-invoices .faux-table .cell.invoiceamount {
-  width: 15%;
-}
+  width: 15%; }
 
 #customer-invoices .faux-table .cell.paid {
-  width: 15%;
-}
+  width: 15%; }
 
 #customer-invoices .faux-table .cell.remainingamount {
-  width: 15%;
-}
+  width: 15%; }
 
 #customer-invoices .faux-table .cell.paymentstatus {
-  width: 11%;
-}
+  width: 11%; }
 
 #customer-invoices .faux-table .cell.status {
-  width: 11%;
-}
+  width: 11%; }
+
 /* ---------------------------------------------
     INSTANCE - CUSTOMER PAYMENT LIST
   ------------------------------------------- */
-
 #customerpaymentlist .faux-table .cell.customer {
   width: 44%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #customerpaymentlist .faux-table .cell.amount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #customerpaymentlist .faux-table .cell.paymentnumber {
   width: 26%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #customerpaymentlist .faux-table .cell.date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #customerpaymentlist .faux-table .cell.status {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
+
 /* ---------------------------------------------
     INSTANCE - AUTO NUMBER LIST
   ------------------------------------------- */
-
 #autonumberlist .faux-table .cell.type {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #autonumberlist .faux-table .cell.type .celllabel {
-  height: 36px;
-}
+  height: 36px; }
 
 #autonumberlist .faux-table .cell.prefix {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #autonumberlist .faux-table .cell.number {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #autonumberlist .faux-table .cell.postfix {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #autonumberlist .lineitem .cell {
   padding: 14px 9px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #autonumberlist .faux-table .table-head .cell {
-  padding: 0 0 0 9px;
-}
+  padding: 0 0 0 9px; }
+
 /* ---------------------------------------------
     INSTANCE - VOUCHER LIST
   ------------------------------------------- */
-
 #voucherlist .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #voucherlist .faux-table .cell.chk {
-  width: 30px;
-}
+  width: 30px; }
 
 #voucherlist .faux-table .cell.vendor {
   width: 15%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #voucherlist .faux-table .cell.vouchername {
   width: 15%;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 #voucherlist .faux-table .cell.voucherno {
   width: 15%;
-  min-width: 140px;
-}
+  min-width: 140px; }
 
 #voucherlist .faux-table .cell.billamount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #voucherlist .faux-table .cell.date {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #voucherlist .faux-table .cell.paid {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #voucherlist .faux-table .cell.remainingamount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #voucherlist .faux-table .cell.pendingamount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #voucherlist .faux-table .cell.paymentstatus {
   width: 11%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #voucherlist .faux-table .cell.status {
   width: 11%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #voucherlist .faux-table .cell.paymenttype {
   width: 11%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #voucherlist .faux-table .cell.paymentamount {
   width: 12%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - CHECK PAYMENT LIST
   ------------------------------------------- */
@@ -2925,41 +2429,33 @@ textarea {
 /* ---------------------------------------------
     INSTANCE - CHECK PAYMENT LIST2
   ------------------------------------------- */
-
 #checkpaymentlist header.block-heading {
-  padding: 14px 14px 14px 22px;
-}
+  padding: 14px 14px 14px 22px; }
 
 #checkpaymentlist .faux-table {
-  position: relative;
-}
+  position: relative; }
 
 #checkpaymentlist .faux-table .tier {
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 #checkpaymentlist .faux-table .cell {
   border-right: 1px solid #d1d3d4;
   float: left;
-  line-height: normal;
-}
+  line-height: normal; }
 
 #checkpaymentlist .faux-table .cell::after {
-  content: "\00A0";
-}
+  content: "\00A0"; }
 
 #checkpaymentlist .faux-table .cell:last-of-type {
-  border-right: 0;
-}
+  border-right: 0; }
 
 #checkpaymentlist .faux-table .cell.paydate {
-  width: 14%;
-}
+  width: 14%; }
 
 #checkpaymentlist .faux-table .cell.checknumber {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - VOUCHER LINE ITEMS
   ------------------------------------------- */
@@ -2978,7 +2474,6 @@ textarea {
   padding-left: 12px;
   width: 10%;
 }*/
-
 #new-voucher-items .new-voucher-item .cell.expense-account,
 #new-voucher-items .new-voucher-item .cell.pay-from-account,
 #new-voucher-items .new-voucher-item .cell.inventory,
@@ -2986,8 +2481,7 @@ textarea {
 #new-voucher-items .new-voucher-item .cell.description,
 #new-voucher-items .new-voucher-item .cell.cost,
 #new-voucher-items .new-voucher-item .cell.quantity {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #new-voucher-items .new-voucher-item .cell.expense-account .form-group,
 #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group,
@@ -2997,8 +2491,7 @@ textarea {
 #new-voucher-items .new-voucher-item .cell.inventorytracking .form-group,
 #new-voucher-items .new-voucher-item .cell.quantity .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #new-voucher-items .new-voucher-item .cell.expense-account .form-group:before,
 #new-voucher-items .new-voucher-item .cell.expense-account .form-group:after,
@@ -3015,8 +2508,7 @@ textarea {
 #new-voucher-items .new-voucher-item .cell.quantity .form-group:before,
 #new-voucher-items .new-voucher-item .cell.quantity .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #new-voucher-items .new-voucher-item .cell.expense-account .form-group:after,
 #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group:after,
@@ -3025,8 +2517,7 @@ textarea {
 #new-voucher-items .new-voucher-item .cell.inventory .form-group:after,
 #new-voucher-items .new-voucher-item .cell.inventorytracking .form-group:after,
 #new-voucher-items .new-voucher-item .cell.cost .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #new-voucher-items .new-voucher-item .cell.expense-account .form-group input[type="text"],
 #new-voucher-items .new-voucher-item .cell.pay-from-account .form-group input[type="text"],
@@ -3035,107 +2526,88 @@ textarea {
 #new-voucher-items .new-voucher-item .cell.inventory .form-group input[type="text"],
 #new-voucher-items .new-voucher-item .cell.inventorytracking .form-group input[type="text"],
 #new-voucher-items .new-voucher-item .cell.quantity .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #new-voucher-items .new-voucher-item .cell.expense-account {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 #new-voucher-items .faux-table .cell.expense-account {
   /* Updating to 20% to allow for more room 
   width: 15%;*/
-  width: 20%;
-}
+  width: 20%; }
 
 #new-voucher-items .faux-table .cell.pay-from-account {
   padding-left: 12px;
   /* Updating to 20% to allow for more room 
   width: 15%;*/
-  width: 20%;
-}
+  width: 20%; }
 
 #new-voucher-items .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #new-voucher-items .faux-table .cell.inventorytracking {
   padding-left: 6px;
-  width: 35px;
-}
+  width: 35px; }
 
 #new-voucher-items .faux-table .cell.description.long {
   padding-left: 12px;
-  width: 58%;
-}
+  width: 58%; }
 
 #new-voucher-items .faux-table .cell.description.medium {
   padding-left: 12px;
-  width: 42%;
-}
+  width: 42%; }
 
 #new-voucher-items .faux-table .cell.description {
   padding-left: 12px;
   /*Updating to 40% 
   width: 42%;*/
-  width: 50%;
-}
-
+  width: 50%; }
 
 #new-voucher-items .faux-table .cell.description.short {
   padding-left: 12px;
-  width: 24%;
-}
+  width: 24%; }
 
 #new-voucher-items .new-voucher-totals .cell {
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 #new-voucher-items .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 7%;
-}
+  width: 7%; }
 
 #new-voucher-items .faux-table .cell.cost {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-voucher-totals .cell.cost {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-voucher-items .new-voucher-item .cell.cost {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-voucher-items .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 73%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-voucher-items .faux-table .cell.amount {
   color: #1a1a1a;
   margin-right: -21px;
   padding: 14px 9px 14px 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-voucher-items .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 17%;
-}
+  width: 17%; }
+
 /* ---------------------------------------------
     INSTANCE - INVOICE LINE ITEMS
   ------------------------------------------- */
-
 #new-invoice-items .new-invoice-item .cell.type,
 #new-invoice-items .new-invoice-item .cell.description,
 #new-invoice-items .new-invoice-item .cell.inventory,
@@ -3143,8 +2615,7 @@ textarea {
 #new-invoice-items .new-invoice-item .cell.quantity,
 #new-invoice-items .new-invoice-item .cell.price,
 #new-invoice-items .new-invoice-item .cell.cost {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #new-invoice-items .new-invoice-item .cell.type .form-group,
 #new-invoice-items .new-invoice-item .cell.description .form-group,
@@ -3154,8 +2625,7 @@ textarea {
 #new-invoice-items .new-invoice-item .cell.price .form-group,
 #new-invoice-items .new-invoice-item .cell.cost .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #new-invoice-items .new-invoice-item .cell.type .form-group:before,
 #new-invoice-items .new-invoice-item .cell.type .form-group:after,
@@ -3172,8 +2642,7 @@ textarea {
 #new-invoice-items .new-invoice-item .cell.cost .form-group:before,
 #new-invoice-items .new-invoice-item .cell.cost .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #new-invoice-items .new-invoice-item .cell.type .form-group:after,
 #new-invoice-items .new-invoice-item .cell.description .form-group:after,
@@ -3182,8 +2651,7 @@ textarea {
 #new-invoice-items .new-invoice-item .cell.quantity .form-group:after,
 #new-invoice-items .new-invoice-item .cell.price .form-group:after,
 #new-invoice-items .new-invoice-item .cell.cost .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #new-invoice-items .new-invoice-item .cell.type .form-group input[type="text"],
 #new-invoice-items .new-invoice-item .cell.description .form-group input[type="text"],
@@ -3192,144 +2660,117 @@ textarea {
 #new-invoice-items .new-invoice-item .cell.quantity .form-group input[type="text"],
 #new-invoice-items .new-invoice-item .cell.price .form-group input[type="text"],
 #new-invoice-items .new-invoice-item .cell.cost .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #new-invoice-items .faux-table .cell.expense-account {
   width: 15%;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-invoice-items .faux-table .cell.pay-from-account {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #new-invoice-items .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 14.95%;
-}
+  width: 14.95%; }
 
 #new-invoice-items .faux-table .cell.inventorytracking {
   padding-left: 6px;
-  width: 35px;
-}
+  width: 35px; }
 
 #new-invoice-items .faux-table .cell.description.long {
   padding-left: 12px;
-  width: 58%;
-}
+  width: 58%; }
 
 #new-invoice-items .faux-table .cell.description.medium {
   padding-left: 12px;
-  width: 42%;
-}
+  width: 42%; }
 
 #new-invoice-items .faux-table .cell.description.short {
   padding-left: 12px;
-  width: 25%;
-}
+  width: 25%; }
 
 #new-invoice-items .faux-table .cell.description {
   padding-left: 12px;
-  width: 40%;
-}
+  width: 40%; }
 
 #new-invoice-items .new-invoice-totals .cell {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-invoice-items .faux-table .cell.cost {
-  width: 9.95%;
-}
+  width: 9.95%; }
 
 #new-invoice-items .faux-table .cell.quantity {
-  width: 6%;
-}
+  width: 6%; }
 
 #new-invoice-items .faux-table .cell.pay-from-account .form-group,
 #new-invoice-items .faux-table .cell.expense-account .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-invoice-items .new-invoice-totals .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #new-invoice-items .new-invoice-totals .cell:after {
-  display: none;
-}
+  display: none; }
 
 #new-invoice-items .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 16%;
-}
+  width: 16%; }
 
 #new-invoice-items .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 73%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-invoice-items .faux-table .cell.amount {
   color: #1a1a1a;
   padding: 14px 9px 14px 12px;
-  width: 11%;
-}
+  width: 11%; }
 
 #checkpaymentlist .faux-table .cell.amount {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #checkpaymentlist .faux-table .cell.vendor {
   padding-left: 12px;
-  width: 20%;
-}
+  width: 20%; }
 
 #checkpaymentlist .faux-table .cell.memo {
   padding-left: 12px;
-  width: 46%;
-}
+  width: 46%; }
 
 #checkpaymentlist .faux-table .checkpayment-actions {
-  display: inline-block;
-}
+  display: inline-block; }
 
 #checkpaymentlist .checkpayment:before,
 #checkpaymentlist .checkpayment:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #checkpaymentlist .checkpayment:after {
-  clear: both;
-}
+  clear: both; }
 
 #checkpaymentlist .checkpayment .cell {
   line-height: normal;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 13px;
-}
+  padding-bottom: 13px; }
 
 #checkpaymentlist .checkpayment .cell::after {
-  display: none;
-}
+  display: none; }
 
 #checkpaymentlist .checkpayment .cell.paydate,
 #checkpaymentlist .checkpayment .cell.memo,
 #checkpaymentlist .checkpayment .cell.checknumber,
 #checkpaymentlist .checkpayment .cell.amount,
 #checkpaymentlist .checkpayment .cell.vendor {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #checkpaymentlist .checkpayment .cell.paydate .form-group,
 #checkpaymentlist .checkpayment .cell.memo .form-group,
@@ -3337,8 +2778,7 @@ textarea {
 #checkpaymentlist .checkpayment .cell.amount .form-group,
 #checkpaymentlist .checkpayment .cell.vendor .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #checkpaymentlist .checkpayment .cell.paydate .form-group:before,
 #checkpaymentlist .checkpayment .cell.paydate .form-group:after,
@@ -3351,53 +2791,43 @@ textarea {
 #checkpaymentlist .checkpayment .cell.vendor .form-group:before,
 #checkpaymentlist .checkpayment .cell.vendor .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #checkpaymentlist .checkpayment .cell.paydate .form-group:after,
 #checkpaymentlist .checkpayment .cell.memo .form-group:after,
 #checkpaymentlist .checkpayment .cell.checknumber .form-group:after,
 #checkpaymentlist .checkpayment .cell.amount .form-group:after,
 #checkpaymentlist .checkpayment .cell.vendor .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #checkpaymentlist .checkpayment .cell.paydate .form-group input[type="text"],
 #checkpaymentlist .checkpayment .cell.memo .form-group input[type="text"],
 #checkpaymentlist .checkpayment .cell.checknumber .form-group input[type="text"],
 #checkpaymentlist .checkpayment .cell.amount .form-group input[type="text"],
 #checkpaymentlist .checkpayment .cell.vendor .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #checkpaymentlist .checkpayment .cell.paydate {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 #checkpaymentlist .checkpayment .cell.checknumber {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #checkpaymentlist .checkpayment .cell.vendor {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #checkpaymentlist .checkpayment .cell.amount {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #checkpaymentlist .checkpayment .cell.memo {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #checkpaymentlist .checkpayment .cell .fancy-select {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 #checkpaymentlist .checkpayment .cell .options {
-  width: 100%;
-}
+  width: 100%; }
 
 #checkpaymentlist .checkpayment .cell textarea {
   -webkit-transition: height, 0.3s;
@@ -3405,96 +2835,77 @@ textarea {
   min-height: 36px;
   height: 36px;
   line-height: 26px;
-  width: 100%;
-}
+  width: 100%; }
 
 #checkpaymentlist .checkpayment .cell input[type="text"] {
-  padding: 6px 12px;
-}
+  padding: 6px 12px; }
 
 #checkpaymentlist .checkpayment .chosen-container {
   float: left;
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 #checkpaymentlist .checkpayment .chosen-container:last-of-type {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 #checkpaymentlist .table-head:before,
 #checkpaymentlist .table-head:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #checkpaymentlist .table-head:after {
-  clear: both;
-}
+  clear: both; }
 
 #checkpaymentlist .table-head > * {
-  line-height: 34px !important;
-}
+  line-height: 34px !important; }
 
 #checkpaymentlist .checkpayment-actions {
   display: inline-block;
   padding: 18px 18px 18px 22px;
   position: absolute;
   bottom: 0;
-  left: 0;
-}
+  left: 0; }
+
 /* ---------------------------------------------
     INSTANCE - BUDGETS
   ------------------------------------------- */
-
 #budgetlist .faux-table {
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 #budgetlist .faux-table .cell.name {
   width: 30%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #budgetlist .faux-table .cell.name span {
-  width: 30%;
-}
+  width: 30%; }
 
 #budgetlist .faux-table .cell.name nav {
-  width: 70%;
-}
+  width: 70%; }
 
 #budgetlist .faux-table .cell.blocknumber {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #budgetlist .faux-table .cell.fiscalyear {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #budgetlist .faux-table .cell.status {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #budgetlist .faux-table .cell.assignment {
   width: 20%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #budgetlist .faux-table .cell.owner {
   width: 20%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #budgetlist .container {
-  width: 100%;
-}
+  width: 100%; }
 
 .container.full {
-  width: 100%;
-}
+  width: 100%; }
 
 #budgetlist .budgetcol {
   max-width: 30px;
@@ -3503,40 +2914,34 @@ textarea {
   text-overflow: ellipsis;
   line-height: 36px;
   padding-right: 5px;
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 
 #budgetlist .account {
   width: 90px;
-  padding: 10px;
-}
+  padding: 10px; }
 
 #budgetlist .description {
-  width: 120px;
-}
+  width: 120px; }
 
 #budgetlist .expense-account {
   width: 240px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 #budgetlist .expense-account .form-group {
   height: 36px;
-  margin: 10px;
-}
+  margin: 10px; }
+
 /*#budgetlist .block-contents {
     padding-left:15px;
 }*/
-
 #budgetlist .checkbox {
   padding-left: 45px;
   padding-right: 0px;
-  width: 10px;
-}
+  width: 10px; }
 
 #budgetlist .cost {
-  padding: 5px;
-}
+  padding: 5px; }
+
 /*#budgetlist .cell.cost {
     line-height: 36px;
 }
@@ -3565,196 +2970,163 @@ textarea {
 /* ---------------------------------------------
     INSTANCE - ACCOUNT FORMAT
   ------------------------------------------- */
-
 #segmentdefinitions .faux-table .segment {
   width: 30%;
   padding: 14px 9px 14px 0px;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #segmentdefinitions .faux-table .length {
   width: 15%;
   padding: 14px 9px 14px 12px;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #segmentdefinitions .faux-table .default {
   width: 15%;
   padding: 14px 9px 14px 12px;
-  min-width: 120px;
-}
+  min-width: 120px; }
+
 /* ---------------------------------------------
     INSTANCE - FISCAL PERIODS
   ------------------------------------------- */
-
 #fiscalperiods .faux-table .periodname {
   width: 30%;
-  padding: 14px 9px 14px 0px;
-}
+  padding: 14px 9px 14px 0px; }
 
 #fiscalperiods .faux-table .begindate {
   width: 15%;
-  padding: 14px 9px 14px 12px;
-}
+  padding: 14px 9px 14px 12px; }
 
 #fiscalperiods .faux-table .enddate {
   width: 15%;
-  padding: 14px 9px 14px 12px;
-}
+  padding: 14px 9px 14px 12px; }
 
 #fiscalperiods .faux-table .series {
   width: 15%;
-  padding: 14px 9px 14px 12px;
-}
+  padding: 14px 9px 14px 12px; }
+
 /* ---------------------------------------------
     INSTANCE - ACCOUNT CATEGORIES
   ------------------------------------------- */
-
 #accountcategories .faux-table .name {
   width: 100%;
-  padding: 14px 9px 14px 0px;
-}
+  padding: 14px 9px 14px 0px; }
+
 /* ---------------------------------------------
     INSTANCE - ACCOUNTS
   ------------------------------------------- */
-
 #accountlist .faux-table .accountnumber {
   width: 20%;
-  min-width: 130px;
-}
+  min-width: 130px; }
 
 #accountlist .faux-table .description {
   width: 35%;
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 #accountlist .faux-table .category {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #accountlist .faux-table .postingtype {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #accountlist .faux-table .balancetype {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
+
 /* ---------------------------------------------
     Journal Entry  
   ------------------------------------------- */
-
 #grid_journalentrylist .faux-table .date {
   width: 20%;
-  min-width: 130px;
-}
+  min-width: 130px; }
 
 #grid_journalentrylist .faux-table .journalentry {
   width: 20%;
-  min-width: 130px;
-}
+  min-width: 130px; }
 
 #grid_journalentrylist .faux-table .description {
   width: 60%;
-  min-width: 130px;
-}
+  min-width: 130px; }
+
 /* ---------------------------------------------
     Outstanding Bills
   ------------------------------------------- */
-
 #grid_outstandingvouchers .faux-table .issue-date {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_outstandingvouchers .faux-table .due-date {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_outstandingvouchers .faux-table .voucher-number {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #grid_outstandingvouchers .faux-table .vendor {
   width: 20%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #grid_outstandingvouchers .faux-table .invoiceamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_outstandingvouchers .faux-table .remainingamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_outstandingvouchers .faux-table .status {
   width: 10%;
-  min-width: 74px;
-}
+  min-width: 74px; }
 
 #grid_outstandingvouchers .faux-table .paymentstatus {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_paidbills .faux-table .issue-date {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_paidbills .faux-table .received-on {
   width: 15%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_paidbills .faux-table .vendor {
   width: 50%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #grid_paidbills .faux-table .amount {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - PRIVILEGE LIST
   ------------------------------------------- */
-
 #privilegelist .faux-table .name {
   width: 50%;
-  min-width: 240px;
-}
+  min-width: 240px; }
 
 #privilegelist .faux-table .granted {
   width: 5%;
-  min-width: 16px;
-}
+  min-width: 16px; }
+
 /* ---------------------------------------------
     INSTANCE - REPORT ROW DEFINITION LIST
   ------------------------------------------- */
-
 #rowsets .faux-table .name {
-  width: 50%;
-}
+  width: 50%; }
+
 /* ---------------------------------------------
     INSTANCE - REPORT ROW DEFINITION LIST
   ------------------------------------------- */
-
 #reportrowdefinitionlineitems .faux-table .cell.type,
 #reportrowdefinitionlineitems .faux-table .cell.beginrange,
 #reportrowdefinitionlineitems .faux-table .cell.actioncolumn,
 #reportrowdefinitionlineitems .faux-table .cell.endrange,
 #reportrowdefinitionlineitems .faux-table .cell.rownumber,
 #reportrowdefinitionlineitems .faux-table .cell.hidecolumn {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #reportrowdefinitionlineitems .faux-table .cell.type .form-group,
 #reportrowdefinitionlineitems .faux-table .cell.beginrange .form-group,
@@ -3769,8 +3141,7 @@ textarea {
 #reportrowdefinitionlineitems .faux-table .cell.rownumber .form-group input[type="text"],
 #reportrowdefinitionlineitems .faux-table .cell.hidecolumn .form-group input[type="text"] {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #reportrowdefinitionlineitems .faux-table .cell.type .form-group:before,
 #reportrowdefinitionlineitems .faux-table .cell.type .form-group:after,
@@ -3785,57 +3156,48 @@ textarea {
 #reportrowdefinitionlineitems .faux-table .cell.hidecolumn .form-group:before,
 #reportrowdefinitionlineitems .faux-table .cell.hidecolumn .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #reportrowdefinitionlineitems .faux-table .action {
-  width: 20px;
-}
+  width: 20px; }
 
 #reportrowdefinitionlineitems .faux-table .actioncolumn {
   width: 130px;
-  padding: 22px;
-}
+  padding: 22px; }
 
 #reportrowdefinitionlineitems .faux-table .type {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #reportrowdefinitionlineitems .faux-table .beginrange {
   width: 20%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #reportrowdefinitionlineitems .faux-table .endrange {
   width: 20%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #reportrowdefinitionlineitems .faux-table .rownumber {
   width: 5%;
-  min-width: 25px;
-}
+  min-width: 25px; }
+
 /*#reportrowdefinitionlineitems .faux-table .rownumber #rowsequenceno {
         padding: 10px 9px 10px 12px;
     }*/
-
 #reportrowdefinitionlineitems .faux-table .hidecolumn {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
+
 /* ---------------------------------------------
     INSTANCE - REPORT COLUMN DEFINITION LIST
   ------------------------------------------- */
-
 #reportcolumndefinitionlineitems .faux-table .cell.type,
 #reportcolumndefinitionlineitems .faux-table .cell.periodoffset,
 #reportcolumndefinitionlineitems .faux-table .cell.actioncolumn,
 #reportcolumndefinitionlineitems .faux-table .cell.formula,
 #reportcolumndefinitionlineitems .faux-table .cell.rownumber,
 #reportcolumndefinitionlineitems .faux-table .cell.hidecolumn {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #reportcolumndefinitionlineitems .faux-table .cell.type .form-group,
 #reportcolumndefinitionlineitems .faux-table .cell.periodoffset .form-group,
@@ -3850,8 +3212,7 @@ textarea {
 #reportcolumndefinitionlineitems .faux-table .cell.rownumber .form-group input[type="text"],
 #reportcolumndefinitionlineitems .faux-table .cell.hidecolumn .form-group input[type="text"] {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #reportcolumndefinitionlineitems .faux-table .cell.type .form-group:before,
 #reportcolumndefinitionlineitems .faux-table .cell.type .form-group:after,
@@ -3866,332 +3227,265 @@ textarea {
 #reportcolumndefinitionlineitems .faux-table .cell.hidecolumn .form-group:before,
 #reportcolumndefinitionlineitems .faux-table .cell.hidecolumn .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #reportcolumndefinitionlineitems .faux-table .action {
-  width: 20px;
-}
+  width: 20px; }
 
 #reportcolumndefinitionlineitems .faux-table .actioncolumn {
   width: 20px;
-  padding: 22px;
-}
+  padding: 22px; }
 
 #reportcolumndefinitionlineitems .faux-table .actioncolumn .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #reportcolumndefinitionlineitems .faux-table .name {
-  width: 20%;
-}
+  width: 20%; }
 
 #reportcolumndefinitionlineitems .faux-table .type {
-  width: 20%;
-}
+  width: 20%; }
 
 #reportcolumndefinitionlineitems .faux-table .periodoffset {
-  width: 10%;
-}
+  width: 10%; }
 
 #reportcolumndefinitionlineitems .faux-table .formula {
-  width: 20%;
-}
+  width: 20%; }
 
 #reportcolumndefinitionlineitems .faux-table .hidecolumn {
-  width: 8%;
-}
+  width: 8%; }
 
 #reportcolumndefinitionlineitems .faux-table .action {
-  width: 20px;
-}
+  width: 20px; }
 
 #reportcolumndefinitionlineitems .faux-table .actioncolumn {
-  width: 25%;
-}
+  width: 25%; }
 
 #reportcolumndefinitionlineitems .faux-table .actioncolumn .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #reportcolumndefinitionlineitems .faux-table .type {
-  width: 20%;
-}
+  width: 20%; }
 
 #reportcolumndefinitionlineitems .faux-table .periodoffset {
-  width: 10%;
-}
+  width: 10%; }
 
 #reportcolumndefinitionlineitems .faux-table .formula {
-  width: 20%;
-}
+  width: 20%; }
 
 #reportcolumndefinitionlineitems .faux-table .rownumber {
-  width: 5%;
-}
+  width: 5%; }
 
 #reportcolumndefinitionlineitems .faux-table .hidecolumn {
-  width: 10%;
-}
+  width: 10%; }
+
 /* ---------------------------------------------
     INSTANCE - SEGMENT
   ------------------------------------------- */
-
 #segmentlist .faux-table .cell.type {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #segmentlist .faux-table .cell.name {
   width: 30%;
-  min-width: 240px;
-}
+  min-width: 240px; }
 
 #segmentlist .faux-table .cell.value {
   width: 30%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     EDIT APPLY FIXED ASSET
   ------------------------------------------- */
-
 #editappyfixedasset .faux-table .cell.actioncolumn {
   width: 16%;
-  padding: 14px 2px 14px 2px;
-}
+  padding: 14px 2px 14px 2px; }
 
 #editappyfixedasset .faux-table .cell.period {
   width: 7%;
-  padding: 14px 2px 14px 2px;
-}
+  padding: 14px 2px 14px 2px; }
+
 /* ---------------------------------------------
     EDIT APPLY PAYROLL
   ------------------------------------------- */
-
 #editappypayroll .faux-table .cell.actioncolumn {
   width: 16%;
-  padding: 14px 2px 14px 2px;
-}
+  padding: 14px 2px 14px 2px; }
 
 #editappypayroll .faux-table .cell.period {
   width: 7%;
-  padding: 14px 2px 14px 2px;
-}
+  padding: 14px 2px 14px 2px; }
+
 /* ---------------------------------------------
     INSTANCE -ACCOUNT CATEGORY
   ------------------------------------------- */
-
 #accountcategoryitems header.block-heading {
-  padding: 14px 14px 14px 22px;
-}
+  padding: 14px 14px 14px 22px; }
 
 #accountcategoryitems .faux-table {
-  position: relative;
-}
+  position: relative; }
 
 #accountcategoryitems .faux-table .tier {
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 #accountcategoryitems .faux-table .cell {
   border-right: 1px solid #d1d3d4;
   float: left;
-  line-height: normal;
-}
+  line-height: normal; }
 
 #accountcategoryitems .faux-table .cell::after {
-  content: "\00A0";
-}
+  content: "\00A0"; }
 
 #accountcategoryitems .faux-table .cell:last-of-type {
-  border-right: 0;
-}
+  border-right: 0; }
 
 #accountcategoryitems .faux-table .cell.type {
-  width: 100%;
-}
+  width: 100%; }
 
 #accountcategoryitems .faux-table .new-invoice-actions {
-  display: inline-block;
-}
+  display: inline-block; }
 
 #accountcategoryitems .accountcategoryitem:before,
 #accountcategoryitems .accountcategoryitem:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #accountcategoryitems .accountcategoryitem:after {
-  clear: both;
-}
+  clear: both; }
 
 #accountcategoryitems .accountcategoryitem .cell {
   line-height: normal;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 13px;
-}
+  padding-bottom: 13px; }
 
 #accountcategoryitems .accountcategoryitem .cell::after {
-  display: none;
-}
+  display: none; }
 
 #accountcategoryitems .accountcategoryitem .cell.type {
-  padding: 14px 9px;
-}
+  padding: 14px 9px; }
 
 #accountcategoryitems .accountcategoryitem .cell.type .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #accountcategoryitems .accountcategoryitem .cell.type .form-group:before,
 #accountcategoryitems .accountcategoryitem .cell.type .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #accountcategoryitems .accountcategoryitem .cell.type .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #accountcategoryitems .accountcategoryitem .cell.type .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #accountcategoryitems .accountcategoryitem .cell.type {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 #accountcategoryitems .accountcategoryitem .cell input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #accountcategoryitems .accountcategoryitem .chosen-container {
   float: left;
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 #accountcategoryitems .accountcategoryitem .chosen-container:last-of-type {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 #accountcategoryitems .table-head:before,
 #accountcategoryitems .table-head:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #accountcategoryitems .table-head:after {
-  clear: both;
-}
+  clear: both; }
 
 #accountcategoryitems .table-head > * {
-  line-height: 34px !important;
-}
+  line-height: 34px !important; }
 
 #accountcategoryitems .block-footing .cell {
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 #accountcategoryitems .faux-table .table-head .cell {
-  padding: 0px 0px 0px 9px;
-}
+  padding: 0px 0px 0px 9px; }
+
 /* ---------------------------------------------
     INSTANCE - QUICKSTART
   ------------------------------------------- */
-
 #quickstartsteps .faux-table .cell.name {
   width: 80%;
-  min-width: 240px;
-}
+  min-width: 240px; }
 
 #quickstartsteps .faux-table .cell.status {
   width: 20%;
-  min-width: 60px;
-}
+  min-width: 60px; }
+
 /* ---------------------------------------------
     INSTANCE - Calculator Apply List
   ------------------------------------------- */
-
 #bbcapplylist .faux-table .cell.name {
-  width: 70%;
-}
+  width: 70%; }
 
 #bbcapplylist .faux-table .cell.status {
-  width: 30%;
-}
+  width: 30%; }
+
 /* ---------------------------------------------
     INSTANCE - FIXED ASSETS 
   ------------------------------------------- */
-
 #fixedassetlist .faux-table .cell.code {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #fixedassetlist .faux-table .cell.name {
   width: 40%;
-  min-width: 260px;
-}
+  min-width: 260px; }
 
 #fixedassetlist .faux-table .cell.amount {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #fixedassetlist .faux-table .cell.account {
   width: auto;
-  min-width: 160px;
-}
+  min-width: 160px; }
+
 /* ---------------------------------------------
     INSTANCE - PAYROLL CALCULATORS
   ------------------------------------------- */
-
 #payrollcalculatorlist .faux-table .cell.code {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #payrollcalculatorlist .faux-table .cell.name {
   width: 40%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #payrollcalculatorlist .faux-table .cell.amount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #payrollcalculatorlist .faux-table .cell.account {
   width: auto;
-  min-width: 160px;
-}
+  min-width: 160px; }
 
 .tt-dropdown-menu,
 .gist {
-  text-align: left;
-}
+  text-align: left; }
 
 .typeahead {
-  background-color: #FFFFFF;
-}
+  background-color: #FFFFFF; }
 
 .typeahead:focus {
-  border: 2px solid #0097CF;
-}
+  border: 2px solid #0097CF; }
 
 .tt-query {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-}
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; }
 
 .tt-hint {
   width: 100%;
   color: #999999;
   padding: 6px 12px;
   font-size: 12px;
-  height: 30px;
-}
+  height: 30px; }
 
 .tt-dropdown-menu {
   background: #f1f2f2;
@@ -4210,8 +3504,7 @@ textarea {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
     margin-top: 2px;
     padding: 2px 0;
-    width: 320px;*/
-}
+    width: 320px;*/ }
 
 .tt-suggestion {
   border-bottom: 1px solid #d1d3d4;
@@ -4223,192 +3516,156 @@ textarea {
   padding: 5px 10px 5px 20px;
   /*font-size: 12px;
     line-height: 16px;
-    padding: 5px 10px 5px 20px;*/
-}
+    padding: 5px 10px 5px 20px;*/ }
 
 .tt-suggestion.tt-cursor {
   background: #e5e7e7;
   color: #626365;
   /*background-color: #2db5ab;
         color: #FFFFFF;
-        padding: 5px 10px 5px 20px;*/
-}
+        padding: 5px 10px 5px 20px;*/ }
 
 .tt-suggestion p {
-  margin: 0;
-}
+  margin: 0; }
 
 .gist {
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .typeaheadcell {
-  padding: 2px 10px 2px 10px;
-}
+  padding: 2px 10px 2px 10px; }
+
 /* ---------------------------------------------
     CUSTOM REPORT LIST
   ------------------------------------------- */
-
 #customreportlist .faux-table .customreportname {
-  width: 50%;
-}
+  width: 50%; }
 
 #customreportlist .faux-table .customreportrowname {
-  width: 20%;
-}
+  width: 20%; }
 
 #customreportlist .faux-table .customreportcolumnname {
-  width: 30%;
-}
+  width: 30%; }
+
 /* ---------------------------------------------
     INSTANCE - VOUCHERS
   ------------------------------------------- */
-
 #payables .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #payables .faux-table .cell.documentdate {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #payables .faux-table .cell.documentnumber {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #payables .faux-table .cell.vendor {
   width: 36%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #payables .faux-table .cell.totalamount {
   width: 14%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payables .faux-table .cell.remainingamount {
   width: 14%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #payables .faux-table .cell.status {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
+
 /* ---------------------------------------------
     INSTANCE - VOUCHERS
   ------------------------------------------- */
-
 #businessunitlist .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #businessunitlist .faux-table .cell.name {
   width: 40%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #businessunitlist .faux-table .cell.description {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #businessunitlist .faux-table .cell.parent {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #businessunitlist .faux-table .cell.user {
   width: 20%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #columnsets .faux-table .cell.name {
-  width: 90%;
-}
+  width: 90%; }
+
 /* ---------------------------------------------
     INSTANCE - BANKREC
      ------------------------------------------- */
-
 #register-transactions .faux-table {
-  color: #939598;
-}
+  color: #939598; }
 
 #register-transactions .faux-table .cell {
-  float: left;
-}
+  float: left; }
 
 #register-transactions .faux-table .cell.date {
-  width: 8%;
-}
+  width: 8%; }
 
 #register-transactions .faux-table .cell.type {
-  width: 10%;
-}
+  width: 10%; }
 
 #register-transactions .faux-table .cell.reference-number {
-  width: 10%;
-}
+  width: 10%; }
 
 #register-transactions .faux-table .cell.transaction-details {
   /* Updating to 44% to allow for more room 
   width: 24%;*/
-  width: 44%;
-}
+  width: 44%; }
 
 #register-transactions .faux-table .cell.cleared {
   text-align: center;
   padding-right: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #register-transactions .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #register-transactions .faux-table .cell.balance {
-  width: 10%;
-}
+  width: 10%; }
 
 #register-transactions .faux-table .cell.reconcile {
   padding-right: 15px;
-  width: 20%;
-}
+  width: 20%; }
 
 #register-transactions .faux-table .cell.link {
   text-align: center;
-  width: 5%;
-}
+  width: 5%; }
 
 #register-transactions .faux-table .cell.exclude {
   text-align: center;
-  width: 5%;
-}
+  width: 5%; }
 
 #register-transactions .faux-table .table-head .cell {
   color: #939598;
   cursor: pointer;
   -webkit-transition: color, 0.1s;
-  transition: color, 0.1s;
-}
+  transition: color, 0.1s; }
 
 #register-transactions .faux-table .table-head .cell p {
   display: inline-block;
   float: left;
   margin: 0;
   margin-right: 3px;
-  padding: 0;
-}
+  padding: 0; }
 
 #register-transactions .faux-table .table-head .cell span {
   display: inline-block;
   float: left;
   overflow: hidden;
   position: relative;
-  width: 18px;
-}
+  width: 18px; }
 
 #register-transactions .faux-table .table-head .cell span i {
   -webkit-transition: -webkit-transform, 0.1s;
@@ -4416,45 +3673,38 @@ textarea {
   display: inline-block;
   -webkit-transform: translate3d(0, -54px, 0);
   -ms-transform: translate3d(0, -54px, 0);
-  transform: translate3d(0, -54px, 0);
-}
+  transform: translate3d(0, -54px, 0); }
 
 #register-transactions .faux-table .table-head .cell:hover {
-  color: #2DB5AB !important;
-}
+  color: #2DB5AB !important; }
 
 #register-transactions .faux-table .table-head .cell:hover i {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+  transform: translate3d(0, 0, 0); }
+
 /*        #register-transactions .faux-table .table-head .cell.sorted {
             color: #6D6E71 !important;
             cursor: default;
         }
 */
-
 #register-transactions .faux-table .table-head .cell.sorted i {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+  transform: translate3d(0, 0, 0); }
 
 #register-transactions .transaction {
   color: #939598;
   font-size: 12px;
-  line-height: 54px;
-}
+  line-height: 54px; }
 
 #register-transactions .transaction .date {
   color: #231F20;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 #register-transactions .transaction .transaction-details p {
   color: #231F20;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 #register-transactions .transaction .cleared span {
   border: 1px solid #D1D3D4;
@@ -4465,79 +3715,65 @@ textarea {
   margin-top: 17px;
   margin-right: 32px;
   text-align: center;
-  width: 19px;
-}
+  width: 19px; }
 
 #register-transactions .transaction .cleared span:before {
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 #register-transactions .transaction .cleared span.has-not-cleared {
   border-color: #D1D3D4;
-  color: #fff;
-}
+  color: #fff; }
 
 #register-transactions .transaction .cleared span.has-cleared {
   border-color: #939598;
-  color: #939598;
-}
+  color: #939598; }
 
 #register-transactions .transaction .amount.debited {
-  color: #E56E53;
-}
+  color: #E56E53; }
 
 #register-transactions .transaction .amount.credited {
-  color: #3DC168;
-}
+  color: #3DC168; }
 
 #register-transactions .transaction-details > p {
   display: inline-block;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 #register-transactions .transaction-details .tagged,
 #register-transactions .transaction-details .memos,
 #register-transactions .transaction-details nav.actions {
   display: inline-block;
   margin-left: 9px;
-  padding: 0;
-}
+  padding: 0; }
 
 #register-transactions .new-transaction:before,
 #register-transactions .new-transaction:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #register-transactions .new-transaction:after {
-  clear: both;
-}
+  clear: both; }
 
 #register-transactions .new-transaction .cell {
   line-height: normal;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 13px;
-}
+  padding-bottom: 13px; }
 
 #register-transactions .new-transaction .cell.transaction-details {
-  padding-right: 9px;
-}
+  padding-right: 9px; }
 
 #register-transactions .new-transaction .cell.payment,
 #register-transactions .new-transaction .cell.deposit,
 #register-transactions .new-transaction .cell.balance {
   min-height: 100%;
-  padding: 14px 9px 13px;
-}
+  padding: 14px 9px 13px; }
 
 #register-transactions .new-transaction .cell.payment .form-group,
 #register-transactions .new-transaction .cell.deposit .form-group,
 #register-transactions .new-transaction .cell.balance .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #register-transactions .new-transaction .cell.payment .form-group:before,
 #register-transactions .new-transaction .cell.payment .form-group:after,
@@ -4546,379 +3782,304 @@ textarea {
 #register-transactions .new-transaction .cell.balance .form-group:before,
 #register-transactions .new-transaction .cell.balance .form-group:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #register-transactions .new-transaction .cell.payment .form-group:after,
 #register-transactions .new-transaction .cell.deposit .form-group:after,
 #register-transactions .new-transaction .cell.balance .form-group:after {
-  clear: both;
-}
+  clear: both; }
 
 #register-transactions .new-transaction .cell.payment .form-group input[type="text"],
 #register-transactions .new-transaction .cell.deposit .form-group input[type="text"],
 #register-transactions .new-transaction .cell.balance .form-group input[type="text"] {
-  height: 36px;
-}
+  height: 36px; }
 
 #register-transactions .new-transaction .cell.payment::after,
 #register-transactions .new-transaction .cell.deposit::after,
 #register-transactions .new-transaction .cell.balance::after {
-  display: none;
-}
+  display: none; }
 
 #register-transactions .new-transaction .chosen-container {
   float: left;
   margin-right: 1%;
-  width: 49.5% !important;
-}
+  width: 49.5% !important; }
 
 #register-transactions .new-transaction .chosen-container:last-of-type {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 #register-transactions .block-footing > .row:before,
 #register-transactions .block-footing > .row:after {
   content: " ";
-  display: table;
-}
+  display: table; }
 
 #register-transactions .block-footing > .row:after {
-  clear: both;
-}
+  clear: both; }
 
 #register-transactions .block-footing > .row.transactions-totals {
   padding-top: 0;
-  padding-bottom: 18px;
-}
+  padding-bottom: 18px; }
 
 #register-transactions .block-footing > .row .table-total {
   font-size: 15px;
-  margin-right: 37px;
-}
+  margin-right: 37px; }
 
 #register-transactions .block-footing > .row .table-total span {
-  margin-right: 24px;
-}
+  margin-right: 24px; }
 
 #paysystembanklist .faux-table .cell.name {
   width: 18%;
-  min-width: 110px;
-}
+  min-width: 110px; }
 
 #paysystembanklist .faux-table .cell.code {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #paysystembanklist .faux-table .cell.subscriber {
   width: 22%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #paysystembanklist .faux-table .cell.description {
   width: 30%;
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 #paysystembanklist .faux-table .cell.actionbuttons {
   width: 18%;
-  min-width: 110px;
-}
+  min-width: 110px; }
 
 #importvoucher .faux-table .cell.name {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.voucherno {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.subject {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.invoicedate {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importvoucher .faux-table .cell.paymentsource {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.shippingmethod {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.duedate {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importvoucher .faux-table .cell.amount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvoucher .faux-table .cell.importstatus {
   width: 24%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importuserlist .faux-table .cell.firstname {
   width: 10%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserlist .faux-table .cell.lastname {
   width: 10%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserlist .faux-table .cell.username {
   width: 10%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserlist .faux-table .cell.emailaddress {
   width: 30%;
-  min-width: 220px;
-}
+  min-width: 220px; }
 
 #importuserlist .faux-table .cell.resetpassword {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importuserlist .faux-table .cell.status {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importrolelist .faux-table .cell.name {
   width: 80%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #importrolelist .faux-table .cell.status {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserrolelist .faux-table .cell.username {
   width: 40%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserrolelist .faux-table .cell.rolename {
   width: 40%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importuserrolelist .faux-table .cell.status {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #importsegmentlist .faux-table .cell.segment {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsegmentlist .faux-table .cell.name {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsegmentlist .faux-table .cell.value {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsegmentlist .faux-table .cell.importstatus {
   width: 40%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #importjournalentries .faux-table .account {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importjournalentries .faux-table .debit {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importjournalentries .faux-table .credit {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importjournalentries .faux-table .description {
   width: auto;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importjournalentries .faux-table .total {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvendor .faux-table .cell.code {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importvendor .faux-table .cell.name {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importvendor .faux-table .cell.accountno {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importvendor .faux-table .cell.contactinfo {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importcustomerlist .faux-table .cell.name {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importcustomerlist .faux-table .cell.statementname {
   width: 15%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importcustomerlist .faux-table .cell.tin {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importcustomerlist .faux-table .cell.accountnumber {
   width: 20%;
-  min-width: 120px;
-}
+  min-width: 120px; }
 
 #importcustomerlist .faux-table .cell.primaryaddress {
   width: 30%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #importinvoice .faux-table .cell.name {
   width: 20%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importinvoice .faux-table .cell.invoiceno {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.subject {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.invdate {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.paymentsource {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.salestax {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.duedate {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.amount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importinvoice .faux-table .cell.importstatus {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #budgetlineitemlist .faux-table .cell.account {
   width: 16%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #budgetlineitemlist .faux-table .cell.fiscalperiod {
   width: 7%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importsalesorder .faux-table .cell.name {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.orderno {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.description {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.issuedate {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importsalesorder .faux-table .cell.requesteddate {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.paymentterm {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.address {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #importsalesorder .faux-table .cell.amount {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #importsalesorder .faux-table .cell.importstatus {
   width: 24%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #edit-recurrence-schedule .form-group {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 header.page.heading .quick-balance {
   background: rgba(255, 255, 255, 0.25);
@@ -4928,243 +4089,191 @@ header.page.heading .quick-balance {
   font-weight: 300;
   margin-top: 13px;
   margin-right: 18px;
-  padding: 9px 12px 7px;
-}
+  padding: 9px 12px 7px; }
+
 /* ---------------------------------------------
     INSTANCE - INVENTORY
 ------------------------------------------- */
-
 #inventory .faux-table .cell.percent5 {
-  width: 5%;
-}
+  width: 5%; }
 
 #inventory .faux-table .cell.percent10 {
-  width: 10%;
-}
+  width: 10%; }
 
 #inventory .faux-table .cell.percent15 {
-  width: 15%;
-}
+  width: 15%; }
 
 #inventory .faux-table .cell.percent20 {
-  width: 20%;
-}
+  width: 20%; }
 
 #inventory .faux-table .cell.percent25 {
-  width: 25%;
-}
+  width: 25%; }
 
 #inventory .faux-table .cell.percent30 {
-  width: 30%;
-}
+  width: 30%; }
 
 #inventory .faux-table .cell.percent35 {
-  width: 35%;
-}
+  width: 35%; }
 
 #inventory .faux-table .cell.percent40 {
-  width: 40%;
-}
+  width: 40%; }
 
 #inventory .faux-table .cell.percent45 {
-  width: 45%;
-}
+  width: 45%; }
 
 #inventory .faux-table .cell.percent50 {
-  width: 50%;
-}
+  width: 50%; }
 
 #inventory .faux-table .cell.percent55 {
-  width: 55%;
-}
+  width: 55%; }
 
 #inventory .faux-table .cell.percent60 {
-  width: 60%;
-}
+  width: 60%; }
 
 #inventory .faux-table .cell.percent65 {
-  width: 65%;
-}
+  width: 65%; }
 
 #inventory .faux-table .cell.percent70 {
-  width: 70%;
-}
+  width: 70%; }
 
 #inventory .faux-table .cell.percent75 {
-  width: 75%;
-}
+  width: 75%; }
 
 #inventory .faux-table .cell.percent80 {
-  width: 80%;
-}
+  width: 80%; }
 
 #inventory .faux-table .cell.percent85 {
-  width: 85%;
-}
+  width: 85%; }
 
 #inventory .faux-table .cell.percent90 {
-  width: 90%;
-}
+  width: 90%; }
 
 #inventory .faux-table .cell.percent95 {
-  width: 95%;
-}
+  width: 95%; }
 
 #inventory .faux-table .cell.percent100 {
-  width: 100%;
-}
+  width: 100%; }
 
 .btn-detail {
   background-color: #2DB5AB !important;
   border: 1px solid #2DB5AB;
   color: #FFFFFF;
-  padding: 12px;
-}
+  padding: 12px; }
+
 /* ---------------------------------------------
     INSTANCE - SITE
   ------------------------------------------- */
-
 #sitelist .faux-table .cell.name {
   width: 40%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #sitelist .faux-table .cell.description {
   width: 30%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #sitelist .faux-table .cell.address {
   width: 30%;
-  min-width: 200px;
-}
+  min-width: 200px; }
 
 #sitelist .faux-table .cell.status {
   width: 5%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - SITE
   ------------------------------------------- */
-
 #uomlist .faux-table .cell.name {
   width: 40%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #uomlist .faux-table .cell.description {
   width: 45%;
-  min-width: 300px;
-}
+  min-width: 300px; }
 
 #uomlist .faux-table .cell.status {
   width: 5%;
-  min-width: 80px;
-}
+  min-width: 80px; }
+
 /* ---------------------------------------------
     INSTANCE - INVENTORY ITEM ADJUSTMENT TRACKING
   ------------------------------------------- */
-
 #gridTrackingNumberList .faux-table .cell.trackingnumber {
   width: 80%;
-  min-width: 280px;
-}
+  min-width: 280px; }
 
 #gridTrackingNumberList .faux-table .cell.action {
   width: 10%;
-  min-width: 100px;
-}
+  min-width: 100px; }
+
 /* ---------------------------------------------
     INSTANCE - ITEM ADJUSTMENT
   ------------------------------------------- */
-
 #adjustmentlineitem .faux-table .cell .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #adjustmentlineitem .faux-table .cell {
-  padding: 12px;
-}
+  padding: 12px; }
 
 #adjustmentlineitem .faux-table .cell.actioncolumn {
-  width: 15%;
-}
+  width: 15%; }
 
 #adjustmentlineitem .faux-table .cell.item {
-  width: 15%;
-}
+  width: 15%; }
 
 #adjustmentlineitem .faux-table .cell.description {
-  width: 20%;
-}
+  width: 20%; }
 
 #adjustmentlineitem .faux-table .cell.type {
-  width: 15%;
-}
+  width: 15%; }
 
 #adjustmentlineitem .faux-table .cell.tosite {
-  width: 15%;
-}
+  width: 15%; }
 
 #adjustmentlineitem .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #adjustmentlineitem .faux-table .cell.tracking {
-  width: 10%;
-}
+  width: 10%; }
 
 #adjustmentlineitem .faux-table .cell:last-of-type {
-  border-right: 0 none;
-}
+  border-right: 0 none; }
+
 /* ---------------------------------------------
     INSTANCE - ITEM COUNT
   ------------------------------------------- */
-
 #countlineitem .faux-table .cell .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #countlineitem .faux-table .cell {
-  padding: 12px;
-}
+  padding: 12px; }
 
 #countlineitem .faux-table .cell.site {
-  width: 15%;
-}
+  width: 15%; }
 
 #countlineitem .faux-table .cell.item {
-  width: 25%;
-}
+  width: 25%; }
 
 #countlineitem .faux-table .cell.description {
-  width: 20%;
-}
+  width: 20%; }
 
 #countlineitem .faux-table .cell.type {
-  width: 15%;
-}
+  width: 15%; }
 
 #countlineitem .faux-table .cell.tosite {
-  width: 15%;
-}
+  width: 15%; }
 
 #countlineitem .faux-table .cell.amount {
-  width: 10%;
-}
+  width: 10%; }
 
 #countlineitem .faux-table .cell.tracking {
-  width: 10%;
-}
+  width: 10%; }
 
 #countlineitem .faux-table .cell:last-of-type {
-  border-right: 0 none;
-}
+  border-right: 0 none; }
 
 .tracking a.btn.edit {
   background: none repeat scroll 0 0 #24d35e;
-  color: #fff;
-}
+  color: #fff; }
 
 .tier.with-actions div.actions .tier-teaser {
   background: none repeat scroll 0 0 #A7A9AC;
@@ -5175,8 +4284,7 @@ header.page.heading .quick-balance {
   position: relative;
   transition: width 0.4s ease 0s;
   width: 12px;
-  z-index: 9;
-}
+  z-index: 9; }
 
 .tier.with-actions div.actions nav.tier-actions {
   background: none repeat scroll 0 0 #A7A9AC;
@@ -5189,647 +4297,521 @@ header.page.heading .quick-balance {
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
+
 /* ---------------------------------------------
     INSTANCE - JOB LIST
   ------------------------------------------- */
-
 #joblist .faux-table .cell.name {
   width: 30%;
-  min-width: 150px;
-}
+  min-width: 150px; }
 
 #joblist .faux-table .cell.createddate {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #joblist .faux-table .cell.updateddate {
   width: 15%;
-  min-width: 100px;
-}
+  min-width: 100px; }
 
 #joblist .faux-table .cell.status {
   width: 10%;
-  min-width: 50px;
-}
-/****  SALES ORDER ************/
+  min-width: 50px; }
 
+/****  SALES ORDER ************/
 #new-salesorder-items .faux-table .cell.expense-account {
   width: 15%;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-salesorder-items .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #new-salesorder-items .faux-table .cell.quantityro {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-salesorder-items .faux-table .cell.description.short {
   padding-left: 12px;
-  width: 25%;
-}
+  width: 25%; }
 
 #new-salesorder-items .faux-table .cell.description.medium {
   padding-left: 12px;
-  width: 35%;
-}
+  width: 35%; }
 
 #new-salesorder-items .new-salesorder-totals .cell {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-salesorder-items .faux-table .cell.cost {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-salesorder-items .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-salesorder-items .faux-table .cell.pay-from-account .form-group,
 #new-salesorder-items .faux-table .cell.expense-account .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-salesorder-items .new-salesorder-totals .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #new-salesorder-items .new-salesorder-totals .cell:after {
-  display: none;
-}
+  display: none; }
 
 #new-salesorder-items .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 18%;
-}
+  width: 18%; }
 
 #new-salesorder-items .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 71%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-salesorder-items .faux-table .cell.amount {
   color: #1a1a1a;
   padding: 14px 9px 14px 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #manage-SalesOrder .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #manage-SalesOrder .faux-table .cell.issue-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-SalesOrder .faux-table .cell.ship-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-SalesOrder .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-SalesOrder .faux-table .cell.customer {
   width: 40%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #manage-SalesOrder .faux-table .cell.totalamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #manage-SalesOrder .faux-table .cell.status {
   width: 8%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #manage-SalesOrder .faux-table .cell.statusdetail {
   width: 12%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 .faux-table .cell.percent5 {
-  width: 5%;
-}
+  width: 5%; }
 
 .faux-table .cell.percent10 {
-  width: 10%;
-}
+  width: 10%; }
 
 .faux-table .cell.percent15 {
-  width: 15%;
-}
+  width: 15%; }
 
 .faux-table .cell.percent20 {
-  width: 20%;
-}
+  width: 20%; }
 
 .faux-table .cell.percent25 {
-  width: 25%;
-}
+  width: 25%; }
 
 .faux-table .cell.percent30 {
-  width: 30%;
-}
+  width: 30%; }
 
 .faux-table .cell.percent35 {
-  width: 35%;
-}
+  width: 35%; }
 
 .faux-table .cell.percent40 {
-  width: 40%;
-}
+  width: 40%; }
 
 .faux-table .cell.percent45 {
-  width: 45%;
-}
+  width: 45%; }
 
 .faux-table .cell.percent50 {
-  width: 50%;
-}
+  width: 50%; }
 
 .faux-table .cell.percent55 {
-  width: 55%;
-}
+  width: 55%; }
 
 .faux-table .cell.percent60 {
-  width: 60%;
-}
+  width: 60%; }
 
 .faux-table .cell.percent65 {
-  width: 65%;
-}
+  width: 65%; }
 
 .faux-table .cell.percent70 {
-  width: 70%;
-}
+  width: 70%; }
 
 .faux-table .cell.percent75 {
-  width: 75%;
-}
+  width: 75%; }
 
 .faux-table .cell.percent80 {
-  width: 80%;
-}
+  width: 80%; }
 
 .faux-table .cell.percent85 {
-  width: 85%;
-}
+  width: 85%; }
 
 .faux-table .cell.percent90 {
-  width: 90%;
-}
+  width: 90%; }
 
 .faux-table .cell.percent95 {
-  width: 95%;
-}
+  width: 95%; }
 
 .faux-table .cell.percent100 {
-  width: 100%;
-}
-/****  PURCHASE ORDER ************/
+  width: 100%; }
 
+/****  PURCHASE ORDER ************/
 #new-purchaseorder-items .faux-table .cell.expense-account {
   width: 10%;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-purchaseorder-items .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 15%;
-}
+  width: 15%; }
 
 #new-purchaseorder-items .faux-table .cell.quantityro {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-purchaseorder-items .faux-table .cell.description.medium {
   padding-left: 12px;
-  width: 35%;
-}
+  width: 35%; }
 
 #new-purchaseorder-items .faux-table .cell.description.short {
   padding-left: 12px;
-  width: 30%;
-}
+  width: 30%; }
 
 #new-purchaseorder-items .new-purchaseorder-totals .cell {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-purchaseorder-items .faux-table .cell.cost {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-purchaseorder-items .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-purchaseorder-items .faux-table .cell.pay-from-account .form-group,
 #new-purchaseorder-items .faux-table .cell.expense-account .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-purchaseorder-items .new-purchaseorder-totals .form-group {
   height: 36px;
-  margin: 0;
-}
+  margin: 0; }
 
 #new-purchaseorder-items .new-purchaseorder-totals .cell:after {
-  display: none;
-}
+  display: none; }
 
 #new-purchaseorder-items .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 18%;
-}
+  width: 18%; }
 
 #new-purchaseorder-items .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 71%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-purchaseorder-items .faux-table .cell.amount {
   color: #1a1a1a;
   padding: 14px 9px 14px 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #manage-PurchaseOrder .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #manage-PurchaseOrder .faux-table .cell.issue-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-PurchaseOrder .faux-table .cell.ship-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-PurchaseOrder .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-PurchaseOrder .faux-table .cell.vendor {
   width: 40%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #manage-PurchaseOrder .faux-table .cell.totalamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #manage-PurchaseOrder .faux-table .cell.status {
   width: 8%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #manage-PurchaseOrder .faux-table .cell.statusdetail {
   width: 12%;
-  min-width: 80px;
-}
-/****  PURCHASE ORDER ************/
+  min-width: 80px; }
 
+/****  PURCHASE ORDER ************/
 #new-poreceipt-items.lineitemgrid .faux-table .cell.expense-account {
   width: 10%;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.description {
   padding-left: 12px;
-  width: 18%;
-}
+  width: 18%; }
 
 #new-poreceipt-items.lineitemgrid .new-purchaseorder-totals .cell {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.cost {
   padding-left: 12px;
-  width: 11%;
-}
+  width: 11%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.unitprice {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.quantityro {
   padding-left: 12px;
-  width: 7%;
-}
+  width: 7%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.expense-account .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 15%;
-}
+  width: 15%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 73%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.amount {
   color: #1a1a1a;
   padding: 14px 9px 14px 12px;
-  width: 11%;
-}
+  width: 11%; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.receipt-date {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-poreceipt-items .faux-table .cell.inventorytracking {
   padding-left: 6px;
-  width: 34px;
-}
+  width: 34px; }
 
 #new-poreceipt-items.lineitemgrid .faux-table .cell.site {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #manage-POReceipts .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #manage-POReceipts .faux-table .cell.receipt-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-POReceipts .faux-table .cell.ship-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-POReceipts .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-POReceipts .faux-table .cell.vendor {
   width: 40%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #manage-POReceipts .faux-table .cell.totalamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #manage-POReceipts .faux-table .cell.status {
   width: 8%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #manage-POReceipts .faux-table .cell.statusdetail {
   width: 12%;
-  min-width: 80px;
-}
-/****  SALES ORDER FULFILLMENT ************/
+  min-width: 80px; }
 
+/****  SALES ORDER FULFILLMENT ************/
 #new-sof-items.lineitemgrid .faux-table .cell.expense-account {
   width: 10%;
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.inventory {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.description {
   padding-left: 12px;
-  width: 20%;
-}
+  width: 20%; }
 
 #new-sof-items.lineitemgrid .new-purchaseorder-totals .cell {
-  line-height: 36px;
-}
+  line-height: 36px; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.cost {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.quantity {
   padding-left: 12px;
-  width: 8%;
-}
+  width: 8%; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.quantityro {
   padding-left: 12px;
-  width: 6%;
-}
+  width: 6%; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.expense-account .form-group {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.total-label {
   color: #6d6e71;
   font-size: 12px;
   padding: 14px 9px 14px 12px;
   text-align: right;
-  width: 16%;
-}
+  width: 16%; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.space {
   min-height: 100%;
   padding: 14px 9px;
   width: 73%;
   color: #939598 !important;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.amount {
   color: #1a1a1a;
   padding: 14px 9px 14px 12px;
-  width: 11%;
-}
+  width: 11%; }
 
 #new-sof-items .faux-table .cell.inventorytracking {
   padding-left: 6px;
-  width: 35px;
-}
+  width: 35px; }
 
 #new-sof-items.lineitemgrid .faux-table .cell.site {
   padding-left: 12px;
-  width: 10%;
-}
+  width: 10%; }
 
 #manage-SalesOrderFulfillment .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.fulfillment-date {
   width: 10%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.customer {
   width: 40%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.totalamount {
   width: 10%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.status {
   width: 8%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #manage-SalesOrderFulfillment .faux-table .cell.statusdetail {
   width: 12%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_potransactions .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #grid_potransactions .faux-table .cell.issue-date {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_potransactions .faux-table .cell.type {
   width: 15%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_potransactions .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_potransactions .faux-table .cell.vendor {
   width: 30%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #grid_potransactions .faux-table .cell.totalamount {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_potransactions .faux-table .cell.status {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #grid_potransactions .faux-table .cell.statusdetail {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #grid_sotransactions .faux-table .cell {
   color: #231f20;
-  float: left;
-}
+  float: left; }
 
 #grid_sotransactions .faux-table .cell.issue-date {
   width: 12%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_sotransactions .faux-table .cell.type {
   width: 15%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_sotransactions .faux-table .cell.number {
   width: 8%;
-  min-width: 70px;
-}
+  min-width: 70px; }
 
 #grid_sotransactions .faux-table .cell.customer {
   width: 30%;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 #grid_sotransactions .faux-table .cell.totalamount {
   width: 8%;
-  min-width: 80px;
-}
+  min-width: 80px; }
 
 #grid_sotransactions .faux-table .cell.status {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
 
 #grid_sotransactions .faux-table .cell.statusdetail {
   width: 10%;
-  min-width: 60px;
-}
+  min-width: 60px; }
+
+/*# sourceMappingURL=banktel_overlay.css.map */

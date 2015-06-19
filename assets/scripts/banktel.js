@@ -26,7 +26,6 @@ function showMenu() {
         $('.loading').delay(800).fadeOut(function(){$(this).remove()});
     });
 
-
     'use strict';
 
     // Inst fancy-select on selects with class '.dropdown'
@@ -83,12 +82,38 @@ function showMenu() {
         $(this).closest(".level").css("left", "-201px");
         return false;
     });
+    // Initialize Custom Scrollbar
+    $(".app-content").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    $(".options").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    // $(".chosen-results").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    // $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
 
     //Swap out control switch text
 
-    $('.track').on('click', function () {
-        $('.status').toggleClass('on');
-    });
+    // $('.track').on('click', function () {
+    //     $('.status').toggleClass('on');
+    // });
+
+
+    // $('.control-switch').on('click', function () {
+    //     $(this).toggleClass('on');
+    // });
+
+
+
+    // $('.track').on('click', function () {
+    //     $(this).toggleClass('on');
+    // });
+
+    // $( '.track' ).on( 'click', function() {
+    //   $('.control-switch').next().toggleClass( 'on' );
+    // });
+
+
+    // $( '.track' ).on( 'click', function( event ) {
+    //   $( event.target ).closest( '.status' ).toggleClass( 'on' );
+    // });
+
 
     // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
     
@@ -131,6 +156,69 @@ function showMenu() {
     });
 
 }());
+
+
+//uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+(function(){
+    var d = document,
+    accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+    setAria,
+    setAccordionAria,
+    switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
+    e.preventDefault();
+    e.target.click();
+  }
+
+        setAriaAttr = function(el, ariaType, newProperty){
+        el.setAttribute(ariaType, newProperty);
+    };
+    setAccordionAria = function(el1, el2, expanded){
+        switch(expanded) {
+      case "true":
+        setAriaAttr(el1, 'aria-expanded', 'true');
+        setAriaAttr(el2, 'aria-hidden', 'false');
+        break;
+      case "false":
+        setAriaAttr(el1, 'aria-expanded', 'false');
+        setAriaAttr(el2, 'aria-hidden', 'true');
+        break;
+      default:
+                break;
+        }
+    };
+//function
+switchAccordion = function(e) {
+    e.preventDefault();
+    var thisAnswer = e.target.parentNode.nextElementSibling;
+    var thisQuestion = e.target;
+    if(thisAnswer.classList.contains('is-collapsed')) {
+        setAccordionAria(thisQuestion, thisAnswer, 'true');
+    } else {
+        setAccordionAria(thisQuestion, thisAnswer, 'false');
+    }
+    thisQuestion.classList.toggle('is-collapsed');
+    thisQuestion.classList.toggle('is-expanded');
+        thisAnswer.classList.toggle('is-collapsed');
+        thisAnswer.classList.toggle('is-expanded');
+    
+    thisAnswer.classList.toggle('animateIn');
+    };
+    for (var i=0,len=accordionToggles.length; i<len; i++) {
+        if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
+
 
 //= require bootstrap/affix
 //= require bootstrap/alert
