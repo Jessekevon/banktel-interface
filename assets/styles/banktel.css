@@ -19827,7 +19827,7 @@ background-color: rgba(136, 136, 136, 0.9);
   z-index: 1;
 }*/
 
-.status:after {
+/*.status:after {
   content: "Granted";
   color:#24d35e;
   font-weight: 100;
@@ -19839,7 +19839,7 @@ background-color: rgba(136, 136, 136, 0.9);
   color:#e56e53;
   font-weight: 100;
 }
-
+*/
 .accordion .table-head p {
   height: 60px;
   line-height: 60px;
