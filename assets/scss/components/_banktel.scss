@@ -13101,8 +13101,8 @@ a i,button i {
   display:inline-block;
   height:25px;
   margin-left:9px;
-/*  vertical-align:middle;
-*/  width:45px;
+  vertical-align:middle;
+  width:45px;
   -webkit-transition-duration:.4s;
   transition-duration:.4s;
   -webkit-transition-property:background-color,-webkit-box-shadow;
@@ -19665,13 +19665,17 @@ background-color: rgba(136, 136, 136, 0.9);
           border-left: 5px solid #ddd;
 }
 .accordionTitle:before {
-  content: "+";
+  font-family: 'entypo';
+  content: "\2b";
   font-size: 2em;
   line-height: 1em;
   float: right;
-  color: #000;
+  color: #ccc;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
-          transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .accordionTitle:hover {
   background-color: #888;
@@ -19712,10 +19716,14 @@ background-color: rgba(136, 136, 136, 0.9);
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
+  font-family: 'entypo';
+  content: "\2d";
   color: #fff;
-  -webkit-transform: rotate(-225deg);
-      -ms-transform: rotate(-225deg);
-          transform: rotate(-225deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform:rotate(-180deg) ;
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .accordionItem {
@@ -19801,3 +19809,52 @@ background-color: rgba(136, 136, 136, 0.9);
             transform: scale(0.9) rotateX(-60deg);
   }
 }
+
+
+.track:before {
+  content: "Granted";
+  color: #24d35e;
+  font-weight: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.control-switch input[type="checkbox"]:checked + .track:before {
+  content: "Denied";
+  color:#e56e53;
+  font-weight: 100;
+  position: absolute;
+  left: 0;
+
+}
+
+.status-block {
+  position: relative;
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+
+.status-block p {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.track-block {
+  position: relative;
+  float: left;
+  width: 80%;
+}
+
+.track-block label {
+  float: right;
+  margin-right: 15px;
+}
+
+.status-actions {
+  margin-left: 0 !important;
+  width: 100%;
+}
+
