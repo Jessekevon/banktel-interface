@@ -15623,21 +15623,19 @@ p.status-draft {
   background-color: #2db5ab;
   border-color: #fff;
   margin-right: 8px; }
-
-.actions.right.save .btn-primary:hover {
-  background: #fff;
-  border-color: #2db5ab;
-  color: #2db5ab; }
+  .actions.right.save .btn-primary:hover {
+    background: #fff;
+    border-color: #2db5ab;
+    color: #2db5ab; }
 
 .actions.right.save .btn-gray {
   color: #ccc;
   background-color: transparent;
   border-color: #ccc; }
-
-.actions.right.save .btn-gray:hover {
-  color: #fff;
-  background-color: #ccc;
-  border-color: #ccc; }
+  .actions.right.save .btn-gray:hover {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc; }
 
 .role-privileges-section-contents {
   margin-left: 10px; }

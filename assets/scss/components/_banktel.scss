@@ -19864,8 +19864,14 @@ background-color: rgba(136, 136, 136, 0.9);
   right: 20px;
 }
 
+$actionButtonPadding: 10px 20px;
+
+@mixin actionButtonPadding {
+  padding: $actionButtonPadding;
+}
+
 .actions.right.save .btn {
-  padding: 10px 20px;
+  @include actionButtonPadding;
 }
 
 .actions.right.save .btn-primary {
@@ -19873,31 +19879,27 @@ background-color: rgba(136, 136, 136, 0.9);
   background-color: #2db5ab;
   border-color: #fff;
   margin-right: 8px;
-}
 
-.actions.right.save .btn-primary:hover {
-  background: #fff;
-  border-color: #2db5ab;
-  color: #2db5ab;
+    &:hover {
+      background: #fff;
+      border-color: #2db5ab;
+      color: #2db5ab;
+    }
 }
-
 
 .actions.right.save .btn-gray {
   color: #ccc;
   background-color: transparent;
   border-color: #ccc;
 
+    &:hover {
+      color: #fff;
+      background-color: #ccc;
+      border-color: #ccc;
+    }
+
 }
-
-.actions.right.save .btn-gray:hover {
-  color: #fff;
-  background-color: #ccc;
-  border-color: #ccc;
-
-}
-
 
 .role-privileges-section-contents {
   margin-left: 10px;
 }
-
