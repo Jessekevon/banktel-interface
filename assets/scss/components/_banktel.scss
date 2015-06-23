@@ -19656,7 +19656,7 @@ background-color: rgba(136, 136, 136, 0.9);
   font-family: 'entypo';
   content: "\2b";
   font-size: 2em;
-  line-height: 1em;
+  line-height: 16px;
   float: right;
   color: #ccc;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -19723,6 +19723,7 @@ background-color: rgba(136, 136, 136, 0.9);
   -ms-transform:rotate(-180deg) ;
   -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  line-height: 25px;
 }
 
 .accordionItem {
