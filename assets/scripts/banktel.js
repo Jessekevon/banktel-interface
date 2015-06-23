@@ -85,39 +85,14 @@ function showMenu() {
     // Initialize Custom Scrollbar
     $(".app-content").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     $(".options").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+    $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     // $(".chosen-results").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
     // $(".modal").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
-
-    //Swap out control switch text
-
-    // $('.track').on('click', function () {
-    //     $('.status').toggleClass('on');
-    // });
-
-
-    // $('.control-switch').on('click', function () {
-    //     $(this).toggleClass('on');
-    // });
-
-
-
-    // $('.track').on('click', function () {
-    //     $(this).toggleClass('on');
-    // });
-
-    // $( '.track' ).on( 'click', function() {
-    //   $('.control-switch').next().toggleClass( 'on' );
-    // });
-
-
-    // $( '.track' ).on( 'click', function( event ) {
-    //   $( event.target ).closest( '.status' ).toggleClass( 'on' );
-    // });
-
 
     // Bulk select http://www.sanwebe.com/2014/01/how-to-select-all-deselect-checkboxes-jquery
     
     $(document).ready(function() {
+    // Top Bulk Select (Result) on Check Review Page
         $('#selectall').click(function(event) {  //on click 
             if(this.checked) { // check select status
                 $('.checkbox1, .checkbox2').each(function() { //loop through each checkbox
@@ -129,6 +104,7 @@ function showMenu() {
                 });         
             }
         });
+    // Bottom Bulk Select on Check Review Page
         $('#selectall2').click(function(event) {  //on click 
             if(this.checked) { // check select status
                 $('.checkbox1, .checkbox3').each(function() { //loop through each checkbox
@@ -140,8 +116,137 @@ function showMenu() {
                 });         
             }
         });
-    
+    // CheckBox Bulk Select on Accounts Payable Drawer
+    $('#selectall_drawer').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
     });
+
+    // CheckBox Bulk Select on Accounts Receivable Drawer
+    $('#selectall_drawer_2').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_2').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_2').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on General Ledger Drawer
+    $('#selectall_drawer_3').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_3').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_3').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on Inventory Drawer
+    $('#selectall_drawer_4').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_4').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_4').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on Main Category Drawer
+    $('#selectall_drawer_5').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_5').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_5').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on Report Drawer
+    $('#selectall_drawer_6').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_6').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_6').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on Sales Order Drawer
+    $('#selectall_drawer_7').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_7').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_7').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on System Drawer
+    $('#selectall_drawer_8').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_8').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_8').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on Setup Drawer
+    $('#selectall_drawer_9').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_9').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_9').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+    // CheckBox Bulk Select on User Management Drawer
+    $('#selectall_drawer_10').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.checkbox_main_10').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.checkbox_main_10').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+
+});
 
     // Change width of pdf modal on click
 
