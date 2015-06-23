@@ -15610,7 +15610,9 @@ p.status-draft {
   width: 100%; }
 
 .actions.right.save {
-  line-height: 0; }
+  line-height: 0;
+  position: fixed;
+  right: 20px; }
 
 .actions.right.save .btn {
   padding: 10px 20px; }

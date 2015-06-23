@@ -19859,6 +19859,8 @@ background-color: rgba(136, 136, 136, 0.9);
 
 .actions.right.save {
   line-height: 0;
+  position: fixed;
+  right: 20px;
 }
 
 .actions.right.save .btn {
