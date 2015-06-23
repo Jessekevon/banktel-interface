@@ -5873,13 +5873,6 @@ output {
   opacity:1
 }
 
-.form-control:-ms-input-placeholder {
-  color:#999
-}
-
-.form-control::-webkit-input-placeholder {
-  color:#999
-}
 
 .form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
   cursor:not-allowed;
@@ -13209,7 +13202,7 @@ input:focus,textarea:focus {
 }
 
 input::-webkit-input-placeholder,input:-ms-input-placeholder,input::-moz-placeholder,input:-moz-placeholder,textarea::-webkit-input-placeholder,textarea:-ms-input-placeholder,textarea::-moz-placeholder,textarea:-moz-placeholder {
-  color:#bababa
+  color:red;
 }
 
 input[type="text"],input[type="password"],input[type="email"],input[type="tel"],input[type="search"],input[type="url"],textarea {
@@ -16812,16 +16805,9 @@ li.memo span.edit-indicator {
 }
 
 .textit textarea.form-control::-webkit-input-placeholder {
-  color:#d1d3d4
+  color:red;
 }
 
-.textit textarea.form-control::-moz-placeholder {
-  color:#d1d3d4
-}
-
-.textit textarea.form-control:-ms-input-placeholder {
-  color:#d1d3d4
-}
 
 /*.textit  input, textarea {
     color: #D1D3D4 !important;
