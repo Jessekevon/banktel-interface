@@ -13477,6 +13477,11 @@ header.page.heading nav.actions.right {
   width:100%
 }
 
+.tier-no-border {
+  border-bottom:0px;
+}
+
+
 .tier:before,.tier:after {
   content:" ";
   display:table
@@ -18630,19 +18635,6 @@ nav.menu.closed li a i {
   border-color:#fff!important
 }
 
-/*    .btn-primary.gray {
-      color: #ffffff !important;
-      background-color: #D2D3D5 !important;
-      border-color: #D2D3D5 !important;
-    }
-
-    .btn-primary.gray:hover {
-      color: #D2D3D5 !important;
-      background-color: #ffffff !important;
-      border-color: #ffffff !important;
-    }
-
-*/
 .modal-body {
   padding:0
 }
@@ -18666,10 +18658,6 @@ nav.menu.closed li a i {
   padding:0
 }
 
-/*    .icon-padding {
-      padding-left: 0 !important;
-    }
-*/
 .modal.multi-step .modal-body {
   position:relative;
   padding:0;
@@ -19620,13 +19608,13 @@ background-color: rgba(136, 136, 136, 0.9);
 .accordion a:focus {
   color: #000 !important;
 }
-.accordion dl:after {
-  content: "";
-  display: block;
-  height: 1em;
-  width: 100%;
-  background-color: #ddd;
-}
+// .accordion dl:after {
+//   content: "";
+//   display: block;
+//   height: 1em;
+//   width: 100%;
+//   background-color: #ddd;
+// }
 
 .accordion dd {
   background-color: #eee;
@@ -19679,6 +19667,7 @@ background-color: rgba(136, 136, 136, 0.9);
 }
 .accordionTitle:hover {
   background-color: #888;
+  // border-left: 5px solid #888;
 }
 
 .accordion .control-switch span {
@@ -19701,6 +19690,14 @@ background-color: rgba(136, 136, 136, 0.9);
   line-height: 60px;
 }
 
+.accordion ul li .indicator, .accordion .table-head .indicator {
+  background: #888 !important;
+  border-top: 1px solid #888 !important;
+  border-bottom: 1px solid #888 !important;
+  top: -1px;
+}
+
+
 .cell-border-left {
   border-left: 1px solid #ccc;
 }
@@ -19712,7 +19709,9 @@ background-color: rgba(136, 136, 136, 0.9);
 .accordionTitleActive,
 .accordionTitle.is-expanded {
   background-color: #888;
+  border-left: 5px solid #888;
   color: #fff !important;
+  border-bottom: 0px;
 }
 .accordionTitleActive:before,
 .accordionTitle.is-expanded:before {
@@ -19856,5 +19855,46 @@ background-color: rgba(136, 136, 136, 0.9);
 .status-actions {
   margin-left: 0 !important;
   width: 100%;
+}
+
+.actions.right.save {
+  line-height: 0;
+}
+
+.actions.right.save .btn {
+  padding: 10px 20px;
+}
+
+.actions.right.save .btn-primary {
+  color: #fff;
+  background-color: #2db5ab;
+  border-color: #fff;
+  margin-right: 8px;
+}
+
+.actions.right.save .btn-primary:hover {
+  background: #fff;
+  border-color: #2db5ab;
+  color: #2db5ab;
+}
+
+
+.actions.right.save .btn-gray {
+  color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
+
+}
+
+.actions.right.save .btn-gray:hover {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+
+}
+
+
+.role-privileges-section-contents {
+  margin-left: 10px;
 }
 
