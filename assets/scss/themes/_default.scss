@@ -9,22 +9,109 @@
 *	4.
 */
 
+// Colors
+// ------------------------------------------------------------------------------------------------
+$color-black:												#000000;
+
+$color-gray:												#78787A;
+$color-gray-dark:											#231F20;
+$color-gray-lighter:										#D2D3D5;
+$color-gray-lightest:										#EEEEEE;
+
+$color-green:												#2DB5AB;
+$color-green-bright:										#3FC568;
+
+$color-white:												#FFFFFF;
+
+
+// Color Maps
+// ------------------------------------------------------------------------------------------------
+$colors-net-at-a-glance: (
+	current: HSLA(226, 30%, 46%, 1.0),
+	net-15: HSLA(226, 30%, 46%, 0.88),
+	net-30: HSLA(226, 30%, 46%, 0.76),
+	net-45: HSLA(226, 30%, 46%, 0.64),
+	net-60: HSLA(226, 30%, 46%, 0.52),
+	net-75: HSLA(226, 30%, 46%, 0.40)
+);
+
+// gray
+// #939598
+// #F2F3F3
+// #D1D3D4
+// #A7A9AC
+// #231F20
+
+// #EBECED
+// #BCBEC0
+// #808285
+// #58595B
+
+// #F1F2F2
+// #6D6E71
+
+// #EEEEEE
+// #DDDDDD
+// #E2E2E2
+
+// #707376
+// #CCCCCC
+// #555555
+
+// #E5E7E7
+// #626365
+
+// purple
+// headlines 			#4D6699
+// sticky header 		#516199
+
+// green
+// sortable columns 	#2DB5AB
+// btn background		rgba(45,181,171,0.24)
+// bright text			#24D35E
+// toggle switch		#3DC168
+// more bright text		#3fc568
+
+// // #EEEEEE gray-lightest to replace:
+// #F2F3F3
+// #EBECED
+// #F1F2F2
+// #E2E2E2
+
+
+// // #D2D3D5 gray-light
+// #D1D3D4
+// #A7A9AC
+// #BCBEC0
+// #DDDDDD
+
+
+// // #78787A gray
+// #939598
+// #808285
+// #6D6E71
+
+
+// // #231F20 gray-dark
+// #58595B
+// #231F20
+
 
 // 1. Anchors
 // ------------------------------------------------------------------------------------------------
-$color-anchor:												#2DB5AB;
-$color-anchor-hover:										#FFFFFF;
+$color-anchor:												$color-green;
+$color-anchor-hover:										$color-white;
 
 $color-button-bg:											transparent;
-$color-button-border:										#FFFFFF;
+$color-button-border:										$color-white;
 $color-button-font:											$color-button-border;
 $color-button-bg-hover:										$color-button-border;
 $color-button-border-hover:									$color-button-border;
-$color-button-font-hover:									#2DB5AB !important;
+$color-button-font-hover:									$color-green !important;
 
 
-$color-loading-bg:											#2DB5AB;
-$color-loading-font:										#FFFFFF;
+$color-loading-bg:											$color-green;
+$color-loading-font:										$color-white;
 $color-loading-animation:									$color-loading-bg;
 
 
@@ -34,29 +121,40 @@ $color-top-and-sidebar-bg:									#464747;
 $color-top-and-sidebar-border:								#333333;
 
 // Top
-$color-top-font:											#FFFFFF;
+$color-top-font:											$color-white;
 $color-top-button-hover:									#3A3A3A;
 
 // Sidebar
-$color-sidebar-font:										#FFFFFF;
+$color-sidebar-font:										$color-white;
 $color-sidebar-button-hover:								rgba(0, 0, 0, 0.18);
 $color-sidebar-collapse-button-font:						#A1A2A3;
-$color-sidebar-collapse-button-font-hover:					#FFFFFF;
+$color-sidebar-collapse-button-font-hover:					$color-white;
 
 
-//
+// Dashboard
 // ------------------------------------------------------------------------------------------------
-$color-dashboard-font:										#FFFFFF;
+$color-dashboard-font:										$color-white;
 $color-dashboard-bg:										#516199;
-$color-dashboard-font:										#FFFFFF;
+$color-dashboard-font:										$color-white;
 $color-dashboard-button-bg:									transparent;
 $color-dashboard-button-border:								$color-dashboard-font;
 $color-dashboard-button-font:								$color-dashboard-font;
 $color-dashboard-button-bg-hover:							$color-dashboard-font;
 $color-dashboard-button-border-hover:						$color-dashboard-font;
 $color-dashboard-button-font-hover:							$color-dashboard-bg;
+$color-dashboard-balance-bg:								rgba(255, 255, 255, 0.25);
 
-$color-grid-bg:												#EBECED;
-$color-grid-item-bg:										#FFFFFF;
+// Breadcrumbs
+$color-breadcrumbs-link:									#939598;
+$color-breadcrumbs-span:									$color-dashboard-bg;
+
+// Grid
+$color-grid-bg:												$color-gray-lightest;
+$color-grid-item-bg:										$color-white;
 $color-grid-item-font-primary:								#4D6699;
-$color-grid-item-font-secondary:							#BCBEC0;
+$color-grid-item-font-secondary:							$color-gray-lighter;
+$color-grid-border:											$color-gray-lighter;
+
+
+// 
+// ------------------------------------------------------------------------------------------------

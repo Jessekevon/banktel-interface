@@ -95,20 +95,169 @@ header.page.heading nav.actions button:hover {
   border-color: #FFFFFF !important;
 }
 
+#register header.page.heading .quick-balance {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+
+#search-register,
+.accounts-graph,
+.grid-stack > .grid-stack-item > .grid-stack-item-content,
+.tier {
+  background-color: #FFFFFF;
+}
+
+.bottom-pane {
+  border-color: #D2D3D5;
+}
+
+.breadcrumbs {
+  border-color: #D2D3D5;
+}
+.breadcrumbs a {
+  color: #939598;
+}
+.breadcrumbs span {
+  color: #516199;
+}
+
+.chosen-container-single .chosen-single > span {
+  color: #231F20;
+}
+
+.tier:not(.static):hover {
+  background-color: #EEEEEE;
+}
+
 body,
 #dashboard {
-  background-color: #EBECED;
+  background-color: #EEEEEE;
 }
-
-.grid-stack > .grid-stack-item > .grid-stack-item-content {
-  background-color: #FFFFFF;
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(1),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(1) {
+  background-color: HSLA(226, 30%, 46%, 1);
 }
-
-.accounts-graph {
-  background-color: #FFFFFF;
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(2),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(2) {
+  background-color: HSLA(226, 30%, 46%, 0.88);
+}
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(3),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(3) {
+  background-color: HSLA(226, 30%, 46%, 0.76);
+}
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(4),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(4) {
+  background-color: HSLA(226, 30%, 46%, 0.64);
+}
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(5),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(5) {
+  background-color: HSLA(226, 30%, 46%, 0.52);
+}
+body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
+#dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(6) {
+  background-color: HSLA(226, 30%, 46%, 0.4);
 }
 
 #dashboard .grid-block header .title h4.title-heading,
 #dashboard .grid-block header .title p.title-heading {
   color: #4D6699;
+}
+
+#tipped,
+.acct-row,
+.fancy-select .options li.selected,
+.fancy-select .options li.chosen-container-single .chosen-single,
+.chosen-container-single .chosen-single > span,
+.chosen-container-single .chosen-default,
+.chosen-container .chosen-results,
+.radio-group label + div > .radio-inline .radio-inline,
+.radio-group label + div > .radio-inline .radio-inline::before,
+.form-group .input-action,
+.form-group .input-info,
+.form-group .form-control-feedback,
+.form-group .inline-action,
+#view-document #document .document-header .document-notes,
+#view-document #document .document-footer .document-notes,
+#view-document #document .document-header .document-subject span,
+#view-document #document .document-footer .document-subject span,
+#view-document #document table.table,
+#view-document #document table.table thead th,
+#vendor-info .vendor-info h6,
+#register-transactions .transaction .date {
+  color: #231F20;
+}
+
+.faux-table .table-head .cell,
+#search-register label.control-label span {
+  color: #231F20 !important;
+}
+
+.fancy-select .trigger:after {
+  border-top-color: #231F20;
+}
+
+.fancy-select .trigger,
+.fancy-select .options,
+.fancy-select .options li,
+#dashboard .grid-block .double-bar .bar-content,
+.chosen-container .chosen-results,
+.tier .indicator {
+  background-color: #EEEEEE;
+}
+
+#dashboard .grid-block header .title h4.title-subheading,
+#dashboard .grid-block header .title p.title-subheading,
+#dashboard .grid-block header .aux p.aux-label,
+.switch-candy label,
+.aux-new p.aux-label,
+.table.dashboard-table > caption + thead > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td {
+  color: #D2D3D5;
+}
+
+.tier:not(.static):hover .indicator {
+  background-color: #D2D3D5 !important;
+}
+
+.switch-light-wrapper,
+.fancy-select .options li.selected,
+.table.dashboard-table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td,
+#dashboard .grid-block .double-bar .bar-origin:after,
+.tier,
+.fancy-select .trigger {
+  border-color: #D2D3D5;
+}
+
+.fancy-select,
+.fancy-select .trigger,
+.fancy-select .trigger:after,
+.acct-title,
+#dashboard .grid-block .bar-heading p.title,
+#dashboard .grid-block .bar-heading p.quantity,
+#dashboard .grid-block .double-bar .bar-origin,
+#dashboard .grid-block .bar-average p,
+#register-transactions .transaction {
+  color: #78787A;
+}
+
+.fancy-select .trigger:after {
+  border-top-color: #78787A;
+}
+
+table.dashboard-table,
+.table.dashboard-table > thead > tr > th {
+  border-color: #78787A;
+}
+
+#dashboard .grid-block .double-bar .bar-content .bar-quantity.left {
+  background-color: #3FC568;
 }
