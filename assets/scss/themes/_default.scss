@@ -11,17 +11,24 @@
 
 // Colors
 // ------------------------------------------------------------------------------------------------
-$color-black:												#000000;
+$color-black:												#FF0000;
 
-$color-gray:												#78787A;
-$color-gray-dark:											#231F20;
-$color-gray-lighter:										#D2D3D5;
-$color-gray-lightest:										#EEEEEE;
+$color-gray:												#FF0000;
+$color-gray-dark:											#FF0000;
+$color-gray-lighter:										#FF0000;
+$color-gray-lightest:										#FF0000;
 
-$color-green:												#2DB5AB;
-$color-green-bright:										#3FC568;
+$color-green:												#FF0000;
+$color-green-bright:										#FF0000;
+$color-green-lighter:										#FF0000;
+
+$color-purple:												#FF0000;
+
+$color-red:													#FF0000;
 
 $color-white:												#FFFFFF;
+
+$color-transparent:											transparent;
 
 
 // Color Maps
@@ -77,6 +84,7 @@ $colors-net-at-a-glance: (
 // #EBECED
 // #F1F2F2
 // #E2E2E2
+//
 
 
 // // #D2D3D5 gray-light
@@ -134,9 +142,9 @@ $color-sidebar-collapse-button-font-hover:					$color-white;
 // Dashboard
 // ------------------------------------------------------------------------------------------------
 $color-dashboard-font:										$color-white;
-$color-dashboard-bg:										#516199;
+$color-dashboard-bg:										$color-purple;
 $color-dashboard-font:										$color-white;
-$color-dashboard-button-bg:									transparent;
+$color-dashboard-button-bg:									$color-transparent;
 $color-dashboard-button-border:								$color-dashboard-font;
 $color-dashboard-button-font:								$color-dashboard-font;
 $color-dashboard-button-bg-hover:							$color-dashboard-font;

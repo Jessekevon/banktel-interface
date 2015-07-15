@@ -5,7 +5,7 @@
 *	4.
 */
 a {
-  color: #2DB5AB;
+  color: #FF0000;
 }
 a:hover, a:focus {
   color: #FFFFFF;
@@ -17,20 +17,20 @@ a:hover, a:focus {
   border-color: #FFFFFF;
 }
 .btn-primary:hover {
-  color: #2DB5AB !important;
+  color: #FF0000 !important;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
 .loading {
-  background-color: #2DB5AB;
+  background-color: #FF0000;
 }
 .loading p {
   color: #FFFFFF;
 }
 
 .loader-quart {
-  border-color: #2DB5AB;
+  border-color: #FF0000;
 }
 
 .menu-system .topbar-branding {
@@ -79,7 +79,7 @@ section.menu-system nav.menu .level li a:hover {
 }
 
 header.page.heading {
-  background-color: #516199;
+  background-color: #FF0000;
 }
 header.page.heading .page.title a {
   color: #FFFFFF;
@@ -90,7 +90,7 @@ header.page.heading nav.actions button {
   border-color: #FFFFFF;
 }
 header.page.heading nav.actions button:hover {
-  color: #516199 !important;
+  color: #FF0000 !important;
   background-color: #FFFFFF !important;
   border-color: #FFFFFF !important;
 }
@@ -108,30 +108,30 @@ header.page.heading nav.actions button:hover {
 }
 
 .bottom-pane {
-  border-color: #D2D3D5;
+  border-color: #FF0000;
 }
 
 .breadcrumbs {
-  border-color: #D2D3D5;
+  border-color: #FF0000;
 }
 .breadcrumbs a {
   color: #939598;
 }
 .breadcrumbs span {
-  color: #516199;
+  color: #FF0000;
 }
 
 .chosen-container-single .chosen-single > span {
-  color: #231F20;
+  color: #FF0000;
 }
 
 .tier:not(.static):hover {
-  background-color: #EEEEEE;
+  background-color: #FF0000;
 }
 
 body,
 #dashboard {
-  background-color: #EEEEEE;
+  background-color: #FF0000;
 }
 body .grid-block.accounts-payable .net-at-a-glance li:nth-child(1),
 #dashboard .grid-block.accounts-payable .net-at-a-glance li:nth-child(1) {
@@ -183,17 +183,38 @@ body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
 #view-document #document table.table,
 #view-document #document table.table thead th,
 #vendor-info .vendor-info h6,
-#register-transactions .transaction .date {
-  color: #231F20;
+#register-transactions .transaction .date,
+.faux-table ul.table-content,
+#outstanding-invoices .faux-table .cell,
+.block.title,
+.status-draft,
+.pagingcontrols,
+.form-group > label,
+#vendor-info .vendor-info h1,
+.table-total,
+#new-invoice-items .faux-table .cell.amount,
+.section-contents,
+#view-document #document .document-header .document-information .item-content,
+#view-document #document .document-footer .document-information .item-content,
+#view-document #document table.table tbody td.cost,
+#view-document #document table.table tfoot tr.table-totals.total td,
+#view-document #document table.table tfoot td.totals-amount,
+#new-voucher-items .faux-table .cell.amount,
+#register-transactions .transaction .transaction-details p,
+.check-review input:focus,
+.check-review input, .check-review textarea,
+.modal-header,
+strong {
+  color: #FF0000 !important;
 }
 
 .faux-table .table-head .cell,
 #search-register label.control-label span {
-  color: #231F20 !important;
+  color: #FF0000 !important;
 }
 
 .fancy-select .trigger:after {
-  border-top-color: #231F20;
+  border-top-color: #FF0000 !important;
 }
 
 .fancy-select .trigger,
@@ -201,8 +222,32 @@ body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
 .fancy-select .options li,
 #dashboard .grid-block .double-bar .bar-content,
 .chosen-container .chosen-results,
-.tier .indicator {
-  background-color: #EEEEEE;
+.tier .indicator,
+.tier:not(.static):hover,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+#view-document #document .document-header .document-subject span,
+#view-document #document .document-footer .document-subject span,
+.tagged .tag,
+input[type="text"],
+textarea,
+.input-group-addon,
+.form-item-label_checkbox:before,
+.check-review input:focus,
+.form-item-checkbox:checked + .form-item-label_checkbox:before {
+  background-color: #FF0000 !important;
+}
+
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+#vendor-info .vendor-photo .add-vendor-photo {
+  color: #FF0000 !important;
+}
+
+#vendor-info .vendor-photo .add-vendor-photo,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+hr,
+.step-content {
+  border-color: #FF0000 !important;
 }
 
 #dashboard .grid-block header .title h4.title-subheading,
@@ -215,12 +260,31 @@ body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
 .table > colgroup + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
-  color: #D2D3D5;
+.table > thead:first-child > tr:first-child > td,
+.empty-content h1,
+.empty-content h2,
+.empty-content h3,
+.empty-content h4,
+.empty-content h5,
+.empty-content h6,
+.section-heading .section.title,
+.section-heading .section.title span,
+.form-group .form-control-feedback i.tip,
+.form-group .inline-action i.tip,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+#view-document #document .document-header .document-information .item-label,
+#view-document #document .document-footer .document-information .item-label,
+#view-document #document .document-header .document-information .info-multi .item-content,
+#view-document #document .document-footer .document-information .info-multi .item-content,
+#view-document #document .document-header .document-subject span:first-of-type,
+#view-document #document .document-footer .document-subject span:first-of-type,
+#view-document #document .document-footer .document-information .info-single .item-content {
+  color: #FF0000 !important;
 }
 
-.tier:not(.static):hover .indicator {
-  background-color: #D2D3D5 !important;
+.tier:not(.static):hover .indicator,
+.tagged .tag:hover {
+  background-color: #FF0000 !important;
 }
 
 .switch-light-wrapper,
@@ -233,8 +297,30 @@ body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
 .table > tfoot > tr > td,
 #dashboard .grid-block .double-bar .bar-origin:after,
 .tier,
-.fancy-select .trigger {
-  border-color: #D2D3D5;
+.fancy-select .trigger,
+.empty-content,
+#vendor-information .section-heading .section.title,
+.section-heading .section.title,
+#new-invoice-items .faux-table .cell,
+#new-invoice-items .new-invoice-totals .cell:not(.space),
+#view-document #document .document-header .document-information .item-content,
+#view-document #document .document-footer .document-information .item-content,
+#view-document #document table.table tfoot tr.table-totals.total td,
+#view-document #document table.table th,
+#view-document #document table.table td,
+#new-voucher-items .faux-table .cell,
+#new-voucher-items .new-voucher-attachments,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-not-cleared,
+input[type="text"],
+textarea,
+.input-group-addon,
+#checkpaymentlist .faux-table .cell,
+.form-item-label_checkbox:before,
+.check-review input:focus,
+.form-item-checkbox:checked + .form-item-label_checkbox:before,
+.features-box {
+  border-color: #FF0000 !important;
 }
 
 .fancy-select,
@@ -245,19 +331,293 @@ body .grid-block.accounts-payable .net-at-a-glance li:nth-child(6),
 #dashboard .grid-block .bar-heading p.quantity,
 #dashboard .grid-block .double-bar .bar-origin,
 #dashboard .grid-block .bar-average p,
-#register-transactions .transaction {
-  color: #78787A;
+#register-transactions .transaction,
+.faux-table .table-head .cell,
+.btn-inverse:hover,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.chosen-container-single .chosen-single div i,
+.input-group-addon,
+.tagged .tag .edit-indicator i,
+#new-invoice-items .faux-table .cell.total-label,
+#view-document #document-actions .document-meta,
+#new-voucher-items .faux-table .cell.total-label,
+#new-voucher-items .new-voucher-attachments .drop-zone p,
+#new-voucher-items .new-voucher-attachments .drop-zone i,
+.dashboard-table td,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-cleared,
+input[type="text"],
+textarea,
+.breadcrumbs a,
+.form-control::-webkit-input-placeholder,
+.modal-body,
+.features-box-inner p {
+  color: #FF0000 !important;
+}
+
+.fancy-select,
+.fancy-select .trigger,
+.fancy-select .trigger:after,
+.acct-title,
+#dashboard .grid-block .bar-heading p.title,
+#dashboard .grid-block .bar-heading p.quantity,
+#dashboard .grid-block .double-bar .bar-origin,
+#dashboard .grid-block .bar-average p,
+#register-transactions .transaction,
+.faux-table .table-head .cell,
+.btn-inverse:hover,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.chosen-container-single .chosen-single div i,
+.input-group-addon,
+.tagged .tag .edit-indicator i,
+#new-invoice-items .faux-table .cell.total-label,
+#view-document #document-actions .document-meta,
+#new-voucher-items .faux-table .cell.total-label,
+#new-voucher-items .new-voucher-attachments .drop-zone p,
+#new-voucher-items .new-voucher-attachments .drop-zone i,
+.dashboard-table td,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-cleared,
+input[type="text"],
+textarea,
+.breadcrumbs a,
+.form-control::-moz-placeholder,
+.modal-body,
+.features-box-inner p {
+  color: #FF0000 !important;
+}
+
+.fancy-select,
+.fancy-select .trigger,
+.fancy-select .trigger:after,
+.acct-title,
+#dashboard .grid-block .bar-heading p.title,
+#dashboard .grid-block .bar-heading p.quantity,
+#dashboard .grid-block .double-bar .bar-origin,
+#dashboard .grid-block .bar-average p,
+#register-transactions .transaction,
+.faux-table .table-head .cell,
+.btn-inverse:hover,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.chosen-container-single .chosen-single div i,
+.input-group-addon,
+.tagged .tag .edit-indicator i,
+#new-invoice-items .faux-table .cell.total-label,
+#view-document #document-actions .document-meta,
+#new-voucher-items .faux-table .cell.total-label,
+#new-voucher-items .new-voucher-attachments .drop-zone p,
+#new-voucher-items .new-voucher-attachments .drop-zone i,
+.dashboard-table td,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-cleared,
+input[type="text"],
+textarea,
+.breadcrumbs a,
+.form-control:-ms-input-placeholder,
+.modal-body,
+.features-box-inner p {
+  color: #FF0000 !important;
+}
+
+.fancy-select,
+.fancy-select .trigger,
+.fancy-select .trigger:after,
+.acct-title,
+#dashboard .grid-block .bar-heading p.title,
+#dashboard .grid-block .bar-heading p.quantity,
+#dashboard .grid-block .double-bar .bar-origin,
+#dashboard .grid-block .bar-average p,
+#register-transactions .transaction,
+.faux-table .table-head .cell,
+.btn-inverse:hover,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.chosen-container-single .chosen-single div i,
+.input-group-addon,
+.tagged .tag .edit-indicator i,
+#new-invoice-items .faux-table .cell.total-label,
+#view-document #document-actions .document-meta,
+#new-voucher-items .faux-table .cell.total-label,
+#new-voucher-items .new-voucher-attachments .drop-zone p,
+#new-voucher-items .new-voucher-attachments .drop-zone i,
+.dashboard-table td,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-cleared,
+input[type="text"],
+textarea,
+.breadcrumbs a,
+.form-control::placeholder,
+.modal-body,
+.features-box-inner p {
+  color: #FF0000 !important;
 }
 
 .fancy-select .trigger:after {
-  border-top-color: #78787A;
+  border-top-color: #FF0000 !important;
 }
 
 table.dashboard-table,
-.table.dashboard-table > thead > tr > th {
-  border-color: #78787A;
+.table.dashboard-table > thead > tr > th,
+#register-transactions .transaction .cleared span.has-cleared,
+.modal.multi-step .modal-body {
+  border-color: #FF0000 !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid #FF0000 !important;
+  border-left: 5px solid #FF0000 !important;
+}
+
+.modal-footer {
+  border-top: 1px solid #FF0000 !important;
+  border-left: 5px solid #FF0000 !important;
+}
+
+.faux-table .table-head .cell.sorted,
+.btn-primary.inverted,
+.btn-inverse,
+.faux-table .table-head .cell:hover,
+.memos .memo,
+.memos .memo .edit-indicator i,
+#register-transactions .faux-table .table-head .cell:hover {
+  color: #FF0000 !important;
+}
+
+.btn-primary.inverted,
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+.btn-inverse,
+.block-heading .btn.btn-primary,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.memos .memo,
+.btn:hover .entypo-check {
+  border-color: #FF0000 !important;
+}
+
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+.btn-inverse:hover,
+.block-heading .btn.btn-primary,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.cash-balances-inner section:nth-child(even):before,
+.memos .memo:hover {
+  background-color: #FF0000 !important;
+}
+
+.status-green,
+.status-sent .due-date,
+.status-due .due-date,
+.aux-new p.aux-value,
+#dashboard .grid-block.accounts-receivable .aux-value,
+#register-transactions .transaction .amount.credited {
+  color: #FF0000 !important;
 }
 
 #dashboard .grid-block .double-bar .bar-content .bar-quantity.left {
-  background-color: #3FC568;
+  background-color: #FF0000 !important;
+}
+
+.memos .memo {
+  background-color: #FF0000 !important;
+}
+
+#dashboard .grid-block header .title h4.title-heading,
+#dashboard .grid-block header .title p.title-heading,
+#dashboard .grid-block.accounts-payable .aux-value,
+header.page.heading nav.actions a:hover,
+.breadcrumbs a:hover,
+.features-box h1 {
+  color: #FF0000 !important;
+}
+
+.cash-balances-inner section:nth-child(odd):before,
+header.page.heading nav.actions a {
+  background-color: #FF0000 !important;
+}
+
+.status-red,
+#register-transactions .transaction .amount.debited,
+p.print-alert {
+  color: #FF0000 !important;
+}
+
+#register header.page.heading .quick-balance {
+  background-color: #FF0000 !important;
+}
+
+#register-transactions .transaction .cleared span.has-not-cleared {
+  color: transparent !important;
+}
+
+.btn-primary.inverted {
+  background-color: transparent !important;
+}
+
+#dashboard .grid-block .net-at-a-glance li p,
+.memos .memo:hover,
+.memos .memo:hover i,
+#register header.page.heading .quick-balance,
+header.page.heading .page.title a,
+.block-heading .btn.btn-primary,
+header.page.heading .page.title {
+  color: #FFFFFF !important;
+}
+
+.btn-inverse
+header.page.heading nav.actions a:hover,
+.features-box {
+  background-color: #FFFFFF !important;
+}
+
+header.page.heading nav.actions a,
+header.page.heading nav.actions a:hover,
+.entypo-check {
+  border-color: #FFFFFF !important;
 }
