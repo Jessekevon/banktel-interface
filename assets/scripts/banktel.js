@@ -55,21 +55,42 @@ function showMenu() {
         $(this).closest('.tier').remove();
     });
 
+    // 'Collapse Menu' button in menu toggles menu in and out
 
-
-    $('.menu').on('click', '.menu-collapse', function () {
+    $('.menu-collapse').on('click', function () {
         $('.menu').toggleClass('expanded');
     });
 
+    // 'Icons' in collapsed menu toggles the menu in and out
+
+    $('i.icon-trigger').on('click', function () {
+        $('.menu').toggleClass('expanded');
+    });
+
+    // 'Collapse Menu' button in menu toggles the arrow icon direction
 
     $('.menu-collapse').on('click', function () {
         $(this).toggleClass('rotator');
     });
 
+    // 'Icons' in collapsed menu toggles the arrow icon direction
+
+    $('i.icon-trigger').on('click', function () {
+        $('.menu-collapse').toggleClass('rotator');
+    });
+
+    // 'Collapse Menu' button in menu toggles the icon animation
 
     $('.menu-collapse').on('click', function () {
         $('#logo').toggleClass('new-icon');
     });
+
+    // 'Icons' in collapsed menu toggles the icon animation
+
+    $('i.icon-trigger').on('click', function () {
+        $('#logo').toggleClass('new-icon');
+    });
+
 
     // Menu, downward traversal
     $(document.body).on('click', '.menu.expanded .level-down', function () {
