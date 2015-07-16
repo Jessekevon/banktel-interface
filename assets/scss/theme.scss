@@ -82,7 +82,7 @@ section {
 							color: $color-sidebar-font;
 
 							&:hover {
-								background-color: $color-menu-tertiary;
+								// background-color: $color-menu-tertiary;
 							}
 						}
 					}
@@ -351,13 +351,12 @@ hr,
 #view-document #document .document-footer .document-subject span:first-of-type,
 #view-document #document .document-footer .document-information .info-single .item-content,
 .accordionTitle:before,
-.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
-.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 // #search-register .balance-key input[type="text"],
 .btn-default,
 .actions.right.save .btn-gray,
 .menu-collapse i.collapse-icon,
-.menu-collapse a {
+.menu-collapse a,
+#drop p {
 	color: $color-gray-lighter !important;
 }
 
@@ -430,7 +429,9 @@ textarea,
 #view-document #document .document-header .document-subject span:first-of-type,
 #view-document #document .document-footer .document-subject span:first-of-type,
 .breadcrumbs,
-.tier.with-actions:hover .indicator {
+.tier.with-actions:hover .indicator,
+#dropzone
+.tier:not(.static):hover .indicator {
 	border-color: $color-gray-lighter !important;
 }
 
@@ -469,6 +470,8 @@ textarea,
 .dashboard-table td,
 .tagged .tag,
 #register-transactions .transaction .cleared span.has-cleared,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 input[type="text"],
 textarea,
 .breadcrumbs a,
@@ -477,7 +480,9 @@ textarea,
 .features-box-inner p,
 .form-control,
 .accordion-gray,
-.tier.with-actions .type div.actions nav.tier-actions a i, {
+.tier.with-actions .type div.actions nav.tier-actions a i,
+.radio-group label + div > .radio-inline .radio-inline,
+.breadcrumbs li:not(:first-child):after {
 	color: $color-gray !important;
 }
 
@@ -492,7 +497,7 @@ textarea,
 .accordion .table-head .indicator,
 .accordionTitle:hover,
 .accordionTitleActive,
-.accordionTitle.is-expanded, {
+.accordionTitle.is-expanded {
 	background-color: $color-gray !important;
 }
 
@@ -502,7 +507,7 @@ table.dashboard-table,
 .modal.multi-step .modal-body,
 .accordion ul li .indicator, .accordion .table-head .indicator,
 .accordionTitleActive,
-.accordionTitle.is-expanded, {
+.accordionTitle.is-expanded {
 	border-color: $color-gray !important;
 }
 
@@ -513,8 +518,13 @@ table.dashboard-table,
 }
 
 .modal-footer {
-	border-top: 1px solid $color-gray-lightest !important;
 	border-left: 5px solid $color-gray-lighter !important;
+	border-top: 1px solid $color-gray-lightest !important;
+}
+
+.tier:not(.static):hover .indicator {
+	border-bottom: 1px solid $color-gray-lighter !important;
+	border-top: 1px solid $color-gray-lighter !important;
 }
 
 
@@ -587,7 +597,8 @@ a.popover-memo.memo.btn.btn-primary:hover,
 .btn-primary-inverse,
 .switch-candy a,
 .apply .btn:hover,
-#new-invoice-items .new-invoice-actions .btn.btn-primary {
+#new-invoice-items .new-invoice-actions .btn.btn-primary,
+section.menu-system nav.menu .level .level {
 	background-color: $color-green !important;
 }
 
@@ -631,12 +642,23 @@ header.page.heading nav.actions a:hover {
 }
 
 .cash-balances-inner section:nth-child(odd):before,
-header.page.heading nav.actions a {
+header.page.heading nav.actions a,
+.loader-buttons .btn-primary.cancel:hover,
+a.btn.btn-primary.save {
 	background-color: $color-purple !important;
 }
 
-.control-switch input[type="checkbox"] + .track {
-	border-color: $color-purple;
+.control-switch input[type="checkbox"] + .track,
+.loader-buttons .btn-primary {
+	border-color: $color-purple !important;
+}
+
+// Purple Lighter
+// ------------------------------------------------------------------------------------------------
+.drawer-content-wrapper,
+a.btn.btn-primary.save:hover,
+.loader-buttons .btn-primary {
+	background-color: $color-purple-lighter !important;
 }
 
 
@@ -667,7 +689,9 @@ p.print-alert,
 }
 
 .btn-primary.inverted,
-.actions.right.save .btn-gray {
+.actions.right.save .btn-gray,
+.drawer-content textarea,
+#drop {
 	background-color: $color-transparent !important;
 }
 
@@ -699,7 +723,12 @@ header.page.heading .page.title,
 .accordionTitle:hover,
 header.page.heading nav.actions a,
 .menu-collapse:hover i.collapse-icon,
-.menu-collapse:hover a.collapse-link {
+.menu-collapse:hover a.collapse-link,
+section.menu-system nav.menu .level li .level li a,
+section.menu-system nav.menu .level li a.level-up:after,
+.drawer-content textarea,
+.loader-buttons .btn-primary,
+.loader-buttons .btn-primary:hover {
 	color: $color-white !important;
 }
 
@@ -756,4 +785,18 @@ header.page.heading nav.actions a:hover,
 .features-box-inner .btn,
 .actions.right.save .btn-primary {
 	border-color: $color-white !important;
+}
+
+// Menu
+// ------------------------------------------------------------------------------------------------
+section.menu-system nav.menu .level li a.level-up {
+	background-color: $color-menu-quinary !important;
+}
+
+section.menu-system nav.menu .level li a:hover {
+	background-color: $color-menu-quaternary !important;
+}
+
+section.menu-system nav.menu .level li .level li a {
+	border-color: $color-menu-tertiary !important;
 }
