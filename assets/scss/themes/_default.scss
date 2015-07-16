@@ -12,27 +12,36 @@
 // Colors
 // ------------------------------------------------------------------------------------------------
 $color-black:												#000000;
-
 $color-gray:												#78787A;
 $color-gray-dark:											#231F20;
 $color-gray-lighter:										#D2D3D5;
 $color-gray-lightest:										#EEEEEE;
-
 $color-green:												#2DB5AB;
 $color-green-bright:										#3FC568;
-
+$color-green-lighter:										#CDECEA;
+$color-menu-primary:										#464747;
+$color-menu-secondary:										#333333;
+$color-menu-tertiary:										#3A3A3A;
+$color-purple:												#516199;
+$color-red:													#E56E53;
 $color-white:												#FFFFFF;
+$color-transparent:											transparent;
 
 
 // Color Maps
 // ------------------------------------------------------------------------------------------------
-$colors-net-at-a-glance: (
+$colors-accounts-payable: (
 	current: HSLA(226, 30%, 46%, 1.0),
 	net-15: HSLA(226, 30%, 46%, 0.88),
 	net-30: HSLA(226, 30%, 46%, 0.76),
 	net-45: HSLA(226, 30%, 46%, 0.64),
 	net-60: HSLA(226, 30%, 46%, 0.52),
 	net-75: HSLA(226, 30%, 46%, 0.40)
+);
+
+$colors-accounts-receivable: (
+	current: #46C26B,
+	net-30: #5BAB5E
 );
 
 // gray
@@ -77,6 +86,7 @@ $colors-net-at-a-glance: (
 // #EBECED
 // #F1F2F2
 // #E2E2E2
+//
 
 
 // // #D2D3D5 gray-light
@@ -102,7 +112,7 @@ $colors-net-at-a-glance: (
 $color-anchor:												$color-green;
 $color-anchor-hover:										$color-white;
 
-$color-button-bg:											transparent;
+$color-button-bg:											$color-transparent;
 $color-button-border:										$color-white;
 $color-button-font:											$color-button-border;
 $color-button-bg-hover:										$color-button-border;
@@ -117,41 +127,33 @@ $color-loading-animation:									$color-loading-bg;
 
 // Top and Sidebar
 // ------------------------------------------------------------------------------------------------
-$color-top-and-sidebar-bg:									#464747;
-$color-top-and-sidebar-border:								#333333;
-
 // Top
 $color-top-font:											$color-white;
-$color-top-button-hover:									#3A3A3A;
+$color-top-button-hover:									$color-menu-tertiary;
 
 // Sidebar
 $color-sidebar-font:										$color-white;
-$color-sidebar-button-hover:								rgba(0, 0, 0, 0.18);
-$color-sidebar-collapse-button-font:						#A1A2A3;
 $color-sidebar-collapse-button-font-hover:					$color-white;
 
 
 // Dashboard
 // ------------------------------------------------------------------------------------------------
 $color-dashboard-font:										$color-white;
-$color-dashboard-bg:										#516199;
+$color-dashboard-bg:										$color-purple;
 $color-dashboard-font:										$color-white;
-$color-dashboard-button-bg:									transparent;
+$color-dashboard-button-bg:									$color-transparent;
 $color-dashboard-button-border:								$color-dashboard-font;
 $color-dashboard-button-font:								$color-dashboard-font;
 $color-dashboard-button-bg-hover:							$color-dashboard-font;
 $color-dashboard-button-border-hover:						$color-dashboard-font;
 $color-dashboard-button-font-hover:							$color-dashboard-bg;
-$color-dashboard-balance-bg:								rgba(255, 255, 255, 0.25);
 
 // Breadcrumbs
-$color-breadcrumbs-link:									#939598;
 $color-breadcrumbs-span:									$color-dashboard-bg;
 
 // Grid
 $color-grid-bg:												$color-gray-lightest;
 $color-grid-item-bg:										$color-white;
-$color-grid-item-font-primary:								#4D6699;
 $color-grid-item-font-secondary:							$color-gray-lighter;
 $color-grid-border:											$color-gray-lighter;
 

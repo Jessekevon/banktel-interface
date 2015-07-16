@@ -3,6 +3,11 @@
 // Overwrite Existing CSS
 // ------------------------------------------------------------------
 
+body {
+	background-color: $color-gray-lightest;
+	color: $color-gray-dark;
+}
+
 a {
 	color: $color-anchor;
 
@@ -38,24 +43,24 @@ a {
 
 .menu-system {
 	.topbar-branding {
-		background-color: $color-top-and-sidebar-bg;
-		border-bottom: 1px solid $color-top-and-sidebar-border;
-		border-right: 1px solid $color-top-and-sidebar-border;
+		background-color: $color-menu-primary;
+		border-bottom: 1px solid $color-menu-secondary;
+		border-right: 1px solid $color-menu-secondary;
 	}
 }
 
 .topbar {
 	&.navbar {
-		background-color: $color-top-and-sidebar-bg;
-		border-bottom: 1px solid $color-top-and-sidebar-border;
+		background-color: $color-menu-primary;
+		border-bottom: 1px solid $color-menu-secondary;
 
 		a {
 			&.topbar-item {
-				border-left: 1px solid $color-top-and-sidebar-border;
+				border-left: 1px solid $color-menu-secondary;
 				color: $color-top-font;
 
 				&:hover {
-					background-color: $color-top-button-hover;
+					background-color: $color-menu-tertiary;
 				}
 			}
 		}
@@ -66,18 +71,18 @@ section {
 	&.menu-system {
 		nav {
 			&.menu {
-				border-right: 1px solid $color-top-and-sidebar-border;
+				border-right: 1px solid $color-menu-secondary;
 
 				.level {
-					background-color: $color-top-and-sidebar-bg;
+					background-color: $color-menu-primary;
 
 					li {
 						a {
-							border-bottom: 1px solid $color-top-and-sidebar-border;
+							border-bottom: 1px solid $color-menu-secondary;
 							color: $color-sidebar-font;
 
 							&:hover {
-								background-color: $color-sidebar-button-hover;
+								background-color: $color-menu-tertiary;
 							}
 						}
 					}
@@ -88,16 +93,6 @@ section {
 }
 
 .menu-collapse {
-	i {
-		&.collapse-icon {
-			color: $color-sidebar-collapse-button-font;
-		}
-	}
-
-	a {
-		color: $color-sidebar-collapse-button-font;
-	}
-
 	&:hover {
 		i {
 			&.collapse-icon {
@@ -135,7 +130,7 @@ header {
 						
 						&:hover {
 							color: $color-dashboard-button-font-hover !important;
-							background-color: $color-dashboard-button-bg-hover !important;
+							background-color: $color-menu-tertiary !important;
 							border-color: $color-dashboard-button-border-hover !important;
 						}
 					}
@@ -145,26 +140,8 @@ header {
 	}
 }
 
-#register {
-	header{
-		&.page.heading {
-			.quick-balance {
-				background-color: $color-dashboard-balance-bg;
-				color: $color-dashboard-font;
-			}
-		}
-	}
-}
 
 
-// White
-// ------------------------------------------------------------------------------------------------
-#search-register,
-.accounts-graph,
-.grid-stack > .grid-stack-item > .grid-stack-item-content,
-.tier {
-	background-color: $color-grid-item-bg;
-}
 
 .bottom-pane {
 	border-color: $color-grid-border;
@@ -172,11 +149,6 @@ header {
 
 .breadcrumbs {
 	border-color: $color-grid-border;
-
-	a {
-		color: $color-breadcrumbs-link;
-	}
-
 	span {
 		color: $color-breadcrumbs-span;
 	}
@@ -200,21 +172,25 @@ body,
 		&.accounts-payable {
 			.net-at-a-glance {
 				li {
-					&:nth-child(1) { background-color: map-get($colors-net-at-a-glance, current); }
-					&:nth-child(2) { background-color: map-get($colors-net-at-a-glance, net-15); }
-					&:nth-child(3) { background-color: map-get($colors-net-at-a-glance, net-30); }
-					&:nth-child(4) { background-color: map-get($colors-net-at-a-glance, net-45); }
-					&:nth-child(5) { background-color: map-get($colors-net-at-a-glance, net-60); }
-					&:nth-child(6) { background-color: map-get($colors-net-at-a-glance, net-75); }
+					&:nth-child(1) { background-color: map-get($colors-accounts-payable, current); }
+					&:nth-child(2) { background-color: map-get($colors-accounts-payable, net-15); }
+					&:nth-child(3) { background-color: map-get($colors-accounts-payable, net-30); }
+					&:nth-child(4) { background-color: map-get($colors-accounts-payable, net-45); }
+					&:nth-child(5) { background-color: map-get($colors-accounts-payable, net-60); }
+					&:nth-child(6) { background-color: map-get($colors-accounts-payable, net-75); }
+				}
+			}
+		}
+
+		&.accounts-receivable {
+			.net-at-a-glance {
+				li {
+					&:nth-child(1) { background-color: map-get($colors-accounts-receivable, current); }
+					&:nth-child(2) { background-color: map-get($colors-accounts-receivable, net-30); }
 				}
 			}
 		}
 	}
-}
-
-#dashboard .grid-block header .title h4.title-heading,
-#dashboard .grid-block header .title p.title-heading {
-	color: $color-grid-item-font-primary;
 }
 
 // Gray Dark
@@ -226,6 +202,9 @@ body,
 .chosen-container-single .chosen-single > span,
 .chosen-container-single .chosen-default,
 .chosen-container .chosen-results,
+.faux-table .table-head .cell,
+#search-register label.control-label span,
+.chosen-container .chosen-results li.highlighted
 .radio-group label + div > .radio-inline .radio-inline,
 .radio-group label + div > .radio-inline .radio-inline::before,
 .form-group .input-action,
@@ -239,28 +218,104 @@ body,
 #view-document #document table.table,
 #view-document #document table.table thead th,
 #vendor-info .vendor-info h6,
-#register-transactions .transaction .date {
-	color: $color-gray-dark;
-}
-
-.faux-table .table-head .cell,
-#search-register label.control-label span {
+#register-transactions .transaction .date,
+.faux-table ul.table-content,
+// #outstanding-invoices .faux-table .cell,
+#outstanding-invoices .faux-table .cell,
+.block.title,
+.status-draft,
+.pagingcontrols,
+.form-group > label,
+#vendor-info .vendor-info h1,
+.table-total,
+#new-invoice-items .faux-table .cell.amount,
+.section-contents,
+#view-document #document .document-header .document-information .item-content,
+#view-document #document .document-footer .document-information .item-content,
+#view-document #document table.table tbody td.cost,
+#view-document #document table.table tfoot tr.table-totals.total td,
+#view-document #document table.table tfoot td.totals-amount,
+#new-voucher-items .faux-table .cell.amount,
+#register-transactions .transaction .transaction-details p,
+.check-review input:focus,
+.check-review input, .check-review textarea,
+.modal-header,
+strong,
+.accordionTitle,
+.popover,
+// .faux-table ul.table-content a,
+.fancy-select .options li,
+.ui-datepicker,
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.accordion a:focus,
+.accordionTitleActive,
+.accordionTitle.is-expanded, {
 	color: $color-gray-dark !important;
 }
 
 .fancy-select .trigger:after {
-	border-top-color: $color-gray-dark;
+	border-top-color: $color-gray-dark !important;
 }
 
 // Gray Lightest
 // ------------------------------------------------------------------------------------------------
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+#vendor-info .vendor-photo .add-vendor-photo,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a,
+.tier.with-actions .type div.actions nav.tier-actions a,
+.tier.with-actions .expense-account div.actions nav.tier-actions a,
+a.popover-memo.memo.btn.btn-primary:hover,
+.ui-datepicker td.ui-datepicker-other-month,
+.ui-datepicker td.ui-datepicker-unselectable,
+.ui-datepicker td.ui-state-disabled,
+.ui-datepicker td.ui-datepicker-other-month span,
+.ui-datepicker td.ui-datepicker-other-month a,
+.ui-datepicker td.ui-datepicker-unselectable span,
+.ui-datepicker td.ui-datepicker-unselectable a,
+.ui-datepicker td.ui-state-disabled span,
+.ui-datepicker td.ui-state-disabled a,
+.btn-inverse:hover,
+.apply .btn:hover,
+#new-invoice-items .new-invoice-actions .btn.btn-primary {
+	color: $color-gray-lightest !important;
+}
+
 .fancy-select .trigger,
 .fancy-select .options,
 .fancy-select .options li,
 #dashboard .grid-block .double-bar .bar-content,
 .chosen-container .chosen-results,
-.tier .indicator {
-	background-color: $color-gray-lightest;
+.tier:not(.static):hover,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+#view-document #document .document-header .document-subject span,
+#view-document #document .document-footer .document-subject span,
+.tagged .tag,
+input,
+textarea,
+.input-group-addon,
+.form-item-label_checkbox:before,
+.check-review input:focus,
+.form-item-checkbox:checked + .form-item-label_checkbox:before,
+.chosen-container-single .chosen-single,
+.chosen-container-single .chosen-single div,
+.chosen-container .chosen-results li.highlighted,
+.radio-group label + div > .radio-inline .radio-inline::after,
+.popover-title,
+.accordion .tier.gray,
+.accordion,
+#secondary-addresses .vendor-ship-to input[type="text"]:hover,
+#secondary-addresses .vendor-ship-to input[type="text"]:active {
+	background-color: $color-gray-lightest !important;
+}
+
+#vendor-info .vendor-photo .add-vendor-photo,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+hr,
+.step-content,
+.popover {
+	border-color: $color-gray-lightest !important;
 }
 
 
@@ -269,18 +324,56 @@ body,
 #dashboard .grid-block header .title h4.title-subheading,
 #dashboard .grid-block header .title p.title-subheading,
 #dashboard .grid-block header .aux p.aux-label,
-.switch-candy label,
 .aux-new p.aux-label,
 .table.dashboard-table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
-	color: $color-gray-lighter;
+.table > thead:first-child > tr:first-child > td,
+// .tier .indicator,
+.empty-content h1,
+.empty-content h2,
+.empty-content h3,
+.empty-content h4,
+.empty-content h5,
+.empty-content h6,
+.section-heading .section.title,
+.section-heading .section.title span,
+.form-group .form-control-feedback i.tip,
+.form-group .inline-action i.tip,
+#vendor-info .vendor-photo .add-vendor-photo:hover:after,
+#view-document #document .document-header .document-information .item-label,
+#view-document #document .document-footer .document-information .item-label,
+#view-document #document .document-header .document-information .info-multi .item-content,
+#view-document #document .document-footer .document-information .info-multi .item-content,
+#view-document #document .document-header .document-subject span:first-of-type,
+#view-document #document .document-footer .document-subject span:first-of-type,
+#view-document #document .document-footer .document-information .info-single .item-content,
+.accordionTitle:before,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
+// #search-register .balance-key input[type="text"],
+.btn-default,
+.actions.right.save .btn-gray,
+.menu-collapse i.collapse-icon,
+.menu-collapse a {
+	color: $color-gray-lighter !important;
 }
 
-.tier:not(.static):hover .indicator {
+.tier:not(.static):hover .indicator,
+.tagged .tag:hover,
+.tier.with-actions .transaction-details div.actions .tier-teaser,
+.tier.with-actions .type div.actions .tier-teaser,
+.tier.with-actions .expense-account div.actions .tier-teaser,
+.tier.with-actions .transaction-details div.actions nav.tier-actions,
+.tier.with-actions .type div.actions nav.tier-actions,
+.tier.with-actions .expense-account div.actions nav.tier-actions,
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.actions.right.save .btn-gray:hover,
+.control-switch input[type="checkbox"]:checked + .track,
+.tier .indicator {
 	background-color: $color-gray-lighter !important;
 }
 
@@ -294,8 +387,51 @@ body,
 .table > tfoot > tr > td,
 #dashboard .grid-block .double-bar .bar-origin:after,
 .tier,
-.fancy-select .trigger {
-	border-color: $color-gray-lighter;
+.fancy-select .trigger,
+.empty-content,
+#vendor-information .section-heading .section.title,
+.section-heading .section.title,
+#new-invoice-items .faux-table .cell,
+#new-invoice-items .new-invoice-totals .cell:not(.space),
+#view-document #document .document-header .document-information .item-content,
+#view-document #document .document-footer .document-information .item-content,
+#view-document #document table.table tfoot tr.table-totals.total td,
+#view-document #document table.table th,
+#view-document #document table.table td,
+#new-voucher-items .faux-table .cell,
+#new-voucher-items .new-voucher-attachments,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-not-cleared,
+input,
+textarea,
+.input-group-addon,
+#checkpaymentlist .faux-table .cell,
+.form-item-label_checkbox:before,
+.check-review input:focus,
+.form-item-checkbox:checked + .form-item-label_checkbox:before,
+.features-box,
+.accordion dl,
+.tier.with-actions .transaction-details div.actions,
+.tier.with-actions .type div.actions,
+.tier.with-actions .expense-account div.actions,
+#transactions .faux-table .cell,
+.chosen-container-single .chosen-single,
+.chosen-container .chosen-results li,
+.radio-group label + div > .radio-inline .radio-inline::after,
+.popover-title,
+.fancy-select .options li,
+#search-register .balance-key input[type="text"],
+.btn-default,
+.tier,
+.cell-border-left,
+.actions.right.save .btn-gray,
+.actions.right.save .btn-gray:hover,
+#view-document #document,
+#view-document #document .document-header .document-subject span:first-of-type,
+#view-document #document .document-footer .document-subject span:first-of-type,
+.breadcrumbs,
+.tier.with-actions:hover .indicator {
+	border-color: $color-gray-lighter !important;
 }
 
 
@@ -309,22 +445,315 @@ body,
 #dashboard .grid-block .bar-heading p.quantity,
 #dashboard .grid-block .double-bar .bar-origin,
 #dashboard .grid-block .bar-average p,
-#register-transactions .transaction {
-	color: $color-gray;
+#register-transactions .transaction,
+.faux-table .table-head .cell,
+// .btn-inverse:hover,
+#search-register .balance-key input[type="text"],
+.switch-candy label,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.chosen-container-single .chosen-single div i,
+.input-group-addon,
+.tagged .tag .edit-indicator i,
+#new-invoice-items .faux-table .cell.total-label,
+#view-document #document-actions .document-meta,
+#new-voucher-items .faux-table .cell.total-label,
+#new-voucher-items .new-voucher-attachments .drop-zone p,
+#new-voucher-items .new-voucher-attachments .drop-zone i,
+.dashboard-table td,
+.tagged .tag,
+#register-transactions .transaction .cleared span.has-cleared,
+input[type="text"],
+textarea,
+.breadcrumbs a,
+.form-control::placeholder,
+.modal-body,
+.features-box-inner p,
+.form-control,
+.accordion-gray,
+.tier.with-actions .type div.actions nav.tier-actions a i, {
+	color: $color-gray !important;
 }
 
 .fancy-select .trigger:after {
-	border-top-color: $color-gray;
+	border-top-color: $color-gray !important;
+}
+
+.ui-datepicker td,
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover,
+.accordion ul li .indicator,
+.accordion .table-head .indicator,
+.accordionTitle:hover,
+.accordionTitleActive,
+.accordionTitle.is-expanded, {
+	background-color: $color-gray !important;
 }
 
 table.dashboard-table,
-.table.dashboard-table > thead > tr > th {
-	border-color: $color-gray;
+.table.dashboard-table > thead > tr > th,
+#register-transactions .transaction .cleared span.has-cleared,
+.modal.multi-step .modal-body,
+.accordion ul li .indicator, .accordion .table-head .indicator,
+.accordionTitleActive,
+.accordionTitle.is-expanded, {
+	border-color: $color-gray !important;
+}
+
+.modal-header,
+.accordionTitle {
+	border-bottom: 1px solid $color-gray-lightest !important;
+	border-left: 5px solid $color-gray-lighter !important;
+}
+
+.modal-footer {
+	border-top: 1px solid $color-gray-lightest !important;
+	border-left: 5px solid $color-gray-lighter !important;
+}
+
+
+// Green
+// ------------------------------------------------------------------------------------------------
+.faux-table .table-head .cell.sorted,
+.btn-primary.inverted,
+.btn-inverse,
+.faux-table .table-head .cell:hover,
+.memos .memo,
+.memos .memo .edit-indicator i,
+#register-transactions .faux-table .table-head .cell:hover,
+.actions.right.save .btn-primary:hover,
+.btn-primary-inverse:hover,
+.block-heading .btn.btn-primary:hover,
+.block-footing .btn.btn-primary:hover,
+.apply .btn,
+#new-invoice-items .new-invoice-actions .btn.btn-primary:hover {
+	color: $color-green !important;
+}
+
+.btn-primary.inverted,
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+.btn-inverse,
+.block-heading .btn.btn-primary,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.memos .memo,
+.btn:hover .entypo-check,
+a.popover-memo.memo.btn.btn-primary:hover,
+.actions.right.save .btn-primary:hover,
+.btn-primary-inverse:hover,
+.btn-primary-inverse,
+.block-footing .btn.btn-primary:hover,
+.apply .btn,
+#new-invoice-items .new-invoice-actions .btn.btn-primary {
+	border-color: $color-green !important;
+}
+
+.btn-primary.inverted:hover,
+.btn-primary.inverted.click-active,
+.btn-inverse:hover,
+.block-heading .btn.btn-primary,
+.block-heading .tagged .btn-primary.tag,
+.tagged .block-heading .btn-primary.tag,
+.block-heading .memos .btn-primary.memo,
+.memos .block-heading .btn-primary.memo,
+.block-footing .btn.btn-primary,
+.block-footing .tagged .btn-primary.tag,
+.tagged .block-footing .btn-primary.tag,
+.block-footing .memos .btn-primary.memo,
+.memos .block-footing .btn-primary.memo,
+.cash-balances-inner section:nth-child(even):before,
+.memos .memo:hover,
+a.popover-memo.memo.btn.btn-primary:hover,
+#vendor-info .vendor-secondary-addresses .form-control:hover,
+.ui-datepicker td.ui-datepicker-current-day,
+.modal .btn-primary,
+.features-box-inner .btn,
+.control-switch input[type="checkbox"] + .track > .switch,
+.actions.right.save .btn-primary,
+.btn-primary-inverse,
+.switch-candy a,
+.apply .btn:hover,
+#new-invoice-items .new-invoice-actions .btn.btn-primary {
+	background-color: $color-green !important;
 }
 
 
 // Green Bright
 // ------------------------------------------------------------------------------------------------
+.status-green,
+.status-sent .due-date,
+.status-due .due-date,
+.aux-new p.aux-value,
+#dashboard .grid-block.accounts-receivable .aux-value,
+#register-transactions .transaction .amount.credited,
+.track:before {
+	color: $color-green-bright !important;
+}
+
 #dashboard .grid-block .double-bar .bar-content .bar-quantity.left {
-	background-color: $color-green-bright;
+	background-color: $color-green-bright !important;
+}
+
+
+// Green Lighter
+// ------------------------------------------------------------------------------------------------
+.memos .memo,
+a.popover-memo.memo.btn.btn-primary {
+	background-color: $color-green-lighter !important;
+}
+
+
+// Purple
+// ------------------------------------------------------------------------------------------------
+#dashboard .grid-block header .title h4.title-heading,
+#dashboard .grid-block header .title p.title-heading,
+#dashboard .grid-block.accounts-payable .aux-value,
+header.page.heading nav.actions a:hover,
+.breadcrumbs a:hover,
+.breadcrumbs span,
+.features-box h1,
+header.page.heading nav.actions a:hover {
+	color: $color-purple !important;
+}
+
+.cash-balances-inner section:nth-child(odd):before,
+header.page.heading nav.actions a {
+	background-color: $color-purple !important;
+}
+
+.control-switch input[type="checkbox"] + .track {
+	border-color: $color-purple;
+}
+
+
+// Red
+// ------------------------------------------------------------------------------------------------
+.status-red,
+#register-transactions .transaction .amount.debited,
+p.print-alert,
+.control-switch input[type="checkbox"]:checked + .track:before,
+.control-switch input[type="checkbox"]:checked + .track > .switch {
+	color: $color-red !important;
+}
+
+#register header.page.heading .quick-balance,
+.tier.with-actions .transaction-details div.actions:hover nav.tier-actions a i.entypo-remove:hover,
+.tier.with-actions .type div.actions:hover nav.tier-actions a i.entypo-remove:hover,
+.tier.with-actions .expense-account div.actions:hover nav.tier-actions a i.entypo-remove:hover,
+#dashboard .grid-block .double-bar .bar-content .bar-quantity.right,
+.control-switch input[type="checkbox"]:checked + .track > .switch {
+	background-color: $color-red !important;
+}
+
+
+// Transparent
+// ------------------------------------------------------------------------------------------------
+#register-transactions .transaction .cleared span.has-not-cleared {
+	color: $color-transparent !important;
+}
+
+.btn-primary.inverted,
+.actions.right.save .btn-gray {
+	background-color: $color-transparent !important;
+}
+
+
+// White
+// ------------------------------------------------------------------------------------------------
+#dashboard .grid-block .net-at-a-glance li p,
+.memos .memo:hover,
+.memos .memo:hover i,
+#register header.page.heading .quick-balance,
+header.page.heading .page.title a,
+.block-heading .btn.btn-primary,
+header.page.heading .page.title,
+.tier.with-actions .transaction-details div.actions .tier-teaser .kicker i,
+.tier.with-actions .type div.actions .tier-teaser .kicker i,
+.tier.with-actions .expense-account div.actions .tier-teaser .kicker i,
+#vendor-info .vendor-secondary-addresses .form-control:hover,
+.ui-datepicker td,
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover,
+.modal .btn-primary,
+.features-box-inner .btn,
+.control-switch,
+.actions.right.save .btn-primary,
+.actions.right.save .btn-gray:hover,
+.btn-primary-inverse,
+.switch-candy input:checked + label,
+.block-footing .btn.btn-primary,
+.accordionTitle:hover,
+header.page.heading nav.actions a,
+.menu-collapse:hover i.collapse-icon,
+.menu-collapse:hover a.collapse-link {
+	color: $color-white !important;
+}
+
+.btn-inverse,
+header.page.heading nav.actions a:hover,
+.features-box,
+.accordionTitle,
+.btn-inverse header.page.heading nav.actions a:hover,
+.features-box,
+.tier.with-actions .transaction-details div.actions:hover nav.tier-actions a i.entypo-drag:hover,
+.tier.with-actions .transaction-details div.actions:hover nav.tier-actions a i.entypo-drag:active,
+.tier.with-actions .type div.actions:hover nav.tier-actions a i.entypo-drag:hover,
+.tier.with-actions .type div.actions:hover nav.tier-actions a i.entypo-drag:active,
+.tier.with-actions .expense-account div.actions:hover nav.tier-actions a i.entypo-drag:hover,
+.tier.with-actions .expense-account div.actions:hover nav.tier-actions a i.entypo-drag:active,
+.popover,
+.ui-datepicker,
+.ui-datepicker td.ui-datepicker-other-month,
+.ui-datepicker td.ui-datepicker-unselectable,
+.ui-datepicker td.ui-state-disabled,
+#search-register .balance-key input[type="text"],
+.btn-default,
+.actions.right.save .btn-primary:hover,
+.btn-primary-inverse:hover,
+.block-heading .btn.btn-primary:hover,
+.block-footing .btn.btn-primary:hover,
+.breadcrumbs,
+.check-review .tier:not(.static):hover,
+.check-review input, .check-review textarea,
+.apply .btn,
+#create-new-invoice,
+#new-invoice-items .new-invoice-actions .btn.btn-primary:hover,
+#create-new-voucher,
+header.page.heading nav.actions a:hover,
+.switch-light-wrapper,
+#create-new-journal,
+.form-control,
+#vendor-info,
+#vendor-info .vendor-photo .add-vendor-photo,
+#vendor-setup,
+#view-document #document,
+#search-register,
+.accounts-graph,
+.grid-stack > .grid-stack-item > .grid-stack-item-content,
+.tier {
+	background-color: $color-white !important;
+}
+
+header.page.heading nav.actions a,
+header.page.heading nav.actions a:hover,
+.entypo-check,
+.ui-datepicker td,
+.modal .btn-primary,
+.features-box-inner .btn,
+.actions.right.save .btn-primary {
+	border-color: $color-white !important;
 }
