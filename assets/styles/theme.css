@@ -53,7 +53,7 @@ a:hover, a:focus {
   color: #FFFFFF;
 }
 .topbar.navbar a.topbar-item:hover {
-  background-color: #3A3A3A;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 section.menu-system nav.menu {
@@ -65,9 +65,6 @@ section.menu-system nav.menu .level {
 section.menu-system nav.menu .level li a {
   border-bottom: 1px solid #333333;
   color: #FFFFFF;
-}
-section.menu-system nav.menu .level li a:hover {
-  background-color: #3A3A3A;
 }
 
 .menu-collapse:hover i.collapse-icon {
@@ -90,7 +87,7 @@ header.page.heading nav.actions button {
 }
 header.page.heading nav.actions button:hover {
   color: #516199 !important;
-  background-color: #3A3A3A !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
   border-color: #FFFFFF !important;
 }
 
@@ -298,12 +295,11 @@ hr,
 #view-document #document .document-footer .document-subject span:first-of-type,
 #view-document #document .document-footer .document-information .info-single .item-content,
 .accordionTitle:before,
-.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
-.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 .btn-default,
 .actions.right.save .btn-gray,
 .menu-collapse i.collapse-icon,
-.menu-collapse a {
+.menu-collapse a,
+#drop p {
   color: #D2D3D5 !important;
 }
 
@@ -376,7 +372,9 @@ textarea,
 #view-document #document .document-header .document-subject span:first-of-type,
 #view-document #document .document-footer .document-subject span:first-of-type,
 .breadcrumbs,
-.tier.with-actions:hover .indicator {
+.tier.with-actions:hover .indicator,
+#dropzone
+.tier:not(.static):hover .indicator {
   border-color: #D2D3D5 !important;
 }
 
@@ -411,6 +409,8 @@ textarea,
 .dashboard-table td,
 .tagged .tag,
 #register-transactions .transaction .cleared span.has-cleared,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 input[type="text"],
 textarea,
 .breadcrumbs a,
@@ -419,7 +419,9 @@ textarea,
 .features-box-inner p,
 .form-control,
 .accordion-gray,
-.tier.with-actions .type div.actions nav.tier-actions a i {
+.tier.with-actions .type div.actions nav.tier-actions a i,
+.radio-group label + div > .radio-inline .radio-inline,
+.breadcrumbs li:not(:first-child):after {
   color: #78787A !important;
 }
 
@@ -454,6 +456,8 @@ textarea,
 .dashboard-table td,
 .tagged .tag,
 #register-transactions .transaction .cleared span.has-cleared,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 input[type="text"],
 textarea,
 .breadcrumbs a,
@@ -462,7 +466,9 @@ textarea,
 .features-box-inner p,
 .form-control,
 .accordion-gray,
-.tier.with-actions .type div.actions nav.tier-actions a i {
+.tier.with-actions .type div.actions nav.tier-actions a i,
+.radio-group label + div > .radio-inline .radio-inline,
+.breadcrumbs li:not(:first-child):after {
   color: #78787A !important;
 }
 
@@ -497,6 +503,8 @@ textarea,
 .dashboard-table td,
 .tagged .tag,
 #register-transactions .transaction .cleared span.has-cleared,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 input[type="text"],
 textarea,
 .breadcrumbs a,
@@ -505,7 +513,9 @@ textarea,
 .features-box-inner p,
 .form-control,
 .accordion-gray,
-.tier.with-actions .type div.actions nav.tier-actions a i {
+.tier.with-actions .type div.actions nav.tier-actions a i,
+.radio-group label + div > .radio-inline .radio-inline,
+.breadcrumbs li:not(:first-child):after {
   color: #78787A !important;
 }
 
@@ -540,6 +550,8 @@ textarea,
 .dashboard-table td,
 .tagged .tag,
 #register-transactions .transaction .cleared span.has-cleared,
+.tier.with-actions .transaction-details div.actions nav.tier-actions a i,
+.tier.with-actions .expense-account div.actions nav.tier-actions a i,
 input[type="text"],
 textarea,
 .breadcrumbs a,
@@ -548,7 +560,9 @@ textarea,
 .features-box-inner p,
 .form-control,
 .accordion-gray,
-.tier.with-actions .type div.actions nav.tier-actions a i {
+.tier.with-actions .type div.actions nav.tier-actions a i,
+.radio-group label + div > .radio-inline .radio-inline,
+.breadcrumbs li:not(:first-child):after {
   color: #78787A !important;
 }
 
@@ -584,8 +598,13 @@ table.dashboard-table,
 }
 
 .modal-footer {
-  border-top: 1px solid #EEEEEE !important;
   border-left: 5px solid #D2D3D5 !important;
+  border-top: 1px solid #EEEEEE !important;
+}
+
+.tier:not(.static):hover .indicator {
+  border-bottom: 1px solid #D2D3D5 !important;
+  border-top: 1px solid #D2D3D5 !important;
 }
 
 .faux-table .table-head .cell.sorted,
@@ -655,7 +674,8 @@ a.popover-memo.memo.btn.btn-primary:hover,
 .btn-primary-inverse,
 .switch-candy a,
 .apply .btn:hover,
-#new-invoice-items .new-invoice-actions .btn.btn-primary {
+#new-invoice-items .new-invoice-actions .btn.btn-primary,
+section.menu-system nav.menu .level .level {
   background-color: #2DB5AB !important;
 }
 
@@ -690,12 +710,21 @@ header.page.heading nav.actions a:hover {
 }
 
 .cash-balances-inner section:nth-child(odd):before,
-header.page.heading nav.actions a {
+header.page.heading nav.actions a,
+.loader-buttons .btn-primary.cancel:hover,
+a.btn.btn-primary.save {
   background-color: #516199 !important;
 }
 
-.control-switch input[type="checkbox"] + .track {
-  border-color: #516199;
+.control-switch input[type="checkbox"] + .track,
+.loader-buttons .btn-primary {
+  border-color: #516199 !important;
+}
+
+.drawer-content-wrapper,
+a.btn.btn-primary.save:hover,
+.loader-buttons .btn-primary {
+  background-color: #6472A1 !important;
 }
 
 .status-red,
@@ -720,7 +749,9 @@ p.print-alert,
 }
 
 .btn-primary.inverted,
-.actions.right.save .btn-gray {
+.actions.right.save .btn-gray,
+.drawer-content textarea,
+#drop {
   background-color: transparent !important;
 }
 
@@ -749,7 +780,12 @@ header.page.heading .page.title,
 .accordionTitle:hover,
 header.page.heading nav.actions a,
 .menu-collapse:hover i.collapse-icon,
-.menu-collapse:hover a.collapse-link {
+.menu-collapse:hover a.collapse-link,
+section.menu-system nav.menu .level li .level li a,
+section.menu-system nav.menu .level li a.level-up:after,
+.drawer-content textarea,
+.loader-buttons .btn-primary,
+.loader-buttons .btn-primary:hover {
   color: #FFFFFF !important;
 }
 
@@ -806,4 +842,16 @@ header.page.heading nav.actions a:hover,
 .features-box-inner .btn,
 .actions.right.save .btn-primary {
   border-color: #FFFFFF !important;
+}
+
+section.menu-system nav.menu .level li a.level-up {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+section.menu-system nav.menu .level li a:hover {
+  background-color: rgba(0, 0, 0, 0.18) !important;
+}
+
+section.menu-system nav.menu .level li .level li a {
+  border-color: rgba(0, 0, 0, 0.2) !important;
 }
