@@ -802,3 +802,7 @@ section.menu-system nav.menu .level li a:hover {
 section.menu-system nav.menu .level li .level li a {
 	border-color: $color-menu-tertiary !important;
 }
+
+section.menu-system nav.menu > .level > li > a > i {
+	border-color: $color-menu-secondary;
+}

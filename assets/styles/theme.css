@@ -857,3 +857,7 @@ section.menu-system nav.menu .level li a:hover {
 section.menu-system nav.menu .level li .level li a {
   border-color: rgba(0, 0, 0, 0.2) !important;
 }
+
+section.menu-system nav.menu > .level > li > a > i {
+  border-color: #333333;
+}
