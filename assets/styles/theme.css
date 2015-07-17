@@ -619,7 +619,9 @@ table.dashboard-table,
 .block-heading .btn.btn-primary:hover,
 .block-footing .btn.btn-primary:hover,
 .apply .btn,
-#new-invoice-items .new-invoice-actions .btn.btn-primary:hover {
+#new-invoice-items .new-invoice-actions .btn.btn-primary:hover,
+#outstanding-invoices .faux-table .cell.sorted,
+#outstanding-invoices .faux-table .table-head .cell:hover {
   color: #2DB5AB !important;
 }
 
