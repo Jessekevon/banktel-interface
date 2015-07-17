@@ -497,7 +497,8 @@ textarea,
 .accordion .table-head .indicator,
 .accordionTitle:hover,
 .accordionTitleActive,
-.accordionTitle.is-expanded {
+.accordionTitle.is-expanded,
+.modal-dialog .modal-content .tier:not(.static):hover .indicator {
 	background-color: $color-gray !important;
 }
 
@@ -544,7 +545,8 @@ table.dashboard-table,
 .apply .btn,
 #new-invoice-items .new-invoice-actions .btn.btn-primary:hover,
 #outstanding-invoices .faux-table .cell.sorted,
-#outstanding-invoices .faux-table  .table-head .cell:hover {
+#outstanding-invoices .faux-table  .table-head .cell:hover,
+.modal-header .btn {
 	color: $color-green !important;
 }
 
@@ -570,7 +572,8 @@ a.popover-memo.memo.btn.btn-primary:hover,
 .btn-primary-inverse,
 .block-footing .btn.btn-primary:hover,
 .apply .btn,
-#new-invoice-items .new-invoice-actions .btn.btn-primary {
+#new-invoice-items .new-invoice-actions .btn.btn-primary,
+.modal-header .btn {
 	border-color: $color-green !important;
 }
 
@@ -600,7 +603,8 @@ a.popover-memo.memo.btn.btn-primary:hover,
 .switch-candy a,
 .apply .btn:hover,
 #new-invoice-items .new-invoice-actions .btn.btn-primary,
-section.menu-system nav.menu .level .level {
+section.menu-system nav.menu .level .level,
+.modal-header .btn:hover {
 	background-color: $color-green !important;
 }
 
@@ -730,7 +734,8 @@ section.menu-system nav.menu .level li .level li a,
 section.menu-system nav.menu .level li a.level-up:after,
 .drawer-content textarea,
 .loader-buttons .btn-primary,
-.loader-buttons .btn-primary:hover {
+.loader-buttons .btn-primary:hover,
+.modal-header .btn:hover {
 	color: $color-white !important;
 }
 
@@ -775,7 +780,9 @@ header.page.heading nav.actions a:hover,
 #search-register,
 .accounts-graph,
 .grid-stack > .grid-stack-item > .grid-stack-item-content,
-.tier {
+.tier,
+.modal-dialog .modal-content .tier:hover,
+.modal-header .btn {
 	background-color: $color-white !important;
 }
 
