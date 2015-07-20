@@ -300,13 +300,14 @@ textarea,
 .form-item-checkbox:checked + .form-item-label_checkbox:before,
 .chosen-container-single .chosen-single,
 .chosen-container-single .chosen-single div,
-.chosen-container .chosen-results li.highlighted,
 .radio-group label + div > .radio-inline .radio-inline::after,
 .popover-title,
 .accordion .tier.gray,
 .accordion,
-#secondary-addresses .vendor-ship-to input[type="text"]:hover,
-#secondary-addresses .vendor-ship-to input[type="text"]:active {
+#secondary-addresses .vendor-ship-to input[type="text"]:over,
+#secondary-addresses .vendor-ship-to input[type="text"]:active,
+.fancy-select .trigger,
+.fancy-select .options li {
 	background-color: $color-gray-lightest !important;
 }
 
@@ -372,7 +373,8 @@ hr,
 .ui-datepicker .ui-datepicker-next,
 .actions.right.save .btn-gray:hover,
 .control-switch input[type="checkbox"]:checked + .track,
-.tier .indicator {
+.tier .indicator,
+.ui-datepicker td {
 	background-color: $color-gray-lighter !important;
 }
 
@@ -490,14 +492,13 @@ textarea,
 	border-top-color: $color-gray !important;
 }
 
-.ui-datepicker td,
+.ui-datepicker td:hover,
 .ui-datepicker .ui-datepicker-prev:hover,
 .ui-datepicker .ui-datepicker-next:hover,
 .accordion ul li .indicator,
 .accordion .table-head .indicator,
-.accordionTitle:hover,
 .accordionTitleActive,
-.accordionTitle.is-expanded,
+// .accordionTitle.is-expanded,
 .modal-dialog .modal-content .tier:not(.static):hover .indicator {
 	background-color: $color-gray !important;
 }
@@ -506,10 +507,18 @@ table.dashboard-table,
 .table.dashboard-table > thead > tr > th,
 #register-transactions .transaction .cleared span.has-cleared,
 .modal.multi-step .modal-body,
-.accordion ul li .indicator, .accordion .table-head .indicator,
-.accordionTitleActive,
-.accordionTitle.is-expanded {
+
+// .accordionTitle.is-expanded 
+.accordionTitleActive {
 	border-color: $color-gray !important;
+}
+
+.accordionTitle.is-expanded,
+.accordionTitle:hover,
+.accordion ul li .indicator,
+.accordion .table-head .indicator {
+	background-color: darken($color-gray-lighter, 15%) !important;
+	border-color: darken($color-gray-lighter, 15%) !important;
 }
 
 .modal-header,
@@ -812,4 +821,12 @@ section.menu-system nav.menu .level li .level li a {
 
 section.menu-system nav.menu > .level > li > a > i {
 	border-color: $color-menu-secondary;
+}
+
+// Dropdown hover
+// ------------------------------------------------------------------------------------------------
+.chosen-container .chosen-results li.highlighted,
+.fancy-select .options li.hover,
+.fancy-select .options li.selected {
+	background-color: lighten($color-gray-lighter, 5%) !important;
 }

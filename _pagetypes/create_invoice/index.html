@@ -28,76 +28,158 @@
 <body>
 
   <!-- Modal -->
-  <div class="modal fade" id="modal-editCustomerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form class="form-horizontal" role="form">
+  <div class="modal fade" id="modal-editCustomerInf" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+          <form class="form-horizontal" role="form">
 
-          <div class="modal-header tier static">
-            <div class="indicator"></div>
-            <h4 class="modal-title">
-              Edit Client Details: CC West Printing
-              <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
-            </h4>
-          </div>
-
-          <div class="modal-body tier">
-            <div class="indicator"></div>
-
-            <div class="form-group">
-              <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
-              </div>
+            <div class="modal-header tier static">
+              <div class="indicator"></div>
+              <h4 class="modal-title">
+                Edit Client Details: CC West Printing
+                <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+              </h4>
             </div>
 
-            <div class="form-group">
-              <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
+            <div class="modal-body tier">
+              <div class="indicator"></div>
+
+              <div class="form-group">
+                <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
+                </div>
               </div>
+
+              <div class="form-group">
+                <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+                <div class="col-sm-4">
+                  <select class="dropdown form-control" name="vendor-city-state-zip">
+                    <option selected="selected">Austin</option>
+                    <option>Amarillo</option>
+                    <option>Dallas</option>
+                    <option>Houston</option>
+                    <option>San Antonio</option>
+                    <option>Tyler</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select class="dropdown form-control" name="vendor-city-state-zip">
+                    <option>AK</option>
+                    <option selected="selected">TX</option>
+                    <option>AR</option>
+                    <option>AZ</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
+                </div>
+              </div>
+
             </div>
 
-            <div class="form-group">
-              <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
-              <div class="col-sm-4">
-                <select class="dropdown form-control" name="vendor-city-state-zip">
-                  <option selected="selected">Austin</option>
-                  <option>Amarillo</option>
-                  <option>Dallas</option>
-                  <option>Houston</option>
-                  <option>San Antonio</option>
-                  <option>Tyler</option>
-                </select>
-              </div>
-              <div class="col-sm-3">
-                <select class="dropdown form-control" name="vendor-city-state-zip">
-                  <option>AK</option>
-                  <option selected="selected">TX</option>
-                  <option>AR</option>
-                  <option>AZ</option>
-                  <option>CA</option>
-                  <option>CO</option>
-                  <option>CT</option>
-                  <option>DE</option>
-                </select>
-              </div>
-              <div class="col-sm-3">
-                <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
-              </div>
+            <div class="modal-footer tier static">
+              <div class="indicator"></div>
+              <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
             </div>
 
-          </div>
-
-          <div class="modal-footer tier static">
-            <div class="indicator"></div>
-            <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
-          </div>
-
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
+  <!-- Begin Print Check Modal -->
+
+          <div class="modal fade multi-step" id="modal-editCustomerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
+            <div class="vertical-alignment-helper">
+              <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Edit Client Details: CC West Printing</h4>
+                      <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+                  </div>
+                      <div class="modal-body step-1" data-step="1">
+                        <div class="row center-row">
+                          <div class="content">
+                          <div class="form-group clearfix">
+                <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
+                </div>
+              </div>
+
+              <div class="form-group clearfix">
+                <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
+                </div>
+              </div>
+
+              <div class="form-group clearfix">
+                <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+                <div class="col-sm-4">
+                  <select class="dropdown form-control" name="vendor-city-state-zip">
+                    <option selected="selected">Austin</option>
+                    <option>Amarillo</option>
+                    <option>Dallas</option>
+                    <option>Houston</option>
+                    <option>San Antonio</option>
+                    <option>Tyler</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select class="dropdown form-control" name="vendor-city-state-zip">
+                    <option>AK</option>
+                    <option selected="selected">TX</option>
+                    <option>AR</option>
+                    <option>AZ</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
+                </div>
+              </div>
+              </div>
+            </div>
+                      </div>
+                      <div class="modal-body step-2" data-step="2">
+                        
+                      </div>
+                      <div class="modal-footer">
+                          <a class="btn btn-primary step step-1 big-modal" data-step="1" value="Print" onclick="sendEvent('#printChecks', 2)">Print Checks<i class="entypo-doc-text" data-text="doc-text"></i></a>
+
+                          <!-- <a class="btn btn-primary blurple step step-1 print-button" data-step="2" onclick="sendEvent('#printChecks', 2)">Next<i class="entypo-right-open-big"></i></a> -->
+                          <a class="btn btn-primary blurple step step-2 print-button remove-big-modal" data-step="2" onclick="sendEvent('#printChecks', 1)"><i class="entypo-left-open-big"></i>Back</a>
+                          <a class="btn btn-primary step step-2 print-button remove-big-modal" data-step="2" data-dismiss="modal" onclick="sendEvent('#printChecks', 1)">Finish<i class="entypo-right-open-big"></i></a>
+
+
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- // -->
 
 
   <div class="app">
