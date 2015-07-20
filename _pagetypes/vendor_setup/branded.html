@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic|Oxygen:400,300,700" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
+  <link rel="stylesheet" href="/assets/styles/branded.css">
+  <script src="/assets/scripts/modernizr.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-addShipFrom" tabindex="-1" role="dialog" aria-labelledby="modal-addShipFrom" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="form-horizontal" role="form">
+
+          <div class="modal-header tier static">
+            <div class="indicator"></div>
+            <h4 class="modal-title" id="myModalLabel">
+              Add Ship From Address
+              <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+            </h4>
+          </div>
+
+          <div class="modal-body tier">
+            <div class="indicator"></div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-1" value="1922 Rodeo Dr">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 108">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+              <div class="col-sm-4">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option selected="selected">Austin</option>
+                  <option>Amarillo</option>
+                  <option>Dallas</option>
+                  <option>Houston</option>
+                  <option>San Antonio</option>
+                  <option>Tyler</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option>AK</option>
+                  <option selected="selected">TX</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DE</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="vendor-city-state-zip" value="78701">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-footer tier static">
+            <div class="indicator"></div>
+            <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="app">
+
+
+    <main>
+
+      <section class="menu-system">
+        <div class="topbar-branding" id="logo"></div>
+
+        <nav class="menu closed expanded">
+          <ul class="level">
+            <li>
+              <a class="level-down" href=""><i class="entypo-line-graph icon-trigger"></i> <span>Dashboard</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Dashboard</a></li>
+                <li><a href="">My Dashboard</a></li>
+
+                <li>
+                  <a class="level-down has-children" href="">Dashboard Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Dashboard Settings</a></li>
+                    <a class="level-down has-children" href="">Fourth Level</a>
+                    <ul class="level">
+                      <li><a class="level-up" href="">Fourth Level</a></li>
+                      <li><a href="">Option 1</a></li>
+                      <li><a href="">Option 2</a></li>
+                      <li><a href="">Option 3</a></li>
+                      <li><a href="">Option 4</a></li>
+                      <li><a href="">Option 5</a></li>
+                    </ul>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                    <li><a href="">Option 4</a></li>
+                    <li><a href="">Option 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="level-down has-children" href="">Widget Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Widget Settings</a></li>
+                    <li><a href="">Colors &amp; Styles</a></li>
+                    <li><a href="">Configure Widgets</a></li>
+                    <li><a href="">3rd Party Apps</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-text-doc icon-trigger"></i> <span>General Ledger</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">General Ledger</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-pie-chart icon-trigger"></i> <span>Budget</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Budget</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Budget by Department</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Budget By Department</a></li>
+                    <li><a href="">Operations</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Personnel</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Budget</a></li>
+                <li><a href="">Approvals</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </li>
+            <li><a href=""><i class="entypo-folder icon-trigger"></i> <span>Reports</span></a></li>
+            <li><a href=""><i class="entypo-cog icon-trigger"></i> <span>Settings</span></a></li>
+            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
+              <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
+            </div>
+
+          </ul>
+        </nav>
+      </section>
+      <!-- section.menu-system -->
+
+      <div class="app-content">
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
+        <div class="sticky-header-wrapper">
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+              <div class="topbar-buttons" id="topbar-buttons">
+                <ul class="topbar-nav nav nav-pills">
+                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                  <li>
+                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                    <ul class="topbar-dropdown dropdown-menu pull-right">
+                      <li><a href="#">Account Settings</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+        <!--sticky header wrapper -->
+
+
+        <div class="master-container view" id="vendor-setup">
+          <div class="sticky-header-wrapper">
+
+            <header class="page heading fixit">
+              <div class="container-fluid">
+
+                <h1 class="page title"><a href="#">Create New Vendor</a></h1>
+
+                <nav class="actions" id="page-actions">
+                  <a class="btn btn-primary" href="">Cancel</a>
+                </nav>
+                <!-- nav.actions #page-actions -->
+
+              </div>
+              <!-- .container -->
+            </header>
+            <!-- header.page-heading -->
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <section class="breadcrumbs">
+                <ul>
+
+                  <div class="svg-wrapper">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                      <a href="#">
+                        <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+                                                    c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
+                                                    h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
+                      </a>
+                    </svg>
+                  </div>
+
+
+                  <li>
+                    <a href="#">Accounts Payable</a>
+                  </li>
+                  <li>
+                    <a href="/news">Manage Vendor</a>
+                  </li>
+                  <li>
+                    <span>Vendor Setup</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+          <div class="content block" id="create-new-vendor">
+            <div class="container-fluid">
+              <form class="form-horizontal" role="form">
+
+                <div class="row">
+
+                  <section class="col-xs-12 col-md-8" id="vendor-information">
+
+                    <div class="row">
+                      <header class="col-xs-12 section-heading">
+                        <h2 class="section title">Vendor Information</h2>
+                      </header>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 section-contents">
+
+                        <div class="form-group">
+                          <label for="vendor-name" class="col-sm-3 control-label">Vendor Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-name" placeholder="Vendor Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="new-vendor-id" class="col-sm-3 control-label">Vendor ID</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-id" placeholder="Vendor ID">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="new-vendor-check-name" class="col-sm-3 control-label">Check Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-check-name" placeholder="Check Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group vendor-class">
+                          <label for="new-vendor-class" class="col-sm-3 control-label">Vendor Class</label>
+                          <div class="col-sm-9">
+                            <select class="dropdown form-control" name="new-vendor-class">
+                              <option>Operations - IT</option>
+                              <option>Operations - Facilities</option>
+                              <option>Operations - Equipment</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group has-feedback">
+                          <label for="new-vendor-account" class="col-sm-3 control-label">Vendor Account</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-account" placeholder="Vendor Account">
+                            <span class="form-control-feedback input-info" rel="tipped" title="Enter your account number for this specific vendor."><i class="entypo-circled-help tip"></i></span>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- .section-contents -->
+
+                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 section-contents">
+
+                        <div class="form-group">
+                          <label for="new-vendor-address-street-1" class="col-sm-3 control-label">Address Line 1</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-address-street-1" placeholder="Address Line 1">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="new-vendor-address-street-2" class="col-sm-3 control-label">Address Line 2</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-address-street-2" placeholder="Address Line 2">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="new-vendor-address-city" class="col-sm-3 control-label">City</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-address-city" placeholder="City">
+                          </div>
+                        </div>
+
+                        <div class="form-group vendor-state">
+                          <label for="new-vendor-address-state" class="col-sm-3 control-label">State</label>
+                          <div class="col-sm-4">
+                            <select class="dropdown form-control" name="new-vendor-address-state">
+                              <option>AK</option>
+                              <option selected="selected">AL</option>
+                              <option>AR</option>
+                              <option>AZ</option>
+                              <option>CA</option>
+                              <option>CO</option>
+                              <option>CT</option>
+                              <option>DE</option>
+                            </select>
+                          </div>
+
+                          <label for="new-vendor-address-zip" class="col-sm-2 col-md-1 col-lg-1 control-label">Zip</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" name="new-vendor-address-zip" placeholder="Zip">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="new-vendor-address-country" class="col-sm-3 control-label vendor-country">Country</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" name="new-vendor-address-country" placeholder="Country">
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- .section-contents -->
+                    </div>
+                    <!-- .row -->
+
+                  </section>
+                  <!-- section.section.block#vendor-information -->
+
+
+                  <section class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="primary-contact">
+
+                    <header class="section-heading">
+                      <h2 class="section title">Primary Contact</h2>
+                    </header>
+                    <!-- header.section.heading -->
+
+                    <div class="section-contents">
+
+                      <div class="form-group">
+                        <label for="vendor-contact-first-name" class="col-sm-3 control-label">First Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="vendor-contact-first-name" placeholder="First Name">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="vendor-contact-last-name" class="col-sm-3 control-label">Last Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="vendor-contact-last-name" placeholder="Last Name">
+                        </div>
+                      </div>
+
+                      <div class="form-group vendor-phone">
+                        <label for="new-vendor-number" class="col-sm-3 control-label">Phone No.</label>
+                        <div class="col-sm-4 thin-right">
+                          <input type="text" class="form-control" name="new-vendor-number" placeholder="555-555-5555">
+                        </div>
+                        <label for="new-vendor-number-extension" class="col-sm-1 control-label">Ext.</label>
+                        <div class="col-sm-2 thin-right">
+                          <input type="text" class="form-control" name="new-vendor-number-extension" placeholder="8888">
+                        </div>
+                        <div class="col-sm-1">
+                          <a class="inline-action" href="#" rel="tipped" title="Add Another"><i class="entypo-circled-plus tip"></i></a>
+                        </div>
+                      </div>
+
+                      <div class="form-group vendor-fax">
+                        <label for="new-vendor-name" class="col-sm-3 control-label">Fax</label>
+                        <div class="col-sm-4 thin-right">
+                          <input type="text" class="form-control" name="new-vendor-name" placeholder="555-555-5555">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="new-vendor-name" class="col-sm-3 control-label">Email Address</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="new-vendor-name" placeholder="user@example.com">
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- .section-contents -->
+
+                  </section>
+                  <!-- section.section.block#primary-contact -->
+
+                </div>
+                <!-- .row -->
+
+                <div class="row">
+
+                  <section class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="vendor-options">
+
+                    <header class="section-heading">
+                      <h2 class="section title">Vendor Options</h2>
+                    </header>
+                    <!-- header.section.heading -->
+
+                    <div class="section-contents">
+
+                      <div class="form-group">
+                        <label for="new-vendor-name" class="col-sm-3 control-label">Tax ID</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="new-vendor-name" placeholder="Tax ID">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="new-vendor-tax-schedule" class="col-sm-3 control-label">Tax Schedule</label>
+                        <div class="col-sm-9">
+                          <select class="dropdown form-control" name="new-vendor-tax-schedule">
+                            <option>1099 MISC</option>
+                            <option>1099 MISC</option>
+                            <option>1099 MISC</option>
+                            <option>1099 MISC</option>
+                            <option>1099 MISC</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="new-vendor-shipping-method" class="col-sm-3 control-label">Shipping Method</label>
+                        <div class="col-sm-9">
+                          <select class="dropdown form-control" name="new-vendor-shipping-method">
+                            <option>UPS Ground</option>
+                            <option>USPS Priority</option>
+                            <option>FedEx Ground</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- .section-contents -->
+
+                  </section>
+                  <!-- section.section.block#vendor-options -->
+
+                  <section class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="secondary-addresses">
+
+                    <header class="section-heading">
+                      <h2 class="section title">Secondary Addresses <span rel="tipped" title="Example tooltip content"><i class="entypo-circled-help"></i></span></h2>
+                    </header>
+                    <!-- header.section.heading -->
+
+                    <div class="section-contents">
+
+                      <div class="form-group has-feedback vendor-ship-to">
+                        <label for="new-vendor-ship-to" class="col-sm-3 control-label">Ship To</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="new-vendor-ship-to" value="1922 Rodeo Drive">
+                          <span class="form-control-feedback"><i class="entypo-pencil"></i></a>
+                        </div>
+                      </div>
+
+                      <div class="form-group vendor-address-type">
+                        <label for="new-vendor-address-type" class="col-sm-3 control-label">Address Type</label>
+                        <div class="col-sm-9">
+                          <select class="dropdown form-control" name="new-vendor-address-type">
+                            <option>Ship From</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                            <option>Other Option</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <a class="btn btn-inverse right" data-toggle="modal" data-target="#modal-addShipFrom">Add New</a>
+                        </div>
+                      </div>
+
+                    </div> <!-- .section-contents -->
+
+                  </section> <!-- section.section.block#secondary-addresses -->
+
+                  <section class="col-xs-12 col-sm-6 col-md-4" id="vendor-notes">
+
+                    <header class="section-heading">
+                      <h2 class="section title">Notes</h2>
+                    </header> <!-- header.section.heading -->
+
+                    <div class="section-contents">
+
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <textarea class="form-control" name="new-vendor-notes"></textarea>
+                        </div>
+                      </div>
+
+                    </div> <!-- .section-contents -->
+
+                  </section> <!-- section.section.block#vendor-notes -->
+
+                </div> <!-- .row -->
+
+                <footer class="block-footing">
+                  <a class="btn btn-primary">Save <i class="entypo-chevron-thin-right"></i></a>
+                </footer>
+
+              </form>
+            </div> <!-- .container -->
+          </div> <!-- .content.block #create-new-vendor -->
+
+        </div> <!-- .master-container.view #vendor-setup -->
+
+      </div> <!-- .app-content -->
+    </main>
+
+  </div> <!-- .app -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')</script>
+  <script src="/assets/scripts/jquery-ui.js"></script>
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/slimscroll.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+
+</body>
+</html>

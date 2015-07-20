@@ -16,7 +16,7 @@ var paths = {
 };
 
 gulp.task('styles', function() {
-	return sass('./assets/scss/theme.scss', { style: 'expanded' })
+	return sass('./assets/scss/branded.scss', { style: 'expanded' })
     	.pipe(autoprefixer('last 2 version'))
     	.pipe(gulp.dest('assets/styles/'))
     	// .pipe(rename({suffix: '.min'}))

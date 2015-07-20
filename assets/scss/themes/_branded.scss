@@ -1,26 +1,26 @@
 
-// Default Theme
+// Branded Theme
 // ------------------------------------------------------------------------------------------------
 
 
 // Colors
 // ------------------------------------------------------------------------------------------------
 $color-black:												#000000;
-$color-gray:												#78787A;
-$color-gray-dark:											#231F20;
-$color-gray-lighter:										#D2D3D5;
-$color-gray-lightest:										#EEEEEE;
-$color-green:												#2DB5AB;
+$color-gray:												lighten(#78787A, 20%);
+$color-gray-dark:											lighten(#231F20, 50%);
+$color-gray-lighter:										lighten(#D2D3D5, 10%);
+$color-gray-lightest:										lighten(#EEEEEE, 5%);
+$color-green:												#79C645;
 $color-green-bright:										#3FC568;
-$color-green-lighter:										#CDECEA;
-$color-menu-primary:										#464747;
-$color-menu-secondary:										#333333;
+$color-green-lighter:										#BEEE9E;
+$color-menu-primary:										lighten(#464747, 20%);
+$color-menu-secondary:										lighten(#333333, 20%);
 $color-menu-tertiary:										rgba(0, 0, 0, 0.2);
 $color-menu-quaternary:										rgba(0, 0, 0, 0.18);
 $color-menu-quinary:										rgba(0, 0, 0, 0.1);
-$color-purple:												#516199;
-$color-purple-lighter:										#6472A1;
-$color-red:													#E56E53;
+$color-purple:												#0D755A;
+$color-purple-lighter:										#129573;
+$color-red:													darken(#E56E53, 20%);
 $color-white:												#FFFFFF;
 $color-transparent:											transparent;
 

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+  <![endif]-->
+<!--[if IE 7]>         
+  <html class="no-js lt-ie9 lt-ie8">
+    <![endif]-->
+<!--[if IE 8]>         
+    <html class="no-js lt-ie9">
+      <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
+  <link rel="stylesheet" href="/assets/styles/branded.css">
+  <script src="/assets/scripts/modernizr.js"></script>
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<body>
+  <div class="app">
+
+    <main>
+
+      <section class="menu-system">
+        <div class="topbar-branding" id="logo"></div>
+
+        <nav class="menu closed expanded">
+          <ul class="level">
+            <li>
+              <a class="level-down" href=""><i class="entypo-line-graph icon-trigger"></i> <span>Dashboard</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Dashboard</a></li>
+                <li><a href="">My Dashboard</a></li>
+
+                <li>
+                  <a class="level-down has-children" href="">Dashboard Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Dashboard Settings</a></li>
+                    <a class="level-down has-children" href="">Fourth Level</a>
+                    <ul class="level">
+                      <li><a class="level-up" href="">Fourth Level</a></li>
+                      <li><a href="">Option 1</a></li>
+                      <li><a href="">Option 2</a></li>
+                      <li><a href="">Option 3</a></li>
+                      <li><a href="">Option 4</a></li>
+                      <li><a href="">Option 5</a></li>
+                    </ul>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                    <li><a href="">Option 4</a></li>
+                    <li><a href="">Option 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="level-down has-children" href="">Widget Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Widget Settings</a></li>
+                    <li><a href="">Colors &amp; Styles</a></li>
+                    <li><a href="">Configure Widgets</a></li>
+                    <li><a href="">3rd Party Apps</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-text-doc icon-trigger"></i> <span>General Ledger</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">General Ledger</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-pie-chart icon-trigger"></i> <span>Budget</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Budget</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Budget by Department</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Budget By Department</a></li>
+                    <li><a href="">Operations</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Personnel</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Budget</a></li>
+                <li><a href="">Approvals</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </li>
+            <li><a href=""><i class="entypo-folder icon-trigger"></i> <span>Reports</span></a></li>
+            <li><a href=""><i class="entypo-cog icon-trigger"></i> <span>Settings</span></a></li>
+            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
+              <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
+            </div>
+
+          </ul>
+        </nav>
+      </section>
+      <!-- section.menu-system -->
+
+      <div class="app-content">
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
+        <div class="sticky-header-wrapper">
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+              <div class="topbar-buttons" id="topbar-buttons">
+                <ul class="topbar-nav nav nav-pills">
+                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                  <li>
+                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                    <ul class="topbar-dropdown dropdown-menu pull-right">
+                      <li><a href="#">Account Settings</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+        <!--sticky header wrapper -->
+
+        <div class="sticky-wrapper">
+          <div class="fixit">
+
+            <header class="page heading">
+              <div class="container-fluid header-container">
+
+                <h1 class="page title"><a href="#">Journal Entry</a></h1>
+
+                <nav class="actions">
+                  <a class="btn btn-primary loader-button" href="">Create Another</a>
+                </nav>
+                <!-- nav.actions -->
+
+                <nav class="actions right">
+
+
+                  <a href="#" class="head btn btn-hidden inverted">Memo
+                                                <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
+                  </a>
+
+                </nav>
+                <!-- nav.actions -->
+              </div>
+              <!-- .container -->
+
+              <!-- Begin Dropdown Drawer -->
+              <div class='drawer-content'>
+                <div class='drawer-content-wrapper'>
+                  <div class="container-fluid">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 textit">
+                      <textarea class="form-control" name="journal-reference" placeholder="Your memo here..."></textarea>
+                    </div>
+                    <div class="col-md-4">
+                      <div id="dropzone" class="fade">
+                        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                          <div id="drop">
+                            <p>Drag attachments here</p>
+
+                            <a class="clip"><img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip.png"></a>
+                            <input type="file" name="upl" multiple />
+                          </div>
+
+                          <ul>
+                            <!-- The file uploads will be shown here -->
+                          </ul>
+
+                        </form>
+
+                      </div>
+
+                    </div>
+                    <div class="col-md-2 loader-buttons">
+                      <a class="btn btn-primary cancel" href="">Cancel<img src="http://banktel.wpengine.com/wp-content/uploads/2014/07/x-icon.png"></a>
+                      <br>
+                      <a class="btn btn-primary save" href="">Save<i class="entypo-save"></i></a>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Dropdown Drawer -->
+            </header>
+            <!-- header.page-heading -->
+
+
+            <div class="content block bottom-pane" id="create-new-journal">
+              <div class="container-fluid">
+                <section class="breadcrumbs">
+                  <ul>
+
+                    <div class="svg-wrapper">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                        <a href="#">
+                          <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+                                            c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
+                                            h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
+                        </a>
+                      </svg>
+                    </div>
+
+
+                    <li>
+                      <a href="#">General Ledger</a>
+                    </li>
+                    <li>
+                      <a href="/news">Chart of Accounts</a>
+                    </li>
+                    <li>
+                      <span>Journal Entry</span>
+                    </li>
+                  </ul>
+                </section>
+
+                <form class="form-horizontal" role="form">
+
+                  <div class="row">
+
+                    <section class="col-xs-12" id="journal-information">
+
+                      <div class="row">
+                        <div class="col-xs-6 col-md-5 col-lg-4 section-contents">
+
+                          <div class="form-group journal-number">
+                            <label for="select-journal-number" class="col-xs-4 col-lg-3 control-label">Journal No.</label>
+                            <div class="col-xs-8 col-lg-9">
+                              <select class="chosen form-control" name="select-journal-number" data-placeholder="Enter or search for journal number">
+                                <option></option>
+                                <option selected>111-000-2391</option>
+                                <option>111-000-2357</option>
+                                <option>111-000-2401</option>
+                                <option>112-000-2391</option>
+                                <option>112-000-2357</option>
+                                <option>112-000-2401</option>
+                                <option>113-000-2391</option>
+                                <option>113-000-2357</option>
+                                <option>113-000-2401</option>
+                                <option>114-000-2391</option>
+                                <option>114-000-2357</option>
+                                <option>114-000-2401</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="transaction-date" class="col-xs-4 col-lg-3 control-label">Transaction Date</label>
+                            <div class="col-xs-8 col-lg-9">
+                              <div class="date-key">
+                                <div class="input-group date">
+                                  <input type="text" class="form-control" id="transaction-date" name="transaction-date" placeholder="04/18/2014">
+                                  <label for="transaction-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                        <!-- .section-contents -->
+
+                        <div class="col-xs-6 col-md-5 col-lg-4 section-contents">
+
+                          <div class="form-group">
+                            <label for="journal-reference" class="col-xs-3 control-label">Reference</label>
+                            <div class="col-xs-9">
+                              <textarea class="form-control" name="journal-reference" placeholder="(optional)"></textarea>
+                            </div>
+                          </div>
+
+                        </div>
+                        <!-- .section-contents -->
+
+                        <div class="col-xs-6 col-md-2 col-lg-4 section-contents">
+
+                          <div class="form-group radio-group">
+                            <label class="col-xs-12 control-label">Recurring?</label>
+                            <div class="col-xs-12">
+                              <div class="radio-inline">
+                                <input type="radio" name="transactions-recurring" id="transactions-recurring-yes" value="Yes">
+                                <label for="transactions-recurring-yes" class="radio-inline entypo-check">Yes</label>
+                              </div>
+                              <div class="radio-inline">
+                                <input type="radio" name="transactions-recurring" id="transactions-recurring-no" value="No" checked>
+                                <label for="transactions-recurring-no" class="radio-inline entypo-check">No</label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <!-- .section-contents -->
+                      </div>
+
+                    </section>
+                    <!-- #journal-information -->
+
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <!-- .content.block #create-new-journal -->
+          </div>
+        </div>
+
+        <div class="master-container view" id="journal-entry">
+
+
+          <div class="content block" id="transactions">
+            <div class="container-fluid">
+
+              <header class="block-heading tier static">
+                <div class="indicator"></div>
+                <h2 class="block title">Transactions</h2>
+
+                <div class="table-search form-group right grid-form">
+                  <select class="chosen form-control" name="select-journal-vendor" data-placeholder="Vendor / Customer">
+                    <option></option>
+                    <option>Southwest Airlines</option>
+                    <option>Southwestern Homes Magazine</option>
+                    <option>Southwestern Landscaping</option>
+                    <option>Southwest Airlines</option>
+                    <option>Southwestern Homes Magazine</option>
+                    <option>Southwestern Landscaping</option>
+                  </select>
+                </div>
+              </header>
+              <!-- header.block.heading -->
+
+
+              <div class="block-contents">
+                <div class="faux-table">
+                  <header class="table-head tier static">
+                    <div class="indicator"></div>
+                    <div class="cell transaction-details">Transaction Details</div>
+                    <div class="cell payment">Payment</div>
+                    <div class="cell deposit">Deposit</div>
+                    <div class="cell balance">Balance</div>
+                  </header>
+                  <!-- .table-head.tier.static -->
+
+                  <ul class="table-content">
+
+                    <div class="draggable-container">
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">City of Austin</p>
+                          <div class="tag-wrapper">
+                            <ul class="tagged">
+                              <li class="tag">
+                                Utilities
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment">$297.34</div>
+                        <div class="cell deposit"></div>
+                        <div class="cell balance">$297.34</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Central Texas Cleaning Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <div class="tag-wrapper">
+                            <ul class="tagged">
+                              <li class="tag">
+                                Repairs &amp; Maintenance
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <div class="popover-markup">
+                                <a href="#" data-toggle="popover" class="popover-memo memo btn btn-primary inverted trigger">Memo
+                                        <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
+          </a>
+                                <div class="content hide">
+                                  <p class="example">Example Memo</p>
+                                  <hr class="example-hr">
+                                  <p>Attachments</p><img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
+
+                                  <hr>
+                                  <div class="attachment-bottom">
+                                    <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/08/doc-icon.png">
+                                    <p class="popover-text"><a href="#">veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylong.pdf
+                                    </a></p>
+                                  </div>
+                                  <div class="edit-memo">
+                                  <a href="#" type="button" class="head btn btn-primary inverted">Edit Memo</a>
+                                </div>
+                                </div>
+                              </div>
+
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment">$95.00</div>
+                        <div class="cell deposit"></div>
+                        <div class="cell balance">$95.00</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Big Red Sun</p>
+                          <div class="tag-wrapper">
+
+                            <ul class="tagged">
+                              <li class="tag">
+                                Income
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <div class="popover-markup">
+                                <a href="#" class="popover-memo memo btn btn-primary inverted trigger">Memo
+                                        <span class="edit-indicator"><i class="entypo-pencil popover-pencil"></i></span>
+                                        </a>
+                                <div class="content hide">
+                                  <p>Example Memo</p>
+                                  <hr class="example-hr">
+                                  <p>Attachments</p>
+                                  <img class="clip-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/clip-gray.png">
+                                  <hr>
+                                  <img class="pdf-icon" src="http://banktel.wpengine.com/wp-content/uploads/2014/07/pdf-icon.png">
+                                  <p class="popover-text"><a href="#">1234-CitiMortgage.pdf</a></p>
+                                </div>
+                              </div>
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment"></div>
+                        <div class="cell deposit">$297.34</div>
+                        <div class="cell balance">$297.34</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Trello</p>
+                          <div class="tag-wrapper">
+
+                            <ul class="tagged">
+                              <li class="tag">
+                                Income from Equity
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment"></div>
+                        <div class="cell deposit">$297.34</div>
+                        <div class="cell balance">$297.34</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Barclaycard</p>
+                          <div class="tag-wrapper">
+
+                            <ul class="tagged">
+                              <li class="tag">
+                                Credit Cards
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment"></div>
+                        <div class="cell deposit">$1,434.57</div>
+                        <div class="cell balance">$1,434.57</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Employee 1</p>
+                          <div class="tag-wrapper">
+
+                            <ul class="tagged">
+                              <li class="tag">
+                                Payroll
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment">$297.34</div>
+                        <div class="cell deposit"></div>
+                        <div class="cell balance">$297.34</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <p class="ellipsis">Employee 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <div class="tag-wrapper">
+
+                            <ul class="tagged">
+                              <li class="tag">
+                                Payroll
+                                <span class="edit-indicator"><i class="entypo-pencil"></i></span>
+                              </li>
+                            </ul>
+                            <!-- .tagged -->
+
+                            <nav class="actions">
+                              <a href="#" class="head btn btn-primary btn-hidden inverted">Add Memo</a>
+                            </nav>
+                            <!-- nav.actions -->
+                          </div>
+                        </div>
+                        <!-- .cell.transaction-details -->
+
+                        <div class="cell payment">$297.34</div>
+                        <div class="cell deposit"></div>
+                        <div class="cell balance">$297.34</div>
+                      </li>
+                      <!-- .tier.with-actions.transaction -->
+
+                      <li class="tier with-actions new-transaction">
+                        <div class="indicator"></div>
+                        <div class="cell transaction-details">
+
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group">
+                            <select class="chosen form-control" name="select-journal-vendor" data-placeholder="Vendor / Customer">
+                              <option></option>
+                              <option>Southwest Airlines</option>
+                              <option>Southwestern Homes Magazine</option>
+                              <option>Southwestern Landscaping</option>
+                              <option>Southwest Airlines</option>
+                              <option>Southwestern Homes Magazine</option>
+                              <option>Southwestern Landscaping</option>
+                            </select>
+
+                            <select class="chosen form-control" name="select-journal-vendor" data-placeholder="Account">
+                              <option></option>
+                              <option>Southwest Airlines</option>
+                              <option>Southwestern Homes Magazine</option>
+                              <option>Southwestern Landscaping</option>
+                              <option>Southwest Airlines</option>
+                              <option>Southwestern Homes Magazine</option>
+                              <option>Southwestern Landscaping</option>
+                            </select>
+                          </div>
+
+                        </div>
+                        <div class="cell payment">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="payment-total">
+                          </div>
+                        </div>
+                        <div class="cell deposit">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="deposit-total">
+                          </div>
+                        </div>
+                        <div class="cell balance"></div>
+                      </li>
+                      <!-- .tier.static.table-actions -->
+
+                    </div>
+                    <!-- .draggable-container -->
+
+                  </ul>
+                  <!-- ul.table-content -->
+                </div>
+                <!-- .faux-table -->
+              </div>
+              <!-- .block-contents -->
+
+              <footer class="block-footing tier static">
+                <div class="indicator"></div>
+                <div class="row transactions-totals">
+                  <div class="table-total right">
+                    <span>Total:</span> $4,233.60
+                  </div>
+                </div>
+                <div class="row transactions-actions drawer-buttons">
+                  <a class="btn btn-primary action-button" href="">Save Draft <i class="entypo-save"></i></a>
+                  <a class="btn btn-primary action-button" href="">Save &amp; Post <i class="entypo-chevron-thin-right"></i></a>
+                </div>
+              </footer>
+              <!-- .block-footing.tier.static -->
+
+
+            </div>
+            <!-- .container -->
+          </div>
+          <!-- .content.block #transactions -->
+
+        </div>
+        <!-- .master-container.view #journal-entry -->
+
+      </div>
+      <!-- .app-content -->
+    </main>
+
+  </div>
+
+
+  <!-- .app -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')
+  </script>
+  <script src="/assets/scripts/jquery-ui.js"></script>
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/slimscroll.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+  <script src="/assets/scripts/jquery.knob.js"></script>
+  <!-- jQuery File Upload Dependencies -->
+  <script src="/assets/scripts/jquery.ui.widget.js"></script>
+  <script src="/assets/scripts/jquery.iframe-transport.js"></script>
+  <script src="/assets/scripts/jquery.fileupload.js"></script>
+  <!-- Our main JS file -->
+  <script src="/assets/scripts/script.js"></script>
+  <script>
+    // Inst chosen on .journal-number select
+            $('.journal-number .chosen, .table-search .chosen').chosen({
+              // allow_single_deselect: true,
+              // disable_search: true,
+              no_results_text: "Sorry, we were unable to find "
+            });
+
+            $(".chosen-container-single .chosen-search input").attr("placeholder", "Search by keyword or ref.no.");
+
+            
+            // Inst chosen on .new-transaction select elements
+            $('.new-transaction .chosen').chosen({
+              allow_single_deselect: true,
+              // disable_search: true,
+              no_results_text: "Sorry, we were unable to find "
+            });
+      </script>
+
+  <script type="text/javascript">
+
+  // popover on click 
+
+    $('.popover-markup>.trigger').popover({
+        placement: 'top',
+        html: true,
+        title: '',
+        template: '<div class="popover memo-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
+        content: function () {
+            return $(this).parent().find('.content').html();
+        }   
+    });
+    
+    //Dropzone script
+
+    $('#fileupload').fileupload({
+        dropZone: $('#dropzone')
+    });
+    
+    $(document).bind('dragover', function (e) {
+        var dropZone = $('#dropzone'),
+            timeout = window.dropZoneTimeout;
+        if (!timeout) {
+            dropZone.addClass('in');
+        } else {
+            clearTimeout(timeout);
+        }
+        var found = false,
+            node = e.target;
+        do {
+            if (node === dropZone[0]) {
+                found = true;
+                break;
+            }
+            node = node.parentNode;
+        } while (node != null);
+        if (found) {
+            dropZone.addClass('hover');
+        } else {
+            dropZone.removeClass('hover');
+        }
+        window.dropZoneTimeout = setTimeout(function () {
+            window.dropZoneTimeout = null;
+            dropZone.removeClass('in hover');
+        }, 100);
+    
+    
+    });
+    
+    $(function () {
+        $('#dial').knob({
+           fgColor: '#159f86'
+        });
+    });
+
+    // Add ellipsis to text
+    
+    $(document).on('mouseenter', ".ellipsis", function () {
+        var $this = $(this);
+        if (this.offsetWidth < this.scrollWidth && !$this.attr('title')) {
+            $this.tooltip({
+                title: $this.text(),
+                placement: "top"
+            });
+            $this.tooltip('show');
+        }
+    });
+
+// Preloader
+
+    $(window).load(function(){
+        $('.loading').delay(400).fadeOut(function(){$(this).remove()});
+          $('.loader-button').on('click', function(){
+           $(window).addClass('loading');
+          });
+    });
+
+    // Add padding to top pane based on variable height
+
+    $(document).ready(function() {
+      var elementAheight = $('.bottom-pane').height();
+        $('#transactions').css('padding-top', elementAheight + 'px');
+
+    })
+
+    $(".chosen-drop").mCustomScrollbar({theme:"minimal", scrollInertia: 100});
+
+
+  </script>
+</body>
+
+</html>

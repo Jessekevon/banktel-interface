@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/assets/styles/banktel.css">
+  <link rel="stylesheet" href="/assets/styles/banktel_overlay.css">
+  <link rel="stylesheet" href="/assets/styles/branded.css">
+  <script src="/assets/scripts/modernizr.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-editCustomerInfo" tabindex="-1" role="dialog" aria-labelledby="modal-editCustomerInfo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="form-horizontal" role="form">
+
+          <div class="modal-header tier static">
+            <div class="indicator"></div>
+            <h4 class="modal-title">
+              Edit Client Details: CC West Printing
+              <a class="btn btn-inverse btn-destroy right" data-dismiss="modal">Cancel</a>
+            </h4>
+          </div>
+
+          <div class="modal-body tier">
+            <div class="indicator"></div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-1" class="col-sm-2 control-label">Address Line 1</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-1" value="19592 West Braker Highway">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-address-line-2" class="col-sm-2 control-label">Address Line 2</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="vendor-address-line-2" value="Suite 992765">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vendor-city-state-zip" class="col-sm-2 control-label">City/State/Zip</label>
+              <div class="col-sm-4">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option selected="selected">Austin</option>
+                  <option>Amarillo</option>
+                  <option>Dallas</option>
+                  <option>Houston</option>
+                  <option>San Antonio</option>
+                  <option>Tyler</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <select class="dropdown form-control" name="vendor-city-state-zip">
+                  <option>AK</option>
+                  <option selected="selected">TX</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DE</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="vendor-city-state-zip" value="78720">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-footer tier static">
+            <div class="indicator"></div>
+            <button type="button" class="btn btn-inverse btn-primary-inverse left" data-dismiss="modal">Save &amp; Close <i class="entypo-cross"></i></button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="app">
+
+    <main>
+
+      <section class="menu-system">
+        <div class="topbar-branding" id="logo"></div>
+
+        <nav class="menu closed expanded">
+          <ul class="level">
+            <li>
+              <a class="level-down" href=""><i class="entypo-line-graph icon-trigger"></i> <span>Dashboard</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Dashboard</a></li>
+                <li><a href="">My Dashboard</a></li>
+
+                <li>
+                  <a class="level-down has-children" href="">Dashboard Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Dashboard Settings</a></li>
+                    <a class="level-down has-children" href="">Fourth Level</a>
+                    <ul class="level">
+                      <li><a class="level-up" href="">Fourth Level</a></li>
+                      <li><a href="">Option 1</a></li>
+                      <li><a href="">Option 2</a></li>
+                      <li><a href="">Option 3</a></li>
+                      <li><a href="">Option 4</a></li>
+                      <li><a href="">Option 5</a></li>
+                    </ul>
+                    <li><a href="">Option 1</a></li>
+                    <li><a href="">Option 2</a></li>
+                    <li><a href="">Option 3</a></li>
+                    <li><a href="">Option 4</a></li>
+                    <li><a href="">Option 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="level-down has-children" href="">Widget Settings</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Widget Settings</a></li>
+                    <li><a href="">Colors &amp; Styles</a></li>
+                    <li><a href="">Configure Widgets</a></li>
+                    <li><a href="">3rd Party Apps</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-text-doc icon-trigger"></i> <span>General Ledger</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">General Ledger</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+                <li><a href="">Chart of Accounts</a></li>
+                <li><a href="">Recent Transactions</a></li>
+                <li><a href="">Batch Entry</a></li>
+                <li><a href="">Account Setup</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">View Settings</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a class="level-down" href=""><i class="entypo-pie-chart icon-trigger"></i> <span>Budget</span></a>
+              <ul class="level">
+                <li><a class="level-up" href="">Budget</a></li>
+                <li>
+                  <a class="level-down has-children" href="">Budget by Department</a>
+                  <ul class="level">
+                    <li><a class="level-up" href="">Budget By Department</a></li>
+                    <li><a href="">Operations</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Personnel</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Budget</a></li>
+                <li><a href="">Approvals</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </li>
+            <li><a href=""><i class="entypo-folder icon-trigger"></i> <span>Reports</span></a></li>
+            <li><a href=""><i class="entypo-cog icon-trigger"></i> <span>Settings</span></a></li>
+            <div class="menu-collapse"><i class="entypo-chevron-thin-left collapse-icon"></i><i class="entypo-chevron-thin-right collapse-icon"></i>
+              <div class="collapse-item"><a class="collapse-link" href="#">Collapse Menu</a></div>
+            </div>
+
+          </ul>
+        </nav>
+      </section>
+      <!-- section.menu-system -->
+
+      <div class="app-content">
+        <div class="loading">
+          <p>Processing your request...</p>
+          <span class="loader loader-quart"></span>
+        </div>
+
+        <div class="sticky-header-wrapper">
+          <header class="topbar navbar" id="topbar" role="navigation">
+            <div class="container-fluid">
+              <div class="topbar-buttons" id="topbar-buttons">
+                <ul class="topbar-nav nav nav-pills">
+                  <li><a class="topbar-item" id="topbar-item" href="#"><i class="topbar-icon entypo-clock"></i> Actions</a></li>
+                  <li>
+                    <a class="topbar-item" id="topbar-item" href="#" class="dropdown-toggle" data-toggle="dropdown" data-trigger="hover"><i class="topbar-icon entypo-user"></i> John Smith</a>
+                    <ul class="topbar-dropdown dropdown-menu pull-right">
+                      <li><a href="#">Account Settings</a></li>
+                      <li><a href="#">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+        <!--sticky header wrapper -->
+
+        <div class="master-container view" id="journal-entry">
+
+          <div class="sticky-header-wrapper">
+
+            <header class="page heading fixit">
+              <div class="container-fluid">
+
+                <h1 class="page title"><a href="#">New Voucher: CC West Printing</a></h1>
+
+                <nav class="actions" id="page-actions">
+                  <a class="btn btn-primary" href="">Edit Customer</a>
+                </nav>
+                <!-- nav.actions #page-actions -->
+
+              </div>
+              <!-- .container -->
+            </header>
+            <!-- header.page-heading -->
+          </div>
+
+
+          <div class="content block bottom-pane" id="create-new-voucher">
+            <div class="container-fluid">
+              <div class="row">
+                <section class="breadcrumbs">
+                  <ul>
+
+                    <div class="svg-wrapper">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+                        <a href="#">
+                          <path fill="#808285" d="M528.439,403.626L324.921,199.911c-10.414-10.79-27.435-10.79-37.838,0L83.564,403.626
+                                                        c-10.409,10.785-6.525,19.62,8.63,19.62h42.421v156.449c0,11.317,0.485,20.487,20.911,20.487h98.782V443.284h103.379v156.897
+                                                        h103.706c15.575,0,15.992-9.17,15.992-20.487V423.246h42.425C534.959,423.246,538.843,414.41,528.439,403.626z" />
+                        </a>
+                      </svg>
+                    </div>
+
+
+                    <li>
+                      <a href="#">Accounts Payable</a>
+                    </li>
+                    <li>
+                      <a href="#">Vouchers</a>
+                    </li>
+                    <li>
+                      <span>Create Voucher</span>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+
+              <form class="form-horizontal" role="form">
+
+                <div class="row">
+
+                  <section class="col-xs-12 col-md-9" id="new-voucher-information">
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+
+                        <div class="form-group">
+                          <label for="voucher-id" class="col-sm-3 control-label">Voucher ID</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="voucher-id" name="voucher-id">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="amount-due" class="col-sm-3 control-label">Amount Due</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="amount-due" name="amount-due">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- .section-contents -->
+
+                      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+
+                        <div class="form-group">
+                          <label for="bill-date" class="col-sm-4 col-lg-3 control-label">Bill Date</label>
+                          <div class="col-sm-8 col-lg-9">
+                            <div class="date-key">
+                              <div class="input-group date">
+                                <input type="text" class="form-control" id="bill-date" name="bill-date" placeholder="04/22/2014">
+                                <label for="bill-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="due-date" class="col-sm-4 col-lg-3 control-label">Due Date</label>
+                          <div class="col-sm-8 col-lg-9">
+                            <div class="date-key">
+                              <div class="input-group date">
+                                <input type="text" class="form-control" id="due-date" name="due-date" placeholder="05/01/2014">
+                                <label for="due-date" class="input-group-addon"><i class="entypo-calendar"></i></label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- .section-contents -->
+
+                      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 section-contents">
+
+                        <div class="form-group">
+                          <label for="terms" class="col-sm-4 col-lg-3 control-label">Terms</label>
+                          <div class="col-sm-8 col-lg-9">
+                            <select class="dropdown form-control" id="terms" name="terms">
+                              <option>Due Upon Receipt</option>
+                              <option selected>Net 15</option>
+                              <option>Net 30</option>
+                              <option>Net 45</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group radio-group inline">
+                          <label class="col-sm-4 control-label">Transaction Type</label>
+                          <div class="col-sm-8">
+                            <div class="radio-inline">
+                              <input type="radio" name="transaction-type" id="transaction-type-yes" value="Yes">
+                              <label for="transaction-type-yes" class="radio-inline entypo-check">Bill</label>
+                            </div>
+                            <div class="radio-inline">
+                              <input type="radio" name="transaction-type" id="transaction-type-no" value="No" checked>
+                              <label for="transaction-type-no" class="radio-inline entypo-check">Credit</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- .section-contents -->
+
+                    </div>
+                    <!-- .row -->
+
+                    <div class="row">
+
+                      <div class="col-xs-12 section-contents">
+
+                        <div class="form-group">
+                          <label for="subject-line" class="col-sm-1 control-label">Subject</label>
+                          <div class="col-sm-11">
+                            <input type="text" class="form-control" id="subject-line" name="subject-line">
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- .section-contents -->
+
+                    </div>
+                    <!-- .row -->
+
+                  </section>
+                  <!-- #new-voucher-information -->
+
+                  <section class="col-xs-12 col-md-3" id="edit-customer-information">
+
+                    <header class="section-heading">
+                      <h2 class="section title">Client Details <span class="right entypo-pencil" data-toggle="modal" data-target="#modal-editCustomerInfo"></span></h2>
+                    </header>
+
+                    <div class="section-contents">
+                      <h6 class="customer-name">CC West Printing</h6>
+                      <div class="customer-address">
+                        <p class="street-1">19592 West Braker Highway</p>
+                        <p class="street-2">Suite 992765</p>
+                        <p class="city-state-zip">Austin, TX 78720</p>
+                      </div>
+                    </div>
+                    <!-- .section-contents -->
+
+                    <div class="row">
+                    </div>
+                    <!-- .row -->
+
+                  </section>
+                  <!-- #edit-customer-information -->
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <!-- .content.block #create-new-voucher -->
+
+
+          <div class="content block" id="new-voucher-items">
+            <div class="container-fluid">
+
+              <div class="block-contents">
+                <div class="faux-table">
+                  <header class="table-head tier static">
+                    <div class="indicator"></div>
+                    <div class="cell expense-account">Expense Account</div>
+                    <div class="cell pay-from-account">Pay From Account</div>
+                    <div class="cell description">Description</div>
+                    <div class="cell cost">Cost</div>
+                  </header>
+                  <!-- .table-head.tier.static -->
+
+                  <ul class="table-content">
+                    <div class="draggable-container">
+
+                      <li class="tier with-actions new-voucher-item">
+                        <div class="indicator"></div>
+
+                        <div class="cell expense-account">
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.expense-account -->
+
+                        <div class="cell pay-from-account">
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.pay-from-account -->
+
+                        <div class="cell description">
+                          <div class="form-group">
+                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                          </div>
+                        </div>
+                        <!-- .cell.description -->
+
+                        <div class="cell cost">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="item-cost" value="$2,920.25">
+                          </div>
+                        </div>
+                        <!-- .cell.cost -->
+                      </li>
+                      <!-- .tier.new-voucher-item -->
+
+                      <li class="tier with-actions new-voucher-item">
+                        <div class="indicator"></div>
+
+                        <div class="cell expense-account">
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.expense-account -->
+
+                        <div class="cell pay-from-account">
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.pay-from-account -->
+
+                        <div class="cell description">
+                          <div class="form-group">
+                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                          </div>
+                        </div>
+                        <!-- .cell.description -->
+
+                        <div class="cell cost">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="item-cost" placeholder="$0.00">
+                          </div>
+                        </div>
+                        <!-- .cell.cost -->
+                      </li>
+                      <!-- .tier.new-voucher-item -->
+
+                      <li class="tier with-actions new-voucher-item">
+                        <div class="indicator"></div>
+
+                        <div class="cell expense-account">
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.expense-account -->
+
+                        <div class="cell pay-from-account">
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.pay-from-account -->
+
+                        <div class="cell description">
+                          <div class="form-group">
+                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                          </div>
+                        </div>
+                        <!-- .cell.description -->
+
+                        <div class="cell cost">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="item-cost" placeholder="$0.00">
+                          </div>
+                        </div>
+                        <!-- .cell.cost -->
+                      </li>
+                      <!-- .tier.new-voucher-item -->
+
+                      <li class="tier with-actions new-voucher-item">
+                        <div class="indicator"></div>
+
+                        <div class="cell expense-account">
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.expense-account -->
+
+                        <div class="cell pay-from-account">
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.pay-from-account -->
+
+                        <div class="cell description">
+                          <div class="form-group">
+                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                          </div>
+                        </div>
+                        <!-- .cell.description -->
+
+                        <div class="cell cost">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="item-cost" placeholder="$0.00">
+                          </div>
+                        </div>
+                        <!-- .cell.cost -->
+                      </li>
+                      <!-- .tier.new-voucher-item -->
+
+                      <li class="tier with-actions new-voucher-item">
+                        <div class="indicator"></div>
+
+                        <div class="cell expense-account">
+                          <div class="actions">
+                            <div class="tier-teaser">
+                              <div class="kicker"><i class="entypo-chevron-thin-right"></i></div>
+                            </div>
+                            <!-- .tier-trigger -->
+
+                            <nav class="tier-actions">
+                              <a class="btn-tier-drag"><i class="entypo-drag"></i></a>
+                              <a class="btn-tier-add"><i class="entypo-add"></i></a>
+                              <a class="btn-tier-remove"><i class="entypo-remove"></i></a>
+                            </nav>
+                            <!-- nav.tier-actions -->
+                          </div>
+                          <!-- div.actions -->
+
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.expense-account -->
+
+                        <div class="cell pay-from-account">
+                          <div class="form-group grid-form">
+                            <select class="chosen form-control" name="select-item-type" data-placeholder="Item">
+                              <option></option>
+
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                              <option>Account</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- .cell.pay-from-account -->
+
+                        <div class="cell description">
+                          <div class="form-group">
+                            <textarea class="form-control" name="item-description" placeholder="Item Description Here"></textarea>
+                          </div>
+                        </div>
+                        <!-- .cell.description -->
+
+                        <div class="cell cost">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="item-cost" placeholder="$0.00">
+                          </div>
+                        </div>
+                        <!-- .cell.cost -->
+                      </li>
+                      <!-- .tier.new-voucher-item -->
+                    </div>
+                    <!-- .draggable-container -->
+
+                    <li class="tier static new-voucher-totals">
+                      <div class="indicator"></div>
+                      <div class="cell space"></div>
+                      <div class="cell total-label">Unassigned Amount</div>
+                      <div class="cell amount">$1,000.00</div>
+                    </li>
+
+                    <li class="tier static new-voucher-totals">
+                      <div class="indicator"></div>
+                      <div class="cell space"></div>
+                      <div class="cell total-label">Bill Total:</div>
+                      <div class="cell amount">$3,920.25</div>
+                    </li>
+
+                    <li class="tier static new-voucher-totals">
+                      <div class="indicator"></div>
+                      <div class="cell space"></div>
+                      <div class="cell total-label"></div>
+                      <div class="cell amount"></div>
+                    </li>
+
+                  </ul>
+                  <!-- ul.table-content -->
+
+
+                  <div class="new-voucher-actions">
+
+                    <footer class="block-footing">
+                      <div class="row transactions-actions drawer-buttons">
+                        <a class="btn btn-primary action-button" href="" data-style="fill" data-horizontal>Save Draft <i class="entypo-save"></i></a>
+                        <a class="btn btn-primary action-button" href="" data-style="fill" data-horizontal>Save &amp; Pay Bill <i class="entypo-chevron-thin-right"></i></a>
+                      </div>
+                  </footer>                    
+                    <!-- <button class="progress-button action-button" data-style="fill" data-horizontal>Save Draft <i class="entypo-save"></i></button> -->
+
+                    <!-- <button class="progress-button error action-button" data-style="fill" data-horizontal>Save &amp; Pay Bill <i class="entypo-chevron-thin-right"></i></button> -->
+
+                    <!--                     <a class="btn btn-primary">Save Draft <i class="entypo-save"></i></a>
+                    <a class="btn btn-primary">Save &amp; Pay Bill <i class="entypo-chevron-thin-right"></i></a>
+ -->
+
+
+                  </div>
+
+                  <div class="new-voucher-attachments">
+                    <div class="drop-zone">
+                      <i class="entypo-attach"></i>
+                      <p>Drag attachments here to apply to voucher.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- .faux-table -->
+              </div>
+              <!-- .block-contents -->
+
+            </div>
+            <!-- .container -->
+          </div>
+          <!-- .content.block #new-voucher-items -->
+
+        </div>
+        <!-- .master-container.view #journal-entry -->
+
+      </div>
+      <!-- .app-content -->
+    </main>
+
+  </div>
+  <!-- .app -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/scripts/jquery.js"><\/script>')
+  </script>
+  <script src="/assets/scripts/jquery-ui.js"></script>
+  <script src="/assets/scripts/bootstrap.js"></script>
+  <script src="/assets/scripts/plugins.js"></script>
+  <script src="/assets/scripts/slimscroll.js"></script>
+  <script src="/assets/scripts/banktel.js"></script>
+
+  <script>
+    // Inst chosen on .journal-number select
+    $('.new-voucher-item .chosen').chosen({
+      allow_single_deselect: true,
+      no_results_text: "Sorry, we were unable to find "
+    });
+
+    // Insert new tier beneath tier clicked
+    $(".draggable-container").on('click', '.btn-tier-add', function () {
+      $(".draggable-container").prepend($("<li class='tier with-actions new-voucher-item'><div class='indicator'></div><div class='cell expense-account'><div class='actions'><div class='tier-teaser'><div class='kicker'><i class='entypo-chevron-thin-right'></i></div></div><nav class='tier-actions'><a class='btn-tier-drag'><i class='entypo-drag'></i></a><a class='btn-tier-add'><i class='entypo-add'></i></a><a class='btn-tier-remove'><i class='entypo-remove'></i></a></nav></div><div class='form-group'><select class='chosen form-control' name='select-item-type' data-placeholder='Item'><option>Account</option><option>Account</option><option>Account</option><option>Account</option></select></div></div><div class='cell pay-from-account'><div class='form-group'><select class='chosen form-control' name='select-item-type' data-placeholder='Item'><option>Account</option><option>Account</option><option>Account</option><option>Account</option></select></div></div><div class='cell description'><div class='form-group'><textarea class='form-control' name='item-description' placeholder='Item Description Here'></textarea></div></div><div class='cell cost'><div class='form-group'><input type='text' class='form-control' name='item-cost' placeholder='$0.00'></div></div></li>"));
+      $('.chosen').chosen('chosen:updated');
+    });
+
+[].slice.call( document.querySelectorAll( 'button.progress-button' ) ).forEach( function( bttn ) {
+  new ProgressButton( bttn, {
+    callback : function( instance ) {
+      var progress = 0,
+        interval = setInterval( function() {
+          progress = Math.min( progress + Math.random() * 0.1, 1 );
+          instance._setProgress( progress );
+
+          if( progress === 1 ) {
+            instance._stop(1);
+            clearInterval( interval );
+          }
+        }, 200 );
+    }
+  } );
+} );
+  </script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+        $('.loading').delay(800).fadeOut(function(){$(this).remove()});
+    });
+    $(document).ready(function() {
+      var elementAheight = $('.bottom-pane').height();
+        $('.block-contents').css('padding-top', elementAheight + 'px');
+
+    })
+  </script>
+
+
+</body>
+
+</html>
